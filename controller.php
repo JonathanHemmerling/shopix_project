@@ -1,8 +1,10 @@
 <?php
 include 'model.php';
 
-function get_content($product){
-    return get_page($product);
+$menu_content = get_content_from_model('categorys');
+
+function get_content_from_model($product){
+    return get_page_information_from_json($product);
 }
 function redirect_to($location) {
     header("Location: " . $location);
