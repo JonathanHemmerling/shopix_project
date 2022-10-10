@@ -1,16 +1,5 @@
-"id": "1",
-"productcategory": "T-Shirts",
-"productname": "T-Shirt 1",
-"description": "The first T-Shirt",
-
-"id": "2",
-"productcategory": "T-Shirts",
-"productname": "T-Shirt 2",
-"description": "The second T-Shirt",
-
-"id": "3",
-"productcategory": "T-Shirts",
-"productname": "T-Shirt 3",
-"description": "The third T-Shirt"
+[{"id": "1", "productcategory": "T-Shirts", "productname": "T-Shirt 1", "description": "The first T-Shirt"},
+  {"id": "2", "productcategory": "T-Shirts", "productname": "T-Shirt 2", "description": "The second T-Shirt"},
+  {"id": "3", "productcategory": "T-Shirts", "productname": "T-Shirt 3", "description": "The third T-Shirt"}]
 
 

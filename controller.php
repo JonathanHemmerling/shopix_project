@@ -1,8 +1,6 @@
 <?php
 include 'model.php';
 
-$menu_content = get_content_from_model('categorys');
-
 function get_content_from_model($product){
     return get_page_information_from_json($product);
 }
