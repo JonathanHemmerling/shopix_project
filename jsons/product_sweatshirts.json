@@ -1,3 +1,5 @@
-[{"id": "1", "productcategory": "Sweatshirts", "productname": "Sweatshirt 1", "description": "The first Sweatshirt"}, {"id": "2", "productcategory": "Sweatshirts", "productname": "Sweatshirt 2", "description": "The second Sweatshirt"}, {"id": "3", "productcategory": "Sweatshirts", "productname": "Sweatshirt 3", "description": "The third Sweatshirt"}]
+[{"product_id": "1", "productcategory": "Sweatshirts", "productname": "Sweatshirt 1", "description": "The first Sweatshirt"},
+  {"product_id": "2", "productcategory": "Sweatshirts", "productname": "Sweatshirt 2", "description": "The second Sweatshirt"},
+  {"product_id": "3", "productcategory": "Sweatshirts", "productname": "Sweatshirt 3", "description": "The third Sweatshirt"}]
 
 
