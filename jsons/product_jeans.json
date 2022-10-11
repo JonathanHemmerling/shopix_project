@@ -1,3 +1,5 @@
-[{ "product_id": "1", "productcategory": "Jeans", "productname": "Jeans 1", "description": "The first Jeans"}, {"id": "2", "productcategory": "Jeans", "productname": "Jeans 2", "description": "The second Jeans"}, {"id": "3", "productcategory": "Jeans", "productname": "Jeans 3", "description": "The third Jeans"}]
+[{"id": "1","product_id": "1", "productcategory": "Jeans", "productname": "jeans_1", "description": "The first Jeans"},
+  {"id": "2","product_id": "1", "productcategory": "Jeans", "productname": "jeans_2", "description": "The second Jeans"},
+  {"id": "3","product_id": "1", "productcategory": "Jeans", "productname": "jeans_3", "description": "The third Jeans"}]
 
 

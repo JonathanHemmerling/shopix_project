@@ -1,0 +1,9 @@
+[{"id": "1","product_id": "1", "displayname": "Jeans 1", "productname": "jeans_1", "description": "The first Jeans"},
+  {"id": "2","product_id": "1", "displayname": "Jeans 2", "productname": "jeans_2", "description": "The second Jeans"},
+  {"id": "3","product_id": "1", "displayname": "Jeans 3", "productname": "jeans_3", "description": "The third Jeans"},
+  {"id": "1","product_id": "2", "displayname": "Sweatshirts 1", "productname": "sweatshirt_1", "description": "The first Sweatshirt"},
+  {"id": "2","product_id": "2", "displayname": "Sweatshirts 2", "productname": "sweatshirt_2", "description": "The second Sweatshirt"},
+  {"id": "3","product_id": "2", "displayname": "Sweatshirts 3", "productname": "sweatshirt_3", "description": "The third Sweatshirt"},
+  {"id": "1","product_id": "3", "displayname": "T-Shirts 1", "productname": "t-shirt_1", "description": "The first T-Shirt"},
+  {"id": "2","product_id": "3", "displayname": "T-Shirts 2", "productname": "t-shirt_2", "description": "The second T-Shirt"},
+  {"id": "3","product_id": "3", "displayname": "T-Shirts 3", "productname": "t-shirt_3", "description": "The third T-Shirt"}]
