@@ -1,9 +1,9 @@
-[{"id": "1","product_Id": "1", "display_Name": "Jeans 1", "product_Name": "jeans_1", "description": "The first Jeans"},
-  {"id": "2","product_Id": "1", "display_Name": "Jeans 2", "product_Name": "jeans_2", "description": "The second Jeans"},
-  {"id": "3","product_Id": "1", "display_Name": "Jeans 3", "product_Name": "jeans_3", "description": "The third Jeans"},
-  {"id": "1","product_Id": "2", "display_Name": "Sweatshirts 1", "product_Name": "sweatshirt_1", "description": "The first Sweatshirt"},
-  {"id": "2","product_Id": "2", "display_Name": "Sweatshirts 2", "product_Name": "sweatshirt_2", "description": "The second Sweatshirt"},
-  {"id": "3","product_Id": "2", "display_Name": "Sweatshirts 3", "product_Name": "sweatshirt_3", "description": "The third Sweatshirt"},
-  {"id": "1","product_Id": "3", "display_Name": "T-Shirts 1", "product_Name": "t-shirt_1", "description": "The first T-Shirt"},
-  {"id": "2","product_Id": "3", "display_Name": "T-Shirts 2", "product_Name": "t-shirt_2", "description": "The second T-Shirt"},
-  {"id": "3","product_Id": "3", "display_Name": "T-Shirts 3", "product_Name": "t-shirt_3", "description": "The third T-Shirt"}]
+[{"id": "1","productId": "1", "displayName": "Jeans 1", "productName": "jeans_1", "description": "The first Jeans"},
+  {"id": "2","productId": "1", "displayName": "Jeans 2", "productName": "jeans_2", "description": "The second Jeans"},
+  {"id": "3","productId": "1", "displayName": "Jeans 3", "productName": "jeans_3", "description": "The third Jeans"},
+  {"id": "1","productId": "2", "displayName": "Sweatshirts 1", "productName": "sweatshirt_1", "description": "The first Sweatshirt"},
+  {"id": "2","productId": "2", "displayName": "Sweatshirts 2", "productName": "sweatshirt_2", "description": "The second Sweatshirt"},
+  {"id": "3","productId": "2", "displayName": "Sweatshirts 3", "productName": "sweatshirt_3", "description": "The third Sweatshirt"},
+  {"id": "1","productId": "3", "displayName": "T-Shirts 1", "productName": "t-shirt_1", "description": "The first T-Shirt"},
+  {"id": "2","productId": "3", "displayName": "T-Shirts 2", "productName": "t-shirt_2", "description": "The second T-Shirt"},
+  {"id": "3","productId": "3", "displayName": "T-Shirts 3", "productName": "t-shirt_3", "description": "The third T-Shirt"}]

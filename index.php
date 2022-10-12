@@ -14,7 +14,6 @@
 <?php include 'content.php';?>
 
 <?php include 'footer.php';
-echo $variable;
 ?>
 
 

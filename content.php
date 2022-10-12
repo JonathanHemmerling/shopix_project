@@ -1,22 +1,22 @@
 <?php include __DIR__ . '/Controller/ProductsController.php';?>
 <?php
-$all_Products = new ProductsController();
+$allProducts = new ProductsController();
 if(isset($_GET['page'])) {
     $id = $_GET['id'];
-    $submenu_Content = $all_Products -> getContentFromModel('products');
-    foreach($submenu_Content as $sub_Content){
-        if($sub_Content['product_Id'] === $id){?>
-            <li><a href= <?php echo 'index.php?product_Page=' . $sub_Content['product_Name'] . '&id='. $sub_Content['id'];?>> <?php echo $sub_Content['display_Name'];?> </a>
+    $submenuContent = $allProducts -> getContentFromModel('products');
+    foreach($submenuContent as $subContent){
+        if($subContent['productId'] === $id){?>
+            <li><a href= <?php echo 'index.php?productPage=' . $subContent['productName'] . '&id='. $subContent['id'];?>> <?php echo $subContent['displayName'];?> </a>
 <?php }}}
-if(isset($_GET['product_Page'])) {
+if(isset($_GET['productPage'])) {
     $id = $_GET['id'];
-    $product = $_GET['product_Page'];
-    $description_Content = $all_Products -> getContentFromModel('products');
-    foreach ($description_Content as $descript_Content) {
-        if ($descript_Content['product_Name'] === $product && $descript_Content['id'] === $id) {
-            echo $descript_Content['display_Name'] . ': ';?>
+    $product = $_GET['productPage'];
+    $descriptionContent = $allProducts -> getContentFromModel('products');
+    foreach ($descriptionContent as $descriptContent) {
+        if ($descriptContent['productName'] === $product && $descriptContent['id'] === $id) {
+            echo $descriptContent['displayName'] . ': ';?>
             <br />
-        <?php echo $descript_Content['description'];
+        <?php echo $descriptContent['description'];
         }
     }
 }?>

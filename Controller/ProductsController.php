@@ -1,10 +1,10 @@
 <?php
 include __DIR__ . '/../Model/Products.php';
 
-class ProductsController extends Products {
+class ProductsController{
 
-    public function getContentFromModel($file_Name){
-        return Products::getCategorysFromJson($file_Name);
+    public function getContentFromModel($fileName){
+        return (new Products()) -> getProductsFromJson($fileName);
     }
 
 }

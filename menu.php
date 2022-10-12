@@ -3,11 +3,12 @@
 <?php $category = new CategoryController()?>
 
 <div id="menu">
-    <?php echo 'Menu:';
+    <?php
     if(!isset($_GET['id'])){
-    $menu_Content = $category -> getMenuDataFromModel('categorys');
-    foreach ($menu_Content as $list_Object){?>
-        <li><a href="<?php echo 'index.php?page='. $list_Object['product_Category'] . '&id='. $list_Object['id']; ?>"><?php echo $list_Object['display_Name'];?></a></li>
+    echo 'Menu:';
+    $menuContent = $category -> getMenuDataFromModel('categorys');
+    foreach ($menuContent as $listObject){?>
+        <li><a href="<?php echo 'index.php?page='. $listObject['productCategory'] . '&id='. $listObject['id']; ?>"><?php echo $listObject['displayName'];?></a></li>
     <?php } }
     if(isset($_GET['id'])){
     ?>

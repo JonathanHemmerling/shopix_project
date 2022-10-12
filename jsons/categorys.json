@@ -1,3 +1,3 @@
-[{"id": "1", "product_Category": "jeans", "display_Name": "Jeans"},
-  {"id": "2", "product_Category": "sweatshirts", "display_Name": "Sweatshirts"},
-  {"id": "3", "product_Category": "t-shirts", "display_Name": "T-Shirts"}]
+[{"id": "1", "productCategory": "jeans", "displayName": "Jeans"},
+  {"id": "2", "productCategory": "sweatshirts", "displayName": "Sweatshirts"},
+  {"id": "3", "productCategory": "t-shirts", "displayName": "T-Shirts"}]
