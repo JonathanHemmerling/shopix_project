@@ -1,31 +1,21 @@
 <?php include __DIR__.'/../controller/Controller_Products.php';?>
 <?php
-if(isset($_GET['id'])) {
+if(isset($_GET['page'])) {
     $id = $_GET['id'];
-    //$content_list = [];
-    $page_Content = get_Content_From_Model('products');
-    foreach($page_Content as $content){
-        if($content['product_id'] === $id){?>
-            <li><a href= <?php echo 'index.php?productpage=' . $content['productname'] . '&id='. $content['id'];?>"> <?php echo $content['display_name'];?> </a>
-            <?php //$content_list[] = $content;
+    $submenu_Content = get_Content_From_Model('products');
+    foreach($submenu_Content as $sub_Content){
+        if($sub_Content['product_Id'] === $id){?>
+            <li><a href= <?php echo 'index.php?product_Page=' . $sub_Content['product_Name'] . '&id='. $sub_Content['id'];?>> <?php echo $sub_Content['display_Name'];?> </a>
+<?php }}}
+if(isset($_GET['product_Page'])) {
+    $id = $_GET['id'];
+    $product = $_GET['product_Page'];
+    $description_Content = get_Content_From_Model('products');
+    foreach ($description_Content as $descript_Content) {
+        if ($descript_Content['product_Name'] === $product && $descript_Content['id'] === $id) {
+            echo $descript_Content['display_Name'] . ': ';?>
+            <br />
+        <?php echo $descript_Content['description'];
+        }
     }
-}}?>
-
-<?php /*foreach($content_list as $contents){
-    ?> <li><a href= <?php echo 'index.php?productname=' . $contents['productname'] . '&id='. $contents['id'] . '.php'?>"> <?php $contents['displayname']?> </a>
-<?php }}*/?>
-
-
-
-
-<?php
-/*if(!isset($_GET['id'])){
-    if(isset($_GET['product_id'])){
-
-    }
-}
-if(isset($_GET['id'])){
-    $page_Id = $_GET['id'];
-    $page_Content = get_Content_From_Model('product_' . $page_Id);*/?>
-
-
+}?>
