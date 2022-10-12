@@ -1,6 +1,6 @@
 <?php include __DIR__ . '/Controller/ProductsController.php';?>
 <?php
-$allProducts = new ProductsController();
+$allProducts = new Controller\ProductsController();
 if(isset($_GET['page'])) {
     $id = $_GET['id'];
     $submenuContent = $allProducts -> getContentFromModel('products');

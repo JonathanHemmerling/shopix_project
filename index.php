@@ -1,4 +1,6 @@
-<?php   // alle Fehler anzeigen
+
+<?php
+// alle Fehler anzeigen
   error_reporting(E_ALL);
   // Fehler in der Webseite anzeigen (nicht in Produktion verwenden)
   ini_set('display_errors', 'On');
