@@ -257,3 +257,44 @@ Stack trace:
 #0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): include()
 #1 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 10
+[13-Oct-2022 08:57:10 Europe/Berlin] PHP Warning:  include(/home/jonathanhemmerling/PhpstormProjects/shopix_project/Controller/CategoryController.php): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 1
+[13-Oct-2022 08:57:10 Europe/Berlin] PHP Warning:  include(): Failed opening '/home/jonathanhemmerling/PhpstormProjects/shopix_project/Controller/CategoryController.php' for inclusion (include_path='.:/usr/share/php') in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 1
+[13-Oct-2022 08:57:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php:3
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): include()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 3
+[13-Oct-2022 08:57:58 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/App/Model/../jsons/categorys.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/App/Model/Category.php on line 5
+[13-Oct-2022 08:57:58 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 9
+[13-Oct-2022 08:59:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php:3
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): include()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 3
+[13-Oct-2022 09:01:34 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Model/../jsons/categorys.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Model/Category.php on line 5
+[13-Oct-2022 09:01:34 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 9
+[13-Oct-2022 09:01:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Controller\ProductsController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/content.php:3
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(16): include()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/content.php on line 3
+[13-Oct-2022 09:03:02 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Model/../jsons/categorys.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Model/Category.php on line 5
+[13-Oct-2022 09:03:02 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php on line 9
+[13-Oct-2022 09:03:29 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Model/../jsons/products.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Model/Products.php on line 5
+[13-Oct-2022 09:03:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/content.php on line 7
+[13-Oct-2022 10:13:13 Europe/Berlin] PHP Warning:  require(/home/jonathanhemmerling/PhpstormProjects/shopix_projectvendor/autoload.php): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 13
+[13-Oct-2022 10:13:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '/home/jonathanhemmerling/PhpstormProjects/shopix_projectvendor/autoload.php' (include_path='.:/usr/share/php') in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 13
+[13-Oct-2022 10:13:35 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Ramsey\Uuid\Uuid::__construct(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14 and exactly 4 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/ramsey/uuid/src/Uuid.php:257
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): Ramsey\Uuid\Uuid->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/ramsey/uuid/src/Uuid.php on line 257
+[13-Oct-2022 10:18:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "app\Model\Category" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Controller/CategoryController.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/menu.php(12): app\Controller\CategoryController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(18): include('...')
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Controller/CategoryController.php on line 14
