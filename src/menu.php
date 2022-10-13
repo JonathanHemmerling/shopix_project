@@ -1,6 +1,8 @@
 <?php
 
-use App\Controller\CategoryController;
+namespace src;
+
+use Src\Controller\CategoryController;
 
 $category = new CategoryController() ?>
 <div id="menu">

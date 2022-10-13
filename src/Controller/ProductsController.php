@@ -1,6 +1,6 @@
 <?php
 
-namespace app\Controller;
+namespace src\Controller;
 
 use App\Model as Mod;
 

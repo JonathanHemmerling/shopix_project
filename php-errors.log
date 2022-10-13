@@ -298,3 +298,41 @@ Stack trace:
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(18): include('...')
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/app/Controller/CategoryController.php on line 14
+[13-Oct-2022 13:17:35 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:23:21 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/View/templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:23:32 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:../View/templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:23:37 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:View/templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:23:51 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:13 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:13 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:47 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:48 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:48 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:48 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:24:49 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:28:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_projectsrc/templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:31:04 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:header.tpl' in 'src/templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:31:04 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:header.tpl' in 'src/templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:33:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:38:07 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:39:13 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 13:50:35 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195

@@ -1,16 +1,5 @@
-<html>
-<head>
-    <title>Info</title>
-</head>
-<body>
-
+{include file="header.tpl"}
 <pre>
-User Information:
-
-Name: {$name|capitalize}
-Address: {$address|escape}
-Date: {$smarty.now|date_format: "%b %e, %Y"}
+TEST
 </pre>
-
-</body>
-</html>
+{include file="footer.tpl"}

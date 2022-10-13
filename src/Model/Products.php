@@ -1,13 +1,15 @@
 <?php
 
-namespace app\Model;
+namespace src\Model;
 
-class Category
+class Products
 {
-    public function getCategorysFromJson($fileName)
+    public function getProductsFromJson($fileName)
     {
         $jsonFile = file_get_contents(__DIR__ . '/../../jsons/' . $fileName . '.json');
         $pageContent = json_decode($jsonFile, JSON_OBJECT_AS_ARRAY);
         return $pageContent;
     }
 }
+
+?>

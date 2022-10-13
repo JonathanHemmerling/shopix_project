@@ -9,13 +9,12 @@ ini_set('log_errors', 'On');
 ini_set('error_log', 'php-errors.log'); ?>
 
 <?php
-
 require __DIR__ . '/vendor/autoload.php';
 
-include 'src/header.php';
-include 'src/menu.php';
-include 'src/content.php';
-include 'src/footer.php';
+$smarty = new Smarty();
+$smarty->assign('name', 'test');
+$smarty->display('index.tpl');
+
 ?>
 
 

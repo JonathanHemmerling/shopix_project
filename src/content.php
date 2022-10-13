@@ -1,6 +1,8 @@
 <?php
 
-use App\Controller\ProductsController;
+namespace src;
+
+use Src\Controller\ProductsController;
 
 $allProducts = new ProductsController();
 if (isset($_GET['page'])) {
