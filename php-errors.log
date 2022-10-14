@@ -336,3 +336,363 @@ Stack trace:
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
 [13-Oct-2022 13:50:35 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:34:08 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:43 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:44 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:44 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:44 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:35:45 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[13-Oct-2022 14:44:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 16
+[13-Oct-2022 15:29:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 16
+[13-Oct-2022 15:29:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 16
+[13-Oct-2022 15:29:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 16
+[13-Oct-2022 15:29:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 15
+[13-Oct-2022 15:29:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:34:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:44:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:44:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:44:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:44:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:44:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:44:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:45:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:45:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:45:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:45:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:45:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:46:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 16
+[13-Oct-2022 15:46:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:47:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:47:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:47:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:52:30 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:30 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:30 Europe/Berlin] PHP Warning:  Undefined array key "menuContent" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:30 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:32 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:32 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:32 Europe/Berlin] PHP Warning:  Undefined array key "menuContent" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:52:32 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:53:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Controller\CategoryController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 17
+[13-Oct-2022 15:55:38 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../../jsons/categorys.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Category.php on line 9
+[13-Oct-2022 15:55:38 Europe/Berlin] PHP Warning:  Undefined array key "menuContent" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:55:38 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:06 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../../jsons/categorys.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Category.php on line 9
+[13-Oct-2022 15:56:06 Europe/Berlin] PHP Warning:  Undefined array key "menuContent" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:06 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:38 Europe/Berlin] PHP Warning:  Undefined array key "menuContent" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:38 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:38 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/plugins/function.html_options.php on line 170
+[13-Oct-2022 15:56:38 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/plugins/function.html_options.php on line 170
+[13-Oct-2022 15:56:38 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/plugins/function.html_options.php on line 170
+[13-Oct-2022 15:56:45 Europe/Berlin] PHP Warning:  Undefined array key "menuContent" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:45 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 30
+[13-Oct-2022 15:56:45 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/plugins/function.html_options.php on line 170
+[13-Oct-2022 15:56:45 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/plugins/function.html_options.php on line 170
+[13-Oct-2022 15:56:45 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/plugins/function.html_options.php on line 170
+[13-Oct-2022 16:26:12 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:26:12 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:28:07 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:28:07 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:28:09 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:28:09 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:28:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[13-Oct-2022 16:30:54 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 35
+[13-Oct-2022 16:30:54 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 35
+[13-Oct-2022 16:30:54 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 35
+[13-Oct-2022 16:52:17 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ")" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/CategoryController.php on line 17
+[13-Oct-2022 16:53:13 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 35
+[13-Oct-2022 16:53:13 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 35
+[13-Oct-2022 16:53:13 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 35
+[13-Oct-2022 17:13:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Object of class src\Controller\CategoryController could not be converted to string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 20
+[13-Oct-2022 20:14:33 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/CategoryController.php on line 18
+[13-Oct-2022 20:14:33 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/CategoryController.php on line 18
+[13-Oct-2022 20:14:33 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/CategoryController.php on line 18
+[13-Oct-2022 20:14:33 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/CategoryController.php on line 20
+[13-Oct-2022 20:23:38 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 20
+[13-Oct-2022 20:23:38 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 20
+[13-Oct-2022 20:26:03 Europe/Berlin] PHP Warning:  Undefined array key "p" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 36
+[13-Oct-2022 20:26:03 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 36
+[13-Oct-2022 20:26:03 Europe/Berlin] PHP Warning:  Undefined array key "p" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 36
+[13-Oct-2022 20:26:03 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 36
+[13-Oct-2022 20:26:03 Europe/Berlin] PHP Warning:  Undefined array key "p" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 36
+[13-Oct-2022 20:26:03 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 36
+[13-Oct-2022 20:32:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: bool | string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php:574
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2440): Smarty_Internal_TemplateCompilerBase->compileVariable()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2777): Smarty_Internal_Templateparser->yy_r102()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php(2872): Smarty_Internal_Templateparser->yy_reduce()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_smartytemplatecompiler.php(128): Smarty_Internal_Templateparser->doParse()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(466): Smarty_Internal_SmartyTemplateCompiler->doCompile()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php(395): Smarty_Internal_TemplateCompilerBase->compileTemplateSource()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate()
+#7 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(141): Smarty_Template_Compiled->compileTemplateSource()
+#8 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_template_compiled.php(105): Smarty_Template_Compiled->process()
+#9 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php(216): Smarty_Template_Compiled->render()
+#10 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(238): Smarty_Internal_Template->render()
+#11 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatebase.php(134): Smarty_Internal_TemplateBase->_execute()
+#12 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): Smarty_Internal_TemplateBase->display()
+#13 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 574
+[14-Oct-2022 08:40:14 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 08:40:14 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 08:40:22 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 08:40:22 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 08:41:10 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 08:41:10 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 10:38:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:38:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:39:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:40:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:40:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:40:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:40:36 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:36 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:37 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:37 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:37 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:37 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:38 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:38 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:39 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:39 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:39 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:39 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:40 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:40 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:46 Europe/Berlin] PHP Warning:  Undefined array key "homelink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:40:46 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 42
+[14-Oct-2022 10:47:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:48:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:48:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:48:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Src\Model\MainMenu" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(16): src\Controller\MainMenuController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(21): src\Controller\MainMenuController->getMenuAsArr()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[14-Oct-2022 10:49:18 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/categorys.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php on line 9
+[14-Oct-2022 10:49:18 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 17
+[14-Oct-2022 11:05:44 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26
+[14-Oct-2022 11:05:58 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26
+[14-Oct-2022 11:06:15 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26
+[14-Oct-2022 11:09:11 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:09:11 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:42:16 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:16 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:17 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:17 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:18 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:42:18 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:42:18 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:18 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:32 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:32 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:33 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:42:33 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:42:33 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:42:33 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:34 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:34 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:34 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:34 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:40 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:40 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:40 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:40 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:43 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:43 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:43 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:43 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:48 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:43:48 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:43:48 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:51:05 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:51:05 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:51:07 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:51:07 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:51:08 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:51:08 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:51:08 Europe/Berlin] PHP Warning:  Undefined array key "info" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:51:08 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:52:05 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:52:05 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 11:52:05 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:52:06 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 11:52:06 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 11:52:06 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 12:09:27 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 12:09:27 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 12:09:27 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 12:09:27 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 12:09:27 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 12:09:27 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 12:09:30 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 12:09:30 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 12:09:30 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 12:09:30 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 12:09:30 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 12:09:30 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 13:51:31 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:51:31 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:51:31 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 13:51:31 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 13:51:31 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 13:51:31 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 13:51:34 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:51:34 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:51:34 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 13:51:34 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 41
+[14-Oct-2022 13:51:34 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 13:51:34 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 51
+[14-Oct-2022 13:52:15 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:52:15 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:52:16 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:52:16 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:53:11 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:53:11 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:54:03 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:54:03 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:54:35 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:54:35 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:54:40 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:54:40 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:56:35 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:56:35 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:57:03 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31
+[14-Oct-2022 13:57:03 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 31

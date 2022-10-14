@@ -1,8 +1,6 @@
 <?php
 
-namespace src;
-
-use Src\Controller\CategoryController;
+use Controller\CategoryController;
 
 $category = new CategoryController() ?>
 <div id="menu">

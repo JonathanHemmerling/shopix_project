@@ -1,8 +1,6 @@
 <?php
 
-namespace src;
-
-use Src\Controller\ProductsController;
+use Controller\ProductsController;
 
 $allProducts = new ProductsController();
 if (isset($_GET['page'])) {
@@ -12,7 +10,7 @@ foreach ($submenuContent as $subContent){
 if ($subContent['productId'] === $id){
 ?>
 <li><a href= <?php
-    echo 'index.php?productPage=' . $subContent['productName'] . '&id=' . $subContent['id']; ?>> <?php
+    echo 'index.php?productPage=' . $subContent['productName'] . '&id=' . $subContent['id'].'>' . $subContent['displayName']. '</a>'; ?>> <?php
         echo $subContent['displayName']; ?> </a>
     <?php
     }

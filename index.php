@@ -1,4 +1,8 @@
+<?php require __DIR__ . '/vendor/autoload.php';?>
+
 <?php
+use Src\Controller;
+
 // alle Fehler anzeigen
 error_reporting(E_ALL);
 // Fehler in der Webseite anzeigen (nicht in Produktion verwenden)
@@ -9,10 +13,39 @@ ini_set('log_errors', 'On');
 ini_set('error_log', 'php-errors.log'); ?>
 
 <?php
-require __DIR__ . '/vendor/autoload.php';
+$mainMenu = new Controller\MainMenuController();
+$products = new Controller\ProductsController();
 
 $smarty = new Smarty();
-$smarty->assign('name', 'test');
+if(!isset($_GET['page'])) {
+    $strForMenuLink = $mainMenu->getMenuAsArr('menuCategorys');
+    $smarty->assign('menu', $strForMenuLink);
+    $smarty->assign('name', '');
+    $smarty->assign('description', '');
+}
+if(isset($_GET['productId'])){
+    $pageName = $_GET['page'];
+    $productId = $_GET['productId'];
+        $strForCategoryLink = $products->getCategorysAsArr('products', $productId);
+        $smarty->assign('menu', $strForCategoryLink);
+        $smarty->assign('name', '');
+        $smarty->assign('description', '');
+}
+if(isset($_GET['id'])){
+        $pageId = $_GET['id'];
+        $strForProductName = $products->getProductName('products', $pageId);
+        $strForProductDescription = $products->getProductDescription('products',$pageId);
+        $smarty->assign('name', $strForProductName);
+        $smarty->assign('description', $strForProductDescription);
+}
+/*if(isset($_GET['id'])){
+    $pageName = $_GET['page'];
+    $pageId = $_GET['id'];
+    $strForProductsLink = $products->getProductsAsArr('products', $pageId);
+    $smarty->assign('menu', $strForProductsLink);
+}*/
+//$smarty->assign('homelink', '<a href="index.tpl">HOME</a>');
+$smarty->addTemplateDir(__DIR__.'/src/templates');
 $smarty->display('index.tpl');
 
 ?>
