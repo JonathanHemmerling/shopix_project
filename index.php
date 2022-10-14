@@ -19,22 +19,26 @@ $products = new Controller\ProductsController();
 $smarty = new Smarty();
 if(!isset($_GET['page'])) {
     $strForMenuLink = $mainMenu->getMenuAsArr('menuCategorys');
+    $smarty->assign('home');
     $smarty->assign('menu', $strForMenuLink);
-    $smarty->assign('name', '');
-    $smarty->assign('description', '');
+    $smarty->assign('name');
+    $smarty->assign('description');
 }
 if(isset($_GET['productId'])){
+    $smarty->assign('home', '<a href="index.php">Home</a>');
     $pageName = $_GET['page'];
     $productId = $_GET['productId'];
         $strForCategoryLink = $products->getCategorysAsArr('products', $productId);
         $smarty->assign('menu', $strForCategoryLink);
-        $smarty->assign('name', '');
-        $smarty->assign('description', '');
+        $smarty->assign('name');
+        $smarty->assign('description');
 }
 if(isset($_GET['id'])){
-        $pageId = $_GET['id'];
-        $strForProductName = $products->getProductName('products', $pageId);
-        $strForProductDescription = $products->getProductDescription('products',$pageId);
+    $smarty->assign('home', '<a href="index.php">Home</a>');
+    $pageId = $_GET['id'];
+    $strForProductName = $products->getProductName('products', $pageId);
+    $strForProductDescription = $products->getProductDescription('products',$pageId);
+    $smarty->assign('menu');
         $smarty->assign('name', $strForProductName);
         $smarty->assign('description', $strForProductDescription);
 }
