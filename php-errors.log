@@ -704,3 +704,919 @@ Stack trace:
 [14-Oct-2022 14:12:37 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
 [14-Oct-2022 14:12:59 Europe/Berlin] PHP Warning:  Undefined array key "home" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
 [14-Oct-2022 14:12:59 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/218ca47f5609e68cf71f65011f15b112b8cf6c84_0.file.index.tpl.php on line 29
+[16-Oct-2022 20:37:19 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/menuCategorys.json.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php on line 9
+[16-Oct-2022 20:37:19 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 18
+[16-Oct-2022 20:51:58 Europe/Berlin] PHP Warning:  Undefined variable $mainsMenu in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 20:51:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMenuAsArr() on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:02:04 Europe/Berlin] PHP Warning:  Undefined variable $mainsMenu in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:02:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMenuAsArr() on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:04:34 Europe/Berlin] PHP Warning:  Undefined variable $mainsMenu in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:04:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMenuAsArr() on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:06:18 Europe/Berlin] PHP Warning:  Undefined variable $mainsMenu in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:06:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMenuAsArr() on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:06:53 Europe/Berlin] PHP Warning:  Undefined variable $mainsMenu in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[16-Oct-2022 21:06:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function getMenuAsArr() on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[18-Oct-2022 13:37:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:37:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:38:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:39:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:39:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:39:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:39:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:39:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:39:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:40:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 13:45:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\MainMenuController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 5
+[18-Oct-2022 14:17:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #2 ($associative) must be of type ?bool, int given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php:10
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php(10): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(14): App\Model\MainMenu->getMenuCategorysFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(18): App\Controller\MainMenuController->getMenuDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\MainMenuController->getMenuAsArr()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php on line 10
+[18-Oct-2022 14:21:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:20
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\MainMenuController->getMenuAsArr()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 20
+[18-Oct-2022 14:22:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:20
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\MainMenuController->getMenuAsArr()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 20
+[18-Oct-2022 15:02:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:12
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 12
+[18-Oct-2022 15:06:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:08:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:08:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:08:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:08:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:12:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:12:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:12:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(6): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:21:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\Smarty" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:13
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 13
+[18-Oct-2022 15:53:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\MainMenuController::$view must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:40
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(18): App\Controller\MainMenuController->addParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 40
+[18-Oct-2022 15:55:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\MainMenuController::$view must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:40
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(18): App\Controller\MainMenuController->addParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 40
+[18-Oct-2022 15:55:52 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 20
+[18-Oct-2022 15:57:40 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 19
+[18-Oct-2022 16:01:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function App\Core\vardump() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:15
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(42): App\Core\View->addTemplateParameter()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(19): App\Controller\MainMenuController->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 15
+[18-Oct-2022 16:06:09 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 50
+[18-Oct-2022 16:06:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\MainMenuController::getView(): Return value must be of type array, none returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->getView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 52
+[18-Oct-2022 16:06:34 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\MainMenuController::getView(): Return value must be of type array, none returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->getView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 52
+[18-Oct-2022 16:06:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\MainMenuController::getView(): Return value must be of type array, none returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->getView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 52
+[18-Oct-2022 16:06:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\MainMenuController::getView(): Return value must be of type array, none returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->getView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 52
+[18-Oct-2022 16:16:38 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Core\View::display(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 49 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:18
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(49): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(21): App\Controller\MainMenuController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 18
+[18-Oct-2022 16:19:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:19
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(48): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 19
+[18-Oct-2022 16:19:41 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 19
+[18-Oct-2022 16:29:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:19
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(49): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(21): App\Controller\MainMenuController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 19
+[18-Oct-2022 16:30:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:19
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(50): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(21): App\Controller\MainMenuController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 19
+[18-Oct-2022 16:30:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:19
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(51): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(21): App\Controller\MainMenuController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 19
+[18-Oct-2022 16:32:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Core\View::addTemplateParameter(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(43): App\Core\View->addTemplateParameter()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[18-Oct-2022 16:33:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Core\View::addTemplateParameter(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(43): App\Core\View->addTemplateParameter()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[18-Oct-2022 16:33:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use [] for reading in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:19
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(50): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(21): App\Controller\MainMenuController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 19
+[18-Oct-2022 16:37:48 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Controller\MainMenuController::$testu of type array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php:43
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->addParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 43
+[18-Oct-2022 16:38:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$parameterToAdd must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(43): App\Core\View->addTemplateParameter()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[18-Oct-2022 17:12:55 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[18-Oct-2022 17:17:09 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core../templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[18-Oct-2022 17:17:50 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core../templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[18-Oct-2022 17:17:51 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core../templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[18-Oct-2022 17:17:51 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core../templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[18-Oct-2022 17:17:52 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core../templates/index.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[18-Oct-2022 17:18:16 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/543f1de4004c3f5ef5db6d9386c6592a38982621_0.file.index.tpl.php on line 30
+[18-Oct-2022 17:18:16 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/543f1de4004c3f5ef5db6d9386c6592a38982621_0.file.index.tpl.php on line 30
+[19-Oct-2022 10:34:35 Europe/Berlin] PHP Warning:  Undefined variable $itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 42
+[19-Oct-2022 10:34:35 Europe/Berlin] PHP Warning:  Undefined variable $itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 42
+[19-Oct-2022 10:34:35 Europe/Berlin] PHP Warning:  Undefined variable $itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 42
+[19-Oct-2022 10:34:35 Europe/Berlin] PHP Warning:  Undefined variable $itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 44
+[19-Oct-2022 10:34:35 Europe/Berlin] PHP Warning:  Undefined variable $itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php on line 49
+[19-Oct-2022 10:36:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$parameterToAdd must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(42): App\Core\View->addTemplateParameter()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 10:43:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Core\View::$parameterToAdd of type array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(42): App\Core\View->addTemplateParameter()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainMenuController.php(20): App\Controller\MainMenuController->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(7): App\Controller\MainMenuController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 11:18:51 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Core\View::display(), 2 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 98 and exactly 3 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(98): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(23): App\Controller\ProductsController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 11:21:34 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/543f1de4004c3f5ef5db6d9386c6592a38982621_0.file.index.tpl.php on line 30
+[19-Oct-2022 11:21:34 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/543f1de4004c3f5ef5db6d9386c6592a38982621_0.file.index.tpl.php on line 30
+[19-Oct-2022 11:23:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Core\View::display(): Argument #2 ($tplIdentifier) must be of type string, array given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 98 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(98): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(23): App\Controller\ProductsController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 11:23:50 Europe/Berlin] PHP Fatal error:  Uncaught  --> Smarty: Unable to load template 'file:/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/../templates/menu.tpl' <-- 
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/smarty/smarty/libs/sysplugins/smarty_internal_template.php on line 195
+[19-Oct-2022 11:24:59 Europe/Berlin] PHP Warning:  Undefined array key "menu" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/1ec98d45a679101ee56a46501367850d611c79ac_0.file.category.tpl.php on line 30
+[19-Oct-2022 11:24:59 Europe/Berlin] PHP Warning:  Attempt to read property "value" on null in /home/jonathanhemmerling/PhpstormProjects/shopix_project/templates_c/1ec98d45a679101ee56a46501367850d611c79ac_0.file.category.tpl.php on line 30
+[19-Oct-2022 12:05:08 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:05:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:05:28 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:29 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:41 Europe/Berlin] PHP Fatal error:  Cannot use [] for reading in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:06:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 34
+[19-Oct-2022 12:16:34 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ProductsController::getMenuDataFromModel(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:36
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(41): App\Controller\ProductsController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(59): App\Controller\ProductsController->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(113): App\Controller\ProductsController->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 36
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Warning:  Undefined variable $viart in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 33
+[19-Oct-2022 12:17:04 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ProductsController::getMenuDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:36
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(41): App\Controller\ProductsController->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(59): App\Controller\ProductsController->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(113): App\Controller\ProductsController->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 36
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:17:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(59): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(113): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 50
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:17:45 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:51
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(60): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(114): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 51
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:18:48 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(59): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(113): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 50
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 44
+[19-Oct-2022 12:19:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:51
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(60): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(114): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 51
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 45
+[19-Oct-2022 12:19:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(61): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(115): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 52
+[19-Oct-2022 12:19:49 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$productId", expecting "function" or "const" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:20:03 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(59): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(113): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 50
+[19-Oct-2022 12:20:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(59): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(113): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 50
+[19-Oct-2022 12:20:14 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:21:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:21:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:21:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 50
+[19-Oct-2022 12:22:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 50
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:21 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Uninitialized string offset 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 49
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$strForCategoryLinks in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 53
+[19-Oct-2022 12:22:22 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ProductsController::getCategorysAsArr(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(58): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(112): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 53
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 43
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$strForCategoryLinks in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 47
+[19-Oct-2022 12:22:48 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ProductsController::getCategorysAsArr(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:47
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(52): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(106): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 47
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 38
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$strForCategoryLinks in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 42
+[19-Oct-2022 12:22:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ProductsController::getCategorysAsArr(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:42
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(47): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(101): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 42
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined array key "$productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 37
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$strForCategoryLinks in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 41
+[19-Oct-2022 12:24:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ProductsController::getCategorysAsArr(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:41
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(46): App\Controller\ProductsController->getCategorysAsArr()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(99): App\Controller\ProductsController->addCategoryParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(24): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 41
+[19-Oct-2022 13:34:06 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controller\ProductsController::getMenuDataFromModel() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:58
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(69): App\Controller\ProductsController->getProductNameAsArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(105): App\Controller\ProductsController->addProductNameParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(27): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 58
+[19-Oct-2022 13:35:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controller\ProductsController::getMenuDataFromModel() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php:78
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(89): App\Controller\ProductsController->getProductDescriptionAsArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(105): App\Controller\ProductsController->addProductDescriptionParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(27): App\Controller\ProductsController->getView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 78
+[19-Oct-2022 13:47:53 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:47:53 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:47:55 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:48:13 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:48:13 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:48:46 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:51:40 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 73
+[19-Oct-2022 13:52:14 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:52:14 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:52:27 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:52:27 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:52:29 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:52:29 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 109
+[19-Oct-2022 13:52:29 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Core\View::display(): Argument #3 ($itemsToDiplay) must be of type array, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 109 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(109): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(29): App\Controller\ProductsController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 13:52:38 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:52:38 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 109
+[19-Oct-2022 13:52:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Core\View::display(): Argument #3 ($itemsToDiplay) must be of type array, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 109 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(109): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(29): App\Controller\ProductsController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 13:53:15 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:53:20 Europe/Berlin] PHP Warning:  Undefined property: App\Controller\ProductsController::$itemsToDiplay in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 114
+[19-Oct-2022 13:53:20 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Core\View::display(): Argument #3 ($itemsToDiplay) must be of type array, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 114 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(114): App\Core\View->display()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php(29): App\Controller\ProductsController->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\ProductsController->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 14
+[19-Oct-2022 13:53:40 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:53:40 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:54:21 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:54:21 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:55:02 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:55:02 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:57:02 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:57:02 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:57:04 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:57:04 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:57:05 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 59
+[19-Oct-2022 13:59:18 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 13:59:23 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 60
+[19-Oct-2022 14:09:59 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 51
+[19-Oct-2022 14:10:01 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 51
+[19-Oct-2022 14:10:03 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ProductsController.php on line 51
+[19-Oct-2022 15:46:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\mod\Products" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:15
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 15
+[19-Oct-2022 15:47:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Model\Products to property App\Controller\DetailControll::$products of type App\Controller\mod\Products in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:17
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 17
+[19-Oct-2022 15:48:06 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign App\Model\Products to property App\Controller\DetailControll::$products of type App\Controller\mod\Products in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:18
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 18
+[19-Oct-2022 15:53:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\ProductsController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[19-Oct-2022 15:53:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\ProductsController" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9

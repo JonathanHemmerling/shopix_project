@@ -1,15 +1,12 @@
 <?php
-
-namespace src\Model;
+declare(strict_types=1);
+namespace App\Model;
 
 class Products
 {
-    public function getProductsFromJson($fileName)
+    public function getProductsFromJson():array
     {
-        $jsonFile = file_get_contents(__DIR__ . '/../jsons/' . $fileName . '.json');
-        $pageContent = json_decode($jsonFile, JSON_OBJECT_AS_ARRAY);
-        return $pageContent;
+        $jsonFile = file_get_contents(__DIR__ . '/../jsons/products.json');
+        return json_decode($jsonFile, true);
     }
 }
-
-?>

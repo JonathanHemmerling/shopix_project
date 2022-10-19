@@ -1,19 +1,21 @@
 <?php
-namespace src\Core;
 
-class View{
+declare(strict_types=1);
 
-    $smarty;
+namespace App\Core;
 
-    function __construct()
+class View
+{
+    public function addTemplateParameter(mixed $parameter): string
     {
-        $this->smarty = new Smarty();
+        return $parameter;
     }
-    public function addTemplateParameter(){
 
-    }
-    public function display(){
-
+    public function display(string $tplName, string $tplIdentifier, array $itemsToDiplay, $smarty): void
+    {
+        $smarty = $smarty;
+        $smarty->assign($tplIdentifier, $itemsToDiplay);
+        $smarty->display(__DIR__ . '/../templates/'.$tplName);
     }
 
 }
