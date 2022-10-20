@@ -22,10 +22,12 @@ class ListControll
         $this->allProducts = $this->getProductDataFromModel();
         $this->getView();
     }
+
     public function getProductDataFromModel(): array
     {
-        return $this->products ->getProductsFromJson();
+        return $this->products->getProductsFromJson();
     }
+
     public function getCategorysAsArr(): void
     {
         $productId = $_GET['productId'];

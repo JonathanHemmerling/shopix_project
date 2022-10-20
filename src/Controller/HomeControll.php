@@ -48,7 +48,7 @@ class HomeControll
     public function getView(): void
     {
         if (!isset($_GET['page'])) {
-            $this->view->display('index.tpl','menu', $this->itemsForMenuToDisplay, $this->smarty);
+            $this->view->display('index.tpl', 'menu', $this->itemsForMenuToDisplay, $this->smarty);
         }
     }
 }

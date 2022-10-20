@@ -11,11 +11,11 @@ class View
         return $parameter;
     }
 
-    public function display(string $tplName, string $tplIdentifier, array $itemsToDiplay, $smarty): void
+    public function display(string $tplName, string $tplIdentifier, array $itemsToDiplay, \Smarty $smarty): void
     {
         $smarty = $smarty;
         $smarty->assign($tplIdentifier, $itemsToDiplay);
-        $smarty->display(__DIR__ . '/../templates/'.$tplName);
+        $smarty->display(__DIR__ . '/../templates/' . $tplName);
     }
 
 }
