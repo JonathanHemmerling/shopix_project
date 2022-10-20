@@ -1620,3 +1620,52 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[19-Oct-2022 17:21:00 Europe/Berlin] PHP Warning:  file_get_contents(/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/src/jsons/products.json): Failed to open stream: No such file or directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 9
+[19-Oct-2022 17:21:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: json_decode(): Argument #1 ($json) must be of type string, bool given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php:10
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php(10): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Model\Products->getProductsFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(22): App\Controller\ListControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): App\Controller\ListControll->__construct()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 10
+[19-Oct-2022 17:24:11 Europe/Berlin] PHP Notice:  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 9
+[19-Oct-2022 17:24:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Products::getProductsFromJson(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php:10
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Model\Products->getProductsFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(22): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 10
+[19-Oct-2022 17:24:49 Europe/Berlin] PHP Notice:  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 10
+[19-Oct-2022 17:24:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Products::getProductsFromJson(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php:11
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Model\Products->getProductsFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(22): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 11
+[19-Oct-2022 17:35:40 Europe/Berlin] PHP Notice:  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 10
+[19-Oct-2022 17:35:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Products::getProductsFromJson(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php:11
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Model\Products->getProductsFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(22): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 11
+[20-Oct-2022 09:20:00 Europe/Berlin] PHP Notice:  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 9
+[20-Oct-2022 09:20:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Products::getProductsFromJson(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php:10
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Model\Products->getProductsFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(22): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 10
+[20-Oct-2022 09:32:24 Europe/Berlin] PHP Notice:  file_get_contents(): Read of 8192 bytes failed with errno=21 Is a directory in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 9
+[20-Oct-2022 09:32:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Products::getProductsFromJson(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php:10
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Model\Products->getProductsFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(22): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(12): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Products.php on line 10
