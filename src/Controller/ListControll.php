@@ -5,13 +5,16 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
+use App\Interfaces\controllerInterface;
 use App\Model\Products;
 
 class ListControll
 {
-    private array $allProducts;
+    private array $fullDataRecords;
+    private array $strForCategoryLinks;
+    private array $itemsForCategoryToDisplay;
     private Products $products;
-    private \Smarty $smarty;
+    private readonly \Smarty $smarty;
     private View $view;
 
     public function __construct()
@@ -19,7 +22,7 @@ class ListControll
         $this->products = new Products();
         $this->smarty = new \Smarty();
         $this->view = new View();
-        $this->allProducts = $this->getProductDataFromModel();
+        $this->fullDataRecords = $this->getProductDataFromModel();
         $this->getView();
     }
 
@@ -31,7 +34,8 @@ class ListControll
     public function getCategorysAsArr(): void
     {
         $productId = $_GET['productId'];
-        foreach ($this->allProducts as $categoryLink) {
+        $categoryContent = $this->fullDataRecords;
+        foreach ($categoryContent as $categoryLink) {
             if ($productId === $categoryLink['productId']) {
                 $this->strForCategoryLinks[] = 'index.php?page=' . $categoryLink['detail'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName'];
             }
@@ -50,8 +54,10 @@ class ListControll
 
     public function getView(): void
     {
-        $this->getCategorysAsArr();
-        $this->addCategoryParameterToView();
-        $this->view->display('category.tpl', 'category', $this->itemsForCategoryToDisplay, $this->smarty);
+        if (isset($_GET['productId'])) {
+            $this->getCategorysAsArr();
+            $this->addCategoryParameterToView();
+            $this->view->display('category.tpl', 'category', $this->itemsForCategoryToDisplay, $this->smarty);
+        }
     }
 }

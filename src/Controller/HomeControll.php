@@ -5,40 +5,43 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
+use App\Interfaces\controllerInterface;
 use App\Model\MainMenu;
 
 class HomeControll
 {
-    private array $strForMenuLinks = [];
-    private array $itemsForMenuToDisplay = [];
+    private array $fullDataRecords;
+    private array $itemsForMenuToDisplay;
+    private array $strForMenuLinks;
+    private MainMenu $mainMenu;
     private readonly \Smarty $smarty;
     private View $view;
 
     public function __construct()
     {
+        $this->mainMenu = new MainMenu();
         $this->smarty = new \Smarty();
         $this->view = new View();
-        $this->addParameterToView();
+        $this->fullDataRecords = $this->getMenuDataFromModel();
         $this->getView();
     }
 
     private function getMenuDataFromModel(): array
     {
-        return (new MainMenu())->getMenuCategorysFromJson();
+        return $this->mainMenu->getMenuCategorysFromJson();
     }
 
-    public function getMenuAsArr(): array
+    public function getMenuAsArr(): void
     {
-        $menuContent = $this->getMenuDataFromModel();
+        $menuContent = $this->fullDataRecords;
         foreach ($menuContent as $menuLink) {
             $this->strForMenuLinks[] = 'index.php?page=' . $menuLink['category'] . '&productId=' . $menuLink['id'] . '>' . $menuLink['displayName'];
         }
-        return $this->strForMenuLinks;
     }
 
     public function addParameterToView(): array
     {
-        $menuStrArray = $this->getMenuAsArr();
+        $menuStrArray = $this->strForMenuLinks;
         foreach ($menuStrArray as $menuStr) {
             $this->itemsForMenuToDisplay[] = $this->view->addTemplateParameter($menuStr);
         }
@@ -48,7 +51,10 @@ class HomeControll
     public function getView(): void
     {
         if (!isset($_GET['page'])) {
+            $this->getMenuAsArr();
+            $this->addParameterToView();
             $this->view->display('index.tpl', 'menu', $this->itemsForMenuToDisplay, $this->smarty);
         }
     }
+
 }

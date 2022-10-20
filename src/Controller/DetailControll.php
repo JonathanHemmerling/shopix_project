@@ -5,22 +5,27 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
+use App\Interfaces\controllerInterface;
 use App\Model\Products;
 
 
 class DetailControll
 {
+    private array $fullDataRecords;
+    private array $itemsForProductToDisplay;
+    private array $strForProductName;
+    private array $strForProductDescription;
     private View $view;
-    private \Smarty $smarty;
+    private readonly \Smarty $smarty;
     private Products $products;
-    private array $allProducts;
+
 
     public function __construct()
     {
         $this->products = new Products();
         $this->smarty = new \Smarty();
         $this->view = new View();
-        $this->allProducts = $this->getProductDataFromModel();
+        $this->fullDataRecords = $this->getProductDataFromModel();
         $this->getView();
     }
 
@@ -33,7 +38,8 @@ class DetailControll
     {
         $pageId = $_GET['id'];
         $detail = $_GET['page'];
-        foreach ($this->allProducts as $name) {
+        $productName = $this->fullDataRecords;
+        foreach ($productName as $name) {
             if ($pageId === $name['id'] && $detail === $name['detail']) {
                 $this->strForProductName[] = $name['displayName'] . ':';
                 $this->strForProductDescription[] = $name['description'];
@@ -57,8 +63,10 @@ class DetailControll
 
     public function getView(): void
     {
-        $this->getProductNameAsArray();
-        $this->addProductNameParameterToView();
-        $this->view->display('product.tpl', 'product', $this->itemsForProductToDisplay, $this->smarty);
+        if (isset($_GET['id'])) {
+            $this->getProductNameAsArray();
+            $this->addProductNameParameterToView();
+            $this->view->display('product.tpl', 'product', $this->itemsForProductToDisplay, $this->smarty);
+        }
     }
 }
