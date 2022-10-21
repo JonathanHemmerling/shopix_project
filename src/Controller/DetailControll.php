@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
-use App\Interfaces\controllerInterface;
+use App\Interfaces\ControllerInterface;
 use App\Model\Products;
 
 
-class DetailControll
+class DetailControll implements ControllerInterface
 {
     private array $fullDataRecords;
     private array $itemsForProductToDisplay;
@@ -63,10 +63,8 @@ class DetailControll
 
     public function getView(): void
     {
-        if (isset($_GET['id'])) {
-            $this->getProductNameAsArray();
-            $this->addProductNameParameterToView();
-            $this->view->display('product.tpl', 'product', $this->itemsForProductToDisplay, $this->smarty);
-        }
+        $this->getProductNameAsArray();
+        $this->addProductNameParameterToView();
+        $this->view->display('product.tpl', 'product', $this->itemsForProductToDisplay, $this->smarty);
     }
 }

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Interfaces;
 
-interface controllerInterface
+interface ControllerInterface
 {
-    public function getParameterSetInURL();
+    public function getView();
 }

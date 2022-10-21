@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
-use App\Interfaces\controllerInterface;
+use App\Interfaces\ControllerInterface;
 use App\Model\Products;
 
-class ListControll
+class ListControll implements ControllerInterface
 {
+    private bool $flag = false;
     private array $fullDataRecords;
     private array $strForCategoryLinks;
     private array $itemsForCategoryToDisplay;
@@ -23,6 +24,7 @@ class ListControll
         $this->smarty = new \Smarty();
         $this->view = new View();
         $this->fullDataRecords = $this->getProductDataFromModel();
+        $this->issetFlag();
         $this->getView();
     }
 
@@ -52,12 +54,17 @@ class ListControll
         return $this->itemsForCategoryToDisplay;
     }
 
-    public function getView(): void
+    public function issetFlag()
     {
         if (isset($_GET['productId'])) {
-            $this->getCategorysAsArr();
-            $this->addCategoryParameterToView();
-            $this->view->display('category.tpl', 'category', $this->itemsForCategoryToDisplay, $this->smarty);
+            $this->flag = true;
         }
+    }
+
+    public function getView(): void
+    {
+        $this->getCategorysAsArr();
+        $this->addCategoryParameterToView();
+        $this->view->display('category.tpl', 'category', $this->itemsForCategoryToDisplay, $this->smarty);
     }
 }

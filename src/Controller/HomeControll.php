@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
-use App\Interfaces\controllerInterface;
+use App\Interfaces\ControllerInterface;
 use App\Model\MainMenu;
 
-class HomeControll
+class HomeControll implements ControllerInterface
 {
     private array $fullDataRecords;
     private array $itemsForMenuToDisplay;
@@ -50,11 +50,9 @@ class HomeControll
 
     public function getView(): void
     {
-        if (!isset($_GET['page'])) {
-            $this->getMenuAsArr();
-            $this->addParameterToView();
-            $this->view->display('index.tpl', 'menu', $this->itemsForMenuToDisplay, $this->smarty);
-        }
+        $this->getMenuAsArr();
+        $this->addParameterToView();
+        $this->view->display('index.tpl', 'menu', $this->itemsForMenuToDisplay, $this->smarty);
     }
 
 }

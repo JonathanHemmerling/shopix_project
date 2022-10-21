@@ -1705,3 +1705,286 @@ Stack trace:
 #3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(16): App\Controller\ListControll->__construct()
 #4 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 11
+[20-Oct-2022 14:56:31 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\MainController::setController(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainController.php:12
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\MainController->setController()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/MainController.php on line 12
+[20-Oct-2022 15:24:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Interface "App\Interfaces\controllerInterface" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:12
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(571): include()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): Composer\Autoload\ClassLoader->loadClass()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 12
+[20-Oct-2022 16:44:12 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, bool returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:44
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 44
+[20-Oct-2022 16:47:56 Europe/Berlin] PHP Deprecated:  Automatic conversion of false to array is deprecated in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:47:56 Europe/Berlin] PHP Deprecated:  Automatic conversion of false to array is deprecated in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:47:56 Europe/Berlin] PHP Deprecated:  Automatic conversion of false to array is deprecated in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:47:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use a scalar value as an array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:40
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:08 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type bool in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 40
+[20-Oct-2022 16:48:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, bool returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:44
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 44
+[20-Oct-2022 16:50:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:44
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 44
+[20-Oct-2022 16:50:31 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:50:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:45
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 45
+[20-Oct-2022 16:51:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "DetailControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 13
+[20-Oct-2022 16:52:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "HomeControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 13
+[20-Oct-2022 16:52:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "HomeControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[20-Oct-2022 16:53:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "DetailControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[20-Oct-2022 17:00:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected single-quoted string "]" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 44
+[20-Oct-2022 17:01:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot use "::class" on value of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:44
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 44
+[21-Oct-2022 08:52:21 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:23 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:24 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:25 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:42 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:43 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:46 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:49 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:50 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:52 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 08:52:53 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 08:52:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 09:00:47 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 13 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 29
+[21-Oct-2022 09:03:43 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Service\ControllerProvider::$classList of type array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:20
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 20
+[21-Oct-2022 10:17:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 23
+[21-Oct-2022 10:17:41 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type object, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 23
+[21-Oct-2022 10:17:42 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type object, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 23
+[21-Oct-2022 10:17:57 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getList(): Return value must be of type object, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 23
+[21-Oct-2022 10:18:39 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Service\ControllerProvider::$classList of type array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 21
+[21-Oct-2022 10:18:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Service\ControllerProvider::$classList of type array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getList()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 21
+[21-Oct-2022 10:28:43 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 17 does not match ')' in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 18
+[21-Oct-2022 10:33:07 Europe/Berlin] PHP Warning:  Undefined variable $controllerList in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[21-Oct-2022 10:33:07 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[21-Oct-2022 10:33:15 Europe/Berlin] PHP Warning:  Undefined variable $controllerList in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[21-Oct-2022 10:33:15 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[21-Oct-2022 10:33:16 Europe/Berlin] PHP Warning:  Undefined variable $controllerList in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[21-Oct-2022 10:33:16 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[21-Oct-2022 10:33:31 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 37
+[21-Oct-2022 10:33:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(65): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(27): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 49
+[21-Oct-2022 10:46:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Interface "App\Interfaces\controllerInterface" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:11
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(571): include()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): Composer\Autoload\ClassLoader->loadClass()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 11
+[21-Oct-2022 10:47:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Interface "App\Interfaces\controllerInterface" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:11
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(571): include()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): Composer\Autoload\ClassLoader->loadClass()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 11
+[21-Oct-2022 10:47:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Interface "App\Interfaces\controllerInterface" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:11
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(571): include()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): Composer\Autoload\ClassLoader->loadClass()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 11
