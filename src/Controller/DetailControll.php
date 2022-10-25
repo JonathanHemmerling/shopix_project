@@ -36,11 +36,12 @@ class DetailControll implements ControllerInterface
 
     public function getProductNameAsArray(): void
     {
-        $pageId = $_GET['id'];
-        $detail = $_GET['page'];
+        $pageName = $_GET['page'];
+        $pageId = $_GET['productId'];
+        $productId = $_GET['id'];
         $productName = $this->fullDataRecords;
         foreach ($productName as $name) {
-            if ($pageId === $name['id'] && $detail === $name['detail']) {
+            if ($pageName === 'Detail' && $pageId === $name['productId'] && $productId == $name['id']) {
                 $this->strForProductName[] = $name['displayName'] . ':';
                 $this->strForProductDescription[] = $name['description'];
             }

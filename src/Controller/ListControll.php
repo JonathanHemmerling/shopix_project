@@ -10,7 +10,6 @@ use App\Model\Products;
 
 class ListControll implements ControllerInterface
 {
-    private bool $flag = false;
     private array $fullDataRecords;
     private array $strForCategoryLinks;
     private array $itemsForCategoryToDisplay;
@@ -24,7 +23,6 @@ class ListControll implements ControllerInterface
         $this->smarty = new \Smarty();
         $this->view = new View();
         $this->fullDataRecords = $this->getProductDataFromModel();
-        $this->issetFlag();
         $this->getView();
     }
 
@@ -39,7 +37,7 @@ class ListControll implements ControllerInterface
         $categoryContent = $this->fullDataRecords;
         foreach ($categoryContent as $categoryLink) {
             if ($productId === $categoryLink['productId']) {
-                $this->strForCategoryLinks[] = 'index.php?page=' . $categoryLink['detail'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName'];
+                $this->strForCategoryLinks[] = 'index.php?page=Detail&' . $categoryLink['detail'] . '&productId=' . $categoryLink['productId'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName'];
             }
         }
     }
@@ -54,12 +52,6 @@ class ListControll implements ControllerInterface
         return $this->itemsForCategoryToDisplay;
     }
 
-    public function issetFlag()
-    {
-        if (isset($_GET['productId'])) {
-            $this->flag = true;
-        }
-    }
 
     public function getView(): void
     {

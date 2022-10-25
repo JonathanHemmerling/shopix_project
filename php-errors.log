@@ -1988,3 +1988,636 @@ Stack trace:
 #2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): Composer\Autoload\ClassLoader->loadClass()
 #3 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 11
+[21-Oct-2022 10:15:48 UTC] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php on line 43
+[21-Oct-2022 10:15:48 UTC] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php on line 44
+[21-Oct-2022 10:15:48 UTC] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControllTest::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php:57
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php(71): App\Controller\DetailControllTest->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php(33): App\Controller\DetailControllTest->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestBuilder.php(138): App\Controller\DetailControllTest->__construct()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestBuilder.php(68): PHPUnit\Framework\TestBuilder->buildTestWithoutData()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(879): PHPUnit\Framework\TestBuilder->build()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(229): PHPUnit\Framework\TestSuite->addTestMethod()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(359): PHPUnit\Framework\TestSuite->__construct()
+#7 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(500): PHPUnit\Framework\TestSuite->addTestSuite()
+#8 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(525): PHPUnit\Framework\TestSuite->addTestFile()
+#9 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/TestSuiteMapper.php(67): PHPUnit\Framework\TestSuite->addTestFiles()
+#10 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php(391): PHPUnit\TextUI\TestSuiteMapper->map()
+#11 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php(112): PHPUnit\TextUI\Command->handleArguments()
+#12 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php(97): PHPUnit\TextUI\Command->run()
+#13 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#14 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/bin/phpunit(123): include('...')
+#15 {main}
+
+Next PHPUnit\TextUI\RuntimeException: Typed property App\Controller\DetailControllTest::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/bin/phpunit(123): include('...')
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php on line 99
+[21-Oct-2022 10:22:12 UTC] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php on line 43
+[21-Oct-2022 10:22:12 UTC] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php on line 44
+[21-Oct-2022 10:22:12 UTC] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControllTest::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php:57
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php(71): App\Controller\DetailControllTest->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/tests/src/ControllerTest/DetailControllTest.php(33): App\Controller\DetailControllTest->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestBuilder.php(138): App\Controller\DetailControllTest->__construct()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestBuilder.php(68): PHPUnit\Framework\TestBuilder->buildTestWithoutData()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(879): PHPUnit\Framework\TestBuilder->build()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(229): PHPUnit\Framework\TestSuite->addTestMethod()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(359): PHPUnit\Framework\TestSuite->__construct()
+#7 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(500): PHPUnit\Framework\TestSuite->addTestSuite()
+#8 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/Framework/TestSuite.php(525): PHPUnit\Framework\TestSuite->addTestFile()
+#9 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/TestSuiteMapper.php(67): PHPUnit\Framework\TestSuite->addTestFiles()
+#10 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php(391): PHPUnit\TextUI\TestSuiteMapper->map()
+#11 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php(112): PHPUnit\TextUI\Command->handleArguments()
+#12 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php(97): PHPUnit\TextUI\Command->run()
+#13 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#14 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/bin/phpunit(123): include('...')
+#15 {main}
+
+Next PHPUnit\TextUI\RuntimeException: Typed property App\Controller\DetailControllTest::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php:99
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/phpunit(98): PHPUnit\TextUI\Command::main()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/bin/phpunit(123): include('...')
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/phpunit/phpunit/src/TextUI/Command.php on line 99
+[24-Oct-2022 10:32:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(67): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 53
+[24-Oct-2022 10:34:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:55
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(30): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 55
+[24-Oct-2022 10:35:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductDescription must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:59
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(30): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 59
+[24-Oct-2022 10:36:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:55
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(30): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 55
+[24-Oct-2022 10:37:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:55
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(30): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 55
+[24-Oct-2022 10:38:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:55
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(30): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 55
+[24-Oct-2022 10:39:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(67): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 53
+[24-Oct-2022 10:40:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(67): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 53
+[24-Oct-2022 10:43:32 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:43:32 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:43:32 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:43:32 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:43:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(67): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 53
+[24-Oct-2022 10:44:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(67): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 53
+[24-Oct-2022 10:44:11 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:44:11 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:44:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:44:11 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:44:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:53
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(67): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 53
+[24-Oct-2022 10:45:16 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:45:16 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:45:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:45:16 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:47:21 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:47:21 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:47:21 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:47:21 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:47:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:50
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(67): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(28): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 50
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:67
+[24-Oct-2022 10:49:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:51
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(68): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(28): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 51
+[24-Oct-2022 10:49:30 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:49:30 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:49:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:49:31 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:49:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(66): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 52
+[24-Oct-2022 10:52:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(66): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 52
+[24-Oct-2022 10:52:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(66): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 52
+[24-Oct-2022 10:54:22 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:54:22 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:54:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:54:22 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:54:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(66): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 52
+[24-Oct-2022 10:56:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(66): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(11): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 52
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 38
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   2. App\Controller\HomeControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   3. App\Controller\HomeControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:26
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:53
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 38
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   2. App\Controller\HomeControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   3. App\Controller\HomeControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:26
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:53
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 38
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   2. App\Controller\HomeControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   3. App\Controller\HomeControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:26
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:53
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:56:29 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:56:58 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:56:58 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:56:58 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:56:58 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:57:02 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:57:02 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:57:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:57:02 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:57:06 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:57:06 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:57:06 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:57:06 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:57:08 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:57:08 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:57:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:57:08 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:58:30 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:58:30 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:58:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:58:30 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 10:58:33 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 10:58:33 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 10:58:33 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 10:58:33 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:00:04 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:00:04 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:00:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:00:04 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:00:07 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:00:07 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:00:07 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:00:07 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:00:09 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:00:09 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:00:09 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:00:09 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:00:12 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:00:12 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:00:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:00:12 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:00:56 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:00:56 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:00:56 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:00:56 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:01:28 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:01:28 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:01:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:01:28 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:01:31 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:01:31 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:01:31 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:01:31 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:01:33 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:01:33 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:01:33 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:01:33 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:01:36 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:01:36 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:01:36 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:01:36 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:01:39 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:01:39 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:01:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:01:39 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:01:43 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:01:43 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:01:43 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:01:43 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:04:12 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:04:12 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:04:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:04:12 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:04:15 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:04:15 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:04:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:04:15 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:04:18 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:04:18 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:04:18 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:04:18 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:04:20 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:04:20 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:04:20 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:04:20 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 27
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:07:02 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:07:30 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:07:30 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:07:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:07:30 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:07:36 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:07:36 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:07:36 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:07:36 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:08:24 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:08:25 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:08:25 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:08:25 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:08:28 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 15
+[24-Oct-2022 11:08:28 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:08:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:08:28 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:09:08 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 17
+[24-Oct-2022 11:09:08 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:09:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:09:08 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:09:11 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 17
+[24-Oct-2022 11:09:11 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:09:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:09:11 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:17:08 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "[" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 24
+[24-Oct-2022 11:17:19 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "[" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 24
+[24-Oct-2022 11:17:26 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "[" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 24
+[24-Oct-2022 11:19:54 Europe/Berlin] PHP Warning:  Undefined array key 3 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 21
+[24-Oct-2022 11:19:54 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:19:54 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:19:54 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:19:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Interfaces\ControllerFactory->createController()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 21
+[24-Oct-2022 11:19:58 Europe/Berlin] PHP Warning:  Undefined array key 3 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 21
+[24-Oct-2022 11:19:58 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:19:58 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:19:58 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController('wurst') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:19:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Interfaces\ControllerFactory->createController()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 21
+[24-Oct-2022 11:20:23 Europe/Berlin] PHP Warning:  Undefined array key 3 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 21
+[24-Oct-2022 11:20:23 Europe/Berlin] PHP Stack trace:
+[24-Oct-2022 11:20:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[24-Oct-2022 11:20:23 Europe/Berlin] PHP   2. App\Interfaces\ControllerFactory->createController() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+[24-Oct-2022 11:20:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(14): App\Interfaces\ControllerFactory->createController()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Interfaces/ControllerFactory.php on line 21
+[25-Oct-2022 13:23:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function redirect_to() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 13:31:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[25-Oct-2022 13:33:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[25-Oct-2022 13:34:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[25-Oct-2022 13:34:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[25-Oct-2022 13:34:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 14
+[25-Oct-2022 15:22:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "home" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[25-Oct-2022 15:22:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "home" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[25-Oct-2022 16:06:39 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:06:39 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:06:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:06:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:07:05 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:07:05 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:07:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:07:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:07:26 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:07:26 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:07:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:07:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:07:54 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:07:54 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:07:54 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:07:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:07:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:08:54 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:08:54 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:08:54 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:08:54 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:09:10 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:09:10 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:09:10 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:09:10 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:09:28 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 8
+[25-Oct-2022 16:09:28 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:09:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:09:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:09:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "jeans" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:16:50 Europe/Berlin] PHP Warning:  Undefined property: App\Service\ControllerProvider::$getClassByString in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:16:50 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:16:50 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:16:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:17:45 Europe/Berlin] PHP Warning:  Undefined property: App\Service\ControllerProvider::$getClassByString in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:17:45 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:17:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:17:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:18:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "DetailControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 11
+[25-Oct-2022 16:19:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "DetailControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 11
+[25-Oct-2022 16:19:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "DetailControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 11
+[25-Oct-2022 16:20:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ListControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[25-Oct-2022 16:21:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ListControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[25-Oct-2022 16:23:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:23:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "home" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:24:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "home" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:24:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[25-Oct-2022 16:25:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[25-Oct-2022 16:29:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ListControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 11
+[25-Oct-2022 16:29:43 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:29:43 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:29:43 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:29:43 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getStringOfClass(): Argument #1 ($name) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getStringOfClass()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 27
+[25-Oct-2022 16:29:44 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 9
+[25-Oct-2022 16:29:44 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:29:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:29:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getStringOfClass(): Argument #1 ($name) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getStringOfClass()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 27
+[25-Oct-2022 16:29:59 Europe/Berlin] PHP Warning:  Undefined variable $page_name in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10
+[25-Oct-2022 16:29:59 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:29:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:29:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getStringOfClass(): Argument #1 ($name) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getStringOfClass()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 27
+[25-Oct-2022 16:30:09 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Service\ControllerProvider::getStringOfClass(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 10 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(10): App\Service\ControllerProvider->getStringOfClass()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 27
+[25-Oct-2022 16:34:58 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 11
+[25-Oct-2022 16:34:58 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:34:58 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:35:25 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 11
+[25-Oct-2022 16:35:25 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:35:25 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 16:59:51 Europe/Berlin] PHP Warning:  Undefined property: App\Service\ControllerProvider::$getStringOfClass in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php on line 7
+[25-Oct-2022 16:59:51 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 16:59:51 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php:0
+[25-Oct-2022 16:59:51 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class name must be a valid object or a string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php on line 7
+[25-Oct-2022 17:07:09 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\HomeControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php on line 11
+[25-Oct-2022 17:07:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\HomeControll::class" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/home.php on line 12
+[25-Oct-2022 17:14:15 Europe/Berlin] PHP Warning:  Undefined array key "page" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 12
+[25-Oct-2022 17:14:15 Europe/Berlin] PHP Stack trace:
+[25-Oct-2022 17:14:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[25-Oct-2022 17:14:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Service\ControllerProvider::getClassByString(): Argument #1 ($pageTitle) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 13 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(13): App\Service\ControllerProvider->getClassByString()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/ControllerProvider.php on line 23
+[25-Oct-2022 17:28:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\Controller\HomeBlaControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 16
+[25-Oct-2022 17:37:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:48
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(26): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(24): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 48
+[25-Oct-2022 17:37:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(23): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[25-Oct-2022 17:39:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(23): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[25-Oct-2022 17:40:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:48
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(26): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(23): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 48

@@ -35,7 +35,7 @@ class HomeControll implements ControllerInterface
     {
         $menuContent = $this->fullDataRecords;
         foreach ($menuContent as $menuLink) {
-            $this->strForMenuLinks[] = 'index.php?page=' . $menuLink['category'] . '&productId=' . $menuLink['id'] . '>' . $menuLink['displayName'];
+            $this->strForMenuLinks[] = 'index.php?page=List&' . $menuLink['category'] . '&productId=' . $menuLink['id'] . '>' . $menuLink['displayName'];
         }
     }
 
@@ -52,7 +52,7 @@ class HomeControll implements ControllerInterface
     {
         $this->getMenuAsArr();
         $this->addParameterToView();
-        $this->view->display('index.tpl', 'menu', $this->itemsForMenuToDisplay, $this->smarty);
+        $this->view->display('home.tpl', 'menu', $this->itemsForMenuToDisplay, $this->smarty);
     }
 
 }

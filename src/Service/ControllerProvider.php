@@ -20,18 +20,8 @@ class ControllerProvider
         ];
     }
 
-    public function getStringOfClass(): string
+    public function getClassByString(string $pageTitle): string
     {
-        $emptyClass = '';
-        if (!isset($_GET['page'])) {
-            $emptyClass = HomeControll::class;
-        }
-        if (isset($_GET['productId'])) {
-            $emptyClass = ListControll::class;
-        }
-        if (isset($_GET['id'])) {
-            $emptyClass = DetailControll::class;
-        }
-        return $emptyClass;
+        return 'App\Controller\\' . $pageTitle . 'Controll';
     }
 }
