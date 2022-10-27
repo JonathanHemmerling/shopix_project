@@ -2621,3 +2621,1014 @@ Stack trace:
 #2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(23): App\Controller\ListControll->__construct()
 #3 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 48
+[26-Oct-2022 13:18:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ProductRepository" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 24
+[26-Oct-2022 13:18:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "ProductRepository" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:24
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 24
+[26-Oct-2022 13:19:41 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 28
+[26-Oct-2022 13:19:55 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Model\ProductRepository::findProductById(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(26): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 14
+[26-Oct-2022 13:20:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type string, array returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:18
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(26): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 18
+[26-Oct-2022 13:20:27 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26
+[26-Oct-2022 13:20:27 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:20:27 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:21:30 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26
+[26-Oct-2022 13:21:30 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:21:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:22:12 Europe/Berlin] PHP Warning:  Undefined array key 1 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[26-Oct-2022 13:22:12 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:22:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:22:12 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($productId = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:26
+[26-Oct-2022 13:22:12 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(26): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[26-Oct-2022 13:22:36 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[26-Oct-2022 13:22:36 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:22:36 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:22:36 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($productId = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:26
+[26-Oct-2022 13:22:36 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(26): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[26-Oct-2022 13:22:40 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26
+[26-Oct-2022 13:22:40 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:22:40 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:24:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:26:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:28:59 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Model\ProductRepository::findProductById(), 1 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 26 and exactly 2 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:14
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(26): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 14
+[26-Oct-2022 13:29:18 Europe/Berlin] PHP Warning:  Undefined array key "$categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 18
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:26
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Undefined array key "$categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 18
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:26
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Undefined array key "$categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 18
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:26
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:29:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:30:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:31:52 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type array, string returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:24
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(26): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 24
+[26-Oct-2022 13:35:20 Europe/Berlin] PHP Warning:  Undefined array key 5 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 29
+[26-Oct-2022 13:35:20 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:35:20 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:35:23 Europe/Berlin] PHP Warning:  Undefined array key 4 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 29
+[26-Oct-2022 13:35:23 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:35:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:35:26 Europe/Berlin] PHP Warning:  Undefined array key 4 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 29
+[26-Oct-2022 13:35:26 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:35:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 37
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP   2. App\Model\ProductRepository->findCategoryById($categoryId = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:29
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP Warning:  Undefined array key "categoryDisplayName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 39
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:44:25 Europe/Berlin] PHP   2. App\Model\ProductRepository->findCategoryById($categoryId = '1') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:29
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:47 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:45:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:48
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(26): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 48
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 40
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 40
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 40
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:46:45 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 40
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 40
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 40
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:47:21 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:58 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 39
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   3. App\Controller\ListControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:26
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP   4. App\Controller\ListControll->getCategorysAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+[26-Oct-2022 13:48:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForCategoryLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:48
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(26): App\Controller\ListControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\ListControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 48
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:13 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:14 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:14 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:14 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:14 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:17 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:17 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:17 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:41 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:51:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[26-Oct-2022 13:53:27 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:27 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\DetailControll::$strForProductName must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(68): App\Controller\DetailControll->addProductNameParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(29): App\Controller\DetailControll->getView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 54
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 40
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:53:34 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 40
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:00 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:01 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 40
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:03 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:04 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 40
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP Stack trace:
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:25
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   3. App\Controller\DetailControll->getView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:29
+[26-Oct-2022 13:54:11 Europe/Berlin] PHP   4. App\Controller\DetailControll->getProductNameAsArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:67

@@ -12,7 +12,7 @@ use App\Model\Products;
 class DetailControll implements ControllerInterface
 {
     private array $fullDataRecords;
-    private array $itemsForProductToDisplay;
+    public array $itemsForProductToDisplay;
     private array $strForProductName;
     private array $strForProductDescription;
     private View $view;
@@ -26,7 +26,7 @@ class DetailControll implements ControllerInterface
         $this->smarty = new \Smarty();
         $this->view = new View();
         $this->fullDataRecords = $this->getProductDataFromModel();
-        $this->getView();
+        //$this->getView();
     }
 
     public function getProductDataFromModel(): array
@@ -37,11 +37,11 @@ class DetailControll implements ControllerInterface
     public function getProductNameAsArray(): void
     {
         $pageName = $_GET['page'];
-        $pageId = $_GET['productId'];
+        $pageId = $_GET['categoryId'];
         $productId = $_GET['id'];
         $productName = $this->fullDataRecords;
         foreach ($productName as $name) {
-            if ($pageName === 'Detail' && $pageId === $name['productId'] && $productId == $name['id']) {
+            if ($pageName === 'Detail' && $pageId === $name['categoryId'] && $productId == $name['id']) {
                 $this->strForProductName[] = $name['displayName'] . ':';
                 $this->strForProductDescription[] = $name['description'];
             }

@@ -10,6 +10,10 @@ use App\Model\MainMenu;
 
 class HomeControll implements ControllerInterface
 {
+    /**
+     * @var string[]
+     */
+    public array $addParameterToView;
     private array $fullDataRecords;
     private array $itemsForMenuToDisplay;
     private array $strForMenuLinks;
@@ -23,7 +27,7 @@ class HomeControll implements ControllerInterface
         $this->smarty = new \Smarty();
         $this->view = new View();
         $this->fullDataRecords = $this->getMenuDataFromModel();
-        $this->getView();
+        //$this->getView();
     }
 
     private function getMenuDataFromModel(): array

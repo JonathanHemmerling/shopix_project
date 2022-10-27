@@ -4,6 +4,8 @@ declare(strict_types=1);
 require __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/showErrorsInBrowser.php';
 use \App\Service\ControllerProvider;
+use \App\Controller\NotFoundControll;
+use \App\Model\ProductRepository;
 
 $pageTitle = 'Home';
 
@@ -11,13 +13,13 @@ if(isset($_GET['page'])) {
     $pageTitle = $_GET['page'];
 }
 
-$className = \App\Controller\NotFoundControll::class;
+$className = NotFoundControll::class;
 
-$provCon = new ControllerProvider();
-$provList = $provCon->getList();
-foreach ($provList as $provElement){
-    if($provElement === 'App\Controller\\' . $pageTitle . 'Controll'){
-        $className = $provElement;
+$providerCon = new ControllerProvider();
+$providerList = $providerCon->getList();
+foreach ($providerList as $providerElement){
+    if($providerElement === 'App\Controller\\' . $pageTitle . 'Controll'){
+        $className = $providerElement;
     }
 }
 new $className;
