@@ -11,20 +11,23 @@ class ViewTest extends TestCase
 {
     public function testAddParameter(): void
     {
-        $view = new View();
-        $stringParameter = 'test parameter';
-        $arrayParameter = ['1', '2'];
-        $integerParameter = 13;
-        $emptyParameter = null;
-        self::assertEquals('test parameter', $view->addTemplateParameter($stringParameter));
-        self::assertEquals('1', $view->addTemplateParameter($arrayParameter[0]));
-        self::assertEquals('13', $view->addTemplateParameter($integerParameter));
-        self::assertEquals('', $view->addTemplateParameter($emptyParameter));
+        $mock = $this->createMock(\Smarty::class);
+        $mock->expects($this->once())
+            ->method('assign')
+            ->with($this->equalTo('String1'), $this->equalTo('String2'));
+        $view = new View($mock);
+        $view->addTemplateParameter('String1', 'String2');
+
     }
 
     public function testDisplay()
     {
-        $view = new View();
+        $mock = $this->createMock(\Smarty::class);
+        $mock->expects($this->once())
+            ->method('display')
+            ->with($this->equalTo('/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/../templates/name.tpl'));
+        $view = new View($mock);
+        $view->display('name.tpl');
     }
 
 }

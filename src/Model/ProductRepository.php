@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Model;
 
+use App\Model\Mapper\ProductsMapper;
+
 class ProductRepository
 {
     public function getAllDataFromJson($fileName): array
@@ -40,5 +42,11 @@ class ProductRepository
             }
         }
         return $allDateOfOneCategory;
+    }
+    public function giveDataToMapper(){
+        $productArray = $this->findProductById();
+        $categoryArray = $this->findCategoryById();
+        $productMapper = new ProductsMapper;
+        $productMapper->mapToDto($productArray);
     }
 }

@@ -6,16 +6,21 @@ namespace App\Core;
 
 class View
 {
-    public function addTemplateParameter(mixed $parameter): string
-    {
-        return $parameter;
+    private \Smarty $smarty;
+    private array $smartyArray = [];
+
+    public function __construct(\Smarty $smarty){
+       $this->smarty = $smarty;
     }
 
-    public function display(string $tplName, string $tplIdentifier, array $itemsToDiplay, \Smarty $smarty): void
+    public function addTemplateParameter(string $tplIdentifier, array $itemsToDisplay): void
     {
-        $smarty = $smarty;
-        $smarty->assign($tplIdentifier, $itemsToDiplay);
-        $smarty->display(__DIR__ . '/../templates/' . $tplName);
+        $this->smarty->assign($tplIdentifier, $itemsToDisplay);
+    }
+
+    public function display(string $tplName): void
+    {
+        $this->smarty->display(__DIR__ . '/../templates/' . $tplName);
     }
 
 }

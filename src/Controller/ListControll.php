@@ -24,10 +24,9 @@ class ListControll implements ControllerInterface
     public function __construct()
     {
         $this->products = new Products();
-        $this->smarty = new \Smarty();
-        $this->view = new View();
+        $this->view = new View(new \Smarty());
         $this->fullDataRecords = $this->getProductDataFromModel();
-        //$this->getView();
+        $this->getView();
     }
 
     public function getProductDataFromModel(): array
@@ -46,14 +45,11 @@ class ListControll implements ControllerInterface
         }
     }
 
-    public function addCategoryParameterToView(): array
+    public function addCategoryParameterToView(): void
     {
-        $this->itemsForCategoryToDisplay[] = $this->view->addTemplateParameter('<a href="index.php">Home</a>');
+        $this->view->addTemplateParameter('categoryHome', ['<a href="index.php">Home</a>']);
         $categoryStrArray = $this->strForCategoryLinks;
-        foreach ($categoryStrArray as $categoryStr) {
-            $this->itemsForCategoryToDisplay[] = $this->view->addTemplateParameter($categoryStr);
-        }
-        return $this->itemsForCategoryToDisplay;
+        $this->view->addTemplateParameter('categoryLink', $categoryStrArray);
     }
 
 
@@ -61,6 +57,6 @@ class ListControll implements ControllerInterface
     {
         $this->getCategorysAsArr();
         $this->addCategoryParameterToView();
-        $this->view->display('category.tpl', 'category', $this->itemsForCategoryToDisplay, $this->smarty);
+        $this->view->display('category.tpl');
     }
 }

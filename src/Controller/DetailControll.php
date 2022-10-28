@@ -12,21 +12,18 @@ use App\Model\Products;
 class DetailControll implements ControllerInterface
 {
     private array $fullDataRecords;
-    public array $itemsForProductToDisplay;
     private array $strForProductName;
     private array $strForProductDescription;
     private View $view;
-    private readonly \Smarty $smarty;
     private Products $products;
 
 
     public function __construct()
     {
         $this->products = new Products();
-        $this->smarty = new \Smarty();
-        $this->view = new View();
+        $this->view = new View(new \Smarty());
         $this->fullDataRecords = $this->getProductDataFromModel();
-        //$this->getView();
+        $this->getView();
     }
 
     public function getProductDataFromModel(): array
@@ -48,24 +45,20 @@ class DetailControll implements ControllerInterface
         }
     }
 
-    public function addProductNameParameterToView(): array
+    public function addProductNameParameterToView(): void
     {
-        $this->itemsForProductToDisplay[] = $this->view->addTemplateParameter('<a href="index.php">Home</a>');
+        $this->view->addTemplateParameter('productHome', ['<a href="index.php">Home</a>']);
         $productNameStrArray = $this->strForProductName;
-        foreach ($productNameStrArray as $productNameStr) {
-            $this->itemsForProductToDisplay['id'] = $this->view->addTemplateParameter($productNameStr);
-        }
+        $this->view->addTemplateParameter('productName', $productNameStrArray);
+
         $productDescriptionStrArray = $this->strForProductDescription;
-        foreach ($productDescriptionStrArray as $productDescriptionStr) {
-            $this->itemsForProductToDisplay['value'] = $this->view->addTemplateParameter($productDescriptionStr);
-        }
-        return $this->itemsForProductToDisplay;
+        $this->view->addTemplateParameter('productDescription', $productDescriptionStrArray);
     }
 
     public function getView(): void
     {
         $this->getProductNameAsArray();
         $this->addProductNameParameterToView();
-        $this->view->display('product.tpl', 'product', $this->itemsForProductToDisplay, $this->smarty);
+        $this->view->display('product.tpl');
     }
 }

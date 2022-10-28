@@ -1,6 +1,12 @@
 {include file="./header.tpl"}
 <pre>
-{foreach from=$product item=p}
+{foreach from=$productHome item=p}
+    {$p}
+{/foreach}
+{foreach from=$productName item=p}
+    {$p}
+{/foreach}
+{foreach from=$productDescription item=p}
     {$p}
 {/foreach}
 </pre>

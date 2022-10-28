@@ -8,5 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ControllerInterfaceTest extends TestCase
 {
+    public function testInterfaceOutput(){
 
+    }
 }

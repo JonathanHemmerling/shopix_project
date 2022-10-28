@@ -8,5 +8,7 @@ use PHPUnit\Framework\TestCase;
 
 class ProductsRepositoryTest extends TestCase
 {
+    public function testRepo(){
 
+    }
 }

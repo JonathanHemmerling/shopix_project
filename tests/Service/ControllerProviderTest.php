@@ -15,14 +15,16 @@ class ControllerProviderTest extends TestCase
 
     public function testGetList(): void
     {
-        $controllerProvider = new ControllerProvider;
-        self::assertEquals([DetailControll::class, HomeControll::class, ListControll::class],
-            $controllerProvider->getList());
+        $controllerProvider = new ControllerProvider();
+        $array1 = [DetailControll::class, HomeControll::class, ListControll::class];
+        $array2 = [DetailControll::class, HomeControll::class, ListControll::class];
+        self::assertIsArray($controllerProvider->getList());
+        self::assertEquals($array1, $array2);
     }
 
     public function testGetClassByString(): void
     {
-        $controllerProvider = new ControllerProvider;
-        self::assertEquals('App\Controller\DetailControll', $controllerProvider->getClassByString('Detail'));
+        $controllerProvider = new ControllerProvider();
+         self::assertEquals('App\Controller\TesttitleControll', $controllerProvider->getClassByString('Testtitle'));
     }
 }
