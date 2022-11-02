@@ -13,6 +13,6 @@ class ControllerInterfaceTest extends TestCase
     {
         $mockControllerInterface = $this->createMock(ControllerInterface::class);
         $mockControllerInterface ->expects($this->never())
-                                ->method('getView');
+                                ->method('renderView');
     }
 }

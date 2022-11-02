@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Model;
 
+use InvalidArgumentException;
 use JsonException;
 use RuntimeException;
 
@@ -14,7 +15,7 @@ class Products
     public function __construct(string $pathToJsonFile = __DIR__ . '/../jsons/products.json')
     {
         if (!file_exists($pathToJsonFile)) {
-            throw new \InvalidArgumentException(sprintf('Path %s does not exist.', $pathToJsonFile));
+            throw new InvalidArgumentException(sprintf('Path %s does not exist.', $pathToJsonFile));
         }
         $this->pathToJsonFile = $pathToJsonFile;
     }

@@ -8,9 +8,9 @@ class View
 {
     private \Smarty $smarty;
 
-    public function __construct(\Smarty $smarty)
+    public function __construct()
     {
-        $this->smarty = $smarty;
+        $this->smarty = new \Smarty();
     }
 
     public function addTemplateParameter(string $tplIdentifier, array $itemsToDisplay): void
@@ -18,7 +18,7 @@ class View
         $this->smarty->assign($tplIdentifier, $itemsToDisplay);
     }
 
-    public function display(string $tplName): void
+    public function renderTemplate(string $tplName): void
     {
         $this->smarty->display(__DIR__ . '/../templates/' . $tplName);
     }

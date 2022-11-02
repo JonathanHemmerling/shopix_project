@@ -6,8 +6,9 @@ namespace App\Controller;
 
 
 use App\Core\View;
+use App\Interfaces\ControllerInterface;
 
-class NotFoundControll
+class NotFoundControll implements ControllerInterface
 {
     private string $error = 'Page not found';
 
@@ -16,11 +17,11 @@ class NotFoundControll
     public function __construct(View $view)
     {
         $this->view = $view;
-        $this->getView();
     }
-    public function getView(): void
+
+    public function renderView(): void
     {
-        $this->view->addTemplateParameter('error',[$this->error]);
-        $this->view->display('notFound.tpl');
+        $this->view->addTemplateParameter('error', [$this->error]);
+        $this->view->renderTemplate('notFound.tpl');
     }
 }

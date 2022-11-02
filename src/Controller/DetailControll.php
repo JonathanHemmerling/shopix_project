@@ -14,37 +14,39 @@ class DetailControll implements ControllerInterface
 
     private array $strForProductName;
     private array $strForProductDescription;
+    private string $pageId;
+    private string $productId;
     private View $view;
     private Products $products;
 
 
-    public function __construct(View $view)
+    public function __construct(View $view, array $useData = [])
     {
+        $this->pageId = $useData['categoryId'];
+        $this->productId = $useData['id'];
         $this->products = new Products();
         $this->view = $view;
     }
 
-    public function getProductDataFromModel(): array
+    private function getProductDataFromModel(): array
     {
         return $this->products->getProductsFromJson();
     }
 
-    public function getProductNameAsArray(): void
+    private function getProductNameAsArray(): void
     {
-        $pageName = $_GET['page'];
-        $pageId = $_GET['categoryId'];
-        $productId = $_GET['id'];
         $productName = $this->getProductDataFromModel();
         foreach ($productName as $name) {
-            if ($pageName === 'Detail' && $pageId === $name['categoryId'] && $productId == $name['id']) {
+            if ($this->pageId === $name['categoryId'] && $this->productId === $name['id']) {
                 $this->strForProductName[] = $name['displayName'] . ':';
                 $this->strForProductDescription[] = $name['description'];
             }
         }
     }
 
-    public function addProductNameParameterToView(): void
+    private function addProductNameParameterToView(): void
     {
+        $this->getProductNameAsArray();
         $this->view->addTemplateParameter('productHome', ['<a href="index.php">Home</a>']);
         $productNameStrArray = $this->strForProductName;
         $this->view->addTemplateParameter('productName', $productNameStrArray);
@@ -55,9 +57,8 @@ class DetailControll implements ControllerInterface
 
     public function renderView(): void
     {
-        $this->getProductNameAsArray();
         $this->addProductNameParameterToView();
-        $this->view->display('product.tpl');
+        $this->view->renderTemplate('product.tpl');
     }
 
 }

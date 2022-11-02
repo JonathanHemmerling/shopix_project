@@ -10,9 +10,7 @@ use App\Model\MainMenu;
 
 class HomeControll implements ControllerInterface
 {
-    /**
-     * @var string[]
-     */
+
     private array $strForMenuLinks;
     private MainMenu $mainMenu;
     private View $view;
@@ -21,7 +19,6 @@ class HomeControll implements ControllerInterface
     {
         $this->mainMenu = new MainMenu();
         $this->view = $view;
-
     }
 
     private function getMenuDataFromModel(): array
@@ -47,7 +44,7 @@ class HomeControll implements ControllerInterface
     public function renderView(): void
     {
         $this->addParameterToView();
-        $this->view->display('home.tpl');
+        $this->view->renderTemplate('home.tpl');
     }
 
 }

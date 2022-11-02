@@ -10,11 +10,14 @@ use PHPUnit\Framework\TestCase;
 
 class HomeControllerTest extends TestCase
 {
-    public function testHomeController(): void
+
+    public function testDisplay(): void
     {
-        $homeController = new HomeControll(new View(new \Smarty()));
-        $homeArray = $homeController->getMenuDataFromModel();
-        $itemsForParameter = ['id', 'value'];
-        self::assertEquals(['id', 'value'], $itemsForParameter);
+        $mock = $this->createMock(View::class);
+        $mock->expects($this->once())
+            ->method('renderTemplate');
+
+        $view = new HomeControll($mock);
+        $view->renderView();
     }
 }

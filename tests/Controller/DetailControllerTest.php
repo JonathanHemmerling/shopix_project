@@ -6,44 +6,20 @@ namespace AppTest\Controller;
 
 use App\Controller\DetailControll;
 
+use App\Controller\HomeControll;
 use App\Core\View;
 use PHPUnit\Framework\TestCase;
 
 
 class DetailControllerTest extends TestCase
 {
-
-    public function testItGetsDataFromModel(): void
-    {
-        $detailController = new DetailControll(new View(new \Smarty()));
-        $detailArray = $detailController->getProductDataFromModel();
-        self::assertIsArray($detailArray);
-        self::assertEquals(
-            [
-                "id" => "1",
-                "categoryId" => "1",
-                "category" => "jeans",
-                "categoryDisplayName" => "Jeans",
-                "displayName" => "Jeans 1",
-                "detail" => "jeans_1",
-                "preis" => "45 €",
-                "description" => "The first Jeans"
-            ],
-            $detailArray[0]
-        );
-    }
-
-    public function testDidItAddParameterToView(): void
+    public function testDisplay(): void
     {
         $mock = $this->createMock(View::class);
         $mock->expects($this->once())
-            ->method('addTemplateParameter');
-        $detailController = new DetailControll();
-        $detailController->addProductNameParameterToView();
-    }
+            ->method('renderTemplate');
 
-    public function testDoesItRenderView(): void
-    {
+        $view = new DetailControll($mock, ['categoryId' => '1', 'id' => '1']);
+        $view->renderView();
     }
-
 }

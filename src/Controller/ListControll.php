@@ -10,15 +10,15 @@ use App\Model\Products;
 
 class ListControll implements ControllerInterface
 {
-    /**
-     * @var string[]
-     */
+
     private array $strForCategoryLinks;
+    private string $productId;
     private Products $products;
     private View $view;
 
-    public function __construct(View $view)
+    public function __construct(View $view, array $useData=[])
     {
+        $this->productId = $useData['productId'];
         $this->products = new Products();
         $this->view = $view;
     }
@@ -30,10 +30,9 @@ class ListControll implements ControllerInterface
 
     private function getCategorysAsArr(): void
     {
-        $productId = $_GET['productId'];
-        $categoryContent = $this->getProductDataFromModel();;
+        $categoryContent = $this->getProductDataFromModel();
         foreach ($categoryContent as $categoryLink) {
-            if ($productId === $categoryLink['categoryId']) {
+            if ($this->productId === $categoryLink['categoryId']) {
                 $this->strForCategoryLinks[] = 'index.php?page=Detail&' . $categoryLink['detail'] . '&categoryId=' . $categoryLink['categoryId'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName'];
             }
         }
@@ -47,10 +46,9 @@ class ListControll implements ControllerInterface
         $this->view->addTemplateParameter('categoryLink', $categoryStrArray);
     }
 
-
     public function renderView(): void
     {
         $this->addCategoryParameterToView();
-        $this->view->display('category.tpl');
+        $this->view->renderTemplate('category.tpl');
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Model;
 
+use InvalidArgumentException;
 use JsonException;
 use RuntimeException;
 
@@ -14,11 +15,8 @@ class MainMenu
     public function __construct(string $pathToJsonFile = __DIR__ . '/../jsons/menuCategorys.json')
     {
         if (!file_exists($pathToJsonFile)) {
-            throw new \InvalidArgumentException(sprintf('Path %s does not exist.', $pathToJsonFile));
+            throw new InvalidArgumentException(sprintf('Path %s does not exist.', $pathToJsonFile));
         }
-        // @todo Create check for is_readable.
-        // @todo Create check for is_file.
-
         $this->pathToJsonFile = $pathToJsonFile;
     }
 
