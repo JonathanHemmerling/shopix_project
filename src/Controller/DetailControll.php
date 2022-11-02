@@ -11,19 +11,17 @@ use App\Model\Products;
 
 class DetailControll implements ControllerInterface
 {
-    private array $fullDataRecords;
+
     private array $strForProductName;
     private array $strForProductDescription;
     private View $view;
     private Products $products;
 
 
-    public function __construct()
+    public function __construct(View $view)
     {
         $this->products = new Products();
-        $this->view = new View(new \Smarty());
-        $this->fullDataRecords = $this->getProductDataFromModel();
-        $this->getView();
+        $this->view = $view;
     }
 
     public function getProductDataFromModel(): array
@@ -36,7 +34,7 @@ class DetailControll implements ControllerInterface
         $pageName = $_GET['page'];
         $pageId = $_GET['categoryId'];
         $productId = $_GET['id'];
-        $productName = $this->fullDataRecords;
+        $productName = $this->getProductDataFromModel();
         foreach ($productName as $name) {
             if ($pageName === 'Detail' && $pageId === $name['categoryId'] && $productId == $name['id']) {
                 $this->strForProductName[] = $name['displayName'] . ':';
@@ -55,10 +53,11 @@ class DetailControll implements ControllerInterface
         $this->view->addTemplateParameter('productDescription', $productDescriptionStrArray);
     }
 
-    public function getView(): void
+    public function renderView(): void
     {
         $this->getProductNameAsArray();
         $this->addProductNameParameterToView();
         $this->view->display('product.tpl');
     }
+
 }

@@ -3833,3 +3833,51 @@ Stack trace:
 #3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\DetailControll->__construct()
 #4 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 16
+[31-Oct-2022 10:46:39 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\NotFoundControll::__construct(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 25 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/NotFoundControll.php:15
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(25): App\Controller\NotFoundControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/NotFoundControll.php on line 15
+[31-Oct-2022 12:25:07 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 30
+[31-Oct-2022 12:25:07 Europe/Berlin] PHP Stack trace:
+[31-Oct-2022 12:25:07 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[31-Oct-2022 12:25:07 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:27
+[31-Oct-2022 12:25:07 Europe/Berlin] PHP   3. App\Controller\DetailControll->getProductDataFromModel() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:25
+[31-Oct-2022 12:25:17 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 30
+[31-Oct-2022 12:25:17 Europe/Berlin] PHP Stack trace:
+[31-Oct-2022 12:25:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[31-Oct-2022 12:25:17 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:27
+[31-Oct-2022 12:25:17 Europe/Berlin] PHP   3. App\Controller\DetailControll->getProductDataFromModel() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:25
+[31-Oct-2022 12:25:25 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 30
+[31-Oct-2022 12:25:25 Europe/Berlin] PHP Stack trace:
+[31-Oct-2022 12:25:25 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[31-Oct-2022 12:25:25 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:27
+[31-Oct-2022 12:25:25 Europe/Berlin] PHP   3. App\Controller\DetailControll->getProductDataFromModel() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:25
+[31-Oct-2022 12:31:45 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 30
+[31-Oct-2022 12:31:45 Europe/Berlin] PHP Stack trace:
+[31-Oct-2022 12:31:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[31-Oct-2022 12:31:45 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:27
+[31-Oct-2022 12:31:45 Europe/Berlin] PHP   3. App\Controller\DetailControll->getProductDataFromModel() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:25
+[31-Oct-2022 16:01:25 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\ListControll::__construct(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:20
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(27): App\Controller\ListControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 20
+[31-Oct-2022 16:04:19 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\NotFoundControll::__construct(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/NotFoundControll.php:16
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(27): App\Controller\NotFoundControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/NotFoundControll.php on line 16
+[31-Oct-2022 16:04:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "View" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[31-Oct-2022 16:04:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "View" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:27
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 27
+[31-Oct-2022 16:05:04 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Core\View::__construct(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 29 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:11
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Core\View->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 11

@@ -6,5 +6,5 @@ namespace App\Interfaces;
 
 interface ControllerInterface
 {
-    public function getView();
+    public function renderView():void;
 }

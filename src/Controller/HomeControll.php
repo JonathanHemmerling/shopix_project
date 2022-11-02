@@ -13,17 +13,15 @@ class HomeControll implements ControllerInterface
     /**
      * @var string[]
      */
-    private array $fullDataRecords;
     private array $strForMenuLinks;
     private MainMenu $mainMenu;
     private View $view;
 
-    public function __construct()
+    public function __construct(View $view)
     {
         $this->mainMenu = new MainMenu();
-        $this->view = new View(new \Smarty());
-        $this->fullDataRecords = $this->getMenuDataFromModel();
-        $this->getView();
+        $this->view = $view;
+
     }
 
     private function getMenuDataFromModel(): array
@@ -31,23 +29,23 @@ class HomeControll implements ControllerInterface
         return $this->mainMenu->getMenuCategorysFromJson();
     }
 
-    public function getMenuAsArr(): void
+    private function getMenuAsArr(): void
     {
-        $menuContent = $this->fullDataRecords;
+        $menuContent = $this->getMenuDataFromModel();
         foreach ($menuContent as $menuLink) {
             $this->strForMenuLinks[] = 'index.php?page=List&' . $menuLink['category'] . '&productId=' . $menuLink['id'] . '>' . $menuLink['displayName'];
         }
     }
 
-    public function addParameterToView(): void
+    private function addParameterToView(): void
     {
+        $this->getMenuAsArr();
         $menuStrArray = $this->strForMenuLinks;
         $this->view->addTemplateParameter('menu', $menuStrArray);
     }
 
-    public function getView(): void
+    public function renderView(): void
     {
-        $this->getMenuAsArr();
         $this->addParameterToView();
         $this->view->display('home.tpl');
     }

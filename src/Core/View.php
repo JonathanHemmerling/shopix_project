@@ -7,10 +7,10 @@ namespace App\Core;
 class View
 {
     private \Smarty $smarty;
-    private array $smartyArray = [];
 
-    public function __construct(\Smarty $smarty){
-       $this->smarty = $smarty;
+    public function __construct(\Smarty $smarty)
+    {
+        $this->smarty = $smarty;
     }
 
     public function addTemplateParameter(string $tplIdentifier, array $itemsToDisplay): void

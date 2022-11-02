@@ -4,16 +4,23 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
-use App\Core\View;
-use App\Interfaces\ControllerInterface;
-use App\Model\Products;
 
+use App\Core\View;
 
 class NotFoundControll
 {
     private string $error = 'Page not found';
-    public function __construct()
+
+    private View $view;
+
+    public function __construct(View $view)
     {
-        echo $this->error;
+        $this->view = $view;
+        $this->getView();
+    }
+    public function getView(): void
+    {
+        $this->view->addTemplateParameter('error',[$this->error]);
+        $this->view->display('notFound.tpl');
     }
 }

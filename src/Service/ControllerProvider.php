@@ -7,6 +7,7 @@ namespace App\Service;
 use App\Controller\DetailControll;
 use App\Controller\HomeControll;
 use App\Controller\ListControll;
+use App\Controller\NotFoundControll;
 
 class ControllerProvider
 {
@@ -17,11 +18,12 @@ class ControllerProvider
             DetailControll::class,
             HomeControll::class,
             ListControll::class,
+            NotFoundControll::class,
         ];
     }
 
     public function getClassByString(string $pageTitle): string
     {
-        return 'App\Controller\\' . $pageTitle . 'Controll';
+            return 'App\Controller\\' . $pageTitle . 'Controll';
     }
 }

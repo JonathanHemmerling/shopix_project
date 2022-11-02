@@ -13,31 +13,25 @@ class ListControll implements ControllerInterface
     /**
      * @var string[]
      */
-    public array $addCategoryParameterToView;
-    private array $fullDataRecords;
     private array $strForCategoryLinks;
-    private array $itemsForCategoryToDisplay;
     private Products $products;
-    private readonly \Smarty $smarty;
     private View $view;
 
-    public function __construct()
+    public function __construct(View $view)
     {
         $this->products = new Products();
-        $this->view = new View(new \Smarty());
-        $this->fullDataRecords = $this->getProductDataFromModel();
-        $this->getView();
+        $this->view = $view;
     }
 
-    public function getProductDataFromModel(): array
+    private function getProductDataFromModel(): array
     {
         return $this->products->getProductsFromJson();
     }
 
-    public function getCategorysAsArr(): void
+    private function getCategorysAsArr(): void
     {
         $productId = $_GET['productId'];
-        $categoryContent = $this->fullDataRecords;
+        $categoryContent = $this->getProductDataFromModel();;
         foreach ($categoryContent as $categoryLink) {
             if ($productId === $categoryLink['categoryId']) {
                 $this->strForCategoryLinks[] = 'index.php?page=Detail&' . $categoryLink['detail'] . '&categoryId=' . $categoryLink['categoryId'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName'];
@@ -45,17 +39,17 @@ class ListControll implements ControllerInterface
         }
     }
 
-    public function addCategoryParameterToView(): void
+    private function addCategoryParameterToView(): void
     {
+        $this->getCategorysAsArr();
         $this->view->addTemplateParameter('categoryHome', ['<a href="index.php">Home</a>']);
         $categoryStrArray = $this->strForCategoryLinks;
         $this->view->addTemplateParameter('categoryLink', $categoryStrArray);
     }
 
 
-    public function getView(): void
+    public function renderView(): void
     {
-        $this->getCategorysAsArr();
         $this->addCategoryParameterToView();
         $this->view->display('category.tpl');
     }
