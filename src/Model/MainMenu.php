@@ -10,6 +10,7 @@ use RuntimeException;
 
 class MainMenu
 {
+    const DEPTH = 512;
     private string $pathToJsonFile;
 
     public function __construct(string $pathToJsonFile = __DIR__ . '/../jsons/menuCategorys.json')
@@ -28,11 +29,6 @@ class MainMenu
     {
         $jsonFile = file_get_contents($this->pathToJsonFile);
 
-        try {
-            $mainMenuContent = json_decode($jsonFile, true, 512, JSON_THROW_ON_ERROR);
-        } catch (JsonException $exception) {
-            throw new RuntimeException(sprintf('Invalid JSON stored in file "%s".', $this->pathToJsonFile),0, $exception);
-        }
-        return $mainMenuContent;
+        return json_decode($jsonFile, true, self::DEPTH, JSON_THROW_ON_ERROR);
     }
 }

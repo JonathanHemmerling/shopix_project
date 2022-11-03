@@ -6,7 +6,6 @@ namespace AppTest\Controller;
 
 use App\Controller\DetailControll;
 
-use App\Controller\HomeControll;
 use App\Core\View;
 use PHPUnit\Framework\TestCase;
 
@@ -19,7 +18,7 @@ class DetailControllerTest extends TestCase
         $mock->expects($this->once())
             ->method('renderTemplate');
 
-        $view = new DetailControll($mock, ['categoryId' => '1', 'id' => '1']);
+        $view = new DetailControll($mock, );
         $view->renderView();
     }
 }
