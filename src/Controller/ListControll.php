@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
-use App\Interfaces\ControllerInterface;
+use App\Model\ProductRepository;
 use App\Model\Products;
 
 class ListControll implements ControllerInterface
@@ -13,19 +13,20 @@ class ListControll implements ControllerInterface
 
     private array $strForCategoryLinks;
     private string $productId;
-    private Products $products;
+    private ProductRepository $products;
     private View $view;
 
-    public function __construct(View $view, array $useData=[])
+    public function __construct(View $view, ProductRepository $products)
     {
-        $this->productId = $useData['productId'];
-        $this->products = new Products();
+        $this->productId = $_GET['productId'];
+        $this->products = $products;
         $this->view = $view;
+        $this->renderView();
     }
 
     private function getProductDataFromModel(): array
     {
-        return $this->products->getProductsFromJson();
+        return $this->products->getAllDataFromJson();
     }
 
     private function getCategorysAsArr(): void
@@ -49,6 +50,6 @@ class ListControll implements ControllerInterface
     public function renderView(): void
     {
         $this->addCategoryParameterToView();
-        $this->view->renderTemplate('category.tpl');
+        $this->view->setTemplate('category.tpl');
     }
 }

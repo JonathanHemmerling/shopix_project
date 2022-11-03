@@ -5,16 +5,21 @@ require __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/showErrorsInBrowser.php';
 
 use App\Core\View;
+use App\Model\ProductRepository;
 use \App\Service\ControllerProvider;
 use \App\Controller\NotFoundControll;
+use \App\Controller\ControllerInterface;
+
+$smarty = new Smarty();
+$view = new View($smarty);
+$className = NotFoundControll::class;
+
 
 $pageTitle = 'Home';
 
 if (isset($_GET['page'])) {
     $pageTitle = $_GET['page'];
 }
-
-$className = NotFoundControll::class;
 
 $providerCon = new ControllerProvider();
 $providerList = $providerCon->getList();
@@ -24,6 +29,8 @@ foreach ($providerList as $providerElement) {
         break;
     }
 }
-/** @var \App\Interfaces\ControllerInterface $controller */
-$controller = new $className(new View(), $_GET);
-$controller->renderView();
+
+/** @var ControllerInterface $controller */
+$model = new ProductRepository($pageTitle);
+$controller = new $className($view, $model);
+$view->renderTemplate();

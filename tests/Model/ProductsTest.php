@@ -14,7 +14,7 @@ class ProductsTest extends TestCase
     public function testGetProducts(): void
     {
         $products = new Products();
-        $productCat = $products->getProductsFromJson();
+        $productCat = $products->getDataAsArray();
         self::assertIsArray($productCat);
         self::assertCount(9, $productCat);
         self::assertEquals(['1', '2'], ['1', '2']);
@@ -25,7 +25,7 @@ class ProductsTest extends TestCase
         $this->expectException(InvalidArgumentException::class);
 
         $products = new Products(__DIR__ . '/data/non-existing.json');
-        $products->getProductsFromJson();
+        $products->getDataAsArray();
     }
     public function testExceptionIsThrownOnBrokenJson(): void
     {
@@ -34,6 +34,6 @@ class ProductsTest extends TestCase
         $this->expectErrorMessage('Invalid JSON stored in file "' . $pathToJsonFile . '".');
 
         $products = new Products($pathToJsonFile);
-        $products->getProductsFromJson();
+        $products->getDataAsArray();
     }
 }
