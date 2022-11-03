@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace AppTest\Interfaces;
 
-use App\Interfaces\ControllerInterface;
+use App\Controller\ControllerInterface;
 use PHPUnit\Framework\TestCase;
 
 class ControllerInterfaceTest extends TestCase

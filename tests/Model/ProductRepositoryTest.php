@@ -4,28 +4,29 @@ declare(strict_types=1);
 
 namespace AppTest\Model;
 
-use App\Model\MainMenu;
+use App\Model\ProductRepository;
 use InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use RuntimeException;
 
-class MainMenuTest extends TestCase
+class ProductRepositoryTest extends TestCase
 {
     public function testDataIsExtractedFromJson(): void
     {
-        $mainMenu = new MainMenu(__DIR__ . '/data/syntactically-correct.json');
+        $productRepo = new ProductRepository();
 
-        $categories = $mainMenu->getDataAsArray();
+        $categories = $productRepo->getAllDataFromJson('products');
         self::assertIsArray($categories);
-        self::assertCount(3, $categories);
+        self::assertCount(9, $categories);
     }
 
     public function testExceptionIsThrownOnNonExistingFile(): void
     {
         $this->expectException(InvalidArgumentException::class);
 
-        $mainMenu = new MainMenu(__DIR__ . '/data/non-existing.json');
-        $mainMenu->getDataAsArray();
+        $productRepo = new ProductRepository();
+
+        $productRepo->getAllDataFromJson('products');
     }
 
     public function testExceptionIsThrownOnBrokenJson(): void
@@ -34,8 +35,8 @@ class MainMenuTest extends TestCase
         $this->expectException(RuntimeException::class);
         $this->expectErrorMessage('Invalid JSON stored in file "' . $pathToJsonFile . '".');
 
-        $mainMenu = new MainMenu($pathToJsonFile);
+        $productRepo = new ProductRepository();
 
-        $mainMenu->getDataAsArray();
+        $productRepo->getAllDataFromJson('products');
     }
 }

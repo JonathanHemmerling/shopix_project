@@ -6,7 +6,6 @@ namespace App\Controller;
 
 
 use App\Core\View;
-use App\Interfaces\ControllerInterface;
 
 class NotFoundControll implements ControllerInterface
 {

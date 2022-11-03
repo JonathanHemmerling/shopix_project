@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
-use App\Interfaces\ControllerInterface;
+use App\Model\ProductRepository;
 use App\Model\Products;
 
 
@@ -14,30 +14,30 @@ class DetailControll implements ControllerInterface
 
     private array $strForProductName;
     private array $strForProductDescription;
-    private string $pageId;
-    private string $productId;
     private View $view;
-    private Products $products;
+    private ProductRepository $products;
 
 
-    public function __construct(View $view, array $useData = [])
+    public function __construct(View $view, ProductRepository $products)
     {
-        $this->pageId = $useData['categoryId'];
-        $this->productId = $useData['id'];
-        $this->products = new Products();
+        $this->products = $products;
         $this->view = $view;
+        $this->renderView();
     }
 
     private function getProductDataFromModel(): array
     {
-        return $this->products->getProductsFromJson();
+        return $this->products->getAllDataFromJson();
     }
 
     private function getProductNameAsArray(): void
     {
+        $pageId = $_GET['categoryId'];
+        $productId = $_GET['id'];
+
         $productName = $this->getProductDataFromModel();
         foreach ($productName as $name) {
-            if ($this->pageId === $name['categoryId'] && $this->productId === $name['id']) {
+            if ($pageId === $name['categoryId'] && $productId === $name['id']) {
                 $this->strForProductName[] = $name['displayName'] . ':';
                 $this->strForProductDescription[] = $name['description'];
             }
@@ -58,7 +58,7 @@ class DetailControll implements ControllerInterface
     public function renderView(): void
     {
         $this->addProductNameParameterToView();
-        $this->view->renderTemplate('product.tpl');
+        $this->view->setTemplate('product.tpl');
     }
 
 }

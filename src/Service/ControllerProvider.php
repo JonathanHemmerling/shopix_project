@@ -22,8 +22,4 @@ class ControllerProvider
         ];
     }
 
-    public function getClassByString(string $pageTitle): string
-    {
-            return 'App\Controller\\' . $pageTitle . 'Controll';
-    }
 }

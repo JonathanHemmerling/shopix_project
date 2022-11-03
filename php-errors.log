@@ -3913,3 +3913,1266 @@ Stack trace:
 [02-Nov-2022 10:52:34 Europe/Berlin] PHP Stack trace:
 [02-Nov-2022 10:52:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
 [02-Nov-2022 10:52:34 Europe/Berlin] PHP   2. App\Controller\DetailControll->__construct($view = class App\Core\View { private Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1667382754.2435; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:28
+[02-Nov-2022 14:49:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\MainMenu::getMenuCategorysFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:26
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(31): App\Controller\HomeControll->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(39): App\Controller\HomeControll->getMenuAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(46): App\Controller\HomeControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\HomeControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 26
+[02-Nov-2022 15:21:22 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[02-Nov-2022 15:24:05 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:24:34 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:24:35 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:49 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:50 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:50 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:50 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:51 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:51 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:25:51 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:26:25 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:26:25 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:26:26 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:34 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:35 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:36 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:36 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:36 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:36 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:37 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:39 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:28:40 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(28): App\Model\ProductRepository->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(29): App\Controller\DetailControll->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[02-Nov-2022 15:29:06 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(30): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(36): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(41): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(52): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(63): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../json/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:32
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(36): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(41): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(52): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(63): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 32
+[02-Nov-2022 15:30:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\ProductRepository::getDataAsArray() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:34
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 34
+[02-Nov-2022 15:30:51 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 29
+[02-Nov-2022 15:33:29 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:37 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:38 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:38 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:39 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:39 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:39 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:39 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:39 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:33:41 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[02-Nov-2022 15:34:20 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/products.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 29
+[02-Nov-2022 15:34:51 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(27): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(34): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(39): App\Controller\DetailControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(50): App\Controller\DetailControll->getProductNameAsArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(61): App\Controller\DetailControll->addProductNameParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 27
+[02-Nov-2022 15:35:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[02-Nov-2022 15:35:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[02-Nov-2022 15:35:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[02-Nov-2022 15:35:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[02-Nov-2022 15:35:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[02-Nov-2022 15:35:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[02-Nov-2022 15:35:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\Products::getProductsFromJson() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(30): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 33
+[03-Nov-2022 11:44:15 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:32
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(47): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Controller\HomeControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 32
+[03-Nov-2022 11:50:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 13:20:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 13:29:50 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 20
+[03-Nov-2022 13:29:50 Europe/Berlin] PHP Stack trace:
+[03-Nov-2022 13:29:50 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[03-Nov-2022 13:29:50 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct($view = class App\Core\View { private array $params = []; private string $template = *uninitialized*; private readonly Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1667478590.3596; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }, $useData = *uninitialized*) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:32
+[03-Nov-2022 13:29:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\Controller\ListControll::$productId of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:20
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(32): App\Controller\ListControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 20
+[03-Nov-2022 13:30:15 Europe/Berlin] PHP Warning:  Undefined array key "productId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 20
+[03-Nov-2022 13:30:15 Europe/Berlin] PHP Stack trace:
+[03-Nov-2022 13:30:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[03-Nov-2022 13:30:15 Europe/Berlin] PHP   2. App\Controller\ListControll->__construct($view = class App\Core\View { private array $params = []; private string $template = *uninitialized*; private readonly Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1667478615.795; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }, $useData = *uninitialized*) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:32
+[03-Nov-2022 13:30:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\Controller\ListControll::$productId of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:20
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(32): App\Controller\ListControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 20
+[03-Nov-2022 13:30:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(33): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 13:31:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(33): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 13:32:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(33): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 13:50:45 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Controller\ListControll::__construct(), 1 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 32 and exactly 2 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:18
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(32): App\Controller\ListControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 18
+[03-Nov-2022 14:01:01 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:01:53 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/Listjson does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[03-Nov-2022 14:02:04 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(28): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 30
+[03-Nov-2022 14:03:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(29): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[03-Nov-2022 14:04:19 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(29): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[03-Nov-2022 14:04:40 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(29): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[03-Nov-2022 14:06:18 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:21
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 21
+[03-Nov-2022 14:06:39 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:06:49 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:10:17 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model./jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:10:35 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model./../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:55:43 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model./../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[03-Nov-2022 14:56:18 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(31): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(29): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(34): App\Controller\ListControll->getProductDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(44): App\Controller\ListControll->getCategorysAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(52): App\Controller\ListControll->addCategoryParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(24): App\Controller\ListControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\ListControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 33
+[03-Nov-2022 14:57:00 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model../../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[03-Nov-2022 14:57:08 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[03-Nov-2022 14:58:10 Europe/Berlin] PHP Warning:  Undefined variable $filename in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 20
+[03-Nov-2022 14:58:10 Europe/Berlin] PHP Stack trace:
+[03-Nov-2022 14:58:10 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[03-Nov-2022 14:58:10 Europe/Berlin] PHP   2. App\Model\ProductRepository->__construct($pathToJsonFile = 'List') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:34
+[03-Nov-2022 14:58:10 Europe/Berlin] PHP Warning:  Undefined variable $filename in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 20
+[03-Nov-2022 14:58:11 Europe/Berlin] PHP Stack trace:
+[03-Nov-2022 14:58:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[03-Nov-2022 14:58:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->__construct($pathToJsonFile = 'List') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:34
+[03-Nov-2022 14:58:11 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path ListList.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:23
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 23
+[03-Nov-2022 14:58:38 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path ListList.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:59:04 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path ListList.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 14:59:17 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path List/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 15:00:12 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path List/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 15:00:16 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path Home/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 15:01:29 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path Home/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 15:01:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(38): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:02:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(37): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:02:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:03:04 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:03:47 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:22
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 22
+[03-Nov-2022 15:04:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:04:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:05:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:05:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:05:32 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:05:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 29
+[03-Nov-2022 15:06:24 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php(29): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(26): App\Model\MainMenu->getDataAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(31): App\Controller\HomeControll->getMenuDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(39): App\Controller\HomeControll->getMenuAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(46): App\Controller\HomeControll->addParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(21): App\Controller\HomeControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/menuCategorys.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(26): App\Model\MainMenu->getDataAsArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(31): App\Controller\HomeControll->getMenuDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(39): App\Controller\HomeControll->getMenuAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(46): App\Controller\HomeControll->addParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(21): App\Controller\HomeControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php on line 31
+[03-Nov-2022 15:06:29 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php(29): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(26): App\Model\MainMenu->getDataAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(31): App\Controller\HomeControll->getMenuDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(39): App\Controller\HomeControll->getMenuAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(46): App\Controller\HomeControll->addParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(21): App\Controller\HomeControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/menuCategorys.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(26): App\Model\MainMenu->getDataAsArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(31): App\Controller\HomeControll->getMenuDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(39): App\Controller\HomeControll->getMenuAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(46): App\Controller\HomeControll->addParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(21): App\Controller\HomeControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/MainMenu.php on line 31
+[03-Nov-2022 15:09:15 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(30): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(28): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(33): App\Controller\HomeControll->getMenuDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(41): App\Controller\HomeControll->getMenuAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(48): App\Controller\HomeControll->addParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(23): App\Controller\HomeControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/jsons/Home.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:32
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(28): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(33): App\Controller\HomeControll->getMenuDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(41): App\Controller\HomeControll->getMenuAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(48): App\Controller\HomeControll->addParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(23): App\Controller\HomeControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 32
+[03-Nov-2022 15:10:22 Europe/Berlin] PHP Fatal error:  Uncaught JsonException: Syntax error in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(30): json_decode()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(28): App\Model\ProductRepository->getAllDataFromJson()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(33): App\Controller\HomeControll->getMenuDataFromModel()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(41): App\Controller\HomeControll->getMenuAsArr()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(48): App\Controller\HomeControll->addParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(23): App\Controller\HomeControll->renderView()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#7 {main}
+
+Next RuntimeException: Invalid JSON stored in file "/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/jsons/Home.json". in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(28): App\Model\ProductRepository->getAllDataFromJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(33): App\Controller\HomeControll->getMenuDataFromModel()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(41): App\Controller\HomeControll->getMenuAsArr()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(48): App\Controller\HomeControll->addParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(23): App\Controller\HomeControll->renderView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\HomeControll->__construct()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 33
+[03-Nov-2022 15:14:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\ProductRepository::getDataAsArray() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(38): App\Controller\DetailControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(49): App\Controller\DetailControll->getProductNameAsArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(60): App\Controller\DetailControll->addProductNameParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(25): App\Controller\DetailControll->renderView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\DetailControll->__construct()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 30

@@ -5,25 +5,25 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Core\View;
-use App\Interfaces\ControllerInterface;
-use App\Model\MainMenu;
+use App\Model\ProductRepository;
 
 class HomeControll implements ControllerInterface
 {
 
     private array $strForMenuLinks;
-    private MainMenu $mainMenu;
     private View $view;
+    private ProductRepository $mainMenu;
 
-    public function __construct(View $view)
+    public function __construct(View $view, ProductRepository $mainMenu)
     {
-        $this->mainMenu = new MainMenu();
+        $this->mainMenu = $mainMenu;
         $this->view = $view;
+        $this->renderView();
     }
 
     private function getMenuDataFromModel(): array
     {
-        return $this->mainMenu->getMenuCategorysFromJson();
+        return $this->mainMenu->getAllDataFromJson();
     }
 
     private function getMenuAsArr(): void
@@ -44,7 +44,6 @@ class HomeControll implements ControllerInterface
     public function renderView(): void
     {
         $this->addParameterToView();
-        $this->view->renderTemplate('home.tpl');
+        $this->view->setTemplate('home.tpl');
     }
-
 }

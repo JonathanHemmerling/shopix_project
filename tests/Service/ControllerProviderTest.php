@@ -16,7 +16,7 @@ class ControllerProviderTest extends TestCase
     public function testGetList(): void
     {
         $controllerProvider = new ControllerProvider();
-        $array1 = [DetailControll::class, HomeControll::class, ListControll::class];
+        $array1 = $controllerProvider->getList();
         $array2 = [DetailControll::class, HomeControll::class, ListControll::class];
         self::assertIsArray($controllerProvider->getList());
         self::assertEquals($array1, $array2);
