@@ -5176,3 +5176,710 @@ Stack trace:
 #4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(35): App\Controller\DetailControll->__construct()
 #5 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 30
+[03-Nov-2022 17:09:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 28
+[03-Nov-2022 17:10:58 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 28
+[03-Nov-2022 17:10:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(34): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Core\View->renderTemplate()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 28
+[07-Nov-2022 13:09:32 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\Model\ProductRepository::setJsonFileContent(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 20 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:36
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(20): App\Model\ProductRepository->setJsonFileContent()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 36
+[07-Nov-2022 13:11:58 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\HomeControll::getMenuDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:25
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(37): App\Controller\HomeControll->getMenuDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(45): App\Controller\HomeControll->getMenuAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(52): App\Controller\HomeControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\HomeControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 25
+[07-Nov-2022 13:14:24 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 13:47:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "jsonDecode" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:39
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 39
+[07-Nov-2022 13:55:16 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 13:55:18 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 14:05:53 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 14:45:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 16:28:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 16:40:31 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 16:40:33 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\ListControll::getProductDataFromModel(): Return value must be of type array, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:28
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(33): App\Controller\ListControll->getProductDataFromModel()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(43): App\Controller\ListControll->getCategorysAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(51): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 28
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP Warning:  Constant category already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 40
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:55
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:49
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   5. define($constant_name = 'category', $value = 'sweatshirts') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:40
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP Warning:  Constant id already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 41
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:55
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:49
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   5. define($constant_name = 'id', $value = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:41
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP Warning:  Constant displayName already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 42
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:40:35 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:55
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:49
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   5. define($constant_name = 'displayName', $value = 'Sweatshirts') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:42
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP Warning:  Constant category already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 40
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:55
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:49
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   5. define($constant_name = 'category', $value = 't-shirts') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:40
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP Warning:  Constant id already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 41
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:55
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:49
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   5. define($constant_name = 'id', $value = '3') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:41
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP Warning:  Constant displayName already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 42
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:55
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:49
+[07-Nov-2022 16:40:36 Europe/Berlin] PHP   5. define($constant_name = 'displayName', $value = 'T-Shirts') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:42
+[07-Nov-2022 16:43:58 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Controller\HomeControll::setStrForMenuLinks(): Argument #1 ($link) must be of type string, array given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 48 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(48): App\Controller\HomeControll->setStrForMenuLinks()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(54): App\Controller\HomeControll->getMenuAsArr()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(60): App\Controller\HomeControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\HomeControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 31
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP Warning:  Constant menuLink already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 46
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:59
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:53
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   5. define($constant_name = 'menuLink', $value = 'index.php?page=List&sweatshirts&productId=2>Sweatshirts') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:46
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP Warning:  Constant menuLink already defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 46
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP Stack trace:
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   2. App\Controller\HomeControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   3. App\Controller\HomeControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:59
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   4. App\Controller\HomeControll->getMenuAsArr() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:53
+[07-Nov-2022 16:45:16 Europe/Berlin] PHP   5. define($constant_name = 'menuLink', $value = 'index.php?page=List&t-shirts&productId=3>T-Shirts') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:46
+[07-Nov-2022 20:06:36 Europe/Berlin] PHP Fatal error:  Uncaught Exception: No Links added to Template in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:58
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(64): App\Controller\HomeControll->addParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\HomeControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 58
+[07-Nov-2022 20:07:52 Europe/Berlin] PHP Fatal error:  Uncaught Exception: No Links added to Template in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php:59
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(65): App\Controller\HomeControll->addParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\HomeControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php on line 59
+[07-Nov-2022 20:10:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ";" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 30
+[08-Nov-2022 09:46:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:44
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#7 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#8 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#9 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#10 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#11 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#12 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#13 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#14 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#15 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#16 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#17 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#18 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#19 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#20 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#21 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#22 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#23 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#24 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#25 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#26 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#27 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#28 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#29 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#30 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#31 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#32 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#33 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#34 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#35 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#36 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#37 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#38 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#39 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#40 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#41 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#42 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#43 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#44 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#45 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#46 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#47 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#48 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#49 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#50 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#51 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#52 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#53 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#54 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#55 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#56 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#57 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#58 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#59 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#60 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#61 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#62 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#63 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#64 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#65 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#66 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#67 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#68 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#69 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#70 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#71 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#72 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#73 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#74 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#75 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#76 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#77 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#78 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#79 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#80 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#81 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#82 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#83 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#84 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#85 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#86 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#87 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#88 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#89 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#90 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#91 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#92 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#93 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#94 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#95 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#96 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#97 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#98 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#99 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#100 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#101 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#102 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#103 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#104 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#105 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#106 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#107 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#108 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#109 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#110 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#111 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#112 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#113 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#114 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#115 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#116 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#117 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#118 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#119 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#120 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#121 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#122 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#123 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#124 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#125 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#126 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#127 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#128 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#129 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#130 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#131 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#132 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#133 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#134 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#135 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#136 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#137 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#138 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#139 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#140 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#141 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#142 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#143 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#144 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#145 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#146 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#147 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#148 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#149 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#150 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#151 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#152 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#153 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#154 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#155 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#156 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#157 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#158 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#159 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#160 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#161 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#162 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#163 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#164 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#165 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#166 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#167 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#168 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#169 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#170 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#171 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#172 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#173 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#174 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#175 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#176 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#177 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#178 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#179 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#180 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#181 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#182 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#183 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#184 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#185 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#186 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#187 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#188 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#189 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#190 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#191 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#192 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#193 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#194 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#195 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#196 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#197 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#198 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#199 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#200 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#201 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#202 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#203 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#204 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#205 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#206 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#207 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#208 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#209 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#210 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#211 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#212 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#213 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#214 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#215 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#216 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#217 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#218 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#219 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#220 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#221 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#222 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#223 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#224 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#225 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#226 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#227 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#228 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#229 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#230 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#231 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#232 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#233 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#234 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#235 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#236 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#237 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#238 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#239 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#240 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#241 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#242 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#243 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#244 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#245 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#246 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#247 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#248 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#249 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#250 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#251 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#252 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#253 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#254 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(21): App\Model\ProductRepository->getJsonFileContent()
+#255 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#256 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 44
+[08-Nov-2022 09:46:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Xdebug has detected a possible infinite loop, and aborted your script with a stack depth of '256' frames in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:44
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#6 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#7 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#8 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#9 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#10 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#11 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#12 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#13 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#14 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#15 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#16 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#17 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#18 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#19 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#20 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#21 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#22 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#23 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#24 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#25 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#26 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#27 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#28 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#29 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#30 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#31 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#32 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#33 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#34 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#35 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#36 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#37 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#38 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#39 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#40 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#41 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#42 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#43 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#44 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#45 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#46 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#47 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#48 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#49 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#50 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#51 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#52 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#53 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#54 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#55 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#56 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#57 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#58 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#59 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#60 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#61 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#62 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#63 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#64 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#65 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#66 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#67 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#68 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#69 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#70 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#71 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#72 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#73 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#74 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#75 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#76 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#77 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#78 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#79 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#80 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#81 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#82 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#83 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#84 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#85 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#86 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#87 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#88 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#89 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#90 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#91 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#92 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#93 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#94 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#95 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#96 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#97 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#98 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#99 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#100 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#101 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#102 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#103 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#104 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#105 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#106 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#107 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#108 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#109 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#110 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#111 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#112 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#113 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#114 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#115 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#116 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#117 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#118 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#119 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#120 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#121 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#122 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#123 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#124 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#125 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#126 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#127 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#128 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#129 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#130 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#131 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#132 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#133 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#134 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#135 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#136 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#137 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#138 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#139 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#140 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#141 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#142 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#143 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#144 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#145 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#146 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#147 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#148 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#149 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#150 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#151 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#152 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#153 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#154 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#155 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#156 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#157 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#158 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#159 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#160 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#161 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#162 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#163 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#164 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#165 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#166 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#167 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#168 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#169 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#170 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#171 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#172 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#173 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#174 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#175 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#176 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#177 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#178 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#179 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#180 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#181 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#182 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#183 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#184 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#185 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#186 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#187 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#188 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#189 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#190 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#191 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#192 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#193 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#194 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#195 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#196 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#197 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#198 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#199 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#200 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#201 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#202 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#203 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#204 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#205 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#206 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#207 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#208 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#209 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#210 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#211 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#212 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#213 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#214 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#215 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#216 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#217 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#218 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#219 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#220 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#221 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#222 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#223 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#224 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#225 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#226 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#227 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#228 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#229 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#230 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#231 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#232 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#233 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#234 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#235 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#236 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#237 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#238 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#239 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#240 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#241 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#242 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#243 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#244 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#245 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#246 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#247 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#248 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#249 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#250 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(44): App\Model\ProductRepository->getJsonFileContent()
+#251 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(39): App\Model\ProductRepository->getJsonFileContent()
+#252 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(44): App\Controller\HomeControll->getDataFromModel()
+#253 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(55): App\Controller\HomeControll->addMenuToLinkArray()
+#254 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/HomeControll.php(61): App\Controller\HomeControll->addParameterToView()
+#255 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\HomeControll->renderView()
+#256 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 44
+[08-Nov-2022 11:48:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to protected method App\Core\View::addTemplateParameter() from scope App\Controller\DetailControll in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:57
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(64): App\Controller\DetailControll->addParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 57
+[08-Nov-2022 16:36:48 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 18
+[08-Nov-2022 16:36:48 Europe/Berlin] PHP Stack trace:
+[08-Nov-2022 16:36:48 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[08-Nov-2022 16:36:48 Europe/Berlin] PHP   2. App\Model\Mapper\ProductsMapper->mapToDto($product = ['id' => 1, 'detail' => 'Detail', 'name' => 'Name', 'description' => 'Description']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:44

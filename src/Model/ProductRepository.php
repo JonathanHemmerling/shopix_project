@@ -12,20 +12,37 @@ use RuntimeException;
 class ProductRepository
 {
     private string $constructedPathToJsonFile;
+    private array $jsonFileContent;
 
     public function __construct(string $fileName, string $pathToJsonFile = __DIR__ . '/../jsons/')
     {
-        $this->constructedPathToJsonFile = $pathToJsonFile . $fileName . '.json';
+        $this->setConstructedPath($pathToJsonFile . $fileName . '.json');
+        $this->getAllDataFromJson();
+    }
+
+    private function setConstructedPath(string $path): void
+    {
+        $this->constructedPathToJsonFile = $path;
         if (!file_exists($this->constructedPathToJsonFile)) {
             throw new InvalidArgumentException(sprintf('Path %s does not exist.', $this->constructedPathToJsonFile));
         }
     }
 
-    public function getAllDataFromJson(): array
+    private function setJsonFileContent(array $jsonFile): void
+    {
+        $this->jsonFileContent = $jsonFile;
+    }
+
+    public function getJsonFileContent(): array
+    {
+        return $this->jsonFileContent;
+    }
+
+    public function getAllDataFromJson(): void
     {
         $jsonFile = file_get_contents($this->constructedPathToJsonFile);
         try {
-            $content = json_decode($jsonFile, true, 512, JSON_THROW_ON_ERROR);
+            $this->setJsonFileContent(json_decode($jsonFile, true, 512, JSON_THROW_ON_ERROR));
         } catch (JsonException $exception) {
             throw new RuntimeException(
                 sprintf('Invalid JSON stored in file "%s".', $this->constructedPathToJsonFile),
@@ -33,14 +50,12 @@ class ProductRepository
                 $exception
             );
         }
-
-        return $content;
     }
 
     public function findProductById(string $categoryId, string $id): array
     {
         $allDateOfOneEntry = [];
-        $allData = $this->getAllDataFromJson();
+        $allData = $this->getJsonFileContent();
         foreach ($allData as $concreteRecord) {
             if ($concreteRecord['id'] === $id && $concreteRecord['categoryId'] === $categoryId) {
                 $allDateOfOneEntry[] = $concreteRecord['id'];

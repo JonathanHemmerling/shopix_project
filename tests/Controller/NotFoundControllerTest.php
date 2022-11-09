@@ -13,11 +13,20 @@ class NotFoundControllerTest extends TestCase
 {
     public function testDisplay(): void
     {
-        $mock = $this->createMock(View::class);
-        $mock->expects($this->once())
+        $viewMock = $this->createMock(View::class);
+        $viewMock->expects($this->once())
             ->method('renderTemplate');
 
-        $view = new NotFoundControll($mock);
-        $view->renderView();
+        $notFoundController = new NotFoundControll($viewMock);
+        $notFoundController->renderView();
+    }
+
+    public function testAreTemplateParameterSet()
+    {
+        $viewMock = $this->createMock(View::class);
+        $viewMock->expects(self::once())
+            ->method('addTemplateParameter');
+        $notFoundController = new NotFoundControll($viewMock);
+        $notFoundController->renderView();
     }
 }

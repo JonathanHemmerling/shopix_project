@@ -1,0 +1,9 @@
+[{"id": "1","categoryId": "1", "category": "jeans", "categoryDisplayName":  "Jeans", "displayName": "Jeans 1", "detail": "jeans_1", "preis": "45 €", "description": "The first Jeans"},
+  {"id": "2","categoryId": "1", "category": "jeans","categoryDisplayName":  "Jeans", "displayName": "Jeans 2", "detail": "jeans_2", "preis": "89 €","description": "The second Jeans"},
+  {"id": "3","categoryId": "1", "category": "jeans","categoryDisplayName":  "Jeans", "displayName": "Jeans 3", "detail": "jeans_3", "preis": "30 €","description": "The third Jeans"},
+  {"id": "1","categoryId": "2", "category": "sweatshirts","categoryDisplayName":  "Sweatshirts", "displayName": "Sweatshirt 1", "detail": "sweatshirt_1", "preis": "68,99 €", "description": "The first Sweatshirt"},
+  {"id": "2","categoryId": "2", "category": "sweatshirts","categoryDisplayName":  "Sweatshirts", "displayName": "Sweatshirt 2", "detail": "sweatshirt_2", "preis": "109 €","description": "The second Sweatshirt"},
+  {"id": "3","categoryId": "2", "category": "sweatshirts","categoryDisplayName":  "Sweatshirts", "displayName": "Sweatshirt 3", "detail": "sweatshirt_3", "preis": "87,99 €","description": "The third Sweatshirt"},
+  {"id": "1","categoryId": "3", "category": "t-shirts","categoryDisplayName":  "T-Shirts", "displayName": "T-Shirt 1", "detail": "t-shirt_1", "preis": "29 €", "description": "The first T-Shirt"},
+  {"id": "2","categoryId": "3", "category": "t-shirts","categoryDisplayName":  "T-Shirts", "displayName": "T-Shirt 2", "detail": "t-shirt_2", "preis": "24,99 €", "description": "The second T-Shirt"},
+  {"id": "3","categoryId": "3", "category": "t-shirts","categoryDisplayName":  "T-Shirts", "displayName": "T-Shirt 3", "detail": "t-shirt_3", "preis": "15,99 €", "description": "The third T-Shirt"}]

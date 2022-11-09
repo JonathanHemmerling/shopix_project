@@ -7,10 +7,14 @@ namespace App\Controller;
 use App\Core\View;
 use App\Model\ProductRepository;
 
+use Exception;
+
+use function PHPUnit\Framework\isEmpty;
+
 class HomeControll implements ControllerInterface
 {
 
-    private array $strForMenuLinks;
+    private array $strForLinks;
     private View $view;
     private ProductRepository $mainMenu;
 
@@ -18,27 +22,38 @@ class HomeControll implements ControllerInterface
     {
         $this->mainMenu = $mainMenu;
         $this->view = $view;
-        $this->renderView();
     }
 
-    private function getMenuDataFromModel(): array
+    public function setStrForLinks(string $link): void
     {
-        return $this->mainMenu->getAllDataFromJson();
+        $this->strForLinks[] = $link;
     }
 
-    private function getMenuAsArr(): void
+    public function getStrForLinks(): array
     {
-        $menuContent = $this->getMenuDataFromModel();
+        return $this->strForLinks;
+    }
+
+    public function getDataFromModel(): array
+    {
+        return $this->mainMenu->getJsonFileContent();
+    }
+
+    private function addMenuToLinkArray(): void
+    {
+        $menuContent = $this->getDataFromModel();
         foreach ($menuContent as $menuLink) {
-            $this->strForMenuLinks[] = 'index.php?page=List&' . $menuLink['category'] . '&productId=' . $menuLink['id'] . '>' . $menuLink['displayName'];
+            $category = $menuLink['category'];
+            $id = $menuLink['id'];
+            $displayName = $menuLink['displayName'];
+            $this->setStrForLinks('index.php?page=List&' . $category . '&productId=' . $id . '>' . $displayName);
         }
     }
 
     private function addParameterToView(): void
     {
-        $this->getMenuAsArr();
-        $menuStrArray = $this->strForMenuLinks;
-        $this->view->addTemplateParameter('menu', $menuStrArray);
+        $this->addMenuToLinkArray();
+        $this->view->addTemplateParameter('menu', $this->strForLinks);//Test ob überhaupt Parameter gesetzt werden?
     }
 
     public function renderView(): void

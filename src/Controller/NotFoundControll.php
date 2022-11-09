@@ -9,7 +9,7 @@ use App\Core\View;
 
 class NotFoundControll implements ControllerInterface
 {
-    private string $error = 'Page not found';
+    const error = ['Page not found'];
 
     private View $view;
 
@@ -20,7 +20,7 @@ class NotFoundControll implements ControllerInterface
 
     public function renderView(): void
     {
-        $this->view->addTemplateParameter('error', [$this->error]);
-        $this->view->renderTemplate('notFound.tpl');
+        $this->view->addTemplateParameter('error', self::error);
+        $this->view->renderTemplate();
     }
 }

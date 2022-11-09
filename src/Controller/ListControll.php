@@ -11,40 +11,51 @@ use App\Model\Products;
 class ListControll implements ControllerInterface
 {
 
-    private array $strForCategoryLinks;
+    private array $strForLinks;
     private string $productId;
     private ProductRepository $products;
     private View $view;
+    private const HomeLink = ['<a href="index.php">Home</a>'];
 
     public function __construct(View $view, ProductRepository $products)
     {
         $this->productId = $_GET['productId'];
         $this->products = $products;
         $this->view = $view;
-        $this->renderView();
     }
 
-    private function getProductDataFromModel(): array
+    public function getStrForLinks(): array
     {
-        return $this->products->getAllDataFromJson();
+        return $this->strForLinks;
     }
 
-    private function getCategorysAsArr(): void
+    public function setStrForLinks(string $strForLinks): void
     {
-        $categoryContent = $this->getProductDataFromModel();
+        $this->strForLinks[] = $strForLinks;
+    }
+
+    public function getDataFromModel(): array
+    {
+        return $this->products->getJsonFileContent();
+    }
+
+    private function addCategorysToLinkArray(): void
+    {
+        $categoryContent = $this->getDataFromModel();
         foreach ($categoryContent as $categoryLink) {
             if ($this->productId === $categoryLink['categoryId']) {
-                $this->strForCategoryLinks[] = 'index.php?page=Detail&' . $categoryLink['detail'] . '&categoryId=' . $categoryLink['categoryId'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName'];
+                $this->setStrForLinks(
+                    'index.php?page=Detail&' . $categoryLink['detail'] . '&categoryId=' . $categoryLink['categoryId'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName']
+                );
             }
         }
     }
 
     private function addCategoryParameterToView(): void
     {
-        $this->getCategorysAsArr();
-        $this->view->addTemplateParameter('categoryHome', ['<a href="index.php">Home</a>']);
-        $categoryStrArray = $this->strForCategoryLinks;
-        $this->view->addTemplateParameter('categoryLink', $categoryStrArray);
+        $this->addCategorysToLinkArray();
+        $this->view->addTemplateParameter('categoryHome', self::HomeLink);
+        $this->view->addTemplateParameter('categoryLink', $this->strForLinks);
     }
 
     public function renderView(): void
