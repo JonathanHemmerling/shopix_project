@@ -40,15 +40,13 @@ class DetailControll implements ControllerInterface
 
     private function addProductParameterToProductArray(): void
     {
-        $pageId = $_GET['categoryId'];
-        $productId = $_GET['id'];
-        $productName = $this->getDataFromModel();
-        foreach ($productName as $name) {
-            if ($pageId === $name['categoryId'] && $productId === $name['id']) {
-                $this->strForProductName[] = $name['displayName'] . ':';
-                $this->strForProductDescription[] = $name['description'];
-            }
-        }
+        $pageId = (int)$_GET['categoryId'];
+        $productId = (int)$_GET['id'];
+
+        $productRep = new ProductRepository('Detail');
+        $singleProduct = $productRep->findProductById($pageId, $productId);
+        $this->strForProductName[] = $singleProduct->displayName . ':';
+        $this->strForProductDescription[] = $singleProduct->description;
     }
 
     private function addParameterToView(): void

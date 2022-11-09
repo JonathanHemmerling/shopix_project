@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace App\Model;
 
+use App\Model\Dto\ListDataTransferObject;
+use App\Model\Dto\ProductsDataTransferObject;
+use App\Model\Mapper\ListMapper;
 use App\Model\Mapper\ProductsMapper;
 use InvalidArgumentException;
 use JsonException;
@@ -13,6 +16,7 @@ class ProductRepository
 {
     private string $constructedPathToJsonFile;
     private array $jsonFileContent;
+    private ProductsMapper $productsMapper;
 
     public function __construct(string $fileName, string $pathToJsonFile = __DIR__ . '/../jsons/')
     {
@@ -52,40 +56,29 @@ class ProductRepository
         }
     }
 
-    public function findProductById(string $categoryId, string $id): array
+    public function findProductById(int $categoryId, int $id): ProductsDataTransferObject
     {
-        $allDateOfOneEntry = [];
+        $this->productsMapper = new ProductsMapper();
         $allData = $this->getJsonFileContent();
-        foreach ($allData as $concreteRecord) {
-            if ($concreteRecord['id'] === $id && $concreteRecord['categoryId'] === $categoryId) {
-                $allDateOfOneEntry[] = $concreteRecord['id'];
-                $allDateOfOneEntry[] = $concreteRecord['detail'];
-                $allDateOfOneEntry[] = $concreteRecord['displayName'];
-                $allDateOfOneEntry[] = $concreteRecord['description'];
-            }
+        foreach($allData as $dataSet){
+           if($dataSet['categoryId'] === $categoryId && $dataSet['id'] === $id){
+               $pdto = $this->productsMapper->mapToProductsDto($dataSet);
+           }
         }
-        return $allDateOfOneEntry;
+        return $pdto;
     }
 
-    public function findCategoryById(string $categoryId): array
+    public function findCategoryById(int $categoryId): array
     {
-        $allDateOfOneCategory = [];
-        $allData = $this->getAllDataFromJson();
-        foreach ($allData as $oneData) {
-            if ($oneData['id'] === $categoryId) {
-                $allDateOfOneCategory[] = $oneData['id'];
-                $allDateOfOneCategory[] = $oneData['category'];
-                $allDateOfOneCategory[] = $oneData['displayName'];
+        $this->listMapper = new ListMapper();
+        $allData = $this->getJsonFileContent();
+        $catgoryArray = [];
+        foreach ($allData as $dataSet) {
+            if ($dataSet['categoryId'] === $categoryId) {
+                $catgoryArray[] = $this->listMapper->mapToListDto($dataSet);
             }
         }
-        return $allDateOfOneCategory;
+        return $catgoryArray;
     }
 
-    public function giveDataToMapper()
-    {
-        $productArray = $this->findProductById();
-        $categoryArray = $this->findCategoryById();
-        $productMapper = new ProductsMapper;
-        $productMapper->mapToDto($productArray);
-    }
 }

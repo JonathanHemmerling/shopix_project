@@ -5883,3 +5883,891 @@ Stack trace:
 [08-Nov-2022 16:36:48 Europe/Berlin] PHP Stack trace:
 [08-Nov-2022 16:36:48 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
 [08-Nov-2022 16:36:48 Europe/Berlin] PHP   2. App\Model\Mapper\ProductsMapper->mapToDto($product = ['id' => 1, 'detail' => 'Detail', 'name' => 'Name', 'description' => 'Description']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:44
+[09-Nov-2022 10:22:50 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 69
+[09-Nov-2022 10:22:50 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:22:50 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:22:50 Europe/Berlin] PHP   2. App\Model\ProductRepository->findCategoryById($categoryId = '1', '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:43
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:43
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:43
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 18
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:43
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 19
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:43
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:23:30 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 19 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(19): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(60): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(43): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 10:46:34 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(60): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:46:45 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:47:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Model\ProductRepository::$jsonFileContent must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:41
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(22): App\Model\ProductRepository->getJsonFileContent()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 41
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:48:10 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'category' => 'jeans', 'displayName' => 'Jeans'], 1 => ['id' => '2', 'category' => 'sweatshirts', 'displayName' => 'Sweatshirts'], 2 => ['id' => '3', 'category' => 't-shirts', 'displayName' => 'T-Shirts']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:48:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(62): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:49:34 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(62): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:62
+[09-Nov-2022 10:53:11 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(62): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => '1', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => '3', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => '1', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => '2', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => '3', 'categoryId' => '2', 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => '1', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => '2', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => '3', 'categoryId' => '3', 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:53:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:54:31 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 10:54:31 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:54:31 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:54:31 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:54:31 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 10:54:31 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #1 ($categoryId) must be of type ?int, string given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:55:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #1 ($categoryId) must be of type ?int, string given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(61): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 10:55:44 Europe/Berlin] PHP Warning:  Undefined array key 0 in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 10:55:44 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 10:55:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 10:55:44 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = '1', $id = '2') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 10:55:44 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = ['id' => '2', 'categoryId' => '1', 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:61
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 14
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => 1, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => 2, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => 3, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => 1, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => 2, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => 3, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => 1, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => 2, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => 3, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Warning:  Undefined array key "detail" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 15
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => 1, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => 2, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => 3, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => 1, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => 2, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => 3, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => 1, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => 2, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => 3, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Warning:  Undefined array key "displayName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 16
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => 1, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => 2, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => 3, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => 1, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => 2, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => 3, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => 1, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => 2, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => 3, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Warning:  Undefined array key "description" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP   3. App\Model\Mapper\ProductsMapper->mapToProductsDto($product = [0 => ['id' => 1, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans'], 1 => ['id' => 2, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 2', 'detail' => 'jeans_2', 'preis' => '89 €', 'description' => 'The second Jeans'], 2 => ['id' => 3, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 3', 'detail' => 'jeans_3', 'preis' => '30 €', 'description' => 'The third Jeans'], 3 => ['id' => 1, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 1', 'detail' => 'sweatshirt_1', 'preis' => '68,99 €', 'description' => 'The first Sweatshirt'], 4 => ['id' => 2, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 2', 'detail' => 'sweatshirt_2', 'preis' => '109 €', 'description' => 'The second Sweatshirt'], 5 => ['id' => 3, 'categoryId' => 2, 'category' => 'sweatshirts', 'categoryDisplayName' => 'Sweatshirts', 'displayName' => 'Sweatshirt 3', 'detail' => 'sweatshirt_3', 'preis' => '87,99 €', 'description' => 'The third Sweatshirt'], 6 => ['id' => 1, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 1', 'detail' => 't-shirt_1', 'preis' => '29 €', 'description' => 'The first T-Shirt'], 7 => ['id' => 2, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 2', 'detail' => 't-shirt_2', 'preis' => '24,99 €', 'description' => 'The second T-Shirt'], 8 => ['id' => 3, 'categoryId' => 3, 'category' => 't-shirts', 'categoryDisplayName' => 'T-Shirts', 'displayName' => 'T-Shirt 3', 'detail' => 't-shirt_3', 'preis' => '15,99 €', 'description' => 'The third T-Shirt']]) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:60
+[09-Nov-2022 11:03:46 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ProductsDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php on line 17 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ProductsMapper.php(17): App\Model\Dto\ProductsDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(60): App\Model\Mapper\ProductsMapper->mapToProductsDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ProductsDataTransferObject.php on line 9
+[09-Nov-2022 11:08:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type App\Model\Dto\ProductsDataTransferObject, array returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:67
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 67
+[09-Nov-2022 11:10:04 Europe/Berlin] PHP Warning:  Undefined variable $pdto in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 66
+[09-Nov-2022 11:10:04 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:10:04 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:10:04 Europe/Berlin] PHP   2. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:41
+[09-Nov-2022 11:10:04 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type App\Model\Dto\ProductsDataTransferObject, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:66
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(41): App\Model\ProductRepository->findProductById()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 66
+[09-Nov-2022 11:19:06 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Argument #1 ($categoryId) must be of type int, string given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 47 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:57
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 57
+[09-Nov-2022 11:20:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Argument #1 ($categoryId) must be of type int, string given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 47 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:57
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 57
+[09-Nov-2022 11:21:04 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Argument #1 ($categoryId) must be of type int, string given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 47 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:57
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 57
+[09-Nov-2022 11:22:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type App\Model\Dto\ProductsDataTransferObject as array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:48
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 48
+[09-Nov-2022 11:22:17 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type App\Model\Dto\ProductsDataTransferObject as array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:48
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 48
+[09-Nov-2022 11:24:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type App\Model\Dto\ProductsDataTransferObject as array in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:49
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(55): App\Controller\DetailControll->addProductParameterToProductArray()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(63): App\Controller\DetailControll->addParameterToView()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 49
+[09-Nov-2022 11:27:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:58
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(63): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 58
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP Warning:  Undefined array key "categoryLink" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ListMapper.php on line 16
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   2. App\Controller\ListControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   3. App\Controller\ListControll->addCategoryParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:66
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   4. App\Controller\ListControll->addCategorysToLinkArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:59
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   5. App\Model\ProductRepository->findCategoryById($categoryId = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:45
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   6. App\Model\Mapper\ListMapper->mapToListDto($list = ['id' => 1, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:77
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP Warning:  Undefined array key "name" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ListMapper.php on line 18
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   2. App\Controller\ListControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   3. App\Controller\ListControll->addCategoryParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:66
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   4. App\Controller\ListControll->addCategorysToLinkArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:59
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   5. App\Model\ProductRepository->findCategoryById($categoryId = 1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:45
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP   6. App\Model\Mapper\ListMapper->mapToListDto($list = ['id' => 1, 'categoryId' => 1, 'category' => 'jeans', 'categoryDisplayName' => 'Jeans', 'displayName' => 'Jeans 1', 'detail' => 'jeans_1', 'preis' => '45 €', 'description' => 'The first Jeans']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:77
+[09-Nov-2022 11:37:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ListDataTransferObject::__construct(): Argument #1 ($categoryId) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ListMapper.php on line 19 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ListDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ListMapper.php(19): App\Model\Dto\ListDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(77): App\Model\Mapper\ListMapper->mapToListDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategorysToLinkArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ListDataTransferObject.php on line 9
+[09-Nov-2022 12:33:10 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\Dto\ListDataTransferObject::__construct(): Argument #2 ($detail) must be of type string, int given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ListMapper.php on line 19 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ListDataTransferObject.php:9
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Mapper/ListMapper.php(19): App\Model\Dto\ListDataTransferObject->__construct()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(77): App\Model\Mapper\ListMapper->mapToListDto()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategorysToLinkArray()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#5 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#6 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/Dto/ListDataTransferObject.php on line 9
+[09-Nov-2022 12:34:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:35:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:35:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:37:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:37:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:39:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:39:47 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:39:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:40:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:43:13 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:46:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:61
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 61
+[09-Nov-2022 12:47:21 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:48 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:49 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:49:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:51:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:51:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:64
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 64
+[09-Nov-2022 12:51:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Return value must be of type array, App\Model\Dto\ListDataTransferObject returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:83
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(62): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 83
+[09-Nov-2022 12:51:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:64
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 64
+[09-Nov-2022 12:52:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:64
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 64
+[09-Nov-2022 12:52:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:64
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 64
+[09-Nov-2022 12:52:42 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:64
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 64
+[09-Nov-2022 12:53:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:64
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(69): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 64
+[09-Nov-2022 12:58:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:67
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(72): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 67
+[09-Nov-2022 12:58:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Controller\ListControll::$strForLinks must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php:67
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(72): App\Controller\ListControll->addCategoryParameterToView()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 67
+[09-Nov-2022 13:01:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$listRep" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 45
+[09-Nov-2022 13:01:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findCategoryById(): Argument #1 ($categoryId) must be of type int, string given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php on line 46 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:71
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(46): App\Model\ProductRepository->findCategoryById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategorysToLinkArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 71
+[09-Nov-2022 13:04:27 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/Product.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(45): App\Model\ProductRepository->__construct()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(59): App\Controller\ListControll->addCategorysToLinkArray()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/ListControll.php(66): App\Controller\ListControll->addCategoryParameterToView()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\ListControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:05:42 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:16 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:17 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:17 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:17 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:17 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:18 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:18 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:18 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:18 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:07:18 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:10:03 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:10:10 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:10:22 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:10:31 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/Product.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 43
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Warning:  Undefined variable $pdto in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP   5. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 0) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:47
+[09-Nov-2022 13:10:51 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type App\Model\Dto\ProductsDataTransferObject, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:68
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 43
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Warning:  Undefined variable $pdto in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP   5. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 0) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:47
+[09-Nov-2022 13:11:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type App\Model\Dto\ProductsDataTransferObject, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:68
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 43
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Warning:  Undefined variable $pdto in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP   5. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 0) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:47
+[09-Nov-2022 13:15:12 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type App\Model\Dto\ProductsDataTransferObject, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:68
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Warning:  Undefined array key "categoryId" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 43
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Warning:  Undefined array key "id" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php on line 44
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Warning:  Undefined variable $pdto in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Stack trace:
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   2. App\Controller\DetailControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:36
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   3. App\Controller\DetailControll->addParameterToView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:62
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   4. App\Controller\DetailControll->addProductParameterToProductArray() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:54
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP   5. App\Model\ProductRepository->findProductById($categoryId = 0, $id = 0) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php:47
+[09-Nov-2022 13:15:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Model\ProductRepository::findProductById(): Return value must be of type App\Model\Dto\ProductsDataTransferObject, null returned in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:68
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(47): App\Model\ProductRepository->findProductById()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(54): App\Controller\DetailControll->addProductParameterToProductArray()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/DetailControll.php(62): App\Controller\DetailControll->addParameterToView()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(36): App\Controller\DetailControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 68
+[09-Nov-2022 13:15:22 Europe/Berlin] PHP Fatal error:  Uncaught InvalidArgumentException: Path /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/../jsons/List.json does not exist. in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:31
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php(23): App\Model\ProductRepository->setConstructedPath()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(34): App\Model\ProductRepository->__construct()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php on line 31

@@ -12,14 +12,12 @@ class ListControll implements ControllerInterface
 {
 
     private array $strForLinks;
-    private string $productId;
     private ProductRepository $products;
     private View $view;
     private const HomeLink = ['<a href="index.php">Home</a>'];
 
     public function __construct(View $view, ProductRepository $products)
     {
-        $this->productId = $_GET['productId'];
         $this->products = $products;
         $this->view = $view;
     }
@@ -41,16 +39,19 @@ class ListControll implements ControllerInterface
 
     private function addCategorysToLinkArray(): void
     {
-        $categoryContent = $this->getDataFromModel();
-        foreach ($categoryContent as $categoryLink) {
-            if ($this->productId === $categoryLink['categoryId']) {
-                $this->setStrForLinks(
-                    'index.php?page=Detail&' . $categoryLink['detail'] . '&categoryId=' . $categoryLink['categoryId'] . '&id=' . $categoryLink['id'] . '>' . $categoryLink['displayName']
-                );
-            }
+        $urlId = (int)$_GET['productId'];
+        $listRep = new ProductRepository('List');
+        $listcategory = $listRep->findCategoryById($urlId);
+        foreach ($listcategory as $categoryElement) {
+            $categoryDetail = $categoryElement->detail;
+            $categoryId = $categoryElement->categoryId;
+            $id = $categoryElement->id;
+            $displayName = $categoryElement->displayName;
+            $this->setStrForLinks(
+                'index.php?page=Detail&' . $categoryDetail . '&categoryId=' . $categoryId . '&id=' . $id . '>' . $displayName
+            );
         }
     }
-
     private function addCategoryParameterToView(): void
     {
         $this->addCategorysToLinkArray();
