@@ -10,15 +10,14 @@ class View
     private array $params = [];
     private string $template;
 
-    public function getParams(): array
-    {
-        return $this->params;
-    }
-
     public function __construct(private readonly \Smarty $smarty)
     {
     }
 
+    public function getParams(): array
+    {
+        return $this->params;
+    }
     public function addTemplateParameter(string $tplIdentifier, array $itemsToDisplay): void
     {
         $this->params[$tplIdentifier] = $itemsToDisplay;

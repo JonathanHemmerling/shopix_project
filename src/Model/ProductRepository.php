@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Model;
 
-use App\Model\Dto\ListDataTransferObject;
 use App\Model\Dto\ProductsDataTransferObject;
 use App\Model\Mapper\ListMapper;
 use App\Model\Mapper\ProductsMapper;
@@ -16,10 +15,14 @@ class ProductRepository
 {
     private string $constructedPathToJsonFile;
     private array $jsonFileContent;
+    private ListMapper $listMapper;
+    private const depth = 512;
     private ProductsMapper $productsMapper;
 
-    public function __construct(string $fileName, string $pathToJsonFile = __DIR__ . '/../jsons/')
+    public function __construct(string $fileName, ListMapper $listMapper = new ListMapper(), ProductsMapper $productsMapper = new ProductsMapper(), string $pathToJsonFile = __DIR__ . '/../jsons/')
     {
+        $this->listMapper = $listMapper;
+        $this->productsMapper = $productsMapper;
         $this->setConstructedPath($pathToJsonFile . $fileName . '.json');
         $this->getAllDataFromJson();
     }
@@ -42,11 +45,11 @@ class ProductRepository
         return $this->jsonFileContent;
     }
 
-    public function getAllDataFromJson(): void
+    private function getAllDataFromJson(): void
     {
         $jsonFile = file_get_contents($this->constructedPathToJsonFile);
         try {
-            $this->setJsonFileContent(json_decode($jsonFile, true, 512, JSON_THROW_ON_ERROR));
+            $this->setJsonFileContent(json_decode($jsonFile, true, self::depth , JSON_THROW_ON_ERROR));
         } catch (JsonException $exception) {
             throw new RuntimeException(
                 sprintf('Invalid JSON stored in file "%s".', $this->constructedPathToJsonFile),
@@ -58,27 +61,35 @@ class ProductRepository
 
     public function findProductById(int $categoryId, int $id): ProductsDataTransferObject
     {
-        $this->productsMapper = new ProductsMapper();
         $allData = $this->getJsonFileContent();
-        foreach($allData as $dataSet){
-           if($dataSet['categoryId'] === $categoryId && $dataSet['id'] === $id){
-               $pdto = $this->productsMapper->mapToProductsDto($dataSet);
-           }
+        foreach ($allData as $dataSet) {
+            if ($dataSet['categoryId'] === $categoryId && $dataSet['id'] === $id) {
+                $pdto = $this->productsMapper->mapToProductsDto($dataSet);
+            }
         }
-        return $pdto;
+       return $pdto;
     }
 
     public function findCategoryById(int $categoryId): array
     {
-        $this->listMapper = new ListMapper();
         $allData = $this->getJsonFileContent();
-        $catgoryArray = [];
+        $listCategory = [];
         foreach ($allData as $dataSet) {
             if ($dataSet['categoryId'] === $categoryId) {
-                $catgoryArray[] = $this->listMapper->mapToListDto($dataSet);
+                $listCategory[] = (array)$this->listMapper->mapToListDto($dataSet);
             }
         }
-        return $catgoryArray;
+
+        $stringArray = [];
+        foreach ($listCategory as $categoryElement) {
+            $categoryArray = [];
+            $categoryArray[] = $categoryElement['categoryId'];
+            $categoryArray[] = $categoryElement['id'];
+            $categoryArray[] = $categoryElement['detail'];
+            $categoryArray[] = $categoryElement['displayName'];
+            $stringArray[] = 'index.php?page=Detail&' . $categoryArray[2] . '&categoryId=' . $categoryArray[0] . '&id=' . $categoryArray[1] . '>' . $categoryArray[3];
+        }
+       return $stringArray;
     }
 
 }

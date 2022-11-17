@@ -2,12 +2,15 @@
 
 declare(strict_types=1);
 
-namespace AppTest\Controller;
+namespace AppTest\FrontendController;
 
-use App\Controller\DetailControll;
+use App\FrontendController\DetailControll;
 
-use App\Controller\ListControll;
+use App\FrontendController\ListControll;
 use App\Core\View;
+use App\Model\Dto\ProductsDataTransferObject;
+use App\Model\Mapper\ListMapper;
+use App\Model\Mapper\ProductsMapper;
 use App\Model\ProductRepository;
 use AppTest\jsons\jsonDecode;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -20,6 +23,9 @@ class DetailControllerTest extends TestCase
     private MockObject $viewMock;
     private MockObject $productRepositoryMock;
     private DetailControll $detailController;
+    private MockObject $listMapperMock;
+    private MockObject $productsMapperMock;
+    private MockObject $productsDTOMock;
 
     public function setUp(): void
     {
@@ -27,6 +33,17 @@ class DetailControllerTest extends TestCase
         $_GET['id'] = '1';
         $jsonPath = file_get_contents(__DIR__ . '/../jsons/Detail.json');
         $expectedJsonArray = json_decode($jsonPath, true);
+        $this->productsDTOMock = $this->getMockBuilder(ProductsDataTransferObject::class)
+            ->setConstructorArgs(
+                ['categoryId' => 2, 'detail' => 'jeans_1', 'displayName' => 'Jeans 1', 'description' => 'Test Jeans 1']
+            )
+            ->getMock();
+        $this->listMapperMock = $this->getMockBuilder(ListMapper::class)
+            ->getMock();
+        $this->productsMapperMock = $this->getMockBuilder(ProductsMapper::class)
+            ->getMock();
+        $this->productsMapperMock->method('mapToProductsDto')
+            ->willReturn($this->productsDTOMock);
         $this->smartyMock = $this->getMockBuilder(\Smarty::class)
             ->getMock();
         $this->viewMock = $this->getMockBuilder(View::class)
@@ -35,10 +52,13 @@ class DetailControllerTest extends TestCase
         $this->viewMock->method('getParams')
             ->willReturn(['test']);
         $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
-            ->disableOriginalConstructor()
+            ->setConstructorArgs(['Detail', $this->listMapperMock, $this->productsMapperMock])
             ->getMock();
         $this->productRepositoryMock->method('getJsonFileContent')
             ->willReturn($expectedJsonArray);
+        $this->productRepositoryMock->method('findProductById')
+            ->with(2, 1)
+            ->willReturn($this->productsDTOMock);
         $this->detailController = new DetailControll($this->viewMock, $this->productRepositoryMock);
     }
 
@@ -50,17 +70,22 @@ class DetailControllerTest extends TestCase
 
     public function testIfDataRequestForJsonWorkedFine(): void
     {
-        $jsonArray = $this->detailController->getDataFromModel();
-        self::assertIsArray($jsonArray);
-        self::assertArrayHasKey(0, $jsonArray);
-        self::assertCount(9, $jsonArray);
+        $this->detailController->renderView();
+        $productNameArray = $this->detailController->getStrForProductName();
+        $productDescriptionArray = $this->detailController->getStrForProductDescription();
+        self::assertIsArray($productNameArray);
+        self::assertArrayHasKey(0, $productNameArray);
+        self::assertCount(1, $productNameArray);
+        self::assertIsArray($productDescriptionArray);
+        self::assertArrayHasKey(0, $productDescriptionArray);
+        self::assertCount(1, $productDescriptionArray);
     }
 
     public function testIsStrForLinkComposedCorrect(): void
     {
         $this->detailController->renderView();
         $linkArray = $this->detailController->getStrForProductName();
-        $expectedLink = 'Sweatshirt 1:';
+        $expectedLink = 'Jeans 1:';
         self::assertIsArray($linkArray);
         self::assertArrayHasKey(0, $linkArray);
         self::assertCount(1, $linkArray);

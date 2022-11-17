@@ -2,36 +2,51 @@
 
 declare(strict_types=1);
 require __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/src/functions/initialize.php';
 require_once __DIR__ . '/showErrorsInBrowser.php';
 
 use App\Core\View;
-use App\Model\ProductRepository;
 use \App\Service\ControllerProvider;
-use \App\Controller\NotFoundControll;
-use \App\Controller\ControllerInterface;
+use \App\FrontendController\NotFoundControll;
+use \App\FrontendController\ControllerInterface;
+
 
 $smarty = new Smarty();
 $view = new View($smarty);
 $className = NotFoundControll::class;
-
-
-$pageTitle = 'Home';
-
-if (isset($_GET['page'])) {
-    $pageTitle = $_GET['page'];
-}
-
+$errors = [];
 $providerCon = new ControllerProvider();
 $providerList = $providerCon->getList();
-foreach ($providerList as $providerElement) {
-    if ($providerElement === 'App\Controller\\' . $pageTitle . 'Controll') {
-        $className = $providerElement;
-        break;
+
+
+if (isLoggedIn()) {
+    $pageTitle = 'Home';
+    if (isset($_GET['page'])) {
+        $pageTitle = $_GET['page'];
+    }
+    foreach ($providerList as $providerElement) {
+        if ($providerElement === 'App\FrontendController\\' . $pageTitle . 'Controll') {
+            $className = $providerElement;
+
+            break;
+        }
+    }
+}
+if (!isLoggedIn()) {
+    if (isset($_GET['newUser'])){
+        $pageTitle = 'NewUser';
+        $className = 'App\BackendController\\' . $pageTitle . 'Controll';
+    }
+    if (!isset($_GET['newUser'])){
+        $pageTitle = 'Login';
+        $className = 'App\BackendController\\' . $pageTitle . 'Controll';
     }
 }
 
-/** @var ControllerInterface $controller */
-$model = new ProductRepository($pageTitle);
-$controller = new $className($view, $model);
-$controller->renderView();
-$view->renderTemplate();
+    /** @var ControllerInterface $controller */
+    $controller = new $className($view);
+    $controller->renderView();
+    $view->renderTemplate();
+    foreach ($errors as $error){
+        echo $error;
+    }

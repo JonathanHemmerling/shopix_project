@@ -1,6 +1,83 @@
 Escaped mutants:
 ================
 
+1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:62    [M] MethodCallRemoval
+
+--- Original
++++ New
+@@ @@
+     }
+     public function renderView() : void
+     {
+-        $this->validateLoginData();
++        
+         $this->addUserParameterToView();
+         $this->view->addTemplateParameter('errors', $this->errors);
+         $this->view->setTemplate('login.tpl');
+     }
+ }
+
+
+2) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/LoginRepository.php:23    [M] MethodCallRemoval
+
+--- Original
++++ New
+@@ @@
+     {
+         $this->userDataMapper = $userDataMapper;
+         $this->setConstructedPath($pathToJsonFile . $fileName . '.json');
+-        $this->getAllDataFromJson();
++        
+     }
+     private function setConstructedPath(string $path) : void
+     {
+
+
+3) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/LoginRepository.php:48    [M] MethodCallRemoval
+
+--- Original
++++ New
+@@ @@
+     {
+         $jsonFile = file_get_contents($this->constructedPathToJsonFile);
+         try {
+-            $this->setJsonFileContent(json_decode($jsonFile, true, self::depth, JSON_THROW_ON_ERROR));
++            
+         } catch (JsonException $exception) {
+             throw new RuntimeException(sprintf('Invalid JSON stored in file "%s".', $this->constructedPathToJsonFile), 0, $exception);
+         }
+
+
+4) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:27    [M] MethodCallRemoval
+
+--- Original
++++ New
+@@ @@
+         $this->listMapper = $listMapper;
+         $this->productsMapper = $productsMapper;
+         $this->setConstructedPath($pathToJsonFile . $fileName . '.json');
+-        $this->getAllDataFromJson();
++        
+     }
+     private function setConstructedPath(string $path) : void
+     {
+
+
+5) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:52    [M] MethodCallRemoval
+
+--- Original
++++ New
+@@ @@
+     {
+         $jsonFile = file_get_contents($this->constructedPathToJsonFile);
+         try {
+-            $this->setJsonFileContent(json_decode($jsonFile, true, self::depth, JSON_THROW_ON_ERROR));
++            
+         } catch (JsonException $exception) {
+             throw new RuntimeException(sprintf('Invalid JSON stored in file "%s".', $this->constructedPathToJsonFile), 0, $exception);
+         }
+
+
 Timed Out mutants:
 ==================
 

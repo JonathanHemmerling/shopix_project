@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\FrontendController;
 
 use App\Core\View;
 use App\Model\ProductRepository;
@@ -18,7 +18,7 @@ class HomeControll implements ControllerInterface
     private View $view;
     private ProductRepository $mainMenu;
 
-    public function __construct(View $view, ProductRepository $mainMenu)
+    public function __construct(View $view, ProductRepository $mainMenu = new ProductRepository('Home'))
     {
         $this->mainMenu = $mainMenu;
         $this->view = $view;
@@ -53,7 +53,7 @@ class HomeControll implements ControllerInterface
     private function addParameterToView(): void
     {
         $this->addMenuToLinkArray();
-        $this->view->addTemplateParameter('menu', $this->strForLinks);//Test ob überhaupt Parameter gesetzt werden?
+        $this->view->addTemplateParameter('menu', $this->strForLinks);
     }
 
     public function renderView(): void

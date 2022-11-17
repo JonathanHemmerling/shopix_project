@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AppTest\Controller;
+namespace AppTest\FrontendController;
 
-use App\Controller\HomeControll;
+use App\FrontendController\HomeControll;
 use App\Core\View;
 use App\Model\ProductRepository;
 use PHPUnit\Framework\MockObject\MockObject;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace AppTest\Controller;
+namespace AppTest\FrontendController;
 
-use App\Controller\ListControll;
-use App\Controller\NotFoundControll;
+use App\FrontendController\ListControll;
+use App\FrontendController\NotFoundControll;
 use App\Core\View;
 use \PHPUnit\Framework\TestCase;
 

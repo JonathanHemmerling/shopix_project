@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller</title>
+  <title>Dashboard for /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@
       <nav aria-label="breadcrumb">
        <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="../index.html">/home/jonathanhemmerling/PhpstormProjects/shopix_project/src</a></li>
-         <li class="breadcrumb-item"><a href="index.html">Controller</a></li>
+         <li class="breadcrumb-item"><a href="index.html">FrontendController</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -223,7 +223,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,10,"<a href=\"DetailControll.php.html#11\">App\\Controller\\DetailControll<\/a>"],[100,8,"<a href=\"HomeControll.php.html#14\">App\\Controller\\HomeControll<\/a>"],[100,9,"<a href=\"ListControll.php.html#11\">App\\Controller\\ListControll<\/a>"],[100,2,"<a href=\"NotFoundControll.php.html#10\">App\\Controller\\NotFoundControll<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,10,"<a href=\"DetailControll.php.html#11\">App\\FrontendController\\DetailControll<\/a>"],[100,8,"<a href=\"HomeControll.php.html#14\">App\\FrontendController\\HomeControll<\/a>"],[100,9,"<a href=\"ListControll.php.html#11\">App\\FrontendController\\ListControll<\/a>"],[100,2,"<a href=\"NotFoundControll.php.html#10\">App\\FrontendController\\NotFoundControll<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -247,7 +247,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"DetailControll.php.html#20\">App\\Controller\\DetailControll::__construct<\/a>"],[100,1,"<a href=\"DetailControll.php.html#26\">App\\Controller\\DetailControll::setStrForProductName<\/a>"],[100,1,"<a href=\"DetailControll.php.html#31\">App\\Controller\\DetailControll::getStrForProductName<\/a>"],[100,1,"<a href=\"DetailControll.php.html#36\">App\\Controller\\DetailControll::getDataFromModel<\/a>"],[100,4,"<a href=\"DetailControll.php.html#41\">App\\Controller\\DetailControll::addProductParameterToProductArray<\/a>"],[100,1,"<a href=\"DetailControll.php.html#54\">App\\Controller\\DetailControll::addParameterToView<\/a>"],[100,1,"<a href=\"DetailControll.php.html#62\">App\\Controller\\DetailControll::renderView<\/a>"],[100,1,"<a href=\"HomeControll.php.html#21\">App\\Controller\\HomeControll::__construct<\/a>"],[100,1,"<a href=\"HomeControll.php.html#27\">App\\Controller\\HomeControll::setStrForLinks<\/a>"],[100,1,"<a href=\"HomeControll.php.html#32\">App\\Controller\\HomeControll::getStrForLinks<\/a>"],[100,1,"<a href=\"HomeControll.php.html#37\">App\\Controller\\HomeControll::getDataFromModel<\/a>"],[100,2,"<a href=\"HomeControll.php.html#42\">App\\Controller\\HomeControll::addMenuToLinkArray<\/a>"],[100,1,"<a href=\"HomeControll.php.html#53\">App\\Controller\\HomeControll::addParameterToView<\/a>"],[100,1,"<a href=\"HomeControll.php.html#59\">App\\Controller\\HomeControll::renderView<\/a>"],[100,1,"<a href=\"ListControll.php.html#20\">App\\Controller\\ListControll::__construct<\/a>"],[100,1,"<a href=\"ListControll.php.html#27\">App\\Controller\\ListControll::getStrForLinks<\/a>"],[100,1,"<a href=\"ListControll.php.html#32\">App\\Controller\\ListControll::setStrForLinks<\/a>"],[100,1,"<a href=\"ListControll.php.html#37\">App\\Controller\\ListControll::getDataFromModel<\/a>"],[100,3,"<a href=\"ListControll.php.html#42\">App\\Controller\\ListControll::addCategorysToLinkArray<\/a>"],[100,1,"<a href=\"ListControll.php.html#54\">App\\Controller\\ListControll::addCategoryParameterToView<\/a>"],[100,1,"<a href=\"ListControll.php.html#61\">App\\Controller\\ListControll::renderView<\/a>"],[100,1,"<a href=\"NotFoundControll.php.html#16\">App\\Controller\\NotFoundControll::__construct<\/a>"],[100,1,"<a href=\"NotFoundControll.php.html#21\">App\\Controller\\NotFoundControll::renderView<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"DetailControll.php.html#20\">App\\FrontendController\\DetailControll::__construct<\/a>"],[100,1,"<a href=\"DetailControll.php.html#26\">App\\FrontendController\\DetailControll::setStrForProductName<\/a>"],[100,1,"<a href=\"DetailControll.php.html#31\">App\\FrontendController\\DetailControll::getStrForProductName<\/a>"],[100,1,"<a href=\"DetailControll.php.html#36\">App\\FrontendController\\DetailControll::getDataFromModel<\/a>"],[100,4,"<a href=\"DetailControll.php.html#41\">App\\FrontendController\\DetailControll::addProductParameterToProductArray<\/a>"],[100,1,"<a href=\"DetailControll.php.html#54\">App\\FrontendController\\DetailControll::addParameterToView<\/a>"],[100,1,"<a href=\"DetailControll.php.html#62\">App\\FrontendController\\DetailControll::renderView<\/a>"],[100,1,"<a href=\"HomeControll.php.html#21\">App\\FrontendController\\HomeControll::__construct<\/a>"],[100,1,"<a href=\"HomeControll.php.html#27\">App\\FrontendController\\HomeControll::setStrForLinks<\/a>"],[100,1,"<a href=\"HomeControll.php.html#32\">App\\FrontendController\\HomeControll::getStrForLinks<\/a>"],[100,1,"<a href=\"HomeControll.php.html#37\">App\\FrontendController\\HomeControll::getDataFromModel<\/a>"],[100,2,"<a href=\"HomeControll.php.html#42\">App\\FrontendController\\HomeControll::addMenuToLinkArray<\/a>"],[100,1,"<a href=\"HomeControll.php.html#53\">App\\FrontendController\\HomeControll::addParameterToView<\/a>"],[100,1,"<a href=\"HomeControll.php.html#59\">App\\FrontendController\\HomeControll::renderView<\/a>"],[100,1,"<a href=\"ListControll.php.html#20\">App\\FrontendController\\ListControll::__construct<\/a>"],[100,1,"<a href=\"ListControll.php.html#27\">App\\FrontendController\\ListControll::getStrForLinks<\/a>"],[100,1,"<a href=\"ListControll.php.html#32\">App\\FrontendController\\ListControll::setStrForLinks<\/a>"],[100,1,"<a href=\"ListControll.php.html#37\">App\\FrontendController\\ListControll::getDataFromModel<\/a>"],[100,3,"<a href=\"ListControll.php.html#42\">App\\FrontendController\\ListControll::addCategorysToLinkArray<\/a>"],[100,1,"<a href=\"ListControll.php.html#54\">App\\FrontendController\\ListControll::addCategoryParameterToView<\/a>"],[100,1,"<a href=\"ListControll.php.html#61\">App\\FrontendController\\ListControll::renderView<\/a>"],[100,1,"<a href=\"NotFoundControll.php.html#16\">App\\FrontendController\\NotFoundControll::__construct<\/a>"],[100,1,"<a href=\"NotFoundControll.php.html#21\">App\\FrontendController\\NotFoundControll::renderView<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

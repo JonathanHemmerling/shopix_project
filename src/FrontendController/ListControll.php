@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\FrontendController;
 
 use App\Core\View;
 use App\Model\ProductRepository;
@@ -16,7 +16,7 @@ class ListControll implements ControllerInterface
     private View $view;
     private const HomeLink = ['<a href="index.php">Home</a>'];
 
-    public function __construct(View $view, ProductRepository $products)
+    public function __construct(View $view, ProductRepository $products = new ProductRepository('List'))
     {
         $this->products = $products;
         $this->view = $view;
@@ -40,18 +40,12 @@ class ListControll implements ControllerInterface
     private function addCategorysToLinkArray(): void
     {
         $urlId = (int)$_GET['productId'];
-        $listRep = new ProductRepository('List');
-        $listcategory = $listRep->findCategoryById($urlId);
-        foreach ($listcategory as $categoryElement) {
-            $categoryDetail = $categoryElement->detail;
-            $categoryId = $categoryElement->categoryId;
-            $id = $categoryElement->id;
-            $displayName = $categoryElement->displayName;
-            $this->setStrForLinks(
-                'index.php?page=Detail&' . $categoryDetail . '&categoryId=' . $categoryId . '&id=' . $id . '>' . $displayName
-            );
+        $listcategory = $this->products->findCategoryById($urlId);
+        foreach ($listcategory as $listElement){
+            $this->setStrForLinks($listElement);
         }
     }
+
     private function addCategoryParameterToView(): void
     {
         $this->addCategorysToLinkArray();

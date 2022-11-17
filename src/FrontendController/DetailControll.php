@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\FrontendController;
 
 use App\Core\View;
 use App\Model\ProductRepository;
@@ -17,7 +17,7 @@ class DetailControll implements ControllerInterface
     private ProductRepository $products;
     private const HomeLink = ['<a href="index.php">Home</a>'];
 
-    public function __construct(View $view, ProductRepository $products)
+    public function __construct(View $view, ProductRepository $products = new ProductRepository('Detail'))
     {
         $this->view = $view;
         $this->products = $products;
@@ -32,19 +32,15 @@ class DetailControll implements ControllerInterface
     {
         return $this->strForProductName;
     }
-
-    public function getDataFromModel(): array
+    public function getStrForProductDescription(): array
     {
-        return $this->products->getJsonFileContent();
+        return $this->strForProductDescription;
     }
-
     private function addProductParameterToProductArray(): void
     {
         $pageId = (int)$_GET['categoryId'];
         $productId = (int)$_GET['id'];
-
-        $productRep = new ProductRepository('Detail');
-        $singleProduct = $productRep->findProductById($pageId, $productId);
+        $singleProduct = $this->products->findProductById($pageId, $productId);
         $this->strForProductName[] = $singleProduct->displayName . ':';
         $this->strForProductDescription[] = $singleProduct->description;
     }
