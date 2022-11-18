@@ -27,26 +27,22 @@ if (isLoggedIn()) {
     foreach ($providerList as $providerElement) {
         if ($providerElement === 'App\FrontendController\\' . $pageTitle . 'Controll') {
             $className = $providerElement;
-
             break;
         }
     }
 }
 if (!isLoggedIn()) {
-    if (isset($_GET['newUser'])){
+    if (isset($_GET['newUser'])) {
         $pageTitle = 'NewUser';
         $className = 'App\BackendController\\' . $pageTitle . 'Controll';
     }
-    if (!isset($_GET['newUser'])){
+    if (!isset($_GET['newUser'])) {
         $pageTitle = 'Login';
         $className = 'App\BackendController\\' . $pageTitle . 'Controll';
     }
 }
 
-    /** @var ControllerInterface $controller */
-    $controller = new $className($view);
-    $controller->renderView();
-    $view->renderTemplate();
-    foreach ($errors as $error){
-        echo $error;
-    }
+/** @var ControllerInterface $controller */
+$controller = new $className($view);
+$controller->renderView();
+$view->renderTemplate();

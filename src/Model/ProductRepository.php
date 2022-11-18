@@ -18,13 +18,20 @@ class ProductRepository
     private ListMapper $listMapper;
     private const depth = 512;
     private ProductsMapper $productsMapper;
+    private string $fileName;
+    private string $pathToJsonFile;
+    private const path = __DIR__ . '/../jsons/';
 
-    public function __construct(string $fileName, ListMapper $listMapper = new ListMapper(), ProductsMapper $productsMapper = new ProductsMapper(), string $pathToJsonFile = __DIR__ . '/../jsons/')
-    {
+    public function __construct(
+        string $fileName,
+        ListMapper $listMapper = new ListMapper(),
+        ProductsMapper $productsMapper = new ProductsMapper(),
+        string $pathToJsonFile = self::path
+    ) {
         $this->listMapper = $listMapper;
         $this->productsMapper = $productsMapper;
-        $this->setConstructedPath($pathToJsonFile . $fileName . '.json');
-        $this->getAllDataFromJson();
+        $this->fileName = $fileName;
+        $this->pathToJsonFile = $pathToJsonFile;
     }
 
     private function setConstructedPath(string $path): void
@@ -35,21 +42,12 @@ class ProductRepository
         }
     }
 
-    private function setJsonFileContent(array $jsonFile): void
+    public function getAllDataFromJson(): array
     {
-        $this->jsonFileContent = $jsonFile;
-    }
-
-    public function getJsonFileContent(): array
-    {
-        return $this->jsonFileContent;
-    }
-
-    private function getAllDataFromJson(): void
-    {
+        $this->setConstructedPath($this->pathToJsonFile . $this->fileName . '.json');
         $jsonFile = file_get_contents($this->constructedPathToJsonFile);
         try {
-            $this->setJsonFileContent(json_decode($jsonFile, true, self::depth , JSON_THROW_ON_ERROR));
+            $allData = json_decode($jsonFile, true, self::depth, JSON_THROW_ON_ERROR);
         } catch (JsonException $exception) {
             throw new RuntimeException(
                 sprintf('Invalid JSON stored in file "%s".', $this->constructedPathToJsonFile),
@@ -57,22 +55,23 @@ class ProductRepository
                 $exception
             );
         }
+        return $allData;
     }
 
     public function findProductById(int $categoryId, int $id): ProductsDataTransferObject
     {
-        $allData = $this->getJsonFileContent();
+        $allData = $this->getAllDataFromJson();
         foreach ($allData as $dataSet) {
             if ($dataSet['categoryId'] === $categoryId && $dataSet['id'] === $id) {
                 $pdto = $this->productsMapper->mapToProductsDto($dataSet);
             }
         }
-       return $pdto;
+        return $pdto;
     }
 
     public function findCategoryById(int $categoryId): array
     {
-        $allData = $this->getJsonFileContent();
+        $allData = $this->getAllDataFromJson();
         $listCategory = [];
         foreach ($allData as $dataSet) {
             if ($dataSet['categoryId'] === $categoryId) {
@@ -89,7 +88,7 @@ class ProductRepository
             $categoryArray[] = $categoryElement['displayName'];
             $stringArray[] = 'index.php?page=Detail&' . $categoryArray[2] . '&categoryId=' . $categoryArray[0] . '&id=' . $categoryArray[1] . '>' . $categoryArray[3];
         }
-       return $stringArray;
+        return $stringArray;
     }
 
 }

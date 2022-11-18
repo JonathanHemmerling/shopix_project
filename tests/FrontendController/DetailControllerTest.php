@@ -54,7 +54,7 @@ class DetailControllerTest extends TestCase
         $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
             ->setConstructorArgs(['Detail', $this->listMapperMock, $this->productsMapperMock])
             ->getMock();
-        $this->productRepositoryMock->method('getJsonFileContent')
+        $this->productRepositoryMock->method('getAllDataFromJson')
             ->willReturn($expectedJsonArray);
         $this->productRepositoryMock->method('findProductById')
             ->with(2, 1)

@@ -7,7 +7,6 @@ namespace App\Model\Dto;
 class UserDataTransferObject
 {
     public function __construct(
-        public readonly int|null $userId,
         public readonly string $userName,
         public readonly string $password,
     ) {

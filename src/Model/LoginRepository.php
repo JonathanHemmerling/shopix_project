@@ -13,19 +13,21 @@ use RuntimeException;
 class LoginRepository
 {
     private string $constructedPathToJsonFile;
-    private array $jsonFileContent;
     private UserDataMapper $userDataMapper;
     private const depth = 512;
     private array $userArray = [];
+    private string $fileName;
+    private string $pathToJsonFile;
+    private const path = __DIR__ . '/../jsons/';
 
     public function __construct(
         string $fileName,
         UserDataMapper $userDataMapper = new UserDataMapper(),
-        string $pathToJsonFile = __DIR__ . '/../jsons/'
+        string $pathToJsonFile = self::path
     ) {
         $this->userDataMapper = $userDataMapper;
-        $this->setConstructedPath($pathToJsonFile . $fileName . '.json');
-        $this->getAllDataFromJson();
+        $this->fileName = $fileName;
+        $this->pathToJsonFile = $pathToJsonFile;
     }
 
     private function setConstructedPath(string $path): void
@@ -36,21 +38,12 @@ class LoginRepository
         }
     }
 
-    private function setJsonFileContent(array $jsonFile): void
+    public function getAllDataFromJson(): array
     {
-        $this->jsonFileContent = $jsonFile;
-    }
-
-    public function getJsonFileContent(): array
-    {
-        return $this->jsonFileContent;
-    }
-
-    private function getAllDataFromJson(): void
-    {
+        $this->setConstructedPath($this->pathToJsonFile . $this->fileName . '.json');
         $jsonFile = file_get_contents($this->constructedPathToJsonFile);
         try {
-            $this->setJsonFileContent(json_decode($jsonFile, true, self::depth, JSON_THROW_ON_ERROR));
+            $allData = json_decode($jsonFile, true, self::depth, JSON_THROW_ON_ERROR);
         } catch (JsonException $exception) {
             throw new RuntimeException(
                 sprintf('Invalid JSON stored in file "%s".', $this->constructedPathToJsonFile),
@@ -58,11 +51,12 @@ class LoginRepository
                 $exception
             );
         }
+        return $allData;
     }
 
     public function findUserByName(string $userName): array
     {
-        $allData = $this->getJsonFileContent();
+        $allData = $this->getAllDataFromJson();
         foreach ($allData as $dataSet) {
             if ($dataSet['userName'] === $userName) {
                 $this->userArray = (array)$this->userDataMapper->mapToUserDto($dataSet);

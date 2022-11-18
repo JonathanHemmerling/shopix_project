@@ -31,7 +31,7 @@ class HomeControllerTest extends TestCase
         $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
             ->disableOriginalConstructor()
             ->getMock();
-        $this->productRepositoryMock->method('getJsonFileContent')
+        $this->productRepositoryMock->method('getAllDataFromJson')
             ->willReturn($expectedJsonArray);
 
         $this->homeController = new HomeControll($this->viewMock, $this->productRepositoryMock);

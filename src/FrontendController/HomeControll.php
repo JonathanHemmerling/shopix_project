@@ -36,7 +36,7 @@ class HomeControll implements ControllerInterface
 
     public function getDataFromModel(): array
     {
-        return $this->mainMenu->getJsonFileContent();
+        return $this->mainMenu->getAllDataFromJson();
     }
 
     private function addMenuToLinkArray(): void

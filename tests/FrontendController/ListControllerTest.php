@@ -45,7 +45,7 @@ class ListControllerTest extends TestCase
         $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
             ->setConstructorArgs(['List', $this->listMapperMock, $this->productsMapperMock])
             ->getMock();
-        $this->productRepositoryMock->method('getJsonFileContent')
+        $this->productRepositoryMock->method('getAllDataFromJson')
             ->willReturn($expectedJsonArray);
         $this->productRepositoryMock->method('findCategoryById')
             ->with(1)

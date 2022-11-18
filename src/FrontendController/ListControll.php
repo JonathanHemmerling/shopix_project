@@ -34,7 +34,7 @@ class ListControll implements ControllerInterface
 
     public function getDataFromModel(): array
     {
-        return $this->products->getJsonFileContent();
+        return $this->products->getAllDataFromJson();
     }
 
     private function addCategorysToLinkArray(): void
