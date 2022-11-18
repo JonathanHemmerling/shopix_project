@@ -41,6 +41,7 @@ class NewUserControll
                 );
                 $this->repository->addNewUserDataArrayToJson($userArray);
             }
+            $this->message = $this->validation->getErrors();
         }
     }
 

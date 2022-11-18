@@ -5,33 +5,34 @@ declare(strict_types=1);
 namespace AppTest\BackendController;
 
 use App\BackendController\LoginControll;
+use App\BackendController\NewUserControll;
+use App\BackendController\NewUserDataValidation;
 use App\BackendController\UserDataValidation;
 use App\Core\View;
 use App\Model\LoginRepository;
 use App\Model\Mapper\UserDataMapper;
+use App\Model\NewUserRepository;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 
-class LoginControllerTest extends TestCase
+class NewUserControllerTest extends TestCase
 {
     private MockObject $smartyMock;
     private MockObject $viewMock;
-    private MockObject $loginRepositoryMock;
+    private MockObject $newUserRepositoryMock;
     private LoginControll $loginController;
     private Mockobject $loginControllerMock;
-    private MockObject $userDataValidation;
-    private array $expectedJsonArray;
+    private MockObject $newUserDataValidation;
 
     public function setUp(): void
     {
         $_SESSION['submit'] = 'submit';
-        $_SESSION['userId'] = 1;
         $_SESSION['userName'] = 'TestUser';
         $_SESSION['password'] = 'password';
         $_POST['userName'] = 'TestUser';
         $jsonPath = file_get_contents(__DIR__ . '/../jsons/Login.json');
-        $this->expectedJsonArray = json_decode($jsonPath, true);
+        $expectedJsonArray = json_decode($jsonPath, true);
         $userDataMapperMock = $this->getMockBuilder(UserDataMapper::class)
             ->getMock();
         $this->smartyMock = $this->getMockBuilder(\Smarty::class)
@@ -39,43 +40,37 @@ class LoginControllerTest extends TestCase
         $this->viewMock = $this->getMockBuilder(View::class)
             ->setConstructorArgs([$this->smartyMock])
             ->getMock();
-        $this->loginRepositoryMock = $this->getMockBuilder(LoginRepository::class)
-            ->setConstructorArgs(['Login', $userDataMapperMock])
+        $this->newUserRepositoryMock = $this->getMockBuilder(NewUserRepository::class)
+            ->setConstructorArgs(['Login'])
             ->getMock();
-        $this->loginRepositoryMock->method('getAllDataFromJson')
-            ->willReturn($this->expectedJsonArray);
-        $this->loginRepositoryMock->method('findUserByName')
-            ->with('TestUser')
-            ->willReturn(['userName' => 'TestUser', 'password' => 'password']);
-        $this->userDataValidation = $this->getMockBuilder(UserDataValidation::class)
+        $this->newUserRepositoryMock->method('getCurrentUserData')
+            ->willReturn($expectedJsonArray);
+        $this->newUserRepositoryMock->method('addNewUserDataArrayToJson')
+            ->with('TestUser');
+        $this->newUserDataValidation = $this->getMockBuilder(NewUserDataValidation::class)
             ->onlyMethods(['checkIfUserNameIsValid'])
             ->getMock();
-        $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
-
-        $this->loginControllerMock = $this->getMockBuilder(LoginControll::class)
-            ->setConstructorArgs([$this->viewMock, $this->loginRepositoryMock, $this->userDataValidation])
-            ->onlyMethods(['validateLoginData','getUserDataSet', 'getLoginData', 'renderView'])
-            ->getMock();
+        $this->newUserController = new NewUserControll($this->viewMock, $this->newUserRepositoryMock, $this->newUserDataValidation);
     }
 
     public function tearDown(): void
     {
-        unset($this->loginController, $this->loginRepositoryMock, $this->viewMock, $this->smartyMock);
+        unset($this->newUserController, $this->newUserRepositoryMock, $this->viewMock, $this->smartyMock);
         $_POST = [];
     }
 
     public function testIfDataRequestForJsonWorkedFine(): void
     {
 
-        $loginData = $this->loginController->getUserDataSet();
+        $loginData = $this->newUserController->renderView();
         $expectedLoginData = 'TestUser';
         self::assertSame($expectedLoginData, $loginData['userName']);
         self::assertNotSame($expectedLoginData, $loginData['password']);
 
-        $this->loginRepositoryMock->expects($this->once())
+        $this->newUserRepositoryMock->expects($this->once())
             ->method('getAllDataFromJson')
             ->willReturn(['']);
-        $this->loginRepositoryMock->getAllDataFromJson();
+        $this->newUserRepositoryMock->getCurrentUserData();
 
     }
 
@@ -93,12 +88,12 @@ class LoginControllerTest extends TestCase
     {
         $this->loginControllerMock->expects($this->once())
             ->method('validateLoginData');
-        $this->userDataValidation->expects($this->once())
+        $this->newUserDataValidation->expects($this->once())
             ->method('checkIfUserNameIsValid')
             ->with('TestUser')
             ->willReturn(false);
         $this->loginControllerMock->validateLoginData();
-        $this->userDataValidation->checkIfUserNameIsValid('TestUser');
+        $this->newUserDataValidation->checkIfUserNameIsValid('TestUser');
     }
 
 }
