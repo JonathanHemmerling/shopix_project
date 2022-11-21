@@ -9867,9 +9867,9 @@ Stack trace:
 [18-Nov-2022 09:43:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
 [18-Nov-2022 09:43:00 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:48
 [18-Nov-2022 09:43:00 Europe/Berlin] PHP   3. App\BackendController\LoginControll->validateLoginData() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:89
-[18-Nov-2022 09:43:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\BackendController\UserDataValidation::verifyPassword(): Argument #2 ($dbUserPassword) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 70 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php:85
+[18-Nov-2022 09:43:00 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Validation\UserDataValidation::verifyPassword(): Argument #2 ($dbUserPassword) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 70 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php:85
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(70): App\BackendController\UserDataValidation->verifyPassword()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(70): App\Validation\UserDataValidation->verifyPassword()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(89): App\BackendController\LoginControll->validateLoginData()
 #2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(48): App\BackendController\LoginControll->renderView()
 #3 {main}
@@ -9879,9 +9879,9 @@ Stack trace:
 [18-Nov-2022 09:44:44 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
 [18-Nov-2022 09:44:44 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:48
 [18-Nov-2022 09:44:44 Europe/Berlin] PHP   3. App\BackendController\LoginControll->validateLoginData() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:89
-[18-Nov-2022 09:44:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\BackendController\UserDataValidation::verifyPassword(): Argument #2 ($dbUserPassword) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 70 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php:51
+[18-Nov-2022 09:44:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Validation\UserDataValidation::verifyPassword(): Argument #2 ($dbUserPassword) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 70 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php:51
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(70): App\BackendController\UserDataValidation->verifyPassword()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(70): App\Validation\UserDataValidation->verifyPassword()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(89): App\BackendController\LoginControll->validateLoginData()
 #2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(48): App\BackendController\LoginControll->renderView()
 #3 {main}
@@ -9918,47 +9918,1310 @@ Stack trace:
 [18-Nov-2022 09:49:52 Europe/Berlin] PHP   3. App\BackendController\LoginControll->validateLoginData() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:87
 [18-Nov-2022 09:49:52 Europe/Berlin] PHP   4. App\Model\LoginRepository->findUserByName($userName = 'UserTest123') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:65
 [18-Nov-2022 09:49:52 Europe/Berlin] PHP   5. App\Model\Mapper\UserDataMapper->mapToUserDto($list = ['userName' => 'UserTest123', 'password' => '$2y$10$p9yt29SR.W0hNofhE28RMOr8zA7FGTJHYumZNxZ4qAlSy1kDneih2']) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/LoginRepository.php:68
-[18-Nov-2022 10:08:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\BackendController\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
+[18-Nov-2022 10:08:05 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Validation\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\BackendController\NewUserDataValidation->__construct()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\Validation\NewUserDataValidation->__construct()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\NewUserControll->__construct()
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php on line 16
-[18-Nov-2022 10:11:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\BackendController\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
+[18-Nov-2022 10:11:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Validation\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\BackendController\NewUserDataValidation->__construct()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\Validation\NewUserDataValidation->__construct()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\NewUserControll->__construct()
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php on line 16
-[18-Nov-2022 10:11:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\BackendController\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
+[18-Nov-2022 10:11:26 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Validation\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\BackendController\NewUserDataValidation->__construct()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\Validation\NewUserDataValidation->__construct()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\NewUserControll->__construct()
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php on line 16
-[18-Nov-2022 10:12:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\BackendController\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
+[18-Nov-2022 10:12:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Validation\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\BackendController\NewUserDataValidation->__construct()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\Validation\NewUserDataValidation->__construct()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\NewUserControll->__construct()
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php on line 16
-[18-Nov-2022 10:16:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\BackendController\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
+[18-Nov-2022 10:16:38 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Validation\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\BackendController\NewUserDataValidation->__construct()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\Validation\NewUserDataValidation->__construct()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\NewUserControll->__construct()
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php on line 16
-[18-Nov-2022 10:17:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\BackendController\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
+[18-Nov-2022 10:17:25 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign string to property App\Validation\NewUserDataValidation::$repository of type App\Model\NewUserRepository in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php:16
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\BackendController\NewUserDataValidation->__construct()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(18): App\Validation\NewUserDataValidation->__construct()
 #1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\NewUserControll->__construct()
 #2 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php on line 16
 [18-Nov-2022 11:35:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method App\Model\LoginRepository::getJsonFileContent() in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php:28
 Stack trace:
-#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php(40): App\BackendController\UserDataValidation->userNameExist()
-#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(58): App\BackendController\UserDataValidation->checkIfUserNameIsValid()
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php(40): App\Validation\UserDataValidation->userNameExist()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(58): App\Validation\UserDataValidation->checkIfUserNameIsValid()
 #2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(84): App\BackendController\LoginControll->validateLoginData()
 #3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(47): App\BackendController\LoginControll->renderView()
 #4 {main}
   thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/UserDataValidation.php on line 28
+[21-Nov-2022 08:54:44 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function App\BackendController\LoginControll::loginUser(), 0 passed in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 89 and exactly 1 expected in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:30
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php(89): App\BackendController\LoginControll->loginUser()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(47): App\BackendController\LoginControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 30
+[21-Nov-2022 08:56:01 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 08:56:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 08:56:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 08:56:01 Europe/Berlin] PHP   2. App\BackendController\LoginControll->__construct($view = class App\Core\View { private array $params = []; private string $template = *uninitialized*; private readonly Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1669017361.055; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }, $login = *uninitialized*, $validation = *uninitialized*) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:46
+[21-Nov-2022 08:56:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\BackendController\LoginControll::$userName of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\LoginControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 08:57:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 08:57:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 08:57:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 08:57:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->__construct($view = class App\Core\View { private array $params = []; private string $template = *uninitialized*; private readonly Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1669017437.6752; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }, $login = *uninitialized*, $validation = *uninitialized*) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:46
+[21-Nov-2022 08:57:17 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\BackendController\LoginControll::$userName of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\LoginControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 08:57:19 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 08:57:19 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 08:57:19 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 08:57:19 Europe/Berlin] PHP   2. App\BackendController\LoginControll->__construct($view = class App\Core\View { private array $params = []; private string $template = *uninitialized*; private readonly Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1669017439.4564; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }, $login = *uninitialized*, $validation = *uninitialized*) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:46
+[21-Nov-2022 08:57:19 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\BackendController\LoginControll::$userName of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\LoginControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 09:43:55 Europe/Berlin] PHP Fatal error:  Constant expression contains invalid operations in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 19
+[21-Nov-2022 09:43:55 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 09:43:55 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 09:43:55 Europe/Berlin] PHP   2. Composer\Autoload\ClassLoader->loadClass($class = 'App\\BackendController\\LoginControll') /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:46
+[21-Nov-2022 09:43:55 Europe/Berlin] PHP   3. Composer\Autoload\includeFile($file = '/home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/../../src/BackendController/LoginControll.php') /home/jonathanhemmerling/PhpstormProjects/shopix_project/vendor/composer/ClassLoader.php:428
+[21-Nov-2022 09:44:54 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 09:44:54 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 09:44:54 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 09:44:54 Europe/Berlin] PHP   2. App\BackendController\LoginControll->__construct($view = class App\Core\View { private array $params = []; private string $template = *uninitialized*; private readonly Smarty $smarty = class Smarty { public $_objType = 1; public $template_class = 'Smarty_Internal_Template'; public $tpl_vars = [...]; public $parent = NULL; public $config_vars = [...]; public $ext = class Smarty_Internal_Extension_Handler { ... }; public $cache_id = NULL; public $compile_id = NULL; public $caching = 0; public $compile_check = 1; public $cache_lifetime = 3600; public $tplFunctions = [...]; public $_cache = [...]; public $auto_literal = TRUE; public $error_unassigned = FALSE; public $use_include_path = FALSE; public $_templateDirNormalized = FALSE; public $_joined_template_dir = NULL; public $_configDirNormalized = FALSE; public $_joined_config_dir = NULL; public $default_template_handler_func = NULL; public $default_config_handler_func = NULL; public $default_plugin_handler_func = NULL; public $_compileDirNormalized = FALSE; public $_pluginsDirNormalized = FALSE; public $_cacheDirNormalized = FALSE; public $force_compile = FALSE; public $use_sub_dirs = FALSE; public $allow_ambiguous_resources = FALSE; public $merge_compiled_includes = FALSE; public $extends_recursion = TRUE; public $force_cache = FALSE; public $left_delimiter = '{'; public $right_delimiter = '}'; public $literals = [...]; public $security_class = 'Smarty_Security'; public $security_policy = NULL; public $allow_php_templates = FALSE; public $debugging = FALSE; public $debugging_ctrl = 'NONE'; public $smarty_debug_id = 'SMARTY_DEBUG'; public $debug_tpl = NULL; public $error_reporting = NULL; public $config_overwrite = TRUE; public $config_booleanize = TRUE; public $config_read_hidden = FALSE; public $compile_locking = TRUE; public $cache_locking = FALSE; public $locking_timeout = 10; public $default_resource_type = 'file'; public $caching_type = 'file'; public $default_config_type = 'file'; public $cache_modified_check = FALSE; public $registered_plugins = [...]; public $registered_objects = [...]; public $registered_classes = [...]; public $registered_filters = [...]; public $registered_resources = [...]; public $registered_cache_resources = [...]; public $autoload_filters = [...]; public $default_modifiers = [...]; public $escape_html = FALSE; public $start_time = 1669020294.5979; public $_current_file = NULL; public $_parserdebug = FALSE; public $_debug = NULL; protected $template_dir = [...]; protected $_processedTemplateDir = [...]; protected $config_dir = [...]; protected $_processedConfigDir = [...]; protected $compile_dir = './templates_c/'; protected $plugins_dir = [...]; protected $cache_dir = './cache/'; protected $obsoleteProperties = [...]; protected $accessMap = [...]; private $isMutingUndefinedOrNullWarnings = FALSE } }, $login = *uninitialized*, $validation = *uninitialized*) /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:46
+[21-Nov-2022 09:44:54 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Cannot assign null to property App\BackendController\LoginControll::$userName of type string in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:29
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(46): App\BackendController\LoginControll->__construct()
+#1 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 29
+[21-Nov-2022 10:37:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\BackendController\NewUserControll::$userArray must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php:32
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(65): App\BackendController\NewUserControll->addUserDataToMemory()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(47): App\BackendController\NewUserControll->renderView()
+#2 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php on line 32
+[21-Nov-2022 11:19:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Model\NewUserRepository::$filePath must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/NewUserRepository.php:40
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php(62): App\Model\NewUserRepository->getCurrentUserData()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserDataValidation.php(80): App\Validation\NewUserDataValidation->isAUniqueUserName()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(45): App\Validation\NewUserDataValidation->checkIfUserNameIsValid()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(67): App\BackendController\NewUserControll->validateLoginData()
+#4 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(47): App\BackendController\NewUserControll->renderView()
+#5 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/NewUserRepository.php on line 40
+[21-Nov-2022 11:20:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Model\NewUserRepository::$filePath must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/NewUserRepository.php:52
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(35): App\Model\NewUserRepository->addNewUserDataArrayToJson()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(67): App\BackendController\NewUserControll->addUserDataToMemory()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(47): App\BackendController\NewUserControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/NewUserRepository.php on line 52
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:14 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:15 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:17 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:22 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:88
+[21-Nov-2022 13:33:31 Europe/Berlin] PHP Warning:  Undefined array key "userName" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php on line 37
+[21-Nov-2022 13:33:31 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 13:33:31 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 13:33:31 Europe/Berlin] PHP   2. App\BackendController\LoginControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 13:33:31 Europe/Berlin] PHP   3. App\BackendController\LoginControll->loginUser() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:89
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP Warning:  Undefined variable $confirmpassword in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php on line 94
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP   2. App\BackendController\NewUserControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:47
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP   3. App\BackendController\NewUserControll->validateLoginData() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php:61
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP   4. App\Validation\NewUserDataValidation->checkIfPasswordIsValid($password = '$2y$10$NnYJiYnfGHH7kIqHBg/t3eHu.nkGxeTUCej8EIngL/0M/kjNdg2bK', $confirmPassword = '1234') /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php:37
+[21-Nov-2022 14:12:52 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Validation\NewUserDataValidation::has_length(): Argument #1 ($value) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php on line 94 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php:43
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php(94): App\Validation\NewUserDataValidation->has_length()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(37): App\Validation\NewUserDataValidation->checkIfPasswordIsValid()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(61): App\BackendController\NewUserControll->validateLoginData()
+#3 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(47): App\BackendController\NewUserControll->renderView()
+#4 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php on line 43
+[21-Nov-2022 17:39:30 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\BackendController\Controll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 50
+[21-Nov-2022 17:40:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\BackendController\Controll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 50
+[21-Nov-2022 17:40:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(51): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:40:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(51): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:40:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(51): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:41:50 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(52): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:41:53 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(52): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:42:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:43:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 17:43:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\BackendController\LogoutControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 17:44:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\BackendController\LogoutControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 17:44:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\BackendController\LogoutControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 17:45:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "App\BackendController\LogoutControll" not found in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:27:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(61): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:28:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(62): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:28:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(63): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:41:07 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:42:31 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:42:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 42
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:43:38 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(50): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:47:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:48:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:48:18 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:48:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:49:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:49:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:49:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:19 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:20 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:24 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:50:36 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:51:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(50): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:51:39 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:51:40 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:51:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:51:41 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:52:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:52:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:52:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:52:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(53): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:57:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:58:01 Europe/Berlin] PHP Warning:  Undefined array key "confirmPassword" in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php on line 35
+[21-Nov-2022 18:58:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:58:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:58:01 Europe/Berlin] PHP   2. App\BackendController\NewUserControll->renderView() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:60
+[21-Nov-2022 18:58:01 Europe/Berlin] PHP   3. App\BackendController\NewUserControll->validateLoginData() /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php:61
+[21-Nov-2022 18:58:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: App\Validation\NewUserDataValidation::checkIfPasswordIsValid(): Argument #2 ($confirmPassword) must be of type string, null given, called in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php on line 37 and defined in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php:87
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(37): App\Validation\NewUserDataValidation->checkIfPasswordIsValid()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php(61): App\BackendController\NewUserControll->validateLoginData()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\BackendController\NewUserControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/NewUserDataValidation.php on line 87
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Warning:  Array to string conversion in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:16 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 18:59:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:00:59 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:02 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Warning:  Undefined variable $pageTitle in /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php on line 52
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Stack trace:
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP   1. {main}() /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php:0
+[21-Nov-2022 19:01:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(60): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:19:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(59): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33
+[21-Nov-2022 19:20:43 Europe/Berlin] PHP Fatal error:  Uncaught Error: Typed property App\Core\View::$template must not be accessed before initialization in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php:33
+Stack trace:
+#0 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php(39): App\Core\View->getTemplate()
+#1 /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/FrontendController/NotFoundControll.php(24): App\Core\View->renderTemplate()
+#2 /home/jonathanhemmerling/PhpstormProjects/shopix_project/index.php(59): App\FrontendController\NotFoundControll->renderView()
+#3 {main}
+  thrown in /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Core/View.php on line 33

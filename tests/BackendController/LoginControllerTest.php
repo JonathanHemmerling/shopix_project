@@ -5,16 +5,17 @@ declare(strict_types=1);
 namespace AppTest\BackendController;
 
 use App\BackendController\LoginControll;
-use App\BackendController\UserDataValidation;
 use App\Core\View;
 use App\Model\LoginRepository;
 use App\Model\Mapper\UserDataMapper;
+use App\Validation\UserDataValidation;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 
 class LoginControllerTest extends TestCase
 {
+
     private MockObject $smartyMock;
     private MockObject $viewMock;
     private MockObject $loginRepositoryMock;
@@ -26,10 +27,9 @@ class LoginControllerTest extends TestCase
     public function setUp(): void
     {
         $_SESSION['submit'] = 'submit';
-        $_SESSION['userId'] = 1;
-        $_SESSION['userName'] = 'TestUser';
+        $_SESSION['userName'] = '';
         $_SESSION['password'] = 'password';
-        $_POST['userName'] = 'TestUser';
+        $_POST['userName'] = '';
         $jsonPath = file_get_contents(__DIR__ . '/../jsons/Login.json');
         $this->expectedJsonArray = json_decode($jsonPath, true);
         $userDataMapperMock = $this->getMockBuilder(UserDataMapper::class)
@@ -45,10 +45,10 @@ class LoginControllerTest extends TestCase
         $this->loginRepositoryMock->method('getAllDataFromJson')
             ->willReturn($this->expectedJsonArray);
         $this->loginRepositoryMock->method('findUserByName')
-            ->with('TestUser')
+            ->with('')
             ->willReturn(['userName' => 'TestUser', 'password' => 'password']);
         $this->userDataValidation = $this->getMockBuilder(UserDataValidation::class)
-            ->onlyMethods(['checkIfUserNameIsValid'])
+            ->onlyMethods(['checkIfUserNameIsValid', 'getErrors'])
             ->getMock();
         $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
 
@@ -66,7 +66,6 @@ class LoginControllerTest extends TestCase
 
     public function testIfDataRequestForJsonWorkedFine(): void
     {
-
         $loginData = $this->loginController->getUserDataSet();
         $expectedLoginData = 'TestUser';
         self::assertSame($expectedLoginData, $loginData['userName']);
@@ -89,16 +88,26 @@ class LoginControllerTest extends TestCase
         $this->loginController->renderView();
     }
 
+
     public function testIfLoginDataIsValid(): void
     {
-        $this->loginControllerMock->expects($this->once())
-            ->method('validateLoginData');
         $this->userDataValidation->expects($this->once())
             ->method('checkIfUserNameIsValid')
             ->with('TestUser')
             ->willReturn(false);
-        $this->loginControllerMock->validateLoginData();
+        //$this->loginControllerMock->validateLoginData();
         $this->userDataValidation->checkIfUserNameIsValid('TestUser');
+    }
+
+    public function testIfLogInIsCalled(): void
+    {
+        $this->userDataValidation->expects($this->atLeastOnce())
+            ->method('getErrors');
+        $this->loginController->loginUser(false);
+        $this->userDataValidation->method('checkIfUserNameIsValid')
+            ->willReturn(false);
+        $this->loginController->renderView();
+
     }
 
 }

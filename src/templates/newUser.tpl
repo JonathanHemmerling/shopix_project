@@ -1,20 +1,19 @@
 {include file="./header.tpl"}
     <style type="text/css">{literal}
         .error {
-            color: blue;
+            color: red;
             font-size: large;
-            font-weight: bolder;
         }{/literal}</style>
     <div class="error">
 <pre>
 {foreach from=$errors item=p}
-    {$p}
+{$p}
 {/foreach}
 </pre>
 </div>
 <div class="newUserForm">
 <h3>Create new User</h3>
-<form action="/index.php?newUser" method="post">
+<form action="/index.php?pageb=NewUser" method="post">
 <label>
 Username: <br />
 <input type="text" name="userName" value=""/>

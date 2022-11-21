@@ -18,6 +18,7 @@ class View
     {
         return $this->params;
     }
+
     public function addTemplateParameter(string $tplIdentifier, array $itemsToDisplay): void
     {
         $this->params[$tplIdentifier] = $itemsToDisplay;

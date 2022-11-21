@@ -6,6 +6,7 @@ namespace App\BackendController;
 
 use App\Core\View;
 use App\Model\NewUserRepository;
+use App\Validation\NewUserDataValidation;
 
 class NewUserControll
 {
@@ -14,6 +15,7 @@ class NewUserControll
     private NewUserDataValidation $validation;
     private array $message = array();
     private const LoginLink = ['<a href="index.php">Back to Login</a>'];
+    private array $userArray;
 
     public function __construct(
         View $view,
@@ -25,7 +27,7 @@ class NewUserControll
         $this->validation = $validation;
     }
 
-    private function validateLoginData(): void
+    public function validateLoginData(): array
     {
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
@@ -35,14 +37,17 @@ class NewUserControll
             $isPasswordValid = $this->validation->checkIfPasswordIsValid($password, $confirmPassword);
 
             if ($isUserNameValid && $isPasswordValid) {
-                $userArray = array(
+                $this->userArray = array(
                     "userName" => $userName,
                     "password" => $password,
                 );
-                $this->repository->addNewUserDataArrayToJson($userArray);
+                $this->repository->addNewUserDataArrayToJson($this->userArray);
             }
-            $this->message = $this->validation->getErrors();
+            if (!$isUserNameValid || !$isPasswordValid) {
+                return $this->validation->getErrors();
+            }
         }
+        return [];
     }
 
     private function addUserParameterToView(): void
@@ -53,7 +58,7 @@ class NewUserControll
 
     public function renderView(): void
     {
-        $this->validateLoginData();
+        $this->message = $this->validateLoginData();
         $this->addUserParameterToView();
         $this->view->setTemplate('newUser.tpl');
     }

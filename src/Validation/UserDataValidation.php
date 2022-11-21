@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\BackendController;
+namespace App\Validation;
 
 use App\Model\LoginRepository;
 
@@ -38,6 +38,7 @@ class UserDataValidation
     {
         $userNameValid = true;
         if ($this->is_blank($userName) || !$this->userNameExist($userName)) {
+            $this->errors = [];
             $this->errors[] = 'Invalid Userdata!';
             $userNameValid = false;
         }
@@ -48,6 +49,7 @@ class UserDataValidation
     {
         $passwordVerified = password_verify($userPassword, $dbUserPassword);
         if (!$passwordVerified) {
+            $this->errors = [];
             $this->errors[] = 'Invalid Userdata!';
         }
         return $passwordVerified;

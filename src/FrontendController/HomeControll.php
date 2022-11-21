@@ -7,10 +7,6 @@ namespace App\FrontendController;
 use App\Core\View;
 use App\Model\ProductRepository;
 
-use Exception;
-
-use function PHPUnit\Framework\isEmpty;
-
 class HomeControll implements ControllerInterface
 {
 

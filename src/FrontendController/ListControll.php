@@ -6,7 +6,6 @@ namespace App\FrontendController;
 
 use App\Core\View;
 use App\Model\ProductRepository;
-use App\Model\Products;
 
 class ListControll implements ControllerInterface
 {
@@ -32,16 +31,12 @@ class ListControll implements ControllerInterface
         $this->strForLinks[] = $strForLinks;
     }
 
-    public function getDataFromModel(): array
-    {
-        return $this->products->getAllDataFromJson();
-    }
 
     private function addCategorysToLinkArray(): void
     {
         $urlId = (int)$_GET['productId'];
         $listcategory = $this->products->findCategoryById($urlId);
-        foreach ($listcategory as $listElement){
+        foreach ($listcategory as $listElement) {
             $this->setStrForLinks($listElement);
         }
     }

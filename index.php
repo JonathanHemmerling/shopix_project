@@ -1,9 +1,13 @@
 <?php
 
 declare(strict_types=1);
+
+ob_start();
+session_start();
+
 require __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/src/functions/initialize.php';
 require_once __DIR__ . '/showErrorsInBrowser.php';
+require_once(__DIR__ . '/src/functions/authFunctions.php');
 
 use App\Core\View;
 use \App\Service\ControllerProvider;
@@ -20,25 +24,27 @@ $providerList = $providerCon->getList();
 
 
 if (isLoggedIn()) {
-    $pageTitle = 'Home';
+    $pageTitle = 'FrontendController\\Home';
     if (isset($_GET['page'])) {
-        $pageTitle = $_GET['page'];
+        $pageTitle = 'FrontendController\\' . $_GET['page'];
     }
-    foreach ($providerList as $providerElement) {
-        if ($providerElement === 'App\FrontendController\\' . $pageTitle . 'Controll') {
-            $className = $providerElement;
-            break;
-        }
+    if (isset($_GET['pageb'])) {
+        $pageTitle = 'BackendController\\' . $_GET['pageb'];
     }
 }
 if (!isLoggedIn()) {
-    if (isset($_GET['newUser'])) {
-        $pageTitle = 'NewUser';
-        $className = 'App\BackendController\\' . $pageTitle . 'Controll';
+    if (isset($_GET['pageb'])) {
+        $pageTitle = 'BackendController\\' . $_GET['pageb'];
     }
-    if (!isset($_GET['newUser'])) {
-        $pageTitle = 'Login';
-        $className = 'App\BackendController\\' . $pageTitle . 'Controll';
+    if (!isset($_GET['pageb'])) {
+        $pageTitle = 'BackendController\\' . 'Login';
+    }
+}
+
+foreach ($providerList as $providerElement) {
+    if ($providerElement === 'App\\' . $pageTitle . 'Controll') {
+        $className = $providerElement;
+        break;
     }
 }
 

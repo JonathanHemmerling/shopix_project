@@ -7,6 +7,7 @@ namespace App\BackendController;
 
 use App\Core\View;
 use App\Model\LoginRepository;
+use App\Validation\UserDataValidation;
 
 class LoginControll
 {
@@ -14,8 +15,9 @@ class LoginControll
     private UserDataValidation $validation;
     private LoginRepository $repository;
     private array $errors = [];
-    private const HomeLink = ['<a href="index.php?newUser">Register as new user</a>'];
+    private const HomeLink = ['<a href="index.php?pageb=NewUser">Register as new user</a>'];
     private array $allUserDataSet = [];
+    private string $userName;
 
     public function __construct(
         View $view,
@@ -25,20 +27,19 @@ class LoginControll
         $this->view = $view;
         $this->repository = $login;
         $this->validation = $validation;
+        $this->userName = '';
     }
 
-    public function loginUser(string $user): void
+    public function loginUser(): void
     {
         session_regenerate_id();
-        $_SESSION['userId'] = 1;
         $_SESSION['lastLogin'] = time();
-        $_SESSION['userName'] = $user;
+        $_SESSION['userName'] = $_POST['userName'];
     }
 
     private function getLoginData(): void
     {
-        $userName = $_POST['userName'];
-        $userData = $this->repository->findUserByName($userName);
+        $userData = $this->repository->findUserByName($this->userName);
         if ($userData) {
             $this->allUserDataSet = $userData;
         }
@@ -50,38 +51,39 @@ class LoginControll
         return $this->allUserDataSet;
     }
 
-    public function validateLoginData(): void
+    private function validateLoginData(): array
     {
         if (isset($_POST['submit'])) {
-            $userName = $_POST['userName'];
+            $this->userName = $_POST['userName'];
             $password = $_POST['password'];
-            $isUserNameValid = $this->validation->checkIfUserNameIsValid($userName);
+            $isUserNameValid = $this->validation->checkIfUserNameIsValid($this->userName);
             $this->allUserDataSet = $this->getUserDataSet();
             $this->allUserDataSet['userName'] = '';
             if ($isUserNameValid) {
-                $this->allUserDataSet['userName'] = $userName;
-                $userDataArray = $this->repository->findUserByName($userName);
+                $this->allUserDataSet['userName'] = $this->userName;
+                $userDataArray = $this->repository->findUserByName($this->userName);
                 $dbUserPassword = $userDataArray['password'];
-                $isPasswordVeified = $this->validation->verifyPassword($password, $dbUserPassword);
-                if ($isPasswordVeified) {
-                    $this->loginUser($userName);
+                $isPasswordVerified = $this->validation->verifyPassword($password, $dbUserPassword);
+                if ($isPasswordVerified) {
+                    $this->loginUser();
                     redirectTo('/../../index.php');
                 }
             }
-            $this->errors = $this->validation->getErrors();
+            if (!$isUserNameValid || !$isPasswordVerified) {
+                return $this->validation->getErrors();
+            }
         }
+        return [];
     }
 
-    private
-    function addUserParameterToView(): void
+    private function addUserParameterToView(): void
     {
         $this->view->addTemplateParameter('newUserLink', self::HomeLink);
     }
 
-    public
-    function renderView(): void
+    public function renderView(): void
     {
-        $this->validateLoginData();
+        $this->errors = $this->validateLoginData();
         $this->addUserParameterToView();
         $this->view->addTemplateParameter('errors', $this->errors);
         $this->view->setTemplate('login.tpl');

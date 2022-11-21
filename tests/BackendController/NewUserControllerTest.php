@@ -6,12 +6,10 @@ namespace AppTest\BackendController;
 
 use App\BackendController\LoginControll;
 use App\BackendController\NewUserControll;
-use App\BackendController\NewUserDataValidation;
-use App\BackendController\UserDataValidation;
 use App\Core\View;
-use App\Model\LoginRepository;
 use App\Model\Mapper\UserDataMapper;
 use App\Model\NewUserRepository;
+use App\Validation\NewUserDataValidation;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
@@ -48,7 +46,7 @@ class NewUserControllerTest extends TestCase
         $this->newUserRepositoryMock->method('addNewUserDataArrayToJson')
             ->with('TestUser');
         $this->newUserDataValidation = $this->getMockBuilder(NewUserDataValidation::class)
-            ->onlyMethods(['checkIfUserNameIsValid'])
+            ->onlyMethods(['checkIfUserNameIsValid','getErrors'])
             ->getMock();
         $this->newUserController = new NewUserControll($this->viewMock, $this->newUserRepositoryMock, $this->newUserDataValidation);
     }
@@ -62,13 +60,12 @@ class NewUserControllerTest extends TestCase
     public function testIfDataRequestForJsonWorkedFine(): void
     {
 
-        $loginData = $this->newUserController->renderView();
-        $expectedLoginData = 'TestUser';
-        self::assertSame($expectedLoginData, $loginData['userName']);
-        self::assertNotSame($expectedLoginData, $loginData['password']);
+        $loginData = $this->newUserController->validateLoginData();
+        self::assertFalse($loginData);
+        self::assertNotTrue($loginData);
 
         $this->newUserRepositoryMock->expects($this->once())
-            ->method('getAllDataFromJson')
+            ->method('getCurrentUserData')
             ->willReturn(['']);
         $this->newUserRepositoryMock->getCurrentUserData();
 
@@ -80,20 +77,28 @@ class NewUserControllerTest extends TestCase
             ->method('addTemplateParameter');
         $this->viewMock->expects($this->once())
             ->method('setTemplate')
-            ->with('login.tpl');
-        $this->loginController->renderView();
+            ->with('newUser.tpl');
+        $this->newUserController->renderView();
     }
 
     public function testIfLoginDataIsValid(): void
     {
-        $this->loginControllerMock->expects($this->once())
-            ->method('validateLoginData');
         $this->newUserDataValidation->expects($this->once())
             ->method('checkIfUserNameIsValid')
             ->with('TestUser')
             ->willReturn(false);
-        $this->loginControllerMock->validateLoginData();
+        $this->newUserController->validateLoginData();
         $this->newUserDataValidation->checkIfUserNameIsValid('TestUser');
+    }
+    public function testIfLogInIsCalled(): void
+    {
+        $this->newUserDataValidation->expects($this->atLeastOnce())
+            ->method('getErrors');
+        $this->newUserController->addUserDataToMemory(false);
+        $this->newUserDataValidation->method('checkIfUserNameIsValid')
+            ->willReturn(false);
+        $this->newUserController->renderView();
+
     }
 
 }

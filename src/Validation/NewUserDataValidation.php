@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\BackendController;
+namespace App\Validation;
 
 use App\Model\NewUserRepository;
 
@@ -90,18 +90,19 @@ class NewUserDataValidation
         if ($this->is_blank($password) || $this->is_blank($confirmPassword)) {
             $this->errors[] = 'Password cannot be blank';
             $passwordValid = false;
-        } elseif ($this->has_length($password, array('min' => 8, 'max' => 40))) {
+        }
+        if (!$this->has_length($confirmPassword, array('min' => 8, 'max' => 40))) {
             $this->errors[] = 'Password must be between 8 and 40 characters long';
             $passwordValid = false;
         }
-        elseif (!password_verify($confirmPassword, $password)) {
+        if (!password_verify($confirmPassword, $password)) {
             $this->errors[] = 'Passwords has to be the same';
             $passwordValid = false;
         }
         return $passwordValid;
     }
 
-    public function getErrors():array
+    public function getErrors(): array
     {
         return $this->errors;
     }

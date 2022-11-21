@@ -6,5 +6,5 @@ namespace App\FrontendController;
 
 interface ControllerInterface
 {
-    public function renderView():void;
+    public function renderView(): void;
 }

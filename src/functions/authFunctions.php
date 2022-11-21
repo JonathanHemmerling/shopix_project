@@ -8,8 +8,6 @@ function redirectTo($location): void
     exit();
 }
 
-
-
 function isLoggedIn(): bool
 {
     return isset($_SESSION['userName']);

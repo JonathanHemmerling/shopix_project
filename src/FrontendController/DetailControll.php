@@ -32,10 +32,12 @@ class DetailControll implements ControllerInterface
     {
         return $this->strForProductName;
     }
+
     public function getStrForProductDescription(): array
     {
         return $this->strForProductDescription;
     }
+
     private function addProductParameterToProductArray(): void
     {
         $pageId = (int)$_GET['categoryId'];
