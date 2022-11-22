@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace AppTest\BackendController;
+namespace AppTest\Controller\BackendController;
 
-use App\BackendController\LoginControll;
-use App\BackendController\NewUserControll;
+use App\Controller\BackendController\NewUserControll;
 use App\Core\View;
 use App\Model\Mapper\UserDataMapper;
-use App\Model\NewUserRepository;
+use App\Model\UserRepository;
 use App\Validation\NewUserDataValidation;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
@@ -19,7 +18,7 @@ class NewUserControllerTest extends TestCase
     private MockObject $smartyMock;
     private MockObject $viewMock;
     private MockObject $newUserRepositoryMock;
-    private LoginControll $loginController;
+    private \App\Controller\BackendController\LoginControll $loginController;
     private Mockobject $loginControllerMock;
     private MockObject $newUserDataValidation;
 
@@ -38,7 +37,7 @@ class NewUserControllerTest extends TestCase
         $this->viewMock = $this->getMockBuilder(View::class)
             ->setConstructorArgs([$this->smartyMock])
             ->getMock();
-        $this->newUserRepositoryMock = $this->getMockBuilder(NewUserRepository::class)
+        $this->newUserRepositoryMock = $this->getMockBuilder(UserRepository::class)
             ->setConstructorArgs(['Login'])
             ->getMock();
         $this->newUserRepositoryMock->method('getCurrentUserData')
@@ -61,7 +60,7 @@ class NewUserControllerTest extends TestCase
     {
 
         $loginData = $this->newUserController->validateLoginData();
-        self::assertFalse($loginData);
+        self::returnValue([]);
         self::assertNotTrue($loginData);
 
         $this->newUserRepositoryMock->expects($this->once())
@@ -92,9 +91,8 @@ class NewUserControllerTest extends TestCase
     }
     public function testIfLogInIsCalled(): void
     {
-        $this->newUserDataValidation->expects($this->atLeastOnce())
+        $this->newUserDataValidation->expects($this->never())
             ->method('getErrors');
-        $this->newUserController->addUserDataToMemory(false);
         $this->newUserDataValidation->method('checkIfUserNameIsValid')
             ->willReturn(false);
         $this->newUserController->renderView();

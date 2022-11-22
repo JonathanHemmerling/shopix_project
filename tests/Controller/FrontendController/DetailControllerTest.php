@@ -4,15 +4,11 @@ declare(strict_types=1);
 
 namespace AppTest\FrontendController;
 
-use App\FrontendController\DetailControll;
-
-use App\FrontendController\ListControll;
 use App\Core\View;
 use App\Model\Dto\ProductsDataTransferObject;
 use App\Model\Mapper\ListMapper;
 use App\Model\Mapper\ProductsMapper;
 use App\Model\ProductRepository;
-use AppTest\jsons\jsonDecode;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
@@ -22,7 +18,7 @@ class DetailControllerTest extends TestCase
     private MockObject $smartyMock;
     private MockObject $viewMock;
     private MockObject $productRepositoryMock;
-    private DetailControll $detailController;
+    private \App\Controller\FrontendController\DetailControll $detailController;
     private MockObject $listMapperMock;
     private MockObject $productsMapperMock;
     private MockObject $productsDTOMock;
@@ -59,7 +55,7 @@ class DetailControllerTest extends TestCase
         $this->productRepositoryMock->method('findProductById')
             ->with(2, 1)
             ->willReturn($this->productsDTOMock);
-        $this->detailController = new DetailControll($this->viewMock, $this->productRepositoryMock);
+        $this->detailController = new \App\Controller\FrontendController\DetailControll($this->viewMock, $this->productRepositoryMock);
     }
 
     public function tearDown(): void

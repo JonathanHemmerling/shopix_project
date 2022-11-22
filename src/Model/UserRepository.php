@@ -6,9 +6,8 @@ namespace App\Model;
 
 use InvalidArgumentException;
 
-class NewUserRepository
+class UserRepository
 {
-    private string $filePath;
     private string $message = '';
     private string $constructedPathToJsonFile;
     private string $pathToJsonFile;

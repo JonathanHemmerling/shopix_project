@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\FrontendController;
+namespace App\Controller;
 
 interface ControllerInterface
 {

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Service;
 
-use App\BackendController\LoginControll;
-use App\BackendController\LogoutControll;
-use App\BackendController\NewUserControll;
-use App\FrontendController\DetailControll;
-use App\FrontendController\HomeControll;
-use App\FrontendController\ListControll;
-use App\FrontendController\NotFoundControll;
+use App\Controller\BackendController\LoginControll;
+use App\Controller\BackendController\LogoutControll;
+use App\Controller\BackendController\NewUserControll;
+use App\Controller\FrontendController\DetailControll;
+use App\Controller\FrontendController\HomeControll;
+use App\Controller\FrontendController\ListControll;
+use App\Controller\FrontendController\NotFoundControll;
 
 class ControllerProvider
 {

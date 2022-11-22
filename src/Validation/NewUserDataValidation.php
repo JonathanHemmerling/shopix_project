@@ -4,15 +4,15 @@ declare(strict_types=1);
 
 namespace App\Validation;
 
-use App\Model\NewUserRepository;
+use App\Model\UserRepository;
 
 class NewUserDataValidation
 {
-    private NewUserRepository $repository;
+    private UserRepository $repository;
     private array $errors = [];
 
     public function __construct(
-        $repository = new NewUserRepository('Login')
+        $repository = new UserRepository('Login')
     ) {
         $this->repository = $repository;
     }

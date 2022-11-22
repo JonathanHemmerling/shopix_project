@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace AppTest\FrontendController;
 
-use App\FrontendController\HomeControll;
 use App\Core\View;
 use App\Model\ProductRepository;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -15,7 +14,7 @@ class HomeControllerTest extends TestCase
     private MockObject $smartyMock;
     private MockObject $viewMock;
     private MockObject $productRepositoryMock;
-    private HomeControll $homeController;
+    private \App\Controller\FrontendController\HomeControll $homeController;
 
     public function setUp(): void
     {
@@ -34,7 +33,7 @@ class HomeControllerTest extends TestCase
         $this->productRepositoryMock->method('getAllDataFromJson')
             ->willReturn($expectedJsonArray);
 
-        $this->homeController = new HomeControll($this->viewMock, $this->productRepositoryMock);
+        $this->homeController = new \App\Controller\FrontendController\HomeControll($this->viewMock, $this->productRepositoryMock);
     }
 
     public function tearDown(): void

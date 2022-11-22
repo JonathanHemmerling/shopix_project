@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AppTest\BackendController;
+namespace AppTest\Controller\BackendController;
 
-use App\BackendController\LoginControll;
+use App\Controller\BackendController\LoginControll;
 use App\Core\View;
 use App\Model\LoginRepository;
 use App\Model\Mapper\UserDataMapper;
@@ -50,9 +50,9 @@ class LoginControllerTest extends TestCase
         $this->userDataValidation = $this->getMockBuilder(UserDataValidation::class)
             ->onlyMethods(['checkIfUserNameIsValid', 'getErrors'])
             ->getMock();
-        $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
+        $this->loginController = new \App\Controller\BackendController\LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
 
-        $this->loginControllerMock = $this->getMockBuilder(LoginControll::class)
+        $this->loginControllerMock = $this->getMockBuilder(\App\Controller\BackendController\LoginControll::class)
             ->setConstructorArgs([$this->viewMock, $this->loginRepositoryMock, $this->userDataValidation])
             ->onlyMethods(['validateLoginData','getUserDataSet', 'getLoginData', 'renderView'])
             ->getMock();
@@ -94,16 +94,14 @@ class LoginControllerTest extends TestCase
         $this->userDataValidation->expects($this->once())
             ->method('checkIfUserNameIsValid')
             ->with('TestUser')
-            ->willReturn(false);
-        //$this->loginControllerMock->validateLoginData();
+            ->willReturn(false);;
         $this->userDataValidation->checkIfUserNameIsValid('TestUser');
     }
 
     public function testIfLogInIsCalled(): void
     {
-        $this->userDataValidation->expects($this->atLeastOnce())
+        $this->userDataValidation->expects($this->never())
             ->method('getErrors');
-        $this->loginController->loginUser(false);
         $this->userDataValidation->method('checkIfUserNameIsValid')
             ->willReturn(false);
         $this->loginController->renderView();

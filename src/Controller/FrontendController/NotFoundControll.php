@@ -2,9 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\FrontendController;
+namespace App\Controller\FrontendController;
 
 
+use App\Controller\ControllerInterface;
 use App\Core\View;
 
 class NotFoundControll implements ControllerInterface

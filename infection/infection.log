@@ -1,39 +1,6 @@
 Escaped mutants:
 ================
 
-1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/LoginControll.php:90    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-     }
-     public function renderView() : void
-     {
--        $this->loginUser($this->validateLoginData());
-+        
-         $this->addUserParameterToView();
-         $this->view->addTemplateParameter('errors', $this->errors);
-         $this->view->setTemplate('login.tpl');
-     }
- }
-
-
-2) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/BackendController/NewUserControll.php:68    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-     }
-     public function renderView() : void
-     {
--        $this->addUserDataToMemory($this->validateLoginData());
-+        
-         $this->addUserParameterToView();
-         $this->view->setTemplate('newUser.tpl');
-     }
- }
-
-
 Timed Out mutants:
 ==================
 

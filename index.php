@@ -2,23 +2,23 @@
 
 declare(strict_types=1);
 
-ob_start();
-session_start();
 
 require __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/showErrorsInBrowser.php';
 require_once(__DIR__ . '/src/functions/authFunctions.php');
 
+use App\Controller\BackendController\Session;
+use App\Controller\ControllerInterface;
+use App\Controller\FrontendController\NotFoundControll;
 use App\Core\View;
-use \App\Service\ControllerProvider;
-use \App\FrontendController\NotFoundControll;
-use \App\FrontendController\ControllerInterface;
+use App\Service\ControllerProvider;
 
 
+$session = new Session();
+$session->sessionStart();
 $smarty = new Smarty();
 $view = new View($smarty);
 $className = NotFoundControll::class;
-$errors = [];
 $providerCon = new ControllerProvider();
 $providerList = $providerCon->getList();
 
@@ -42,7 +42,7 @@ if (!isLoggedIn()) {
 }
 
 foreach ($providerList as $providerElement) {
-    if ($providerElement === 'App\\' . $pageTitle . 'Controll') {
+    if ($providerElement === 'App\\Controller\\' . $pageTitle . 'Controll') {
         $className = $providerElement;
         break;
     }

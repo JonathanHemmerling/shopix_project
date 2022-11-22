@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace AppTest\FrontendController;
 
-use App\FrontendController\ListControll;
 use App\Core\View;
 use App\Model\Dto\ListDataTransferObject;
 use App\Model\Mapper\ListMapper;
@@ -18,7 +17,7 @@ class ListControllerTest extends TestCase
     private MockObject $smartyMock;
     private MockObject $viewMock;
     private MockObject $productRepositoryMock;
-    private ListControll $listController;
+    private \App\Controller\FrontendController\ListControll $listController;
     private MockObject $listDTOMock;
 
     public function setUp(): void
@@ -50,7 +49,7 @@ class ListControllerTest extends TestCase
         $this->productRepositoryMock->method('findCategoryById')
             ->with(1)
             ->willReturn(['index.php?page=Detail&sweatshirt_1&categoryId=2&id=1>Sweatshirt 1', 'index.php?page=Detail&sweatshirt_2&categoryId=2&id=2>Sweatshirt 2', 'index.php?page=Detail&sweatshirt_3&categoryId=2&id=3>Sweatshirt 3']);
-        $this->listController = new ListControll($this->viewMock, $this->productRepositoryMock);
+        $this->listController = new \App\Controller\FrontendController\ListControll($this->viewMock, $this->productRepositoryMock);
     }
 
     public function tearDown(): void
