@@ -20,7 +20,6 @@ class LoginControllerTest extends TestCase
     private MockObject $viewMock;
     private MockObject $loginRepositoryMock;
     private LoginControll $loginController;
-    private Mockobject $loginControllerMock;
     private MockObject $userDataValidation;
     private array $expectedJsonArray;
 
@@ -46,13 +45,12 @@ class LoginControllerTest extends TestCase
             ->willReturn($this->expectedJsonArray);
         $this->loginRepositoryMock->method('findUserByName')
             ->with('')
-            ->willReturn(['userName' => 'TestUser', 'password' => 'password']);
+            ->willReturn(['userName' => '', 'password' => 'password']);
         $this->userDataValidation = $this->getMockBuilder(UserDataValidation::class)
             ->onlyMethods(['checkIfUserNameIsValid', 'getErrors'])
             ->getMock();
-        $this->loginController = new \App\Controller\BackendController\LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
 
-        $this->loginControllerMock = $this->getMockBuilder(\App\Controller\BackendController\LoginControll::class)
+        $this->loginControllerMock = $this->getMockBuilder(LoginControll::class)
             ->setConstructorArgs([$this->viewMock, $this->loginRepositoryMock, $this->userDataValidation])
             ->onlyMethods(['validateLoginData','getUserDataSet', 'getLoginData', 'renderView'])
             ->getMock();
@@ -64,10 +62,13 @@ class LoginControllerTest extends TestCase
         $_POST = [];
     }
 
+
+
     public function testIfDataRequestForJsonWorkedFine(): void
     {
-        $loginData = $this->loginController->getUserDataSet();
-        $expectedLoginData = 'TestUser';
+        $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
+        $loginData = $this->loginController->getUserDataSet('');
+        $expectedLoginData = '';
         self::assertSame($expectedLoginData, $loginData['userName']);
         self::assertNotSame($expectedLoginData, $loginData['password']);
 
@@ -80,6 +81,7 @@ class LoginControllerTest extends TestCase
 
     public function testIfTemplateIsSet(): void
     {
+        $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
         $this->viewMock->expects(self::exactly(2))
             ->method('addTemplateParameter');
         $this->viewMock->expects($this->once())
@@ -91,6 +93,7 @@ class LoginControllerTest extends TestCase
 
     public function testIfLoginDataIsValid(): void
     {
+        $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
         $this->userDataValidation->expects($this->once())
             ->method('checkIfUserNameIsValid')
             ->with('TestUser')
@@ -100,6 +103,7 @@ class LoginControllerTest extends TestCase
 
     public function testIfLogInIsCalled(): void
     {
+        $this->loginController = new LoginControll($this->viewMock, $this->loginRepositoryMock, $this->userDataValidation);
         $this->userDataValidation->expects($this->never())
             ->method('getErrors');
         $this->userDataValidation->method('checkIfUserNameIsValid')

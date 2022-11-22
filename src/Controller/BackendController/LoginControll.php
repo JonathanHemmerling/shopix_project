@@ -6,6 +6,7 @@ namespace App\Controller\BackendController;
 
 
 use App\Controller\ControllerInterface;
+use App\Controller\Session;
 use App\Core\View;
 use App\Model\LoginRepository;
 use App\Validation\UserDataValidation;
@@ -16,9 +17,9 @@ class LoginControll implements ControllerInterface
     private UserDataValidation $userValidation;
     private LoginRepository $repository;
     private Session $session;
-    private const HomeLink = ['<a href="index.php?pageb=NewUser">Register as new user</a>'];
+    private const HomeLink = ['<a href="index.php?pageb=User">Register as new user</a>'];
     private array $allUserDataSet = [];
-    private array $errors;
+    private array $errors = [];
 
     public function __construct(
         View $view,
@@ -32,15 +33,15 @@ class LoginControll implements ControllerInterface
         $this->userValidation = $userValidation;
     }
 
-    private function getLoginData($userName): void
+    private function getLoginData(string $userName): void
     {
-        $userData = $this->repository->findUserByName($userName);
+        $userData = $this->repository->findUserByName( $userName);
         if ($userData) {
             $this->allUserDataSet = $userData;
         }
     }
 
-    public function getUserDataSet($userName): array
+    public function getUserDataSet(string $userName): array
     {
         $this->getLoginData($userName);
         return $this->allUserDataSet;
@@ -74,7 +75,7 @@ class LoginControll implements ControllerInterface
     private function addUserParameterToView(): void
     {
         $this->view->addTemplateParameter('errors', $this->errors);
-        $this->view->addTemplateParameter('newUserLink', self::HomeLink);
+        $this->view->addTemplateParameter('UserLink', self::HomeLink);
     }
 
     public function renderView(): void

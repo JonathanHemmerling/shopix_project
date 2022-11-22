@@ -6,7 +6,7 @@ namespace App\Service;
 
 use App\Controller\BackendController\LoginControll;
 use App\Controller\BackendController\LogoutControll;
-use App\Controller\BackendController\NewUserControll;
+use App\Controller\BackendController\UserControll;
 use App\Controller\FrontendController\DetailControll;
 use App\Controller\FrontendController\HomeControll;
 use App\Controller\FrontendController\ListControll;
@@ -20,7 +20,7 @@ class ControllerProvider
         return [
             LoginControll::class,
             LogoutControll::class,
-            NewUserControll::class,
+            UserControll::class,
             DetailControll::class,
             HomeControll::class,
             ListControll::class,

@@ -7,15 +7,15 @@ require __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/showErrorsInBrowser.php';
 require_once(__DIR__ . '/src/functions/authFunctions.php');
 
-use App\Controller\BackendController\Session;
 use App\Controller\ControllerInterface;
 use App\Controller\FrontendController\NotFoundControll;
+use App\Controller\Session;
 use App\Core\View;
 use App\Service\ControllerProvider;
 
 
-$session = new Session();
-$session->sessionStart();
+ob_start();
+session_start();
 $smarty = new Smarty();
 $view = new View($smarty);
 $className = NotFoundControll::class;
@@ -34,7 +34,7 @@ if (isLoggedIn()) {
 }
 if (!isLoggedIn()) {
     if (isset($_GET['pageb'])) {
-        $pageTitle = 'BackendController\\' . $_GET['pageb'];
+        $pageTitle = 'BackendController\\' . $_GET['pageb'];;
     }
     if (!isset($_GET['pageb'])) {
         $pageTitle = 'BackendController\\' . 'Login';

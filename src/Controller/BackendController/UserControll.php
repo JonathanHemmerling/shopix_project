@@ -9,24 +9,23 @@ use App\Core\View;
 use App\Model\UserRepository;
 use App\Validation\NewUserDataValidation;
 
-class NewUserControll implements ControllerInterface
+class UserControll implements ControllerInterface
 {
     private View $view;
     private UserRepository $repository;
-    private NewUserDataValidation $validation;
-    private array $errorMessage = array();
+    private NewUserDataValidation $userValidation;
+    private array $errorMessage = [];
     private const LoginLink = ['<a href="index.php">Back to Login</a>'];
-    private array $userArray;
+    private array $userArray = ['userName' => '', 'password' => ''];
 
     public function __construct(
         View $view,
         UserRepository $newUser = new UserRepository('Login'),
-        NewUserDataValidation $validation = new NewUserDataValidation()
+        NewUserDataValidation $userValidation = new NewUserDataValidation()
     ) {
         $this->view = $view;
         $this->repository = $newUser;
-        $this->validation = $validation;
-        $this->userArray = array('userName' => '', 'password' => '');
+        $this->userValidation = $userValidation;
     }
 
     public function validateLoginData(): array
@@ -35,8 +34,8 @@ class NewUserControll implements ControllerInterface
             $userName = $_POST['userName'];
             $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
             $confirmPassword = $_POST['confirmPassword'];
-            $isUserNameValid = $this->validation->checkIfUserNameIsValid($userName);
-            $isPasswordValid = $this->validation->checkIfPasswordIsValid($password, $confirmPassword);
+            $isUserNameValid = $this->userValidation->checkIfUserNameIsValid($userName);
+            $isPasswordValid = $this->userValidation->checkIfPasswordIsValid($password, $confirmPassword);
 
             if ($isUserNameValid && $isPasswordValid) {
                 $this->userArray['userName'] = $userName;
@@ -44,7 +43,7 @@ class NewUserControll implements ControllerInterface
                 $this->repository->addNewUserDataArrayToJson($this->userArray);
             }
             if (!$isUserNameValid || !$isPasswordValid) {
-                return $this->validation->getErrors();
+                return $this->userValidation->getErrors();
             }
         }
         return $this->errorMessage;

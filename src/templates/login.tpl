@@ -26,9 +26,9 @@
         </label>
     </form>
 </div>
-<div class="newUser">
+<div class="User">
     <br />
-{foreach from=$newUserLink item=p}
+{foreach from=$UserLink item=p}
    {$p}
 {/foreach}
 </div>

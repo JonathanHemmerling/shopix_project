@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace AppTest\Controller\BackendController;
 
-use App\Controller\BackendController\NewUserControll;
+use App\Controller\BackendController\UserControll;
 use App\Core\View;
 use App\Model\Mapper\UserDataMapper;
 use App\Model\UserRepository;
@@ -13,13 +13,11 @@ use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 
-class NewUserControllerTest extends TestCase
+class UserControllerTest extends TestCase
 {
     private MockObject $smartyMock;
     private MockObject $viewMock;
     private MockObject $newUserRepositoryMock;
-    private \App\Controller\BackendController\LoginControll $loginController;
-    private Mockobject $loginControllerMock;
     private MockObject $newUserDataValidation;
 
     public function setUp(): void
@@ -45,9 +43,13 @@ class NewUserControllerTest extends TestCase
         $this->newUserRepositoryMock->method('addNewUserDataArrayToJson')
             ->with('TestUser');
         $this->newUserDataValidation = $this->getMockBuilder(NewUserDataValidation::class)
-            ->onlyMethods(['checkIfUserNameIsValid','getErrors'])
+            ->onlyMethods(['checkIfUserNameIsValid', 'getErrors'])
             ->getMock();
-        $this->newUserController = new NewUserControll($this->viewMock, $this->newUserRepositoryMock, $this->newUserDataValidation);
+        $this->newUserController = new UserControll(
+            $this->viewMock,
+            $this->newUserRepositoryMock,
+            $this->newUserDataValidation
+        );
     }
 
     public function tearDown(): void
@@ -58,7 +60,6 @@ class NewUserControllerTest extends TestCase
 
     public function testIfDataRequestForJsonWorkedFine(): void
     {
-
         $loginData = $this->newUserController->validateLoginData();
         self::returnValue([]);
         self::assertNotTrue($loginData);
@@ -67,7 +68,6 @@ class NewUserControllerTest extends TestCase
             ->method('getCurrentUserData')
             ->willReturn(['']);
         $this->newUserRepositoryMock->getCurrentUserData();
-
     }
 
     public function testIfTemplateIsSet(): void
@@ -89,6 +89,7 @@ class NewUserControllerTest extends TestCase
         $this->newUserController->validateLoginData();
         $this->newUserDataValidation->checkIfUserNameIsValid('TestUser');
     }
+
     public function testIfLogInIsCalled(): void
     {
         $this->newUserDataValidation->expects($this->never())
@@ -96,7 +97,6 @@ class NewUserControllerTest extends TestCase
         $this->newUserDataValidation->method('checkIfUserNameIsValid')
             ->willReturn(false);
         $this->newUserController->renderView();
-
     }
 
 }

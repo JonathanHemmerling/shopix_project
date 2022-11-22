@@ -2,15 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\BackendController;
+namespace App\Controller;
 
 class Session
 {
-    public function sessionStart(): void
-    {
-        ob_start();
-        session_start();
-    }
 
     public function loginUser(): void
     {

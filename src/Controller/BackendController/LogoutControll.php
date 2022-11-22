@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace App\Controller\BackendController;
 
 use App\Controller\ControllerInterface;
+use App\Controller\Session;
 use App\Core\View;
 
 class LogoutControll implements ControllerInterface
 {
 
     private View $view;
-    private const homeLink = ['<a href="index.php?pageb=NewUser">Register as new user</a>'];
+    private const homeLink = ['<a href="index.php?pageb=User">Register as new user</a>'];
     private const message = ['Logout successful!'];
 
     public function __construct(View $view, Session $session = new Session())
