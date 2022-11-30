@@ -5,23 +5,24 @@ declare(strict_types=1);
 namespace App\Controller\FrontendController;
 
 use App\Controller\ControllerInterface;
-use App\Core\View;
-use App\Model\ProductRepository;
+use App\Core\ViewInterface;
+use App\Model\ProductRepositoryInterface;
 
 
-class DetailControll implements ControllerInterface
+class DetailControll implements DetailControllInterface
 {
 
     private array $strForProductName;
     private array $strForProductDescription;
-    private View $view;
-    private ProductRepository $products;
+    private array $strForPrice;
     private const HomeLink = ['<a href="index.php">Home</a>'];
+    private const changeUserData = ['<a href="index.php?pageb=ChangeUser">Change Userdata</a>'];
 
-    public function __construct(View $view, ProductRepository $products = new ProductRepository('Detail'))
+    public function __construct(
+        private ViewInterface $view,
+        private ProductRepositoryInterface $products
+    )
     {
-        $this->view = $view;
-        $this->products = $products;
     }
 
     public function setStrForProductName(array $strForProductName): void
@@ -41,11 +42,13 @@ class DetailControll implements ControllerInterface
 
     private function addProductParameterToProductArray(): void
     {
-        $pageId = (int)$_GET['categoryId'];
-        $productId = (int)$_GET['id'];
-        $singleProduct = $this->products->findProductById($pageId, $productId);
-        $this->strForProductName[] = $singleProduct->displayName . ':';
-        $this->strForProductDescription[] = $singleProduct->description;
+        $pageId = (int)$_GET['subId'];
+        $singleProduct = $this->products->getAllDataFromProducts($pageId);
+        //foreach ($singleProduct as $product) {
+            $this->strForProductName[] = $singleProduct->displayName . ':';
+            $this->strForProductDescription[] = $singleProduct->productDescription;
+            $this->strForPrice[] = $singleProduct->price;
+        //}
     }
 
     private function addParameterToView(): void
@@ -54,6 +57,8 @@ class DetailControll implements ControllerInterface
         $this->view->addTemplateParameter('productHome', self::HomeLink);
         $this->view->addTemplateParameter('productName', $this->strForProductName);
         $this->view->addTemplateParameter('productDescription', $this->strForProductDescription);
+        $this->view->addTemplateParameter('price', $this->strForPrice);
+        $this->view->addTemplateParameter('changeUserData', self::changeUserData);
     }
 
     public function renderView(): void

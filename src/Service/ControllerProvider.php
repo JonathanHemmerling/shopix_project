@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Service;
 
+use App\Controller\BackendController\ChangeUserControll;
 use App\Controller\BackendController\LoginControll;
 use App\Controller\BackendController\LogoutControll;
 use App\Controller\BackendController\UserControll;
@@ -18,6 +19,7 @@ class ControllerProvider
     public function getList(): array
     {
         return [
+            ChangeUserControll::class,
             LoginControll::class,
             LogoutControll::class,
             UserControll::class,

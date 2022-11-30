@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace App\Model\Dto;
 
-class ListDataTransferObject
+class MainMenuDataTransferObject
 {
     public function __construct(
-        public readonly int|null $categoryId,
-        public readonly int|null $id,
-        public readonly string $detail,
+        public readonly int|null $mainId,
+        public readonly string $productGroup,
         public readonly string $displayName,
     ) {
     }

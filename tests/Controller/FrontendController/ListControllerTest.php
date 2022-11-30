@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace AppTest\FrontendController;
 
 use App\Core\View;
-use App\Model\Dto\ListDataTransferObject;
-use App\Model\Mapper\ListMapper;
+use App\Model\Dto\SubMenuDataTransferObject;
+use App\Model\Mapper\SubMenuMapper;
 use App\Model\Mapper\ProductsMapper;
 use App\Model\ProductRepository;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -25,10 +25,10 @@ class ListControllerTest extends TestCase
         $_GET['productId'] = '1';
         $jsonPath = file_get_contents(__DIR__ . '/../jsons/List.json');
         $expectedJsonArray = json_decode($jsonPath, true);
-        $this->listDTOMock = $this->getMockBuilder(ListDataTransferObject::class)
+        $this->listDTOMock = $this->getMockBuilder(SubMenuDataTransferObject::class)
             ->setConstructorArgs(['categoryId' => 1, 'id' => 1, 'detail' => 'jeans_1', 'displayName' => 'Jeans 1'])
             ->getMock();
-        $this->listMapperMock = $this->getMockBuilder(ListMapper::class)
+        $this->listMapperMock = $this->getMockBuilder(SubMenuMapper::class)
             ->getMock();
         $this->listMapperMock->method('mapToListDto')
             ->willReturn($this->listDTOMock);

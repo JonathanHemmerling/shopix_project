@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-28 18:19:26
+/* Smarty version 4.2.1, created on 2022-11-30 12:08:24
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/category.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_635c010ecd9c98_32985904',
+  'unifunc' => 'content_638739a8efc6b2_54308848',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1ec98d45a679101ee56a46501367850d611c79ac' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/category.tpl',
-      1 => 1666973965,
+      1 => 1669806504,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./footer.tpl' => 1,
   ),
 ),false)) {
-function content_635c010ecd9c98_32985904 (Smarty_Internal_Template $_smarty_tpl) {
+function content_638739a8efc6b2_54308848 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <pre>
@@ -31,8 +31,7 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 $_smarty_tpl->tpl_vars['q']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['q']->value) {
 $_smarty_tpl->tpl_vars['q']->do_else = false;
-?>
-    <?php echo $_smarty_tpl->tpl_vars['q']->value;?>
+echo $_smarty_tpl->tpl_vars['q']->value;?>
 
 <?php
 }
@@ -41,9 +40,8 @@ $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->t
 $_smarty_tpl->tpl_vars['p']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['p']->value) {
 $_smarty_tpl->tpl_vars['p']->do_else = false;
-?>
-    <a href=<?php echo $_smarty_tpl->tpl_vars['p']->value;?>
-</a>
+echo $_smarty_tpl->tpl_vars['p']->value;?>
+
 <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace AppTest\Controller\BackendController;
 
 use App\Controller\BackendController\LogoutControll;
-use App\Controller\Session;
+use App\Core\Session;
 use App\Core\View;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;

@@ -8,7 +8,7 @@ namespace App\Controller\FrontendController;
 use App\Controller\ControllerInterface;
 use App\Core\View;
 
-class NotFoundControll implements ControllerInterface
+class NotFoundControll implements NotFoundControllListControll
 {
     const error = ['Page not found'];
 

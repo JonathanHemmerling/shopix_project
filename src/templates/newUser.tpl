@@ -13,12 +13,48 @@
 </div>
 <div class="newUserForm">
 <h3>Create new User</h3>
-<form action="/index.php?pageb=NewUser" method="post">
+<form action="/index.php?pageb=User" method="post">
 <label>
 Username: <br />
 <input type="text" name="userName" value=""/>
 <br/>
 <br/>
+    First Name: <br />
+    <input type="text" name="firstName" value=""/>
+    <br/>
+    <br/>
+    Last Name: <br />
+    <input type="text" name="lastName" value=""/>
+    <br/>
+    <br/>
+    Country: <br />
+    <input type="text" name="country" value=""/>
+    <br/>
+    <br/>
+    Postcode: <br />
+    <input type="text" name="postCode" value=""/>
+    <br/>
+    <br/>
+    City: <br />
+    <input type="text" name="city" value=""/>
+    <br/>
+    <br/>
+    Street: <br />
+    <input type="text" name="street" value=""/>
+    <br/>
+    <br/>
+    Streetnumber: <br />
+    <input type="text" name="streetNumber" value=""/>
+    <br/>
+    <br/>
+    E-Mailadress: <br />
+    <input type="text" name="email" value=""/>
+    <br/>
+    <br/>
+    Telefonnumber: <br />
+    <input type="text" name="telefonNumber" value=""/>
+    <br/>
+    <br/>
 Password: <br />
 <input type="password" name="password" value=""/>
 <br />

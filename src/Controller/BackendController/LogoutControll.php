@@ -5,25 +5,25 @@ declare(strict_types=1);
 namespace App\Controller\BackendController;
 
 use App\Controller\ControllerInterface;
-use App\Controller\Session;
+use App\Core\Session;
 use App\Core\View;
+use App\Model\LoginRepository;
+use App\Model\UserRepository;
+use App\Validation\UserDataValidation;
 
-class LogoutControll implements ControllerInterface
+class LogoutControll implements LogoutControllInterface
 {
-
-    private View $view;
     private const homeLink = ['<a href="index.php?pageb=User">Register as new user</a>'];
     private const message = ['Logout successful!'];
 
-    public function __construct(View $view, Session $session = new Session())
+    public function __construct(private View $view, private LoginRepository $login, private UserRepository$repository, private UserDataValidation $validation, private Session $session)
     {
-        $this->view = $view;
         $session->logoutUser();
     }
 
     private function addParameterToView(): void
     {
-        $this->view->addTemplateParameter('newUserLink', self::homeLink);
+        $this->view->addTemplateParameter('UserLink', self::homeLink);
         $this->view->addTemplateParameter('errors', self::message);
     }
 

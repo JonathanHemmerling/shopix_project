@@ -6,15 +6,14 @@ namespace App\Model\Mapper;
 
 use App\Model\Dto\ProductsDataTransferObject;
 
-class ProductsMapper
+class ProductsMapper implements ProductsMapperInterface
 {
     public function mapToProductsDto(array $product): ProductsDataTransferObject
     {
         return new ProductsDataTransferObject(
-            $product['categoryId'],
-            $product['detail'],
             $product['displayName'],
-            $product['description']
+            $product['productDescription'],
+            $product['price']
         );
     }
 }

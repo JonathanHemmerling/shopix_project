@@ -6,7 +6,7 @@ namespace AppTest\FrontendController;
 
 use App\Core\View;
 use App\Model\Dto\ProductsDataTransferObject;
-use App\Model\Mapper\ListMapper;
+use App\Model\Mapper\SubMenuMapper;
 use App\Model\Mapper\ProductsMapper;
 use App\Model\ProductRepository;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -34,7 +34,7 @@ class DetailControllerTest extends TestCase
                 ['categoryId' => 2, 'detail' => 'jeans_1', 'displayName' => 'Jeans 1', 'description' => 'Test Jeans 1']
             )
             ->getMock();
-        $this->listMapperMock = $this->getMockBuilder(ListMapper::class)
+        $this->listMapperMock = $this->getMockBuilder(SubMenuMapper::class)
             ->getMock();
         $this->productsMapperMock = $this->getMockBuilder(ProductsMapper::class)
             ->getMock();

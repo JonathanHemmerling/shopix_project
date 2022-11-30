@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Controller;
+namespace App\Core;
 
-class Session
+class Session implements SessionInterface
 {
 
     public function loginUser(): void

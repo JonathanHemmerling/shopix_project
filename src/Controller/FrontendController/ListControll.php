@@ -8,18 +8,16 @@ use App\Controller\ControllerInterface;
 use App\Core\View;
 use App\Model\ProductRepository;
 
-class ListControll implements ControllerInterface
+class ListControll implements ListControllInterface
 {
 
     private array $strForLinks;
-    private ProductRepository $products;
-    private View $view;
     private const HomeLink = ['<a href="index.php">Home</a>'];
+    private const changeUserData = ['<a href="index.php?pageb=ChangeUser">Change Userdata</a>'];
 
-    public function __construct(View $view, ProductRepository $products = new ProductRepository('List'))
+    public function __construct(private View $view, private ProductRepository $products)
     {
-        $this->products = $products;
-        $this->view = $view;
+
     }
 
     public function getStrForLinks(): array
@@ -35,10 +33,13 @@ class ListControll implements ControllerInterface
 
     private function addCategorysToLinkArray(): void
     {
-        $urlId = (int)$_GET['productId'];
-        $listcategory = $this->products->findCategoryById($urlId);
-        foreach ($listcategory as $listElement) {
-            $this->setStrForLinks($listElement);
+        $urlId = (int)$_GET['mainId'];
+        $listContent = $this->products->getAllDataFromSubCategorys($urlId);
+        foreach ($listContent as $listElement) {
+            $subId = $listElement->subId;
+            $productName = $listElement->productNames;
+            $displayName = $listElement->displayName;
+            $this->setStrForLinks('<a href="index.php?page=Detail&subId=' . $subId . '&productName=' . $productName . '">' . $displayName . '</a>');
         }
     }
 
@@ -47,6 +48,7 @@ class ListControll implements ControllerInterface
         $this->addCategorysToLinkArray();
         $this->view->addTemplateParameter('categoryHome', self::HomeLink);
         $this->view->addTemplateParameter('categoryLink', $this->strForLinks);
+        $this->view->addTemplateParameter('changeUserData', self::changeUserData);
     }
 
     public function renderView(): void

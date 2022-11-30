@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Core;
 
 
-class View
+class View implements ViewInterface
 {
     private array $params = [];
     private string $template;
@@ -37,6 +37,7 @@ class View
     public function renderTemplate(): void
     {
         $this->smarty->assign($this->params);
+
         $this->smarty->display(__DIR__ . '/../templates/' . $this->getTemplate());
     }
 

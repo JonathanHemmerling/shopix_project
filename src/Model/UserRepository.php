@@ -4,51 +4,69 @@ declare(strict_types=1);
 
 namespace App\Model;
 
-use InvalidArgumentException;
+use App\SQL\SqlConnectionInterface;
+use PDO;
 
-class UserRepository
+class UserRepository implements UserRepositoryInterface
 {
     private string $message = '';
-    private string $constructedPathToJsonFile;
-    private string $pathToJsonFile;
-    private string $fileName;
-    private const path = __DIR__ . '/../jsons/';
+    private PDO $pdo;
+    private array $dataArray = [];
 
-    public function __construct(string $fileName, string $pathToJsonFile = self::path)
+    public function __construct(private SqlConnectionInterface $dbConnection)
     {
-        $this->fileName = $fileName;
-        $this->pathToJsonFile = $pathToJsonFile;
+        $this->pdo = $this->dbConnection->connectToDatabase('0.0.0.0', 'shopix', 'TestUser', 'password', '13306');
     }
 
-    private function setConstructedPath(string $path): void
-    {
-        $this->constructedPathToJsonFile = $path;
-        if (!file_exists($this->constructedPathToJsonFile)) {
-            throw new InvalidArgumentException(sprintf('Path %s does not exist.', $this->constructedPathToJsonFile));
-        }
-    }
 
     public function getErrors(): string
     {
         return $this->message;
     }
 
-    public function getCurrentUserData(): array
+    public function getCurrentUserData(string $user): array
     {
-        $this->setConstructedPath($this->pathToJsonFile . $this->fileName . '.json');
-        if (file_exists($this->constructedPathToJsonFile)) {
-            $currentData = file_get_contents($this->constructedPathToJsonFile);
-            $arrayData = json_decode($currentData, true);
+        $string = "SELECT * FROM userData WHERE ";
+        $string .= "userName=\"" . $user . '";';
+        foreach ($this->pdo->query($string) as $row) {
+            $this->dataArray = $row;
         }
-        return $arrayData;
+        return $this->dataArray;
     }
 
-    public function addNewUserDataArrayToJson(array $userData): void
+    public function addNewUserDataArrayToDb(array $userData): void
     {
-        $arrayData = $this->getCurrentUserData();
-        $newArrayData = $userData;
-        $arrayData[] = $newArrayData;
-        $finalData = json_encode($arrayData);
-        file_put_contents($this->constructedPathToJsonFile, $finalData);
+        $string = "INSERT INTO userData ";
+        $string .= "(userName, firstName, lastName, country, postcode, city, street, streetNumber, email, telefonNumber, hashedPassword) ";
+        $string .= "VALUES ('" . $userData['userName'] . "', ";
+        $string .= "'" . $userData['firstName'] . "', ";
+        $string .= "'" . $userData['lastName'] . "', ";
+        $string .= "'" . $userData['country'] . "', ";
+        $string .= "'" . $userData['postCode'] . "', ";
+        $string .= "'" . $userData['city'] . "', ";
+        $string .= "'" . $userData['street'] . "', ";
+        $string .= "'" . $userData['streetNumber'] . "', ";
+        $string .= "'" . $userData['email'] . "', ";
+        $string .= "'" . $userData['telefonNumber'] . "', ";
+        $string .= "'" . $userData['hashedPassword'] . "');";
+        $this->pdo->query($string);
+    }
+
+    public function changeUserDataArrayFromDb(array $userData, string $userName): void
+    {
+        $string = "UPDATE userData SET ";
+        $string .= "userName=\"" . $userData['userName'] . '",';
+        $string .= "firstName=\"" . $userData['firstName'] . '",';
+        $string .= "lastName=\"" . $userData['lastName'] . '",';
+        $string .= "country=\"" . $userData['country'] . '",';
+        $string .= "postcode=\"" . $userData['postCode'] . '",';
+        $string .= "city=\"" . $userData['city'] . '",';
+        $string .= "street=\"" . $userData['street'] . '",';
+        $string .= "streetNumber=\"" . $userData['streetNumber'] . '",';
+        $string .= "email=\"" . $userData['email'] . '",';
+        $string .= "telefonNumber=\"" . $userData['telefonNumber'] . '",';
+        $string .= "hashedPassword=\"" . $userData['hashedPassword'] . ' "';
+        $string .= "WHERE userName=\"" . $userName . '";';
+        $this->pdo->query($string);
     }
 }

@@ -7,10 +7,9 @@ namespace App\Model\Dto;
 class ProductsDataTransferObject
 {
     public function __construct(
-        public readonly int|null $categoryId,
-        public readonly string $detail,
         public readonly string $displayName,
-        public readonly string $description,
+        public readonly string $productDescription,
+        public readonly string $price,
     ) {
     }
 }

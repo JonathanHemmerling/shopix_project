@@ -5,20 +5,17 @@ declare(strict_types=1);
 namespace App\Controller\FrontendController;
 
 use App\Controller\ControllerInterface;
-use App\Core\View;
-use App\Model\ProductRepository;
+use App\Core\ViewInterface;
+use App\Model\ProductRepositoryInterface;
 
-class HomeControll implements ControllerInterface
+class HomeControll implements HomeControllInterface
 {
 
     private array $strForLinks;
-    private View $view;
-    private ProductRepository $mainMenu;
+    private const changeUserData = ['<a href="index.php?pageb=ChangeUser">Change Userdata</a>'];
 
-    public function __construct(View $view, ProductRepository $mainMenu = new ProductRepository('Home'))
+    public function __construct(private ViewInterface $view, private ProductRepositoryInterface $mainMenu)
     {
-        $this->mainMenu = $mainMenu;
-        $this->view = $view;
     }
 
     public function setStrForLinks(string $link): void
@@ -33,17 +30,17 @@ class HomeControll implements ControllerInterface
 
     public function getDataFromModel(): array
     {
-        return $this->mainMenu->getAllDataFromJson();
+        return $this->mainMenu->getAllDataFromMainTable();
     }
 
-    private function addMenuToLinkArray(): void
+    public function addMenuToLinkArray(): void
     {
         $menuContent = $this->getDataFromModel();
-        foreach ($menuContent as $menuLink) {
-            $category = $menuLink['category'];
-            $id = $menuLink['id'];
-            $displayName = $menuLink['displayName'];
-            $this->setStrForLinks('index.php?page=List&' . $category . '&productId=' . $id . '>' . $displayName);
+        foreach ($menuContent as $menuElement) {
+            $mainId = $menuElement->mainId;
+            $productGroup = $menuElement->productGroup;
+            $displayName = $menuElement->displayName;
+            $this->setStrForLinks('<a href="index.php?page=List&mainId=' . $mainId . '&productGroup=' . $productGroup . '">' . $displayName . '</a>');
         }
     }
 
@@ -51,6 +48,7 @@ class HomeControll implements ControllerInterface
     {
         $this->addMenuToLinkArray();
         $this->view->addTemplateParameter('menu', $this->strForLinks);
+        $this->view->addTemplateParameter('changeUserData', self::changeUserData);
     }
 
     public function renderView(): void

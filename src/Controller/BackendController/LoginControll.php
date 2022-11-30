@@ -5,37 +5,32 @@ declare(strict_types=1);
 namespace App\Controller\BackendController;
 
 
+use App\Controller\BackendControllerInterface;
 use App\Controller\ControllerInterface;
-use App\Controller\Session;
-use App\Core\View;
-use App\Model\LoginRepository;
-use App\Validation\UserDataValidation;
+use App\Core\SessionInterface;
+use App\Core\ViewInterface;
+use App\Model\LoginRepositoryInterface;
+use App\Model\UserRepositoryInterface;
+use App\Validation\UserDataValidationInterface;
 
-class LoginControll implements ControllerInterface
+class LoginControll implements LoginControllInterface
 {
-    private View $view;
-    private UserDataValidation $userValidation;
-    private LoginRepository $repository;
-    private Session $session;
     private const HomeLink = ['<a href="index.php?pageb=User">Register as new user</a>'];
     private array $allUserDataSet = [];
     private array $errors = [];
 
     public function __construct(
-        View $view,
-        LoginRepository $login = new LoginRepository('Login'),
-        UserDataValidation $userValidation = new UserDataValidation(),
-        Session $session = new Session()
+        private ViewInterface $view,
+        private LoginRepositoryInterface $login,
+        private UserRepositoryInterface $repository,
+        private UserDataValidationInterface $userValidation,
+        private SessionInterface $session
     ) {
-        $this->session = $session;
-        $this->view = $view;
-        $this->repository = $login;
-        $this->userValidation = $userValidation;
     }
 
-    private function getLoginData(string $userName): void
+    public function getLoginData(string $userName): void
     {
-        $userData = $this->repository->findUserByName( $userName);
+        $userData = $this->login->findUserByName($userName);
         if ($userData) {
             $this->allUserDataSet = $userData;
         }
@@ -47,18 +42,16 @@ class LoginControll implements ControllerInterface
         return $this->allUserDataSet;
     }
 
-    private function validateLoginData(): array
+    public function validateLoginData(): array
     {
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
             $password = $_POST['password'];
             $isUserNameValid = $this->userValidation->checkIfUserNameIsValid($userName);
-            $this->allUserDataSet = $this->getUserDataSet($userName);
-            $this->allUserDataSet['userName'] = '';
+            $this->allUserDataSet = $this->login->findUserByName($userName);
             if ($isUserNameValid) {
-                $this->allUserDataSet['userName'] = $userName;
-                $userDataArray = $this->repository->findUserByName($userName);
-                $dbUserPassword = $userDataArray['password'];
+                $userDataArray = $this->login->findUserByName($userName);
+                $dbUserPassword = $userDataArray['hashedPassword'];
                 $isPasswordVerified = $this->userValidation->verifyPassword($password, $dbUserPassword);
                 if ($isPasswordVerified) {
                     $this->session->loginUser();
