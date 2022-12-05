@@ -1,9 +1,0 @@
-[{"id": 1,"categoryId": 1, "category": "jeans",  "displayName": "Jeans 1", "detail": "jeans_1"},
-  {"id": 2,"categoryId": 1, "category": "jeans", "displayName": "Jeans 2", "detail": "jeans_2"},
-  {"id": 3,"categoryId": 1, "category": "jeans", "displayName": "Jeans 3", "detail": "jeans_3"},
-  {"id": 1,"categoryId": 2, "category": "sweatshirts", "displayName": "Sweatshirt 1", "detail": "sweatshirt_1"},
-  {"id": 2,"categoryId": 2, "category": "sweatshirts", "displayName": "Sweatshirt 2", "detail": "sweatshirt_2"},
-  {"id": 3,"categoryId": 2, "category": "sweatshirts", "displayName": "Sweatshirt 3", "detail": "sweatshirt_3"},
-  {"id": 1,"categoryId": 3, "category": "t-shirts", "displayName": "T-Shirt 1", "detail": "t-shirt_1"},
-  {"id": 2,"categoryId": 3, "category": "t-shirts", "displayName": "T-Shirt 2", "detail": "t-shirt_2"},
-  {"id": 3,"categoryId": 3, "category": "t-shirts", "displayName": "T-Shirt 3", "detail": "t-shirt_3"}]

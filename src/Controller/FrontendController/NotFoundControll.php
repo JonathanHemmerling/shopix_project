@@ -5,18 +5,14 @@ declare(strict_types=1);
 namespace App\Controller\FrontendController;
 
 
-use App\Controller\ControllerInterface;
 use App\Core\View;
 
-class NotFoundControll implements NotFoundControllListControll
+class NotFoundControll implements NotFoundControllInterface
 {
     const error = ['Page not found'];
 
-    private View $view;
-
-    public function __construct(View $view)
+    public function __construct(private View $view)
     {
-        $this->view = $view;
     }
 
     public function renderView(): void

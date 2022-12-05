@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller\BackendController;
 
-use App\Core\Session;
 use App\Core\View;
-use App\Model\LoginRepository;
 use App\Model\UserRepositoryInterface;
 use App\Validation\UserDataValidation;
 
@@ -18,14 +16,12 @@ class UserControll implements UserControllInterface
 
     public function __construct(
         private View $view,
-        private LoginRepository $login,
         private UserRepositoryInterface $repository,
-        private UserDataValidation $validation,
-        private Session $session
+        private UserDataValidation $validation
     ) {
     }
 
-    public function validateLoginData(): array
+    private function validateLoginData(): array
     {
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
@@ -40,7 +36,7 @@ class UserControll implements UserControllInterface
             $telefonNumber = $_POST['telefonNumber'];
             $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
             $confirmPassword = $_POST['confirmPassword'];
-            $isUserNameValid = $this->validation->checkIfUserNameIsValid($userName);
+            $isUserNameValid = $this->validation->checkIfNewUserNameIsValid($userName);
             $isPasswordValid = $this->validation->checkIfPasswordIsValid($password, $confirmPassword);
 
             if ($isUserNameValid && $isPasswordValid) {
@@ -55,13 +51,10 @@ class UserControll implements UserControllInterface
                 $this->userArray['email'] = $email;
                 $this->userArray['telefonNumber'] = $telefonNumber;
                 $this->userArray['hashedPassword'] = $password;
-                $this->repository->addNewUserDataArrayToDb($this->userArray, $userName);
-            }
-            if (!$isUserNameValid || !$isPasswordValid) {
-                return $this->validation->getErrors();
+                $this->repository->addNewUserDataArrayToDb($this->userArray);
             }
         }
-        return $this->errorMessage;
+        return $this->validation->getErrors();
     }
 
     private function addUserParameterToView(): void

@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 4.2.1, created on 2022-11-29 14:14:12
-  from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/changeUser.tpl' */
+  from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/changeUserData.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -11,7 +11,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     '49450a098de2e02f5259c157f9cff2fe57e25b9a' => 
     array (
-      0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/changeUser.tpl',
+      0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/changeUserData.tpl',
       1 => 1669727651,
       2 => 'file',
     ),

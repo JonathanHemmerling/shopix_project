@@ -8,15 +8,19 @@ namespace App\Model;
 use App\Model\Dto\MainMenuDataTransferObject;
 use App\Model\Dto\ProductsDataTransferObject;
 use App\Model\Dto\SubMenuDataTransferObject;
+use App\Model\Mapper\MainMenuMapper;
 use App\Model\Mapper\MainMenuMapperInterface;
 use App\Model\Mapper\ProductsMapperInterface;
+use App\Model\Mapper\SubMenuMapper;
 use App\Model\Mapper\SubMenuMapperInterface;
 use App\SQL\SqlConnectionInterface;
 use PDO;
 
 class ProductRepository implements ProductRepositoryInterface
 {
-    public function __construct(private SqlConnectionInterface $dbConnection, private PDO $pdo, private ProductsMapperInterface $productsMapper, private SubMenuMapperInterface $listMapper, private MainMenuMapperInterface $mainMapper)
+
+
+    public function __construct(private readonly SqlConnectionInterface $dbConnection, private PDO $pdo, private ProductsMapperInterface $productsMapper,private SubMenuMapper $listMapper,  private MainMenuMapper $mainMapper)
     {
         $this->pdo = $this->dbConnection->connectToDatabase('0.0.0.0', 'shopix', 'TestUser', 'password', '13306');
     }

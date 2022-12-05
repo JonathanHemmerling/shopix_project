@@ -1,6 +1,21 @@
 Escaped mutants:
 ================
 
+1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/FrontendController/DetailControll.php:58    [M] CastInt
+
+--- Original
++++ New
+@@ @@
+     }
+     private function addProductParameterToProductArray() : void
+     {
+-        $pageId = (int) $_GET['subId'];
++        $pageId = $_GET['subId'];
+         $singleProduct = $this->products->getAllDataFromProducts($pageId);
+         $this->setStrForProductName([$singleProduct->displayName . ':']);
+         $this->setStrForProductDescription([$singleProduct->productDescription]);
+
+
 Timed Out mutants:
 ==================
 

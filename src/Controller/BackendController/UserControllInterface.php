@@ -6,7 +6,5 @@ namespace App\Controller\BackendController;
 
 interface UserControllInterface
 {
-    public function validateLoginData(): array;
-
     public function renderView(): void;
 }

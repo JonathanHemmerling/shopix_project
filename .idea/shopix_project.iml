@@ -57,6 +57,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/infection/include-interceptor" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/infection/abstract-testframework-adapter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/infection/infection" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/var-dumper" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

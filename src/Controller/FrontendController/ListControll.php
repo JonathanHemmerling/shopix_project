@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Controller\FrontendController;
 
-use App\Controller\ControllerInterface;
 use App\Core\View;
 use App\Model\ProductRepository;
 
@@ -13,11 +12,10 @@ class ListControll implements ListControllInterface
 
     private array $strForLinks;
     private const HomeLink = ['<a href="index.php">Home</a>'];
-    private const changeUserData = ['<a href="index.php?pageb=ChangeUser">Change Userdata</a>'];
+    private const changeUserData = ['<a href="index.php?pageb=ChangeUserData">Change Userdata</a>'];
 
     public function __construct(private View $view, private ProductRepository $products)
     {
-
     }
 
     public function getStrForLinks(): array
@@ -25,7 +23,7 @@ class ListControll implements ListControllInterface
         return $this->strForLinks;
     }
 
-    public function setStrForLinks(string $strForLinks): void
+    private function setStrForLinks(string $strForLinks): void
     {
         $this->strForLinks[] = $strForLinks;
     }
@@ -39,7 +37,9 @@ class ListControll implements ListControllInterface
             $subId = $listElement->subId;
             $productName = $listElement->productNames;
             $displayName = $listElement->displayName;
-            $this->setStrForLinks('<a href="index.php?page=Detail&subId=' . $subId . '&productName=' . $productName . '">' . $displayName . '</a>');
+            $this->setStrForLinks(
+                '<a href="index.php?page=Detail&subId=' . $subId . '&productName=' . $productName . '">' . $displayName . '</a>'
+            );
         }
     }
 

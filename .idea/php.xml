@@ -60,6 +60,7 @@
       <path value="$PROJECT_DIR$/vendor/infection/include-interceptor" />
       <path value="$PROJECT_DIR$/vendor/infection/abstract-testframework-adapter" />
       <path value="$PROJECT_DIR$/vendor/infection/infection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

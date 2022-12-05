@@ -6,11 +6,9 @@ namespace App\Controller\BackendController;
 
 interface LoginControllInterface
 {
-    public function getLoginData(string $userName): void;
+    //public function getLoginData(string $userName): void;
 
-    public function getUserDataSet(string $userName): array;
-
-    public function validateLoginData(): array;
+    //public function getUserDataSet(string $userName): array;
 
     public function renderView(): void;
 }

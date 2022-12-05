@@ -80,7 +80,7 @@ class UserDataValidation implements UserDataValidationInterface
         }
         return $userDataDontExist;
     }
-    private
+    public
     function userNameExist(
         string $value
     ): bool {

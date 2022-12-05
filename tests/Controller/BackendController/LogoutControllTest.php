@@ -26,11 +26,11 @@ class LogoutControllTest extends TestCase{
         $this->sessionMock = $this->getMockBuilder(Session::class)
             ->onlyMethods(['logoutUser'])
             ->getMock();
-        $this->sessionMock->expects($this->once())
-            ->method('logoutUser');
+
 
         $this->logoutController = new LogoutControll($this->viewMock, $this->sessionMock);
-
+        $this->sessionMock->expects($this->once())
+            ->method('logoutUser');
         $this->viewMock->expects($this->exactly(2))
             ->method('addTemplateParameter')
             ->withAnyParameters();

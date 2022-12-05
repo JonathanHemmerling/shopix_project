@@ -17,10 +17,10 @@
     <form action="/index.php?pageb=Login" method="post">
         Username: <br/>
         <label>
-            <input type="text" name="userName" value=""/>
+            <input type="text" name="userName" value="UserTest123"/>
             <br/>
             Password: <br/>
-            <input type="password" name="password" value=""/>
+            <input type="password" name="password" value="password"/>
             <br/><br/>
             <input type="submit" name="submit" value="Login"/>
         </label>

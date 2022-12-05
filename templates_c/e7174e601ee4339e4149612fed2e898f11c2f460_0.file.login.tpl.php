@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-11-22 15:48:40
+/* Smarty version 4.2.1, created on 2022-12-01 15:40:55
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_637ce148817806_77401147',
+  'unifunc' => 'content_6388bcf7511c71_11832596',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e7174e601ee4339e4149612fed2e898f11c2f460' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/login.tpl',
-      1 => 1669128514,
+      1 => 1669905644,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./loginFooter.tpl' => 1,
   ),
 ),false)) {
-function content_637ce148817806_77401147 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6388bcf7511c71_11832596 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <style type="text/css">
@@ -50,10 +50,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <form action="/index.php?pageb=Login" method="post">
         Username: <br/>
         <label>
-            <input type="text" name="userName" value=""/>
+            <input type="text" name="userName" value="UserTest123"/>
             <br/>
             Password: <br/>
-            <input type="password" name="password" value=""/>
+            <input type="password" name="password" value="password"/>
             <br/><br/>
             <input type="submit" name="submit" value="Login"/>
         </label>

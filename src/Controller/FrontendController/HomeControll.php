@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace App\Controller\FrontendController;
 
-use App\Controller\ControllerInterface;
 use App\Core\ViewInterface;
 use App\Model\ProductRepositoryInterface;
 
@@ -12,7 +11,7 @@ class HomeControll implements HomeControllInterface
 {
 
     private array $strForLinks;
-    private const changeUserData = ['<a href="index.php?pageb=ChangeUser">Change Userdata</a>'];
+    private const changeUserData = ['<a href="index.php?pageb=ChangeUserData">Change Userdata</a>'];
 
     public function __construct(private ViewInterface $view, private ProductRepositoryInterface $mainMenu)
     {
@@ -28,19 +27,16 @@ class HomeControll implements HomeControllInterface
         return $this->strForLinks;
     }
 
-    public function getDataFromModel(): array
+    private function addMenuToLinkArray(): void
     {
-        return $this->mainMenu->getAllDataFromMainTable();
-    }
-
-    public function addMenuToLinkArray(): void
-    {
-        $menuContent = $this->getDataFromModel();
+        $menuContent = $this->mainMenu->getAllDataFromMainTable();
         foreach ($menuContent as $menuElement) {
             $mainId = $menuElement->mainId;
             $productGroup = $menuElement->productGroup;
             $displayName = $menuElement->displayName;
-            $this->setStrForLinks('<a href="index.php?page=List&mainId=' . $mainId . '&productGroup=' . $productGroup . '">' . $displayName . '</a>');
+            $this->setStrForLinks(
+                '<a href="index.php?page=List&mainId=' . $mainId . '&productGroup=' . $productGroup . '">' . $displayName . '</a>'
+            );
         }
     }
 

@@ -5,44 +5,25 @@ declare(strict_types=1);
 namespace App\Controller\BackendController;
 
 
-use App\Controller\BackendControllerInterface;
-use App\Controller\ControllerInterface;
 use App\Core\SessionInterface;
 use App\Core\ViewInterface;
 use App\Model\LoginRepositoryInterface;
-use App\Model\UserRepositoryInterface;
 use App\Validation\UserDataValidationInterface;
 
 class LoginControll implements LoginControllInterface
 {
     private const HomeLink = ['<a href="index.php?pageb=User">Register as new user</a>'];
-    private array $allUserDataSet = [];
     private array $errors = [];
 
     public function __construct(
         private ViewInterface $view,
         private LoginRepositoryInterface $login,
-        private UserRepositoryInterface $repository,
         private UserDataValidationInterface $userValidation,
         private SessionInterface $session
     ) {
     }
 
-    public function getLoginData(string $userName): void
-    {
-        $userData = $this->login->findUserByName($userName);
-        if ($userData) {
-            $this->allUserDataSet = $userData;
-        }
-    }
-
-    public function getUserDataSet(string $userName): array
-    {
-        $this->getLoginData($userName);
-        return $this->allUserDataSet;
-    }
-
-    public function validateLoginData(): array
+    private function validateLoginData(): array
     {
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
@@ -58,11 +39,8 @@ class LoginControll implements LoginControllInterface
                     redirectTo('/../../index.php');
                 }
             }
-            if (!$isUserNameValid || !$isPasswordVerified) {
-                return $this->userValidation->getErrors();
-            }
         }
-        return $this->errors;
+        return $this->userValidation->getErrors();
     }
 
     private function addUserParameterToView(): void
