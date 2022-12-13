@@ -208,7 +208,7 @@ class UserControllTest extends TestCase
         $view->expects($this->atLeastOnce())
             ->method('setTemplate')
             ->with('newUser.tpl');
-        $view->expects($this->exactly(2))
+        $view->expects($this->exactly(1))
             ->method('addTemplateParameter');
         $userControll->renderView();
     }

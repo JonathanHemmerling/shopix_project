@@ -14,7 +14,7 @@
 <div class="loginform">
     <h3>Log in</h3>
 
-    <form action="/index.php?pageb=Login" method="post">
+    <form action="/index.php?page=Login&backend" method="post">
         Username: <br/>
         <label>
             <input type="text" name="userName" value="UserTest123"/>
@@ -26,10 +26,9 @@
         </label>
     </form>
 </div>
-<div class="User">
-    <br />
-{foreach from=$UserLink item=p}
-   {$p}
-{/foreach}
+<div><a href="index.php?page=User&backend">Register as new user</a></div>
+
+<div><br />
+    <a href="index.php?page=AdminLogin&backend">Adminarea</a>
 </div>
 {include file="./loginFooter.tpl"}

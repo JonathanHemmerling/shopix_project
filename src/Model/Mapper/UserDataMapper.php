@@ -11,8 +11,18 @@ class UserDataMapper
     public function mapToUserDto(array $list): UserDataTransferObject
     {
         return new UserDataTransferObject(
+            $list['id'],
             $list['userName'],
-            $list['password'],
+            $list['firstName'],
+            $list['lastName'],
+            $list['country'],
+            $list['postcode'],
+            $list['city'],
+            $list['street'],
+            $list['streetNumber'],
+            $list['email'],
+            $list['telefonNumber'],
+            $list['hashedPassword'],
         );
     }
 

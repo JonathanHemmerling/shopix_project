@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Controller\BackendController;
+namespace App\Controller;
 
-interface UserControllInterface
+interface ControllerInterface
 {
     public function renderView(): void;
 }

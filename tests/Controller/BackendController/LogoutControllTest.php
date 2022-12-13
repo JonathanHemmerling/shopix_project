@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace AppTest\Controller\BackendController;
 
-use App\Controller\BackendController\LogoutControll;
+use App\Controller\BackendController\AdminLogoutControll;
 use App\Core\Session;
 use App\Core\View;
 use PHPUnit\Framework\MockObject\MockObject;
@@ -13,7 +13,7 @@ use PHPUnit\Framework\TestCase;
 class LogoutControllTest extends TestCase{
     private MockObject $viewMock;
     private MockObject $sessionMock;
-    private LogoutControll $logoutController;
+    private AdminLogoutControll $logoutController;
 
     public function testIfUserIsLoggedOut():void
     {
@@ -28,16 +28,16 @@ class LogoutControllTest extends TestCase{
             ->getMock();
 
 
-        $this->logoutController = new LogoutControll($this->viewMock, $this->sessionMock);
+        $this->logoutController = new AdminLogoutControll($this->viewMock, $this->sessionMock);
         $this->sessionMock->expects($this->once())
             ->method('logoutUser');
-        $this->viewMock->expects($this->exactly(2))
+        $this->viewMock->expects($this->exactly(1))
             ->method('addTemplateParameter')
             ->withAnyParameters();
 
         $this->viewMock->expects($this->once())
             ->method('setTemplate')
-            ->with('login.tpl');
+            ->with('adminLogin.tpl');
         $this->logoutController->renderView();
 
 

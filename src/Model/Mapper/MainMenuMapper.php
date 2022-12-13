@@ -12,7 +12,7 @@ class MainMenuMapper implements MainMenuMapperInterface
     {
         return new MainMenuDataTransferObject(
             $list['mainId'],
-            $list['productGroup'],
+            $list['mainName'],
             $list['displayName'],
         );
     }

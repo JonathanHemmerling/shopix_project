@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AppTest\FrontendController;
+namespace AppTest\Controller\FrontendController;
 
 use App\Controller\FrontendController\ListControll;
 use App\Core\View;

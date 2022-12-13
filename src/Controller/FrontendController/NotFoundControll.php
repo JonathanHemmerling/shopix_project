@@ -5,13 +5,14 @@ declare(strict_types=1);
 namespace App\Controller\FrontendController;
 
 
+use App\Controller\ControllerInterface;
 use App\Core\View;
 
-class NotFoundControll implements NotFoundControllInterface
+class NotFoundControll  implements ControllerInterface
 {
-    const error = ['Page not found'];
+    private const error = ['Page not found'];
 
-    public function __construct(private View $view)
+    public function __construct(private readonly View $view)
     {
     }
 

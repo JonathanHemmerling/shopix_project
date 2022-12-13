@@ -9,6 +9,7 @@
         failOnEmptyTestSuite="true"
         beStrictAboutOutputDuringTests="true"
         verbose= "true"
+        bootstrap="./bootstap.php"
 >
     <php>
         <ini name="display_errors" value="On"/>

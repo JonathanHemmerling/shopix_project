@@ -71,15 +71,17 @@ class UserDataValidation implements UserDataValidationInterface
             return true;
         }
     }
+
     private function isAUniqueUserName(string $userName): bool
     {
         $userDataDontExist = false;
-        $userDataArray = $this->repository->getCurrentUserData($userName);
-        if (isEmpty($userDataArray)) {
+        $userDataExist = $this->repository->doesUserDataExists($userName);
+        if (!$userDataExist) {
             $userDataDontExist = true;
         }
         return $userDataDontExist;
     }
+
     public
     function userNameExist(
         string $value
@@ -91,13 +93,26 @@ class UserDataValidation implements UserDataValidationInterface
         }
         return $userDataExist;
     }
+
+    public
+    function userAdminExist(
+        string $value
+    ): bool {
+        $userDataExist = false;
+        $userDataArray = $this->login->findAdminByName($value);
+        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
+            $userDataExist = true;
+        }
+        return $userDataExist;
+    }
+
     public function checkIfNewUserNameIsValid(string $userName): bool
     {
         $userNameValid = true;
         if ($this->is_blank($userName)) {
             $this->errors[] = 'Username cannot be blank';
             $userNameValid = false;
-        } elseif (!$this->has_length($userName, array('min' => 3, 'max' => 20))) {
+        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
             $this->errors[] = 'Username must be between 3 and 20 characters long';
             $userNameValid = false;
         } elseif (!$this->isAUniqueUserName($userName)) {
@@ -106,12 +121,13 @@ class UserDataValidation implements UserDataValidationInterface
         }
         return $userNameValid;
     }
+
     public
     function checkIfUserNameIsValid(
         string $userName
     ): bool {
         $userNameValid = true;
-        if ($this->is_blank($userName) || !$this->userNameExist($userName)) {
+        if ($this->is_blank($userName) || ((!$this->userNameExist($userName) && !$this->userAdminExist($userName)))) {
             $this->errors = [];
             $this->errors[] = 'Invalid Userdata!';
             $userNameValid = false;
@@ -119,8 +135,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $userNameValid;
     }
 
-    public
-    function verifyPassword(
+    public function verifyPassword(
         string $userPassword,
         string $dbUserPassword
     ): bool {
@@ -131,6 +146,7 @@ class UserDataValidation implements UserDataValidationInterface
         }
         return $passwordVerified;
     }
+
     public function checkIfPasswordIsValid(string $password, string $confirmPassword)
     {
         $passwordValid = true;
@@ -138,7 +154,7 @@ class UserDataValidation implements UserDataValidationInterface
             $this->errors[] = 'Password cannot be blank';
             $passwordValid = false;
         }
-        if (!$this->has_length($confirmPassword, array('min' => 8, 'max' => 40))) {
+        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 40])) {
             $this->errors[] = 'Password must be between 8 and 40 characters long';
             $passwordValid = false;
         }
@@ -149,8 +165,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $passwordValid;
     }
 
-    public
-    function getErrors(): array
+    public function getErrors(): array
     {
         return $this->errors;
     }

@@ -7,65 +7,126 @@ namespace App\Model;
 
 use App\Model\Dto\MainMenuDataTransferObject;
 use App\Model\Dto\ProductsDataTransferObject;
-use App\Model\Dto\SubMenuDataTransferObject;
 use App\Model\Mapper\MainMenuMapper;
-use App\Model\Mapper\MainMenuMapperInterface;
 use App\Model\Mapper\ProductsMapperInterface;
-use App\Model\Mapper\SubMenuMapper;
-use App\Model\Mapper\SubMenuMapperInterface;
 use App\SQL\SqlConnectionInterface;
 use PDO;
 
 class ProductRepository implements ProductRepositoryInterface
 {
 
-
-    public function __construct(private readonly SqlConnectionInterface $dbConnection, private PDO $pdo, private ProductsMapperInterface $productsMapper,private SubMenuMapper $listMapper,  private MainMenuMapper $mainMapper)
-    {
+    public function __construct(
+        private readonly SqlConnectionInterface $dbConnection,
+        private PDO $pdo,
+        private ProductsMapperInterface $productsMapper,
+        private MainMenuMapper $mainMapper
+    ) {
         $this->pdo = $this->dbConnection->connectToDatabase('0.0.0.0', 'shopix', 'TestUser', 'password', '13306');
     }
+
+    //MainMenu
 
     /**
      * @param int $mainId
      * @return MainMenuDataTransferObject[]
      */
-    public function getAllDataFromMainTable(): array
+    public function getAllMainCategorysFromDatabase(): array
     {
-        $string = "SELECT * FROM mainCategorys";
-        $rows = $this->pdo->query($string);
-        foreach ($rows as $row){
-            $dto []= ($this->mainMapper->mapToMainDto($row));
+        $queryString = "SELECT * FROM mainCategorys";
+        $rows = $this->pdo->query($queryString);
+        foreach ($rows as $row) {
+            $dto [] = ($this->mainMapper->mapToMainDto($row));
         }
         return $dto;
     }
 
-    /**
-     * @param int $subId
-     * @return SubMenuDataTransferObject[]
-     */
-    public function getAllDataFromSubCategorys(int $mainId): array
+    public function getMainCategorysByIdFromDatabase(int $mainId): ProductsDataTransferObject
     {
-        $string = "SELECT * FROM subCategorys ";
-        $string .= "WHERE mainId =" . $mainId;
-        $dto = [];
-        foreach ($this->pdo->query($string) as $row) {
-            $dto[] = $this->listMapper->mapToListDto($row);
+        $queryString = "SELECT * FROM products ";
+        $queryString .= "WHERE mainId =" . $mainId;
+        foreach ($this->pdo->query($queryString) as $row) {
+            $dto = $this->productsMapper->mapToProductsDto($row);
         }
-
         return $dto;
     }
+
+
+    //ProductsTable
+
     /**
      * @param int $subId
      * @return ProductsDataTransferObject
      */
-    public function getAllDataFromProducts($subId): ProductsDataTransferObject
+    public function getAllProductsFromDatabase(): array
     {
-        $string = "SELECT * FROM products ";
-        $string .= "WHERE subId =" . $subId;
-        foreach ($this->pdo->query($string) as $row) {
+        $queryString = "SELECT * FROM products";
+        $rows = $this->pdo->query($queryString);
+        foreach ($rows as $row) {
+            $dto [] = ($this->mainMapper->mapToMainDto($row));
+        }
+        return $dto;
+    }
+
+    public function getProductByMainIdFromDatabase(int $mainId): array
+    {
+        $queryString = "SELECT * FROM products ";
+        $queryString .= "WHERE mainId =" . $mainId;
+        $queryString .= " ORDER BY displayName ASC";
+        foreach ($this->pdo->query($queryString) as $row) {
+            $dto [] = $this->productsMapper->mapToProductsDto($row);
+        }
+        return $dto;
+    }
+
+    public function getProductByProductIdFromDatabase(int $productId): ProductsDataTransferObject
+    {
+        $queryString = "SELECT * FROM products ";
+        $queryString .= "WHERE productId =" . $productId;
+        foreach ($this->pdo->query($queryString) as $row) {
             $dto = $this->productsMapper->mapToProductsDto($row);
         }
         return $dto;
+    }
+
+    public function getProductByProductNameFromDatabase(string $productName): ProductsDataTransferObject
+    {
+        $queryString = "SELECT * FROM products ";
+        $queryString .= "WHERE displayName ='" . $productName . "'";
+        foreach ($this->pdo->query($queryString) as $row) {
+            $dto = $this->productsMapper->mapToProductsDto($row);
+        }
+        return $dto;
+    }
+
+    public function editProductByName(int $productId, string $column, string $stringToChange): bool
+    {
+        $queryString = "UPDATE products SET " . $column . "='" . $stringToChange . "' ";
+        $queryString .= "WHERE productid=" . $productId;
+        $this->pdo->query($queryString);
+        return true;
+    }
+
+    public function deleteProductById(int $productId): bool
+    {
+        $queryString = "DELETE FROM products ";
+        $queryString .= "WHERE productId =" . $productId;
+        $this->pdo->query($queryString);
+        return true;
+    }
+
+    public function createNewProduct(
+        int $mainId,
+        string $displayName,
+        string $productName,
+        string $description,
+        string $price
+    ):bool
+    {
+        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) ";
+        $queryString .= "VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
+        var_dump($queryString);
+        $this->pdo->query($queryString);
+        return true;
     }
 
 }

@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace App\Controller\BackendController;
 
+use App\Controller\ControllerInterface;
 use App\Core\View;
 use App\Model\UserRepositoryInterface;
 use App\Validation\UserDataValidation;
 
-class UserControll implements UserControllInterface
+class UserControll  implements ControllerInterface
 {
-    private array $errorMessage = [];
-    private const LoginLink = ['<a href="index.php">Back to Login</a>'];
     private array $userArray = ['userName' => '', 'password' => ''];
 
     public function __construct(
@@ -21,7 +20,7 @@ class UserControll implements UserControllInterface
     ) {
     }
 
-    private function validateLoginData(): array
+    public function renderView(): void
     {
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
@@ -54,19 +53,7 @@ class UserControll implements UserControllInterface
                 $this->repository->addNewUserDataArrayToDb($this->userArray);
             }
         }
-        return $this->validation->getErrors();
-    }
-
-    private function addUserParameterToView(): void
-    {
-        $this->view->addTemplateParameter('backToLogin', self::LoginLink);
-        $this->view->addTemplateParameter('errors', $this->errorMessage);
-    }
-
-    public function renderView(): void
-    {
-        $this->errorMessage = $this->validateLoginData();
-        $this->addUserParameterToView();
+        $this->view->addTemplateParameter('errors', $this->validation->getErrors());
         $this->view->setTemplate('newUser.tpl');
     }
 }

@@ -1,13 +1,11 @@
 <div>
-    <form action="/index.php?pageb=Logout" method="post">
+    <form action="/index.php?page=Logout&backend" method="post">
         <input type="submit" name="logout" value="Logout">
     </form>
 </div>
 <div>
     <br />
-    {foreach from=$changeUserData item=p}
-    {$p}
-    {/foreach}
+    <a href="index.php?page=ChangeUserData&backend">Change Userdata</a>
 </div>
 </body>
 </html>

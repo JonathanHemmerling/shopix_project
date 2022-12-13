@@ -1,8 +1,6 @@
 {include file="./header.tpl"}
 <pre>
-{foreach from=$categoryHome item=q}
-{$q}
-{/foreach}
+<a href="index.php">Home</a>
 {foreach from=$categoryLink item=p}
 {$p}
 {/foreach}

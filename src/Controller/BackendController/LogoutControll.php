@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace App\Controller\BackendController;
 
+use App\Controller\ControllerInterface;
 use App\Core\Session;
 use App\Core\View;
 
 
-class LogoutControll implements LogoutControllInterface
+class LogoutControll  implements ControllerInterface
 {
-    private const homeLink = ['<a href="index.php?pageb=User">Register as new user</a>'];
     private const message = ['Logout successful!'];
 
     public function __construct(
@@ -19,17 +19,10 @@ class LogoutControll implements LogoutControllInterface
     ) {
     }
 
-    private function addParameterToView(): void
-    {
-        $this->view->addTemplateParameter('UserLink', self::homeLink);
-        $this->view->addTemplateParameter('errors', self::message);
-    }
-
     public function renderView(): void
     {
         $this->session->logoutUser();
-        $this->addParameterToView();
+        $this->view->addTemplateParameter('errors', self::message);
         $this->view->setTemplate('login.tpl');
-
     }
 }

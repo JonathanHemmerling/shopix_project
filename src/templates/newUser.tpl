@@ -13,7 +13,7 @@
 </div>
 <div class="newUserForm">
 <h3>Create new User</h3>
-<form action="/index.php?pageb=User" method="post">
+<form action="/index.php?page=User&backend" method="post">
 <label>
 Username: <br />
 <input type="text" name="userName" value=""/>
@@ -70,7 +70,5 @@ Repeat Password: <br />
 </div>
 <div class="backToLogin">
     <br />
-    {foreach from=$backToLogin item=q}
-        {$q}
-    {/foreach}
+    <a href="index.php">Back to Login</a>
 </div>

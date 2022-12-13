@@ -19,6 +19,15 @@ class LoginRepository implements LoginRepositoryInterface
     }
 
 
+    public function findAdminByName(string $userName): array
+    {
+        $string = "SELECT * FROM admin WHERE userName = ";
+        $string .= '"'.$userName.'"';
+        foreach ($this->pdo->query($string) as $row){
+            $this->userArray = $row;
+        }
+        return $this->userArray;
+    }
     public function findUserByName(string $userName): array
     {
         $string = "SELECT * FROM userData WHERE userName = ";

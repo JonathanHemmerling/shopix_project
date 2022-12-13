@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-11-29 11:02:18
+/* Smarty version 4.2.1, created on 2022-12-09 10:01:33
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/newUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6385d8aa971b32_45814167',
+  'unifunc' => 'content_6392f96dcd3059_12659413',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9131a2198db354de2a0123a8a5f01c021681eaf7' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/newUser.tpl',
-      1 => 1669716094,
+      1 => 1670576488,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./header.tpl' => 1,
   ),
 ),false)) {
-function content_6385d8aa971b32_45814167 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6392f96dcd3059_12659413 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <style type="text/css">
@@ -45,7 +45,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 <div class="newUserForm">
 <h3>Create new User</h3>
-<form action="/index.php?pageb=User" method="post">
+<form action="/index.php?page=User&backend" method="post">
 <label>
 Username: <br />
 <input type="text" name="userName" value=""/>
@@ -102,16 +102,6 @@ Repeat Password: <br />
 </div>
 <div class="backToLogin">
     <br />
-    <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['backToLogin']->value, 'q');
-$_smarty_tpl->tpl_vars['q']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['q']->value) {
-$_smarty_tpl->tpl_vars['q']->do_else = false;
-?>
-        <?php echo $_smarty_tpl->tpl_vars['q']->value;?>
-
-    <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+    <a href="index.php">Back to Login</a>
 </div><?php }
 }

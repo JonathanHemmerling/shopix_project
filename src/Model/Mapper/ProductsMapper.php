@@ -11,8 +11,11 @@ class ProductsMapper implements ProductsMapperInterface
     public function mapToProductsDto(array $product): ProductsDataTransferObject
     {
         return new ProductsDataTransferObject(
+            $product['productId'],
+            $product['mainId'],
             $product['displayName'],
-            $product['productDescription'],
+            $product['productName'],
+            $product['description'],
             $product['price']
         );
     }

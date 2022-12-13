@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-01 15:40:55
+/* Smarty version 4.2.1, created on 2022-12-08 21:28:12
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6388bcf7511c71_11832596',
+  'unifunc' => 'content_639248dc2a9b67_08625915',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'e7174e601ee4339e4149612fed2e898f11c2f460' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/login.tpl',
-      1 => 1669905644,
+      1 => 1670531288,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./loginFooter.tpl' => 1,
   ),
 ),false)) {
-function content_6388bcf7511c71_11832596 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639248dc2a9b67_08625915 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <style type="text/css">
@@ -47,7 +47,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 <div class="loginform">
     <h3>Log in</h3>
 
-    <form action="/index.php?pageb=Login" method="post">
+    <form action="/index.php?page=Login&backend" method="post">
         Username: <br/>
         <label>
             <input type="text" name="userName" value="UserTest123"/>
@@ -59,19 +59,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         </label>
     </form>
 </div>
-<div class="User">
-    <br />
-<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['UserLink']->value, 'p');
-$_smarty_tpl->tpl_vars['p']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['p']->value) {
-$_smarty_tpl->tpl_vars['p']->do_else = false;
-?>
-   <?php echo $_smarty_tpl->tpl_vars['p']->value;?>
+<div><a href="index.php?page=User&backend">Register as new user</a></div>
 
-<?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+<div><br />
+    <a href="index.php?page=AdminLogin&backend">Adminarea</a>
 </div>
 <?php $_smarty_tpl->_subTemplateRender("file:./loginFooter.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }

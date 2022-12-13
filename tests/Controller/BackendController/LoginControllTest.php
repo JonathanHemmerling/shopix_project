@@ -4,12 +4,14 @@ declare(strict_types=1);
 
 namespace AppTest\Controller\BackendController;
 
-include_once 'authFunctions.php';
 use App\Controller\BackendController\LoginControll;
+use App\Core\RedirectInterface;
 use App\Core\Session;
 use App\Core\View;
 use App\Model\LoginRepository;
 use App\Model\UserRepository;
+use App\Service\Container;
+use App\Service\DependencyProvider;
 use App\SQL\SqlConnection;
 use App\Validation\UserDataValidation;
 use PHPUnit\Framework\TestCase;
@@ -17,98 +19,47 @@ use PHPUnit\Framework\TestCase;
 
 class LoginControllTest extends TestCase
 {
+    protected function tearDown(): void
+    {
+        $_SESSION = [];
+        $_POST = [];
+        parent::tearDown();
+    }
+
     public function testIsUserLoggedIn()
     {
-        $pdo = $this->getMockBuilder(\PDO::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $smarty = $this->getMockBuilder(\Smarty::Class)
-            ->getMock();
-        $view = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$smarty])
-            ->onlyMethods(['setTemplate', 'addTemplateParameter'])
-            ->getMock();
-        $session = $this->getMockBuilder(Session::class)
-            ->onlyMethods(['loginUser'])
-            ->getMock();
-        $sqlcon = $this->getMockBuilder(SqlConnection::class)
-            ->getMock();
-        $loginRepo = $this->getMockBuilder(LoginRepository::class)
-            ->setConstructorArgs([$sqlcon, $pdo])
-            ->onlyMethods(['findUserByName'])
-            ->getMock();
-        $userRepo = $this->getMockBuilder(UserRepository::class)
-            ->setConstructorArgs([$sqlcon])
-            ->getMock();
-        $userValidation = $this->getMockBuilder(UserDataValidation::class)
-            ->setConstructorArgs([$loginRepo, $userRepo])
-            ->onlyMethods(['checkIfUserNameIsValid', 'verifyPassword'])
-            ->getMock();
-        $loginControll = new LoginControll($view ,$loginRepo, $userValidation ,$session);
-        $_POST['submit'] = 'Login';
+        $_POST['submit'] = true;
         $_POST['userName'] = 'UserTest123';
         $_POST['password'] = 'password';
-        $userValidation->method('checkIfUserNameIsValid')
-            ->willReturn(true);
-        $userValidation->method('verifyPassword')
-            ->willReturn(true);
-        $loginRepo->method('findUserByName')
-            ->willReturn(['hashedPassword' => 'password']);
+
+        $container = $this->getContainer();
+        /** @var View $view */
+        $view = $container->get(View::class);
+
+        $mockRedirect = $this->createMock(RedirectInterface::class);
+        $mockRedirect->expects($this->once())->method('to');
+        $mockSession = $this->createMock(Session::class);
+        $mockSession->expects($this->once())->method('loginUser');
+
+        $login = new LoginControll(
+            $view,
+            $container->get(LoginRepository::class),
+            $container->get(UserDataValidation::class),
+            $mockSession,
+            $mockRedirect,
+        );
+
+        $login->renderView();
+
+        $params = $view->getParams();
+        }
 
 
-        $session->expects($this->atLeastOnce())
-            ->method('loginUser');
-
-        $view->expects($this->atLeastOnce())
-            ->method('setTemplate')
-             ->with('login.tpl');
-        $view->expects($this->exactly(2))
-            ->method('addTemplateParameter');
-        $loginControll->renderView();
-    }
-
-    public function testIfErrorsAreThrown(): void
+    private function getContainer(): Container
     {
-        $pdo = $this->getMockBuilder(\PDO::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $smarty = $this->getMockBuilder(\Smarty::Class)
-            ->getMock();
-        $view = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$smarty])
-            ->onlyMethods(['setTemplate'])
-            ->getMock();
-        $session = $this->getMockBuilder(Session::class)
-            ->onlyMethods(['loginUser'])
-            ->getMock();
-        $sqlcon = $this->getMockBuilder(SqlConnection::class)
-            ->getMock();
-        $loginRepo = $this->getMockBuilder(LoginRepository::class)
-            ->setConstructorArgs([$sqlcon, $pdo])
-            ->onlyMethods(['findUserByName'])
-            ->getMock();
-        $userRepo = $this->getMockBuilder(UserRepository::class)
-            ->setConstructorArgs([$sqlcon])
-            ->getMock();
-        $userValidation = $this->getMockBuilder(UserDataValidation::class)
-            ->setConstructorArgs([$loginRepo, $userRepo])
-            ->onlyMethods(['checkIfUserNameIsValid', 'verifyPassword', 'getErrors'])
-            ->getMock();
-        $loginControll = new LoginControll($view ,$loginRepo, $userValidation ,$session);
-        $_POST['submit'] = 'Login';
-        $_POST['userName'] = '';
-        $_POST['password'] = '';
-        $userValidation->method('checkIfUserNameIsValid')
-            ->willReturn(false);
-        $userValidation->method('verifyPassword')
-            ->willReturn(false);
-        $loginRepo->method('findUserByName')
-            ->willReturn(['hashedPassword' => 'password']);
-
-        $userValidation->expects($this->atLeastOnce())
-            ->method('getErrors');
-        $loginControll->renderView();
+        $container = new Container();
+        $dependencyProvider = new DependencyProvider();
+        $dependencyProvider->providerDependency($container);
+        return $container;
     }
-
-
 }
