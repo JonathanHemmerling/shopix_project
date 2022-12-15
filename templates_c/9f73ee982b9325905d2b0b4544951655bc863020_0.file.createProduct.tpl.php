@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-12 14:46:01
+/* Smarty version 4.2.1, created on 2022-12-15 15:52:23
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/createProduct.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_63973099edf438_23467151',
+  'unifunc' => 'content_639b34a7ef3d41_07348397',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9f73ee982b9325905d2b0b4544951655bc863020' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/createProduct.tpl',
-      1 => 1670852756,
+      1 => 1671115942,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./loginFooter.tpl' => 1,
   ),
 ),false)) {
-function content_63973099edf438_23467151 (Smarty_Internal_Template $_smarty_tpl) {
+function content_639b34a7ef3d41_07348397 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,14 +32,19 @@ $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_
 <br/>
 <table>
     <tr>
-        <td><form action="/index.php?page=CreateProduct&backend" method="post">
+        <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['mainId']->value, 'p');
+$_smarty_tpl->tpl_vars['p']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['p']->value) {
+$_smarty_tpl->tpl_vars['p']->do_else = false;
+?>
+        <td><form action="/index.php?page=CreateProduct&mainId=<?php echo $_smarty_tpl->tpl_vars['p']->value;?>
+&backend" method="post">
+
          <label>
              Maincategory: <br/>
-             <select name="mainId" size = "3">
-             <option>1</option>
-             <option>2</option>
-             <option>3</option>
-             </select>
+             <?php echo $_smarty_tpl->tpl_vars['p']->value;?>
+
              <br />
              Displayname: <br/>
              <input type="text" name= "displayName" value=""/>
@@ -56,8 +61,12 @@ $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_
              <br/>
              <input type="submit" name= "submit" value="Save new Product"/>
          </label>
+
          </form>
         </td>
+        <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </tr>
 <?php $_smarty_tpl->_subTemplateRender("file:./loginFooter.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }

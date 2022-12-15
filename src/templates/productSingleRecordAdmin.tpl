@@ -1,17 +1,15 @@
 {include file="./header.tpl"}
 
-<h3>Userdata Detail</h3>
+<h3>ProductData Detail</h3>
 
 <a href="index.php?page=Admin&backend">Home</a>
 <br />
 <table>
 <tr>
-    <td><form action="/index.php?page=UserDetail&backend" method="post">
+    <td><form action="/index.php?page=AdminProductSingleRecord&productId={$smarty.session.productId}&backend" method="post">
     <label>
-    {foreach from=$singleUser key=k item=p}
-        {$k}:
+    {foreach from=$productName key=k item=p}
     <input type="text" name= "{$k}" value="{$p}"/>
-        <br/>
     {/foreach}
     <input type="submit" name= "submit" value="save"/>
     </label>

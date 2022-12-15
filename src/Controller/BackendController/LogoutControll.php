@@ -5,17 +5,17 @@ declare(strict_types=1);
 namespace App\Controller\BackendController;
 
 use App\Controller\ControllerInterface;
-use App\Core\Session;
-use App\Core\View;
+use App\Core\SessionInterface;
+use App\Core\ViewInterface;
 
 
-class LogoutControll  implements ControllerInterface
+class LogoutControll implements ControllerInterface
 {
     private const message = ['Logout successful!'];
 
     public function __construct(
-        private View $view,
-        private Session $session
+        private readonly ViewInterface $view,
+        private readonly SessionInterface $session
     ) {
     }
 

@@ -12,8 +12,9 @@
 </pre>
 </div>
 <div class="changeUserForm">
-    <h3>Change Userdata</h3>
-    <form action="/index.php?page=ChangeUserData&backend" method="post">
+    <h3>Userdata</h3>
+
+    <form  action="/index.php?page=UserSingleRecord&userId={$smarty.session.userId}&backend" method="post">
         <label>
             {foreach from=$items key=k item=p}
             {$k}:<br />
@@ -23,7 +24,9 @@
         <input type="submit" name="submit" value="Submit">
         <br/>
         </label>
+
     </form>
+
 </div>
 <div class="backToLogin">
     <br/>

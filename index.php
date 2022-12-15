@@ -41,7 +41,6 @@ foreach ($providerList as $providerElement) {
         break;
     }
 }
-
 $container = $container->get($className);
 $container->renderView();
 $view->renderTemplate();

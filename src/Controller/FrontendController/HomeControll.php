@@ -8,24 +8,22 @@ use App\Controller\ControllerInterface;
 use App\Core\ViewInterface;
 use App\Model\ProductRepositoryInterface;
 
-class HomeControll  implements ControllerInterface
+class HomeControll implements ControllerInterface
 {
-
     private array $strForLinks;
 
-    public function __construct(private ViewInterface $view, private ProductRepositoryInterface $mainMenu)
-    {
+    public function __construct(
+        private readonly ViewInterface $view,
+        private readonly ProductRepositoryInterface $mainMenuRepository
+    ) {
     }
 
     public function renderView(): void
     {
-        $menuContent = $this->mainMenu->getAllMainCategorysFromDatabase();
-        foreach ($menuContent as $menuElement) {
-            $mainId = $menuElement->mainId;
-            $mainName = $menuElement->mainName;
-            $displayName = $menuElement->displayName;
+        $allMenuCategorys = $this->mainMenuRepository->getAllMainCategorys();
+        foreach ($allMenuCategorys as $singleMenuElement) {
             $this->strForLinks [] = (
-                '<a href="index.php?page=List&mainId=' . $mainId . '&mainName=' . $mainName . '">' . $displayName . '</a>'
+                '<a href="index.php?page=UserProductCategoryOverview&mainId=' . $singleMenuElement->mainId . '">' . $singleMenuElement->displayName . '</a>'
             );
         }
         $this->view->addTemplateParameter('menu', $this->strForLinks);

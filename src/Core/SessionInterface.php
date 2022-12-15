@@ -6,7 +6,7 @@ namespace App\Core;
 
 interface SessionInterface
 {
-    public function loginUser(): void;
+    public function loginUser(int $userId): void;
 
-    public function logoutUser(): bool;
+    public function logoutUser(): void;
 }

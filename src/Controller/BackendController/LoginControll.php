@@ -12,21 +12,24 @@ use App\Core\ViewInterface;
 use App\Model\LoginRepositoryInterface;
 use App\Validation\UserDataValidationInterface;
 
-class LoginControll  implements ControllerInterface
+class LoginControll implements ControllerInterface
 {
 
     public function __construct(
-        private ViewInterface $view,
-        private LoginRepositoryInterface $login,
-        private UserDataValidationInterface $userValidation,
-        private SessionInterface $session,
-        private RedirectInterface $redirect,
+        private readonly ViewInterface $view,
+        private readonly LoginRepositoryInterface $login,
+        private readonly UserDataValidationInterface $userValidation,
+        private readonly SessionInterface $session,
+        private readonly RedirectInterface $redirect,
     ) {
     }
 
 
     public function renderView(): void
     {
+        if (isset($_SESSION['userName']) || isset($_SESSION['adminName'])) {
+            $this->session->logoutUser();
+        }
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
             $password = $_POST['password'];
@@ -37,14 +40,13 @@ class LoginControll  implements ControllerInterface
                 $dbUserPassword = $userDataArray['hashedPassword'];
                 $isPasswordVerified = $this->userValidation->verifyPassword($password, $dbUserPassword);
                 if ($isPasswordVerified) {
-                    $this->session->loginUser();
+                    $this->session->loginUser($userDataArray['id']);
                     $this->redirect->to('/../../index.php');
                 }
             }
         }
 
         $this->view->addTemplateParameter('errors', $this->userValidation->getErrors());
-
         $this->view->setTemplate('login.tpl');
     }
 }

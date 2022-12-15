@@ -13,24 +13,28 @@ interface ProductRepositoryInterface
      * @param int $mainId
      * @return MainMenuDataTransferObject[]
      */
-    public function getAllMainCategorysFromDatabase(): array;
-
-    public function getMainCategorysByIdFromDatabase(int $mainId): ProductsDataTransferObject;
+    public function getAllMainCategorys(): array;
 
     /**
      * @param int $subId
      * @return ProductsDataTransferObject
      */
-    public function getAllProductsFromDatabase(): array;
+    public function getAllProducts(): array;
 
-    public function getProductByMainIdFromDatabase(int $mainId): array;
+    public function getProductByMainId(int $mainId): array;
+    public function createNewProduct(
+        int $mainId,
+        string $displayName,
+        string $productName,
+        string $description,
+        string $price
+    ): void;
 
-    public function getProductByProductIdFromDatabase(int $productId): ProductsDataTransferObject;
+    public function getProductByProductId(int $productId): ProductsDataTransferObject;
 
-    public function getProductByProductNameFromDatabase(string $productName): ProductsDataTransferObject;
+    public function editProductById(int $productId, string $column, string $stringToChange): void;
 
-    public function editProductByName(int $productId, string $column, string $stringToChange): bool;
+    public function deleteProductById(int $productId): void;
 
-    public function deleteProductById(int $productId): bool;
-    public function createNewProduct(int $mainId, string $displayName,string $productName, string $description,string $price):bool;
+
 }

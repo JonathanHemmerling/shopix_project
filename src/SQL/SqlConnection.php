@@ -14,29 +14,23 @@ class SqlConnection implements SqlConnectionInterface
 
     public function connectToDatabase(string $dsn, string $database, string $user, string $password, string $port): PDO
     {
-        $pdoConnection = new PDO("mysql:host=$dsn;dbname=$database;port=$port" ,$user, $password);
+        $pdoConnection = new PDO("mysql:host=$dsn;dbname=$database;port=$port", $user, $password);
         return $pdoConnection;
     }
 
-    public
-    function disconnectFromDatabase(
-        $connection
-    ) {
+    public function disconnectFromDatabase($connection): void
+    {
         if (isset($connection)) {
             mysqli_close($connection);
         }
     }
 
-    public
-    function db_escape(
-        $connection,
-        $string
-    ) {
+    public function db_escape($connection, $string): string
+    {
         return mysqli_real_escape_string($connection, $string);
     }
 
-    public
-    function confirm_db_connect()
+    public function confirm_db_connect(): void
     {
         if (mysqli_connect_errno()) {
             $msg = "Database connection failed: ";
@@ -46,10 +40,7 @@ class SqlConnection implements SqlConnectionInterface
         }
     }
 
-    public
-    function confirm_result_set(
-        $result_set
-    ) {
+    public function confirm_result_set($result_set):void {
         if (!$result_set) {
             exit("Database query failed.");
         }

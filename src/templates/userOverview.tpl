@@ -10,13 +10,13 @@
         <th>User:</th>
         <th></th>
     </tr>
-    {foreach from=$userDisplay item=p}
+    {foreach from=$userDisplay key=k item=p}
         <tr>
             <td>
-                <a href="index.php?page=UserDetail&userName={$p}&backend">{$p}</a>
+                <a href="index.php?page=UserSingleRecord&userName={$p}&backend">{$p}</a>
             </td>
             <td>
-                    <input type="submit" name="submit" value="Delete"/></form>
+                    <form action="/index.php?page=AdminUserOverview&backend&userId={$k}" method="post"><input type="submit" name="submit" value="Delete"/></form>
             </td>
         </tr>
     {/foreach}

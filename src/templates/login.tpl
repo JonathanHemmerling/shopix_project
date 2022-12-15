@@ -26,7 +26,7 @@
         </label>
     </form>
 </div>
-<div><a href="index.php?page=User&backend">Register as new user</a></div>
+<div><a href="index.php?page=CreateUser&backend">Register user</a></div>
 
 <div><br />
     <a href="index.php?page=AdminLogin&backend">Adminarea</a>

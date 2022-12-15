@@ -6,14 +6,12 @@
 <br/>
 <table>
     <tr>
-        <td><form action="/index.php?page=CreateProduct&backend" method="post">
+        {foreach from=$mainId item=p}
+        <td><form action="/index.php?page=CreateProduct&mainId={$p}&backend" method="post">
+
          <label>
              Maincategory: <br/>
-             <select name="mainId" size = "3">
-             <option>1</option>
-             <option>2</option>
-             <option>3</option>
-             </select>
+             {$p}
              <br />
              Displayname: <br/>
              <input type="text" name= "displayName" value=""/>
@@ -30,7 +28,9 @@
              <br/>
              <input type="submit" name= "submit" value="Save new Product"/>
          </label>
+
          </form>
         </td>
+        {/foreach}
     </tr>
 {include file="./loginFooter.tpl"}

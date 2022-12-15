@@ -7,11 +7,12 @@ namespace App\Core;
 class Session implements SessionInterface
 {
 
-    public function loginUser(): void
+    public function loginUser(int $userId): void
     {
         session_regenerate_id();
         $_SESSION['lastLogin'] = time();
         $_SESSION['userName'] = $_POST['userName'];
+        $_SESSION['userId'] = $userId;
     }
 
     public function loginAdmin(): void
@@ -21,11 +22,10 @@ class Session implements SessionInterface
         $_SESSION['adminName'] = $_POST['adminName'];
     }
 
-    public function logoutUser(): bool
+    public function logoutUser(): void
     {
         unset($_SESSION['userName']);
         unset($_SESSION['adminName']);
-        return true;
     }
 
 }

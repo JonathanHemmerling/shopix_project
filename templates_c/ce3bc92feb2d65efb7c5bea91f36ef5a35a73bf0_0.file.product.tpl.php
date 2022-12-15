@@ -1,6 +1,6 @@
 <?php
 /* Smarty version 4.2.1, created on 2022-12-08 21:08:13
-  from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/product.tpl' */
+  from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/productSingleRecord.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
@@ -11,7 +11,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
     'ce3bc92feb2d65efb7c5bea91f36ef5a35a73bf0' => 
     array (
-      0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/product.tpl',
+      0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/productSingleRecord.tpl',
       1 => 1670530074,
       2 => 'file',
     ),

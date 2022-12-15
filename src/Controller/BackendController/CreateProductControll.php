@@ -6,27 +6,32 @@ namespace App\Controller\BackendController;
 
 
 use App\Controller\ControllerInterface;
-use App\Core\Redirect;
 use App\Core\ViewInterface;
 use App\Model\ProductRepository;
 
-class CreateProductControll  implements ControllerInterface
+class CreateProductControll implements ControllerInterface
 {
 
     public function __construct(
-        private ViewInterface $view,
-        private ProductRepository $products,
-        private Redirect $redirect
+        private readonly ViewInterface $view,
+        private readonly ProductRepository $products,
     ) {
     }
 
     public function renderView(): void
     {
+        $mainId = $_GET['mainId'];
         if (isset($_POST['submit'])) {
             $productDataFromForm = $_POST;
-            $this->products->createNewProduct((int)$productDataFromForm['mainId'], $productDataFromForm['displayName'], $productDataFromForm['productName'], $productDataFromForm['description'], $productDataFromForm['price']);
-            $this->redirect->to('/index.php?page=CategoryData&backend');
+            $this->products->createNewProduct(
+                (int)$mainId,
+                $productDataFromForm['displayName'],
+                $productDataFromForm['productName'],
+                $productDataFromForm['description'],
+                $productDataFromForm['price']
+            );
         }
+        $this->view->addTemplateParameter('mainId', [$mainId]);
         $this->view->setTemplate('createProduct.tpl');
     }
 }

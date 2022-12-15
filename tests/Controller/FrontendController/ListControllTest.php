@@ -4,129 +4,55 @@ declare(strict_types=1);
 
 namespace AppTest\Controller\FrontendController;
 
-use App\Controller\FrontendController\ListControll;
+use App\Controller\FrontendController\UserProductCategoryOverviewControll;
 use App\Core\View;
-use App\Model\Dto\SubMenuDataTransferObject;
-use App\Model\Mapper\MainMenuMapper;
+use App\Model\Dto\ProductsDataTransferObject;
 use App\Model\Mapper\ProductsMapper;
-use App\Model\Mapper\SubMenuMapper;
 use App\Model\ProductRepository;
-use App\SQL\SqlConnection;
-use PDO;
-use PHPUnit\Framework\MockObject\MockObject;
+use App\Service\Container;
+use App\Service\DependencyProvider;
 use PHPUnit\Framework\TestCase;
 
 class ListControllTest extends TestCase
 {
-    private MockObject $smartyMock;
-    private MockObject $viewMock;
-    private MockObject $productRepositoryMock;
-    private ListControll $listController;
-    private MockObject $listDTOMock;
-    private $pdoMock;
-    private $sqlConMock;
-
-
-    public function testIsStrForLinkComposedCorrect(): void
+    protected function tearDown(): void
     {
-        $_GET['mainId'] = '1';
-        $this->pdoMock = $this->getMockBuilder(PDO::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $this->sqlConMock = $this->getMockBuilder(SqlConnection::class)
-            ->getMock();
-        $this->listDTOMock = $this->getMockBuilder(SubMenuDataTransferObject::class)
-            ->setConstructorArgs(['subId' => 1, 'productNames' => 'jeans_1', 'displayName' => 'Jeans 1'])
-            ->getMock();
-        $this->listMapperMock = $this->getMockBuilder(SubMenuMapper::class)
-            ->getMock();
-        $this->listMapperMock->method('mapToListDto')
-            ->willReturn($this->listDTOMock);
-        $this->mainMenuMapperMock = $this->getMockBuilder(MainMenuMapper::class)
-            ->getMock();
-        $this->productsMapperMock = $this->getMockBuilder(ProductsMapper::class)
-            ->getMock();
-        $this->smartyMock = $this->getMockBuilder(\Smarty::class)
-            ->getMock();
-        $this->viewMock = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$this->smartyMock])
-            ->onlyMethods(['addTemplateParameter', 'setTemplate'])
-            ->getMock();
-        $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
-            ->setConstructorArgs(
-                [
-                    $this->sqlConMock,
-                    $this->pdoMock,
-                    $this->productsMapperMock,
-                    $this->listMapperMock,
-                    $this->mainMenuMapperMock,
-                ]
-            )
-            ->getMock();
-        $this->productRepositoryMock->method('getAllDataFromSubCategorys')
-            ->with(1)
-            ->willReturn(
-                [$this->listDTOMock]
-            );
-        $this->listController = new ListControll($this->viewMock, $this->productRepositoryMock);
-
-        $this->productRepositoryMock->expects($this->atLeastOnce())
-            ->method('getAllDataFromSubCategorys');
-        $this->listController->renderView();
-        $link = $this->listController->getStrForLinks();
-        $expectedLink = '<a href="index.php?page=Detail&subId=1&productName=jeans_1">Jeans 1</a>';
-        $this->assertSame($link[0], $expectedLink);
+        $_SESSION = [];
+        $_POST = [];
+        parent::tearDown();
     }
 
-    public function testIfParameterAddedToView(): void
+    public function testIfMainCategorysAreLoadedAndDisplayed()
     {
-        $_GET['mainId'] = '1';
-        $this->pdoMock = $this->getMockBuilder(PDO::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $this->sqlConMock = $this->getMockBuilder(SqlConnection::class)
-            ->getMock();
-        $this->listDTOMock = $this->getMockBuilder(SubMenuDataTransferObject::class)
-            ->setConstructorArgs(['subId' => 1, 'productNames' => 'jeans_1', 'displayName' => 'Jeans 1'])
-            ->getMock();
-        $this->listMapperMock = $this->getMockBuilder(SubMenuMapper::class)
-            ->getMock();
-        $this->listMapperMock->method('mapToListDto')
-            ->willReturn($this->listDTOMock);
-        $this->mainMenuMapperMock = $this->getMockBuilder(MainMenuMapper::class)
-            ->getMock();
-        $this->productsMapperMock = $this->getMockBuilder(ProductsMapper::class)
-            ->getMock();
-        $this->smartyMock = $this->getMockBuilder(\Smarty::class)
-            ->getMock();
-        $this->viewMock = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$this->smartyMock])
-            ->onlyMethods(['addTemplateParameter', 'setTemplate', 'getTemplate'])
-            ->getMock();
-        $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
-            ->setConstructorArgs(
-                [
-                    $this->sqlConMock,
-                    $this->pdoMock,
-                    $this->productsMapperMock,
-                    $this->listMapperMock,
-                    $this->mainMenuMapperMock,
-                ]
-            )
-            ->getMock();
-        $this->productRepositoryMock->method('getAllDataFromSubCategorys')
-            ->with(1)
-            ->willReturn(
-                [$this->listDTOMock]
-            );
-        $this->listController = new ListControll($this->viewMock, $this->productRepositoryMock);
-        $this->viewMock->expects($this->atLeastOnce())
-            ->method('addTemplateParameter');
-        $this->viewMock->expects(self::exactly(3))
-            ->method('addTemplateParameter');
-        $this->viewMock->expects($this->once())
-            ->method('setTemplate')
-            ->with('category.tpl');
-        $this->listController->renderView();
+        $_GET['mainId'] = 1;
+        $container = $this->getContainer();
+        /** @var View $view */
+        $view = $container->get(View::class);
+        $dto = ['productId' => 1, 'mainId' => 1, 'displayName' => 'Jeans 1', 'productName' => 'jeans1', 'description' => 'First Jeans', 'price' => '28,99'];
+        $mapper = new ProductsMapper();
+        $dtoArray [] = $mapper->mapToProductsDto($dto);
+        $mockRepository = $this->createMock(ProductRepository::class);
+        $mockRepository->method('getProductByMainId')->with(1)->willReturn($dtoArray);
+        $mockRepository->expects($this->once())->method('getProductByMainId');
+
+        $detailControll = new UserProductCategoryOverviewControll($view, $mockRepository);
+
+        $detailControll->renderView();
+        $template = $view->getTemplate();
+        $params = $view->getParams();
+
+        self::assertSame('productCategoryOverview.tpl', $template);
+        self::assertIsArray($params);
+        self::assertSame(['categoryLink' => [0 => '<a href="index.php?page=Detail&productId=1&productName=jeans1">Jeans 1</a>']],
+            $params
+        );
+    }
+
+    private function getContainer(): Container
+    {
+        $container = new Container();
+        $dependencyProvider = new DependencyProvider();
+        $dependencyProvider->providerDependency($container);
+        return $container;
     }
 }

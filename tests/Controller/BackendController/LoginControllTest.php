@@ -7,6 +7,7 @@ namespace AppTest\Controller\BackendController;
 use App\Controller\BackendController\LoginControll;
 use App\Core\RedirectInterface;
 use App\Core\Session;
+use App\Core\SessionInterface;
 use App\Core\View;
 use App\Model\LoginRepository;
 use App\Model\UserRepository;
@@ -35,23 +36,31 @@ class LoginControllTest extends TestCase
         $container = $this->getContainer();
         /** @var View $view */
         $view = $container->get(View::class);
+        $validation = $container->get(UserDataValidation::class);
 
         $mockRedirect = $this->createMock(RedirectInterface::class);
         $mockRedirect->expects($this->once())->method('to');
-        $mockSession = $this->createMock(Session::class);
+        $mockSession = $this->createMock(SessionInterface::class);
         $mockSession->expects($this->once())->method('loginUser');
 
         $login = new LoginControll(
             $view,
             $container->get(LoginRepository::class),
-            $container->get(UserDataValidation::class),
+            $validation,
             $mockSession,
             $mockRedirect,
         );
 
         $login->renderView();
-
+        $template = $view->getTemplate();
         $params = $view->getParams();
+        $userValid = $validation->checkIfUserNameIsValid('');
+
+        self::assertSame('login.tpl' ,$template);
+        self::assertIsArray($params);
+        self::assertSame(['errors' => []],$params);
+        self::assertFalse($userValid);
+        self::assertIsBool($userValid);
         }
 
 

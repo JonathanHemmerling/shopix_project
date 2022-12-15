@@ -13,14 +13,13 @@ class UserRepository implements UserRepositoryInterface
 {
     private PDO $pdo;
 
-    public function __construct(private SqlConnectionInterface $dbConnection, private UserDataMapper $userDataMapper)
+    public function __construct(private readonly SqlConnectionInterface $dbConnection, private readonly UserDataMapper $userDataMapper)
     {
         $this->pdo = $this->dbConnection->connectToDatabase('0.0.0.0', 'shopix', 'TestUser', 'password', '13306');
     }
 
-    public function getAllUsersFromDatabase(): array
+    public function getAllUsers(): array
     {
-
         $queryString = "SELECT * FROM userData";
         foreach ($this->pdo->query($queryString) as $row) {
             $dataArray [] = $this->userDataMapper->mapToUserDto($row);
@@ -28,10 +27,10 @@ class UserRepository implements UserRepositoryInterface
         return $dataArray;
     }
 
-    public function getCurrentUserData(string $user): UserDataTransferObject
+    public function getCurrentUserDataById(int $id): UserDataTransferObject
     {
         $queryString = "SELECT * FROM userData WHERE ";
-        $queryString .= "userName=\"" . $user . '";';
+        $queryString .= "id=" . $id . ';';
         foreach ($this->pdo->query($queryString) as $row) {
             $dataArray = $this->userDataMapper->mapToUserDTO($row);
         }
@@ -40,13 +39,15 @@ class UserRepository implements UserRepositoryInterface
 
     public function doesUserDataExists(string $user): bool
     {
-        $exists = false;
         $queryString = "SELECT * FROM userData WHERE ";
         $queryString .= "userName=\"" . $user . '";';
         foreach ($this->pdo->query($queryString) as $row) {
-            $exists = true;
+            $userArray = $this->userDataMapper->mapToUserDTO($row);
         }
-        return $exists;
+        if (!$userArray) {
+            return false;
+        }
+        return true;
     }
 
     public function addNewUserDataArrayToDb(array $userDataSet): void
@@ -67,56 +68,20 @@ class UserRepository implements UserRepositoryInterface
         $this->pdo->query($queryString);
     }
 
-    public function changeUserAttributeByAttribiute(
-        string $attribute,
-        string $field,
-        string $userName,
-        string $dbName
-    ): bool {
-        $booly = false;
-        $queryString = "UPDATE userData SET ";
-        $queryString .= $field . "='" . $attribute . "' ";
-        $queryString .= "WHERE userName='" . $dbName . "' AND " . $field . "='" . $userName . "'";
+    public function editUserAttributeById(
+        int $id,
+        string $column,
+        string $stringToChange,
+    ): void {
+        $queryString = "UPDATE userData SET " . $column . "='" . $stringToChange . "' ";
+        $queryString .= "WHERE id=" . $id;
         $this->pdo->query($queryString);
-        $controll = $this->getCurrentUserData($dbName);
-        if ($controll->$field === $attribute) {
-            $booly = true;
-        }
-        return $booly;
     }
 
-    public function changeUserDataByUserId(int $userId, array $userDataSet): void
+    public function deleteUserById(int $userId): void
     {
-        $queryString = "UPDATE userData SET ";
-        $queryString .= "userName=\"" . $userDataSet['userName'] . '",';
-        $queryString .= "firstName=\"" . $userDataSet['firstName'] . '",';
-        $queryString .= "lastName=\"" . $userDataSet['lastName'] . '",';
-        $queryString .= "country=\"" . $userDataSet['country'] . '",';
-        $queryString .= "postcode=\"" . $userDataSet['postCode'] . '",';
-        $queryString .= "city=\"" . $userDataSet['city'] . '",';
-        $queryString .= "street=\"" . $userDataSet['street'] . '",';
-        $queryString .= "streetNumber=\"" . $userDataSet['streetNumber'] . '",';
-        $queryString .= "email=\"" . $userDataSet['email'] . '",';
-        $queryString .= "telefonNumber=\"" . $userDataSet['telefonNumber'] . '",';
-        $queryString .= "hashedPassword=\"" . $userDataSet['hashedPassword'] . ' "';
-        $queryString .= "WHERE id=" . $userId . ';';
-        $this->pdo->query($queryString);
-    }
-    public function changeUserDataByUserName(array $userDataSet, string $userName): void
-    {
-        $queryString = "UPDATE userData SET ";
-        $queryString .= "userName=\"" . $userDataSet['userName'] . '",';
-        $queryString .= "firstName=\"" . $userDataSet['firstName'] . '",';
-        $queryString .= "lastName=\"" . $userDataSet['lastName'] . '",';
-        $queryString .= "country=\"" . $userDataSet['country'] . '",';
-        $queryString .= "postcode=\"" . $userDataSet['postCode'] . '",';
-        $queryString .= "city=\"" . $userDataSet['city'] . '",';
-        $queryString .= "street=\"" . $userDataSet['street'] . '",';
-        $queryString .= "streetNumber=\"" . $userDataSet['streetNumber'] . '",';
-        $queryString .= "email=\"" . $userDataSet['email'] . '",';
-        $queryString .= "telefonNumber=\"" . $userDataSet['telefonNumber'] . '",';
-        $queryString .= "hashedPassword=\"" . $userDataSet['hashedPassword'] . ' "';
-        $queryString .= "WHERE userName=\"" . $userName . '";';
+        $queryString = "DELETE FROM userData ";
+        $queryString .= "WHERE id =" . $userId;
         $this->pdo->query($queryString);
     }
 }

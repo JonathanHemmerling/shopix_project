@@ -13,8 +13,8 @@ class AdminLogoutControll
     private const message = ['Logout successful!'];
 
     public function __construct(
-        private View $view,
-        private Session $session
+        private readonly View $view,
+        private readonly Session $session
     ) {
     }
 

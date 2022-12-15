@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-09 10:01:33
-  from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/newUser.tpl' */
+/* Smarty version 4.2.1, created on 2022-12-14 11:08:43
+  from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/createUser.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_6392f96dcd3059_12659413',
+  'unifunc' => 'content_6399a0ab42cd10_55343676',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9131a2198db354de2a0123a8a5f01c021681eaf7' => 
     array (
-      0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/newUser.tpl',
-      1 => 1670576488,
+      0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/createUser.tpl',
+      1 => 1671012521,
       2 => 'file',
     ),
   ),
@@ -21,7 +21,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./header.tpl' => 1,
   ),
 ),false)) {
-function content_6392f96dcd3059_12659413 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6399a0ab42cd10_55343676 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
     <style type="text/css">
@@ -44,7 +44,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </pre>
 </div>
 <div class="newUserForm">
-<h3>Create new User</h3>
+<h3>Register as a new User</h3>
 <form action="/index.php?page=User&backend" method="post">
 <label>
 Username: <br />

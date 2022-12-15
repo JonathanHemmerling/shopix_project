@@ -4,24 +4,66 @@ declare(strict_types=1);
 
 namespace AppTest\Controller\BackendController;
 
-use App\Controller\BackendController\UserControll;
-use App\Core\Session;
+use App\Controller\BackendController\CreateUserControll;
 use App\Core\View;
-use App\Model\LoginRepository;
 use App\Model\UserRepository;
-use App\SQL\SqlConnection;
-use App\Validation\NewUserDataValidation;
+use App\Service\Container;
+use App\Service\DependencyProvider;
 use App\Validation\UserDataValidation;
-use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 
 
 class UserControllTest extends TestCase
 {
-    private MockObject $smartyMock;
-    private MockObject $viewMock;
-    private MockObject $newUserRepositoryMock;
-    private MockObject $newUserDataValidation;
+    protected function tearDown(): void
+    {
+        $_SESSION = [];
+        $_POST = [];
+        parent::tearDown();
+    }
+
+    public function testIsFormSubmitted()
+    {
+        $_POST['submit'] = true;
+        $_POST['userName'] = 'UserForTest';
+        $_POST['firstName'] = 'User';
+        $_POST['lastName'] = 'ForTest';
+        $_POST['country'] = 'TestCountry';
+        $_POST['postCode'] = '55555';
+        $_POST['city'] = 'TestCity';
+        $_POST['street'] = 'TestStreet';
+        $_POST['streetNumber'] = '99';
+        $_POST['email'] = 'test@test.test';
+        $_POST['telefonNumber'] = '0123456789';
+        $_POST['password'] = 'password';
+        $_POST['confirmPassword'] = 'password';
+
+        $container = $this->getContainer();
+        /** @var View $view */
+        $view = $container->get(View::class);
+        $repository = $container->get(UserRepository::class);
+        $validation = $container->get(UserDataValidation::class);
+
+        $userControll = new CreateUserControll($view, $repository, $validation);
+
+        $userControll->renderView();
+        $template = $view->getTemplate();
+        $params = $view->getParams();
+
+        self::assertSame('createUser.tpl' ,$template);
+        self::assertIsArray($params);
+        self::assertSame(['errors' => [0 => 'Select another Username']],$params);
+
+
+    }
+
+    private function getContainer(): Container
+    {
+        $container = new Container();
+        $dependencyProvider = new DependencyProvider();
+        $dependencyProvider->providerDependency($container);
+        return $container;
+    }
 
     /*public function setUp(): void
     {
@@ -48,7 +90,7 @@ class UserControllTest extends TestCase
         $this->newUserDataValidation = $this->getMockBuilder(NewUserDataValidation::class)
             ->onlyMethods(['checkIfUserNameIsValid', 'getErrors'])
             ->getMock();
-        $this->newUserController = new UserControll(
+        $this->newUserController = new CreateUserControll(
             $this->viewMock,
             $this->newUserRepositoryMock,
             $this->newUserDataValidation
@@ -79,7 +121,7 @@ class UserControllTest extends TestCase
             ->method('addTemplateParameter');
         $this->viewMock->expects($this->once())
             ->method('setTemplate')
-            ->with('newUser.tpl');
+            ->with('createUser.tpl');
         $this->newUserController->renderView();
     }
 
@@ -101,7 +143,7 @@ class UserControllTest extends TestCase
             ->willReturn(false);
         $this->newUserController->renderView();
     }
-*/
+
     public function testIfErrorIsThrown()
     {
         $pdo = $this->getMockBuilder(\PDO::class)
@@ -127,9 +169,9 @@ class UserControllTest extends TestCase
             ->getMock();
         $userValidation = $this->getMockBuilder(UserDataValidation::class)
             ->setConstructorArgs([$loginRepo, $userRepo])
-            ->onlyMethods(['checkIfUserNameIsValid', 'getErrors' ,'checkIfPasswordIsValid', 'verifyPassword'])
+            ->onlyMethods(['checkIfUserNameIsValid', 'getErrors', 'checkIfPasswordIsValid', 'verifyPassword'])
             ->getMock();
-        $userControll = new UserControll($view, $userRepo, $userValidation);
+        $userControll = new CreateUserControll($view, $userRepo, $userValidation);
         $_POST['submit'] = 'log';
         $_POST['userName'] = '';
         $_POST['firstName'] = 'test';
@@ -180,7 +222,7 @@ class UserControllTest extends TestCase
             ->setConstructorArgs([$loginRepo, $userRepo])
             ->onlyMethods(['checkIfUserNameIsValid', 'checkIfPasswordIsValid', 'verifyPassword'])
             ->getMock();
-        $userControll = new UserControll($view, $userRepo, $userValidation);
+        $userControll = new CreateUserControll($view, $userRepo, $userValidation);
         $_POST['submit'] = 'log';
         $_POST['userName'] = 'UserTest123';
         $_POST['firstName'] = 'test';
@@ -207,10 +249,10 @@ class UserControllTest extends TestCase
 
         $view->expects($this->atLeastOnce())
             ->method('setTemplate')
-            ->with('newUser.tpl');
+            ->with('createUser.tpl');
         $view->expects($this->exactly(1))
             ->method('addTemplateParameter');
         $userControll->renderView();
     }
-
+*/
 }

@@ -7,6 +7,7 @@ namespace App\Controller\BackendController;
 
 use App\Controller\ControllerInterface;
 use App\Core\Redirect;
+use App\Core\RedirectInterface;
 use App\Core\SessionInterface;
 use App\Core\ViewInterface;
 use App\Model\LoginRepositoryInterface;
@@ -15,11 +16,11 @@ use App\Validation\UserDataValidationInterface;
 class AdminLoginControll implements ControllerInterface
 {
     public function __construct(
-        private ViewInterface $view,
-        private LoginRepositoryInterface $login,
-        private UserDataValidationInterface $userValidation,
-        private SessionInterface $session,
-        private Redirect $redirect
+        private readonly ViewInterface $view,
+        private readonly LoginRepositoryInterface $login,
+        private readonly UserDataValidationInterface $userValidation,
+        private readonly SessionInterface $session,
+        private readonly RedirectInterface $redirect
     ) {
     }
 

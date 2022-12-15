@@ -9,17 +9,17 @@ use App\Model\Dto\UserDataTransferObject;
 interface UserRepositoryInterface
 {
 
-    public function getAllUsersFromDatabase(): array;
+    public function getAllUsers(): array;
 
-    public function getCurrentUserData(string $user): UserDataTransferObject;
+    public function getCurrentUserDataById(int $id): UserDataTransferObject;
 
-    public function changeUserAttributeByAttribiute(string $attribute, string $field, string $userName, string $dbName): bool;
+    public function editUserAttributeById(
+        int $id,
+        string $column,
+        string $stringToChange
+    ): void;
 
     public function doesUserDataExists(string $user): bool;
 
     public function addNewUserDataArrayToDb(array $userData): void;
-
-    public function changeUserDataByUserId(int $userId, array $userDataSet): void;
-
-    public function changeUserDataByUserName(array $userData, string $userName): void;
 }

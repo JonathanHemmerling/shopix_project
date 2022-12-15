@@ -5,18 +5,18 @@ declare(strict_types=1);
 namespace App\Controller\BackendController;
 
 use App\Controller\ControllerInterface;
-use App\Core\View;
+use App\Core\ViewInterface;
 use App\Model\UserRepositoryInterface;
-use App\Validation\UserDataValidation;
+use App\Validation\UserDataValidationInterface;
 
-class UserControll  implements ControllerInterface
+class CreateUserControll implements ControllerInterface
 {
     private array $userArray = ['userName' => '', 'password' => ''];
 
     public function __construct(
-        private View $view,
-        private UserRepositoryInterface $repository,
-        private UserDataValidation $validation
+        private readonly ViewInterface $view,
+        private readonly UserRepositoryInterface $repository,
+        private readonly UserDataValidationInterface $validation
     ) {
     }
 
@@ -54,6 +54,6 @@ class UserControll  implements ControllerInterface
             }
         }
         $this->view->addTemplateParameter('errors', $this->validation->getErrors());
-        $this->view->setTemplate('newUser.tpl');
+        $this->view->setTemplate('createUser.tpl');
     }
 }

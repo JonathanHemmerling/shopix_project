@@ -7,7 +7,7 @@ namespace App\Model;
 
 use App\Model\Dto\MainMenuDataTransferObject;
 use App\Model\Dto\ProductsDataTransferObject;
-use App\Model\Mapper\MainMenuMapper;
+use App\Model\Mapper\MainMenuMapperInterface;
 use App\Model\Mapper\ProductsMapperInterface;
 use App\SQL\SqlConnectionInterface;
 use PDO;
@@ -18,8 +18,8 @@ class ProductRepository implements ProductRepositoryInterface
     public function __construct(
         private readonly SqlConnectionInterface $dbConnection,
         private PDO $pdo,
-        private ProductsMapperInterface $productsMapper,
-        private MainMenuMapper $mainMapper
+        private readonly ProductsMapperInterface $productsMapper,
+        private readonly MainMenuMapperInterface $mainMapper
     ) {
         $this->pdo = $this->dbConnection->connectToDatabase('0.0.0.0', 'shopix', 'TestUser', 'password', '13306');
     }
@@ -30,7 +30,7 @@ class ProductRepository implements ProductRepositoryInterface
      * @param int $mainId
      * @return MainMenuDataTransferObject[]
      */
-    public function getAllMainCategorysFromDatabase(): array
+    public function getAllMainCategorys(): array
     {
         $queryString = "SELECT * FROM mainCategorys";
         $rows = $this->pdo->query($queryString);
@@ -40,24 +40,13 @@ class ProductRepository implements ProductRepositoryInterface
         return $dto;
     }
 
-    public function getMainCategorysByIdFromDatabase(int $mainId): ProductsDataTransferObject
-    {
-        $queryString = "SELECT * FROM products ";
-        $queryString .= "WHERE mainId =" . $mainId;
-        foreach ($this->pdo->query($queryString) as $row) {
-            $dto = $this->productsMapper->mapToProductsDto($row);
-        }
-        return $dto;
-    }
-
-
     //ProductsTable
 
     /**
      * @param int $subId
      * @return ProductsDataTransferObject
      */
-    public function getAllProductsFromDatabase(): array
+    public function getAllProducts(): array
     {
         $queryString = "SELECT * FROM products";
         $rows = $this->pdo->query($queryString);
@@ -67,7 +56,7 @@ class ProductRepository implements ProductRepositoryInterface
         return $dto;
     }
 
-    public function getProductByMainIdFromDatabase(int $mainId): array
+    public function getProductByMainId(int $mainId): array
     {
         $queryString = "SELECT * FROM products ";
         $queryString .= "WHERE mainId =" . $mainId;
@@ -78,7 +67,7 @@ class ProductRepository implements ProductRepositoryInterface
         return $dto;
     }
 
-    public function getProductByProductIdFromDatabase(int $productId): ProductsDataTransferObject
+    public function getProductByProductId(int $productId): ProductsDataTransferObject
     {
         $queryString = "SELECT * FROM products ";
         $queryString .= "WHERE productId =" . $productId;
@@ -88,30 +77,18 @@ class ProductRepository implements ProductRepositoryInterface
         return $dto;
     }
 
-    public function getProductByProductNameFromDatabase(string $productName): ProductsDataTransferObject
-    {
-        $queryString = "SELECT * FROM products ";
-        $queryString .= "WHERE displayName ='" . $productName . "'";
-        foreach ($this->pdo->query($queryString) as $row) {
-            $dto = $this->productsMapper->mapToProductsDto($row);
-        }
-        return $dto;
-    }
-
-    public function editProductByName(int $productId, string $column, string $stringToChange): bool
+    public function editProductById(int $productId, string $column, string $stringToChange): void
     {
         $queryString = "UPDATE products SET " . $column . "='" . $stringToChange . "' ";
         $queryString .= "WHERE productid=" . $productId;
         $this->pdo->query($queryString);
-        return true;
     }
 
-    public function deleteProductById(int $productId): bool
+    public function deleteProductById(int $productId): void
     {
         $queryString = "DELETE FROM products ";
         $queryString .= "WHERE productId =" . $productId;
         $this->pdo->query($queryString);
-        return true;
     }
 
     public function createNewProduct(
@@ -120,13 +97,10 @@ class ProductRepository implements ProductRepositoryInterface
         string $productName,
         string $description,
         string $price
-    ):bool
-    {
+    ): void {
         $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) ";
         $queryString .= "VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
-        var_dump($queryString);
         $this->pdo->query($queryString);
-        return true;
     }
 
 }

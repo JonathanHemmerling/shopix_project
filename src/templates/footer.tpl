@@ -5,7 +5,7 @@
 </div>
 <div>
     <br />
-    <a href="index.php?page=ChangeUserData&backend">Change Userdata</a>
+    <a href="index.php?page=UserSingleRecord&backend">Change Userdata</a>
 </div>
 </body>
 </html>

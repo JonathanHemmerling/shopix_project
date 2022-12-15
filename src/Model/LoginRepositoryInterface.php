@@ -6,5 +6,7 @@ namespace App\Model;
 
 interface LoginRepositoryInterface
 {
+    public function findAdminByName(string $userName): array;
+
     public function findUserByName(string $userName): array;
 }

@@ -2,9 +2,9 @@
 
 <h3>Change Data for:</h3>
 <div>
-<a href="index.php?page=CategoryData&backend">- Productdata</a>
+<a href="index.php?page=AdminMainProductCategoryOverview&backend">- Productdata</a>
 <br />
-<a href="index.php?page=UserOverview&backend">- Userdata</a>
+<a href="index.php?page=AdminUserOverview&backend">- Userdata</a>
 </div>
 <br />
 <div>

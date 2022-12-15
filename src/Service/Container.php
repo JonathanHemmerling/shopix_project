@@ -15,7 +15,7 @@ class Container
 
     public function set(string $class, object $newObject): void
     {
-            $this->objects[$class] = $newObject;
+        $this->objects[$class] = $newObject;
     }
 
     public function get(string $class)

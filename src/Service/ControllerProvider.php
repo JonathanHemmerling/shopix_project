@@ -6,20 +6,20 @@ namespace App\Service;
 
 use App\Controller\BackendController\AdminControll;
 use App\Controller\BackendController\AdminLoginControll;
-use App\Controller\BackendController\ChangeUserDataControll;
-use App\Controller\BackendController\CreateProductControll;
-use App\Controller\BackendController\DetailDataControll;
-use App\Controller\BackendController\UserDetailControll;
-use App\Controller\BackendController\LoginControll;
 use App\Controller\BackendController\AdminLogoutControll;
+use App\Controller\BackendController\AdminMainProductCategoryOverviewControll;
+use App\Controller\BackendController\AdminProductOverviewControll;
+use App\Controller\BackendController\AdminProductSingleRecordControll;
+use App\Controller\BackendController\AdminUserOverviewControll;
+use App\Controller\BackendController\CreateProductControll;
+use App\Controller\BackendController\CreateUserControll;
+use App\Controller\BackendController\LoginControll;
 use App\Controller\BackendController\LogoutControll;
-use App\Controller\BackendController\CategoryDataControll;
-use App\Controller\BackendController\UserControll;
-use App\Controller\BackendController\UserOverviewControll;
-use App\Controller\FrontendController\DetailControll;
+use App\Controller\BackendController\UserSingleRecordControll;
 use App\Controller\FrontendController\HomeControll;
-use App\Controller\FrontendController\ListControll;
 use App\Controller\FrontendController\NotFoundControll;
+use App\Controller\FrontendController\UserProductCategoryOverviewControll;
+use App\Controller\FrontendController\UserProductSingleRecordControll;
 
 class ControllerProvider
 {
@@ -30,20 +30,20 @@ class ControllerProvider
             AdminControll::class,
             AdminLoginControll::class,
             AdminLogoutControll::class,
-            CategoryDataControll::class,
-            ChangeUserDataControll::class,
+            AdminMainProductCategoryOverviewControll::class,
+            UserSingleRecordControll::class,
             CreateProductControll::class,
-            DetailControll::class,
-            DetailDataControll::class,
+            UserProductSingleRecordControll::class,
+            AdminProductSingleRecordControll::class,
             HomeControll::class,
-            ListControll::class,
+            UserProductCategoryOverviewControll::class,
             LoginControll::class,
             LogoutControll::class,
             NotFoundControll::class,
-            UserControll::class,
-            UserDetailControll::class,
-            UserOverviewControll::class,
-            ];
+            CreateUserControll::class,
+            AdminProductOverviewControll::class,
+            AdminUserOverviewControll::class,
+        ];
     }
 
 }

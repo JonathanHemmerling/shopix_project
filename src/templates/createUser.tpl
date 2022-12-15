@@ -12,8 +12,8 @@
 </pre>
 </div>
 <div class="newUserForm">
-<h3>Create new User</h3>
-<form action="/index.php?page=User&backend" method="post">
+<h3>Register User</h3>
+<form action="/index.php?page=CreateUser&backend" method="post">
 <label>
 Username: <br />
 <input type="text" name="userName" value=""/>

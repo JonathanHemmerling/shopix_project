@@ -6,85 +6,57 @@ namespace AppTest\FrontendController;
 
 use App\Controller\FrontendController\HomeControll;
 use App\Core\View;
-use App\Model\Dto\MainMenuDataTransferObject;
+use App\Model\Mapper\MainMenuMapper;
 use App\Model\ProductRepository;
-use PHPUnit\Framework\MockObject\MockObject;
+use App\Service\Container;
+use App\Service\DependencyProvider;
 use PHPUnit\Framework\TestCase;
 
 class HomeControllTest extends TestCase
 {
-    private MockObject $smartyMock;
-    private MockObject $viewMock;
-    private MockObject $productRepositoryMock;
-    private HomeControll $homeController;
-    private MockObject $mainDTOMock;
-
-
-    public function testIsLinkCorrect()
+    protected function tearDown(): void
     {
-        $this->mainDTOMock = $this->getMockBuilder(MainMenuDataTransferObject::class)
-            ->setConstructorArgs([1, 'jeans', 'Jeans'])
-            ->getMock();
-        $this->smartyMock = $this->getMockBuilder(\Smarty::class)
-            ->getMock();
-        $this->viewMock = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$this->smartyMock])
-            ->getMock();
-        $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
-            ->disableOriginalConstructor()
-            ->onlyMethods(['getAllDataFromMainTable'])
-            ->getMock();
-        $this->homeController = new HomeControll($this->viewMock, $this->productRepositoryMock);
-        $this->productRepositoryMock->method('getAllDataFromMainTable')
-            ->willReturn([$this->mainDTOMock]);
-        $this->homeController->renderView();
-        $expectedLink = '<a href="index.php?page=List&mainId=1&productGroup=jeans">Jeans</a>';
-        $link = $this->homeController->getStrForLinks();
-        self::assertSame($expectedLink, $link[0]);
+        $_SESSION = [];
+        $_POST = [];
+        parent::tearDown();
     }
-    public function testIsTemplateNameCorrectSetUp(): void
+
+    public function testIfMainCategorysAreLoadedAndDisplayed()
     {
-        $this->smartyMock = $this->getMockBuilder(\Smarty::class)
-            ->getMock();
-        $this->viewMock = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$this->smartyMock])
-            ->onlyMethods(['setTemplate'])
-            ->getMock();
-        $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $this->homeController = new HomeControll($this->viewMock, $this->productRepositoryMock);
-        $this->viewMock->expects($this->once())
-            ->method('setTemplate')
-            ->with('home.tpl');
-        $this->homeController->setStrForLinks(
-            '<a href="index.php?page=List&mainId= . Test . &productGroup= . Test . "> . Test . </a>'
+        $container = $this->getContainer();
+        /** @var View $view */
+        $view = $container->get(View::class);
+
+        $dto = ['mainId' => 1, 'mainName' => 'jeans', 'displayName' => 'Jeans'];
+        $mapper = new MainMenuMapper();
+        $dtoArray [] = $mapper->mapToMainDto($dto);
+        $mockRepository = $this->createMock(ProductRepository::class);
+        $mockRepository->method('getAllMainCategorys')->willReturn($dtoArray);
+        $mockRepository->expects($this->once())->method('getAllMainCategorys');
+
+        $detailControll = new HomeControll($view, $mockRepository);
+
+        $detailControll->renderView();
+        $template = $view->getTemplate();
+        $params = $view->getParams();
+
+        self::assertSame('home.tpl', $template);
+        self::assertIsArray($params);
+        self::assertSame(
+            [
+                'menu' => [
+                    '<a href="index.php?page=List&mainId=1&mainName=jeans">Jeans</a>',
+                ],
+            ],
+            $params
         );
-        $this->homeController->renderView();
     }
 
-    public function testIfParameterAddedToView(): void
+    private function getContainer(): Container
     {
-        $this->smartyMock = $this->getMockBuilder(\Smarty::class)
-            ->getMock();
-        $this->viewMock = $this->getMockBuilder(View::class)
-            ->setConstructorArgs([$this->smartyMock])
-            ->onlyMethods(['getParams', 'addTemplateParameter'])
-            ->getMock();
-        $this->viewMock->method('getParams')
-            ->willReturn(['test']);
-        $this->productRepositoryMock = $this->getMockBuilder(ProductRepository::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $this->homeController = new HomeControll($this->viewMock, $this->productRepositoryMock);
-        $this->viewMock->expects(self::atLeastOnce())
-            ->method('addTemplateParameter');
-        $this->viewMock->expects($this->exactly(2))
-            ->method('addTemplateParameter');
-        $this->homeController->setStrforLinks('test');
-        $this->homeController->renderView();
-        $paramsInView = $this->viewMock->getParams();
-        $expectedStrForLink = $this->homeController->getStrForLinks()[0];
-        $this->assertSame($expectedStrForLink, $paramsInView[0]);
+        $container = new Container();
+        $dependencyProvider = new DependencyProvider();
+        $dependencyProvider->providerDependency($container);
+        return $container;
     }
 }
