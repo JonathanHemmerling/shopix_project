@@ -19,6 +19,6 @@ class NotFoundControll  implements ControllerInterface
     public function renderView(): void
     {
         $this->view->addTemplateParameter('error', self::error);
-        $this->view->renderTemplate();
+        $this->view->setTemplate('notFound.tpl');
     }
 }

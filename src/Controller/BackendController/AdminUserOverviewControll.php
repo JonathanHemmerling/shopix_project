@@ -11,18 +11,18 @@ use App\Model\UserRepository;
 class AdminUserOverviewControll implements ControllerInterface
 {
     private array $userDisplay = [];
-
+    private int $userId;
     public function __construct(
         private readonly ViewInterface $view,
         private readonly UserRepository $userRepository,
     ) {
+
     }
 
     public function renderView(): void
-    {
-        if (isset($_POST['submit'])) {
-            $userId = (int)$_GET['userId'];
-            $this->userRepository->deleteUserById($userId);
+    {$this->userId = (int)$_GET['userId'];
+        if (isset($_POST['submit'])){
+            $this->userRepository->deleteUserById($this->userId);
         }
 
         $users = $this->userRepository->getAllUsers();

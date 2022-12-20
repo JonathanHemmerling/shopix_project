@@ -27,7 +27,7 @@ class LoginControllTest extends TestCase
         parent::tearDown();
     }
 
-    public function testIsUserLoggedIn()
+    public function testIsUserLoggedIn(): void
     {
         $_POST['submit'] = true;
         $_POST['userName'] = 'UserTest123';

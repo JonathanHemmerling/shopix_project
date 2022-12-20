@@ -6,7 +6,7 @@ namespace App\Model\Mapper;
 
 use App\Model\Dto\UserDataTransferObject;
 
-class UserDataMapper
+class UserDataMapper implements UserDataMapperInterface
 {
     public function mapToUserDto(array $list): UserDataTransferObject
     {

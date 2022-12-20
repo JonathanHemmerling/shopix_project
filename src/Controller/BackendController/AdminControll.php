@@ -8,7 +8,7 @@ use App\Core\ViewInterface;
 
 class AdminControll implements ControllerInterface
 {
-    public function __construct(private ViewInterface $view)
+    public function __construct(private readonly ViewInterface $view)
     {
     }
 

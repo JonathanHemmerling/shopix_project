@@ -12,15 +12,22 @@ use PHPUnit\Framework\TestCase;
 
 class AdminControllTest extends TestCase
 {
-    public function testIfTemplateIsSetUp()
+    protected function tearDown(): void
+    {
+        $_SESSION = [];
+        $_POST = [];
+        parent::tearDown();
+    }
+    public function testIfTemplateIsSetUp(): void
     {
         $container = $this->getContainer();
         $view = $container->get(View::class);
         $adminControll = new AdminControll($view);
+
         $adminControll->renderView();
         $template = $view->getTemplate();
-        self::assertSame('admin.tpl' ,$template);
 
+        self::assertSame('admin.tpl' ,$template);
     }
 
 

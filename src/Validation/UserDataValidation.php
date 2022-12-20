@@ -7,27 +7,23 @@ namespace App\Validation;
 use App\Model\LoginRepositoryInterface;
 use App\Model\UserRepositoryInterface;
 
-use function PHPUnit\Framework\isEmpty;
-
 class UserDataValidation implements UserDataValidationInterface
 {
     private array $errors = [];
 
     public function __construct(
-        private LoginRepositoryInterface $login,
-        private UserRepositoryInterface $repository
+        private readonly LoginRepositoryInterface $login,
+        private readonly UserRepositoryInterface $repository
     ) {
     }
 
-    private
-    function is_blank(
+    private function is_blank(
         string $value
     ): bool {
         return !isset($value) || trim($value) === '';
     }
 
-    private
-    function has_length_greater_than(
+    private function has_length_greater_than(
         string $value,
         int $min
     ): bool {
@@ -35,8 +31,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $length > $min;
     }
 
-    private
-    function has_length_less_than(
+    private function has_length_less_than(
         string $value,
         int $max
     ): bool {
@@ -44,8 +39,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $length < $max;
     }
 
-    private
-    function has_length_exactly(
+    private function has_length_exactly(
         $value,
         $exact
     ): bool {
@@ -53,8 +47,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $length === $exact;
     }
 
-    private
-    function has_length(
+    private function has_length(
         string $value,
         array $options
     ): bool {
@@ -82,8 +75,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $userDataDontExist;
     }
 
-    public
-    function userNameExist(
+    public function userNameExist(
         string $value
     ): bool {
         $userDataExist = false;
@@ -94,8 +86,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $userDataExist;
     }
 
-    public
-    function userAdminExist(
+    public function userAdminExist(
         string $value
     ): bool {
         $userDataExist = false;
@@ -122,8 +113,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $userNameValid;
     }
 
-    public
-    function checkIfUserNameIsValid(
+    public function checkIfUserNameIsValid(
         string $userName
     ): bool {
         $userNameValid = true;

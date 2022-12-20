@@ -29,8 +29,7 @@ class UserRepository implements UserRepositoryInterface
 
     public function getCurrentUserDataById(int $id): UserDataTransferObject
     {
-        $queryString = "SELECT * FROM userData WHERE ";
-        $queryString .= "id=" . $id . ';';
+        $queryString = "SELECT * FROM userData WHERE id=" . $id;
         foreach ($this->pdo->query($queryString) as $row) {
             $dataArray = $this->userDataMapper->mapToUserDTO($row);
         }
@@ -44,7 +43,7 @@ class UserRepository implements UserRepositoryInterface
         foreach ($this->pdo->query($queryString) as $row) {
             $userArray = $this->userDataMapper->mapToUserDTO($row);
         }
-        if (!$userArray) {
+        if (!isset($userArray)) {
             return false;
         }
         return true;

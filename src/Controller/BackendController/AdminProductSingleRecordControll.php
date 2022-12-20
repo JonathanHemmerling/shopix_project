@@ -10,24 +10,25 @@ use App\Model\ProductRepository;
 
 class AdminProductSingleRecordControll implements ControllerInterface
 {
+    private int $productId;
     public function __construct(private readonly ViewInterface $view, private readonly ProductRepository $products)
     {
     }
 
     public function renderView(): void
     {
+        $this->productId = (int)$_GET['productId'];
         if (isset($_POST['submit'])) {
             $productDataFromForm = $_POST;
-            $productId = (int)$_GET['productId'];
-            $productData = $this->products->getProductByProductId($productId);
+            $productData = $this->products->getProductByProductId($this->productId);
             $productId = $productData->productId;
             $this->products->editProductById($productId, 'displayName', $productDataFromForm['displayName']);
             $this->products->editProductById($productId, 'description', $productDataFromForm['productDescription']);
             $this->products->editProductByid($productId, 'price', $productDataFromForm['price']);
         }
-        $productId = (int)$_GET['productId'];
+
         $arrayMain = [];
-        $mainCategorys = $this->products->getProductByProductId($productId);
+        $mainCategorys = $this->products->getProductByProductId($this->productId);
         $arrayMain['displayName'] = $mainCategorys->displayName;
         $arrayMain['productDescription'] = $mainCategorys->description;
         $arrayMain['price'] = $mainCategorys->price;

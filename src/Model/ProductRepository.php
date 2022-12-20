@@ -51,7 +51,7 @@ class ProductRepository implements ProductRepositoryInterface
         $queryString = "SELECT * FROM products";
         $rows = $this->pdo->query($queryString);
         foreach ($rows as $row) {
-            $dto [] = ($this->mainMapper->mapToMainDto($row));
+            $dto [] = ($this->productsMapper->mapToProductsDto($row));
         }
         return $dto;
     }

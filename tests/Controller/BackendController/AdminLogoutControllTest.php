@@ -24,12 +24,11 @@ class AdminLogoutControllTest extends TestCase
         parent::tearDown();
     }
 
-    public function testIfTemplateIsSetUpAndUserIsLoggedOut()
+    public function testIfTemplateIsSetUpAndUserIsLoggedOut(): void
     {
         $_SESSION['adminName'] = 'admin';
         $container = $this->getContainer();
         $view = $container->get(View::class);
-
         $adminControll = new AdminLogoutControll(
             $view,
             $container->get(Session::class)
@@ -39,7 +38,6 @@ class AdminLogoutControllTest extends TestCase
         $template = $view->getTemplate();
         $params = $view->getParams();
         $adminIsUnset = isset($_SESSION['adminName']);
-
 
         self::assertSame(['errors' => ['Logout successful!']], $params);
         self::assertSame('adminLogin.tpl', $template);

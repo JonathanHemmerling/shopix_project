@@ -12,15 +12,16 @@ class UserProductCategoryOverviewControll implements ControllerInterface
 {
 
     private array $strForLinks = [];
-
+    private int $mainId;
     public function __construct(private readonly View $view, private readonly ProductRepository $products)
     {
+
     }
 
     public function renderView(): void
     {
-        $mainId = (int)$_GET['mainId'];
-        $listContent = $this->products->getProductByMainId($mainId);
+        $this->mainId = (int)$_GET['mainId'];
+        $listContent = $this->products->getProductByMainId($this->mainId);
         foreach ($listContent as $listElement) {
             $this->strForLinks[$listElement->productId] = $listElement->displayName;
         }

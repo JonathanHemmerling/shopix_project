@@ -4,27 +4,47 @@ declare(strict_types=1);
 
 namespace AppTest\FrontendController;
 
+use App\Controller\FrontendController\HomeControll;
+use App\Controller\FrontendController\NotFoundControll;
 use App\Core\View;
+use App\Model\Mapper\MainMenuMapper;
+use App\Model\ProductRepository;
+use App\Service\Container;
+use App\Service\DependencyProvider;
 use PHPUnit\Framework\TestCase;
 
 class NotFoundControllTest extends TestCase
 {
-    public function testDisplay(): void
+    protected function tearDown(): void
     {
-        $viewMock = $this->createMock(View::class);
-        $viewMock->expects($this->once())
-            ->method('renderTemplate');
-
-        $notFoundController = new \App\Controller\FrontendController\NotFoundControll($viewMock);
-        $notFoundController->renderView();
+        $_SESSION = [];
+        $_POST = [];
+        parent::tearDown();
     }
 
-    public function testAreTemplateParameterSet()
+    public function testIfArrayIsLoaded(): void
     {
-        $viewMock = $this->createMock(View::class);
-        $viewMock->expects(self::once())
-            ->method('addTemplateParameter');
-        $notFoundController = new \App\Controller\FrontendController\NotFoundControll($viewMock);
-        $notFoundController->renderView();
+        $container = $this->getContainer();
+        /** @var View $view */
+        $view = $container->get(View::class);
+
+        $notFoundControll = new NotFoundControll($view);
+        $notFoundControll->renderView();
+        $params = $view->getParams();
+        $templates = $view->getTemplate();
+
+        self::assertCount(1, $params);
+        self::assertIsArray($params);
+        self::assertSame('notFound.tpl' ,$templates);
+
+
+    }
+
+    private function getContainer(): Container
+    {
+        $container = new Container();
+        $dependencyProvider = new DependencyProvider();
+        $dependencyProvider->providerDependency($container);
+        return $container;
     }
 }

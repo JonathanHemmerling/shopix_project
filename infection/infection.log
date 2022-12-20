@@ -1,7 +1,7 @@
 Escaped mutants:
 ================
 
-1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/BackendController/UserControll.php:43    [M] LogicalAnd
+1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/BackendController/CreateUserControll.php:41    [M] LogicalAnd
 
 --- Original
 +++ New
@@ -16,7 +16,7 @@ Escaped mutants:
                  $this->userArray['lastName'] = $lastName;
 
 
-2) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/FrontendController/DetailControll.php:28    [M] CastInt
+2) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/BackendController/LoginControll.php:30    [M] LogicalOr
 
 --- Original
 +++ New
@@ -24,376 +24,29 @@ Escaped mutants:
      }
      public function renderView() : void
      {
--        $this->productId = (int) $_GET['productId'];
-+        $this->productId = $_GET['productId'];
-         $singleProduct = $this->products->getProductByProductId($this->productId);
-         $this->strForProductName[] = $singleProduct->displayName . ':';
-         $this->strForProductDescription[] = $singleProduct->description;
-
-
-3) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/FrontendController/ListControll.php:22    [M] CastInt
-
---- Original
-+++ New
-@@ @@
-     }
-     public function renderView() : void
-     {
--        $mainId = (int) $_GET['mainId'];
-+        $mainId = $_GET['mainId'];
-         $listContent = $this->products->getProductByMainId($mainId);
-         foreach ($listContent as $listElement) {
-             $productId = $listElement->productId;
-
-
-4) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/UserRepository.php:44    [M] Concat
-
---- Original
-+++ New
-@@ @@
-     public function doesUserDataExists(string $user) : bool
-     {
-         $queryString = "SELECT * FROM userData WHERE ";
--        $queryString .= "userName=\"" . $user . '";';
-+        $queryString .= $user . "userName=\"" . '";';
-         if (!$queryString) {
-             return false;
+-        if (isset($_SESSION['userName']) || isset($_SESSION['adminName'])) {
++        if (isset($_SESSION['userName']) && isset($_SESSION['adminName'])) {
+             $this->session->logoutUser();
          }
+         if (isset($_POST['submit'])) {
 
 
-5) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/UserRepository.php:44    [M] ConcatOperandRemoval
+3) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:91    [M] MethodCallRemoval
 
 --- Original
 +++ New
 @@ @@
-     public function doesUserDataExists(string $user) : bool
      {
-         $queryString = "SELECT * FROM userData WHERE ";
--        $queryString .= "userName=\"" . $user . '";';
-+        $queryString .= $user . '";';
-         if (!$queryString) {
-             return false;
-         }
-
-
-6) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/UserRepository.php:44    [M] ConcatOperandRemoval
-
---- Original
-+++ New
-@@ @@
-     public function doesUserDataExists(string $user) : bool
-     {
-         $queryString = "SELECT * FROM userData WHERE ";
--        $queryString .= "userName=\"" . $user . '";';
-+        $queryString .= "userName=\"" . '";';
-         if (!$queryString) {
-             return false;
-         }
-
-
-7) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/UserRepository.php:44    [M] Concat
-
---- Original
-+++ New
-@@ @@
-     public function doesUserDataExists(string $user) : bool
-     {
-         $queryString = "SELECT * FROM userData WHERE ";
--        $queryString .= "userName=\"" . $user . '";';
-+        $queryString .= "userName=\"" . '";' . $user;
-         if (!$queryString) {
-             return false;
-         }
-
-
-8) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/UserRepository.php:44    [M] ConcatOperandRemoval
-
---- Original
-+++ New
-@@ @@
-     public function doesUserDataExists(string $user) : bool
-     {
-         $queryString = "SELECT * FROM userData WHERE ";
--        $queryString .= "userName=\"" . $user . '";';
-+        $queryString .= "userName=\"" . $user;
-         if (!$queryString) {
-             return false;
-         }
-
-
-9) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/UserRepository.php:44    [M] Assignment
-
---- Original
-+++ New
-@@ @@
-     public function doesUserDataExists(string $user) : bool
-     {
-         $queryString = "SELECT * FROM userData WHERE ";
--        $queryString .= "userName=\"" . $user . '";';
-+        $queryString = "userName=\"" . $user . '";';
-         if (!$queryString) {
-             return false;
-         }
-
-
-10) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:54    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(Session::class, new Session());
-         $container->set(UserDataMapper::class, new UserDataMapper());
-         $container->set(ProductsMapper::class, new ProductsMapper());
--        $container->set(SubMenuMapper::class, new SubMenuMapper());
-+        
-         $container->set(MainMenuMapper::class, new MainMenuMapper());
-         $container->set(LoginRepository::class, new LoginRepository($container->get(SqlConnection::class), $container->get(PDO::class)));
-         $container->set(ProductRepository::class, new ProductRepository($container->get(SqlConnection::class), $container->get(PDO::class), $container->get(ProductsMapper::class), $container->get(MainMenuMapper::class)));
-
-
-11) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:78    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(ProductRepository::class, new ProductRepository($container->get(SqlConnection::class), $container->get(PDO::class), $container->get(ProductsMapper::class), $container->get(MainMenuMapper::class)));
-         $container->set(UserRepository::class, new UserRepository($container->get(SqlConnection::class), $container->get(UserDataMapper::class)));
-         $container->set(UserDataValidation::class, new UserDataValidation($container->get(LoginRepository::class), $container->get(UserRepository::class)));
--        $container->set(AdminControll::class, new AdminControll($container->get(View::class)));
-+        
-         $container->set(AdminLoginControll::class, new AdminLoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(AdminLogoutControll::class, new AdminLogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-
-
-12) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:82    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(UserRepository::class, new UserRepository($container->get(SqlConnection::class), $container->get(UserDataMapper::class)));
-         $container->set(UserDataValidation::class, new UserDataValidation($container->get(LoginRepository::class), $container->get(UserRepository::class)));
-         $container->set(AdminControll::class, new AdminControll($container->get(View::class)));
--        $container->set(AdminLoginControll::class, new AdminLoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-+        
-         $container->set(AdminLogoutControll::class, new AdminLogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
-
-
-13) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:92    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(UserDataValidation::class, new UserDataValidation($container->get(LoginRepository::class), $container->get(UserRepository::class)));
-         $container->set(AdminControll::class, new AdminControll($container->get(View::class)));
-         $container->set(AdminLoginControll::class, new AdminLoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
--        $container->set(AdminLogoutControll::class, new AdminLogoutControll($container->get(View::class), $container->get(Session::class)));
-+        
-         $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
-         $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-
-
-14) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:96    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(AdminControll::class, new AdminControll($container->get(View::class)));
-         $container->set(AdminLoginControll::class, new AdminLoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(AdminLogoutControll::class, new AdminLogoutControll($container->get(View::class), $container->get(Session::class)));
--        $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-+        
-         $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
-         $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
-
-
-15) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:104    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(AdminLoginControll::class, new AdminLoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(AdminLogoutControll::class, new AdminLogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
--        $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
-+        
-         $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
-
-
-16) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:113    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(AdminLogoutControll::class, new AdminLogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
--        $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-+        
-         $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
-
-
-17) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:121    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(CategoryDataControll::class, new CategoryDataControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
-         $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
--        $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
-+        
-         $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
-
-
-18) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:128    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(ChangeUserDataControll::class, new ChangeUserDataControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class), $container->get(Redirect::class)));
-         $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
--        $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
-+        
-         $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-
-
-19) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:129    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(CreateProductControll::class, new CreateProductControll($container->get(View::class), $container->get(ProductRepository::class), $container->get(Redirect::class)));
-         $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
--        $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
-+        
-         $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
-
-
-20) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:136    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(DetailControll::class, new DetailControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
--        $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
-+        
-         $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
-
-
-21) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:143    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(DetailDataControll::class, new DetailDataControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
--        $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-+        
-         $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
-         $container->set(UserControll::class, new UserControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class)));
-
-
-22) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:153    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(HomeControll::class, new HomeControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
--        $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
-+        
-         $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
-         $container->set(UserControll::class, new UserControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class)));
-         $container->set(UserDetailControll::class, new UserDetailControll($container->get(View::class), $container->get(UserRepository::class)));
-
-
-23) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:157    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(ListControll::class, new ListControll($container->get(View::class), $container->get(ProductRepository::class)));
-         $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
--        $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
-+        
-         $container->set(UserControll::class, new UserControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class)));
-         $container->set(UserDetailControll::class, new UserDetailControll($container->get(View::class), $container->get(UserRepository::class)));
-         $container->set(UserOverviewControll::class, new UserOverviewControll($container->get(View::class), $container->get(UserRepository::class), $container->get(Redirect::class)));
-     }
- }
-
-
-24) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:163    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(LoginControll::class, new LoginControll($container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $container->get(Session::class), $container->get(Redirect::class)));
-         $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
--        $container->set(UserControll::class, new UserControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class)));
-+        
-         $container->set(UserDetailControll::class, new UserDetailControll($container->get(View::class), $container->get(UserRepository::class)));
-         $container->set(UserOverviewControll::class, new UserOverviewControll($container->get(View::class), $container->get(UserRepository::class), $container->get(Redirect::class)));
-     }
- }
-
-
-25) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:171    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(LogoutControll::class, new LogoutControll($container->get(View::class), $container->get(Session::class)));
-         $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
-         $container->set(UserControll::class, new UserControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class)));
--        $container->set(UserDetailControll::class, new UserDetailControll($container->get(View::class), $container->get(UserRepository::class)));
-+        
-         $container->set(UserOverviewControll::class, new UserOverviewControll($container->get(View::class), $container->get(UserRepository::class), $container->get(Redirect::class)));
-     }
- }
-
-
-26) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Service/DependencyProvider.php:175    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-         $container->set(NotFoundControll::class, new NotFoundControll($container->get(View::class)));
-         $container->set(UserControll::class, new UserControll($container->get(View::class), $container->get(UserRepository::class), $container->get(UserDataValidation::class)));
-         $container->set(UserDetailControll::class, new UserDetailControll($container->get(View::class), $container->get(UserRepository::class)));
--        $container->set(UserOverviewControll::class, new UserOverviewControll($container->get(View::class), $container->get(UserRepository::class), $container->get(Redirect::class)));
+         $queryString = "DELETE FROM products ";
+         $queryString .= "WHERE productId =" . $productId;
+-        $this->pdo->query($queryString);
 +        
      }
- }
+     public function createNewProduct(int $mainId, string $displayName, string $productName, string $description, string $price) : void
+     {
 
 
-27) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:26    [M] UnwrapTrim
+4) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:23    [M] UnwrapTrim
 
 --- Original
 +++ New
@@ -408,7 +61,7 @@ Escaped mutants:
      {
 
 
-28) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:26    [M] LogicalOr
+5) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:23    [M] LogicalOr
 
 --- Original
 +++ New
@@ -423,112 +76,7 @@ Escaped mutants:
      {
 
 
-29) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:35    [M] GreaterThan
-
---- Original
-+++ New
-@@ @@
-     private function has_length_greater_than(string $value, int $min) : bool
-     {
-         $length = strlen($value);
--        return $length > $min;
-+        return $length >= $min;
-     }
-     private function has_length_less_than(string $value, int $max) : bool
-     {
-
-
-30) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:44    [M] LessThan
-
---- Original
-+++ New
-@@ @@
-     private function has_length_less_than(string $value, int $max) : bool
-     {
-         $length = strlen($value);
--        return $length < $max;
-+        return $length <= $max;
-     }
-     private function has_length_exactly($value, $exact) : bool
-     {
-
-
-31) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:61    [M] IncrementInteger
-
---- Original
-+++ New
-@@ @@
-     }
-     private function has_length(string $value, array $options) : bool
-     {
--        if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
-+        if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 2)) {
-             return false;
-         }
-         if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
-
-
-32) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:64    [M] DecrementInteger
-
---- Original
-+++ New
-@@ @@
-         if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
-             return false;
-         }
--        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
-+        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 0)) {
-             return false;
-         }
-         if (isset($options['exact']) && !$this->has_length_exactly($value, $options['exact'])) {
-
-
-33) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:64    [M] IncrementInteger
-
---- Original
-+++ New
-@@ @@
-         if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
-             return false;
-         }
--        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
-+        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 2)) {
-             return false;
-         }
-         if (isset($options['exact']) && !$this->has_length_exactly($value, $options['exact'])) {
-
-
-34) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:64    [M] Plus
-
---- Original
-+++ New
-@@ @@
-         if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
-             return false;
-         }
--        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
-+        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] - 1)) {
-             return false;
-         }
-         if (isset($options['exact']) && !$this->has_length_exactly($value, $options['exact'])) {
-
-
-35) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:68    [M] LogicalNot
-
---- Original
-+++ New
-@@ @@
-         if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
-             return false;
-         }
--        if (isset($options['exact']) && !$this->has_length_exactly($value, $options['exact'])) {
-+        if (isset($options['exact']) && $this->has_length_exactly($value, $options['exact'])) {
-             return false;
-         } else {
-             return true;
-
-
-36) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:85    [M] PublicVisibility
+6) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:78    [M] PublicVisibility
 
 --- Original
 +++ New
@@ -543,7 +91,7 @@ Escaped mutants:
          $userDataArray = $this->login->findUserByName($value);
 
 
-37) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:89    [M] FalseValue
+7) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:81    [M] FalseValue
 
 --- Original
 +++ New
@@ -558,7 +106,7 @@ Escaped mutants:
              $userDataExist = true;
 
 
-38) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:91    [M] Identical
+8) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:83    [M] Identical
 
 --- Original
 +++ New
@@ -573,7 +121,7 @@ Escaped mutants:
          return $userDataExist;
 
 
-39) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:92    [M] TrueValue
+9) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:84    [M] TrueValue
 
 --- Original
 +++ New
@@ -588,7 +136,7 @@ Escaped mutants:
      }
 
 
-40) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:97    [M] PublicVisibility
+10) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:89    [M] PublicVisibility
 
 --- Original
 +++ New
@@ -603,7 +151,7 @@ Escaped mutants:
          $userDataArray = $this->login->findAdminByName($value);
 
 
-41) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:101    [M] FalseValue
+11) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:92    [M] FalseValue
 
 --- Original
 +++ New
@@ -618,7 +166,7 @@ Escaped mutants:
              $userDataExist = true;
 
 
-42) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:103    [M] LogicalAnd
+12) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:94    [M] LogicalAnd
 
 --- Original
 +++ New
@@ -633,112 +181,7 @@ Escaped mutants:
          return $userDataExist;
 
 
-43) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:111    [M] TrueValue
-
---- Original
-+++ New
-@@ @@
-     }
-     public function checkIfNewUserNameIsValid(string $userName) : bool
-     {
--        $userNameValid = true;
-+        $userNameValid = false;
-         if ($this->is_blank($userName)) {
-             $this->errors[] = 'Username cannot be blank';
-             $userNameValid = false;
-
-
-44) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:115    [M] DecrementInteger
-
---- Original
-+++ New
-@@ @@
-         if ($this->is_blank($userName)) {
-             $this->errors[] = 'Username cannot be blank';
-             $userNameValid = false;
--        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
-+        } elseif (!$this->has_length($userName, ['min' => 2, 'max' => 20])) {
-             $this->errors[] = 'Username must be between 3 and 20 characters long';
-             $userNameValid = false;
-         } elseif (!$this->isAUniqueUserName($userName)) {
-
-
-45) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:115    [M] IncrementInteger
-
---- Original
-+++ New
-@@ @@
-         if ($this->is_blank($userName)) {
-             $this->errors[] = 'Username cannot be blank';
-             $userNameValid = false;
--        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
-+        } elseif (!$this->has_length($userName, ['min' => 4, 'max' => 20])) {
-             $this->errors[] = 'Username must be between 3 and 20 characters long';
-             $userNameValid = false;
-         } elseif (!$this->isAUniqueUserName($userName)) {
-
-
-46) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:115    [M] DecrementInteger
-
---- Original
-+++ New
-@@ @@
-         if ($this->is_blank($userName)) {
-             $this->errors[] = 'Username cannot be blank';
-             $userNameValid = false;
--        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
-+        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 19])) {
-             $this->errors[] = 'Username must be between 3 and 20 characters long';
-             $userNameValid = false;
-         } elseif (!$this->isAUniqueUserName($userName)) {
-
-
-47) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:115    [M] IncrementInteger
-
---- Original
-+++ New
-@@ @@
-         if ($this->is_blank($userName)) {
-             $this->errors[] = 'Username cannot be blank';
-             $userNameValid = false;
--        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
-+        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 21])) {
-             $this->errors[] = 'Username must be between 3 and 20 characters long';
-             $userNameValid = false;
-         } elseif (!$this->isAUniqueUserName($userName)) {
-
-
-48) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:115    [M] ArrayItemRemoval
-
---- Original
-+++ New
-@@ @@
-         if ($this->is_blank($userName)) {
-             $this->errors[] = 'Username cannot be blank';
-             $userNameValid = false;
--        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
-+        } elseif (!$this->has_length($userName, ['max' => 20])) {
-             $this->errors[] = 'Username must be between 3 and 20 characters long';
-             $userNameValid = false;
-         } elseif (!$this->isAUniqueUserName($userName)) {
-
-
-49) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:120    [M] FalseValue
-
---- Original
-+++ New
-@@ @@
-             $userNameValid = false;
-         } elseif (!$this->isAUniqueUserName($userName)) {
-             $this->errors[] = 'Select another Username';
--            $userNameValid = false;
-+            $userNameValid = true;
-         }
-         return $userNameValid;
-     }
-
-
-50) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:130    [M] LogicalNot
+13) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:120    [M] LogicalNot
 
 --- Original
 +++ New
@@ -753,7 +196,7 @@ Escaped mutants:
              $userNameValid = false;
 
 
-51) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:130    [M] LogicalOr
+14) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:120    [M] LogicalOr
 
 --- Original
 +++ New
@@ -766,96 +209,6 @@ Escaped mutants:
              $this->errors = [];
              $this->errors[] = 'Invalid Userdata!';
              $userNameValid = false;
-
-
-52) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:152    [M] TrueValue
-
---- Original
-+++ New
-@@ @@
-     }
-     public function checkIfPasswordIsValid(string $password, string $confirmPassword)
-     {
--        $passwordValid = true;
-+        $passwordValid = false;
-         if ($this->is_blank($password) || $this->is_blank($confirmPassword)) {
-             $this->errors[] = 'Password cannot be blank';
-             $passwordValid = false;
-
-
-53) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:153    [M] LogicalOr
-
---- Original
-+++ New
-@@ @@
-     public function checkIfPasswordIsValid(string $password, string $confirmPassword)
-     {
-         $passwordValid = true;
--        if ($this->is_blank($password) || $this->is_blank($confirmPassword)) {
-+        if ($this->is_blank($password) && $this->is_blank($confirmPassword)) {
-             $this->errors[] = 'Password cannot be blank';
-             $passwordValid = false;
-         }
-
-
-54) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:157    [M] DecrementInteger
-
---- Original
-+++ New
-@@ @@
-             $this->errors[] = 'Password cannot be blank';
-             $passwordValid = false;
-         }
--        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 40])) {
-+        if (!$this->has_length($confirmPassword, ['min' => 7, 'max' => 40])) {
-             $this->errors[] = 'Password must be between 8 and 40 characters long';
-             $passwordValid = false;
-         }
-
-
-55) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:157    [M] DecrementInteger
-
---- Original
-+++ New
-@@ @@
-             $this->errors[] = 'Password cannot be blank';
-             $passwordValid = false;
-         }
--        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 40])) {
-+        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 39])) {
-             $this->errors[] = 'Password must be between 8 and 40 characters long';
-             $passwordValid = false;
-         }
-
-
-56) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:157    [M] IncrementInteger
-
---- Original
-+++ New
-@@ @@
-             $this->errors[] = 'Password cannot be blank';
-             $passwordValid = false;
-         }
--        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 40])) {
-+        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 41])) {
-             $this->errors[] = 'Password must be between 8 and 40 characters long';
-             $passwordValid = false;
-         }
-
-
-57) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:157    [M] ArrayItemRemoval
-
---- Original
-+++ New
-@@ @@
-             $this->errors[] = 'Password cannot be blank';
-             $passwordValid = false;
-         }
--        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 40])) {
-+        if (!$this->has_length($confirmPassword, ['max' => 40])) {
-             $this->errors[] = 'Password must be between 8 and 40 characters long';
-             $passwordValid = false;
-         }
 
 
 Timed Out mutants:

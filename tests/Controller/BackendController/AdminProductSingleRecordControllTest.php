@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace AppTest\Controller\FrontendController;
+namespace AppTest\Controller\BackendController;
 
-use App\Controller\FrontendController\UserProductSingleRecordControll;
+use App\Controller\BackendController\AdminProductSingleRecordControll;
 use App\Core\View;
 use App\Model\Dto\ProductsDataTransferObject;
 use App\Model\ProductRepository;
@@ -13,9 +13,8 @@ use App\Service\DependencyProvider;
 use PHPUnit\Framework\TestCase;
 
 
-class DetailControllTest extends TestCase
+class AdminProductSingleRecordControllTest extends TestCase
 {
-
     protected function tearDown(): void
     {
         $_SESSION = [];
@@ -23,36 +22,31 @@ class DetailControllTest extends TestCase
         parent::tearDown();
     }
 
-    public function testIfProductsAreLoadedAndDisplayed()
+    public function testIfArrayIsSetUp(): void
     {
-        $_GET['productId'] = 1;
+        $_GET['productId'] = '1';
         $container = $this->getContainer();
         /** @var View $view */
         $view = $container->get(View::class);
-        $dto = new ProductsDataTransferObject(
-            1, 1, 'Jeans 1', 'jeans1', 'The first Jeans', '29,99'
-        );
+
+        $productDTO = new ProductsDataTransferObject(1, 1, 'test', 'test', 'Test', '1');
         $mockRepository = $this->createMock(ProductRepository::class);
-        $mockRepository->method('getProductByProductId')->with(1)->willReturn($dto);
+        $mockRepository->method('getProductByProductId')->with(1)->willReturn($productDTO);
         $mockRepository->expects($this->once())->method('getProductByProductId');
+        $productSingleRecordControll = new AdminProductSingleRecordControll($view, $mockRepository);
 
-        $detailControll = new UserProductSingleRecordControll($view, $mockRepository);
-
-        $detailControll->renderView();
-        $template = $view->getTemplate();
+        $productSingleRecordControll->renderView();
         $params = $view->getParams();
+        $template = $view->getTemplate();
 
-        self::assertSame('productSingleRecord.tpl', $template);
+
         self::assertIsArray($params);
+        self::assertCount(1, $params);
+        self::assertSame('productSingleRecordAdmin.tpl', $template);
         self::assertSame(
-            [
-                'productName' => [0 => 'Jeans 1:'],
-                'productDescription' => [0 => 'The first Jeans'],
-                'price' => [0 => '29,99'],
-            ],
+            ['productName' => ['displayName' => 'test', 'productDescription' => 'Test', 'price' => '1']],
             $params
         );
-        self::assertIsInt($_GET['productId']);
     }
 
     private function getContainer(): Container

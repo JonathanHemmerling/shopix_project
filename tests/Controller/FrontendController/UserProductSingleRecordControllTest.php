@@ -2,18 +2,20 @@
 
 declare(strict_types=1);
 
-namespace AppTest\FrontendController;
+namespace AppTest\Controller\FrontendController;
 
-use App\Controller\FrontendController\HomeControll;
+use App\Controller\FrontendController\UserProductSingleRecordControll;
 use App\Core\View;
-use App\Model\Mapper\MainMenuMapper;
+use App\Model\Dto\ProductsDataTransferObject;
 use App\Model\ProductRepository;
 use App\Service\Container;
 use App\Service\DependencyProvider;
 use PHPUnit\Framework\TestCase;
 
-class HomeControllTest extends TestCase
+
+class UserProductSingleRecordControllTest extends TestCase
 {
+
     protected function tearDown(): void
     {
         $_SESSION = [];
@@ -21,31 +23,32 @@ class HomeControllTest extends TestCase
         parent::tearDown();
     }
 
-    public function testIfMainCategorysAreLoadedAndDisplayed(): void
+    public function testIfProductsAreLoadedAndDisplayed(): void
     {
+        $_GET['productId'] = '1';
         $container = $this->getContainer();
         /** @var View $view */
         $view = $container->get(View::class);
-
-        $dto = ['mainId' => 1, 'mainName' => 'jeans', 'displayName' => 'Jeans'];
-        $mapper = new MainMenuMapper();
-        $dtoArray [] = $mapper->mapToMainDto($dto);
+        $dto = new ProductsDataTransferObject(
+            1, 1, 'Jeans 1', 'jeans1', 'The first Jeans', '29,99'
+        );
         $mockRepository = $this->createMock(ProductRepository::class);
-        $mockRepository->method('getAllMainCategorys')->willReturn($dtoArray);
-        $mockRepository->expects($this->once())->method('getAllMainCategorys');
+        $mockRepository->method('getProductByProductId')->with(1)->willReturn($dto);
+        $mockRepository->expects($this->once())->method('getProductByProductId');
 
-        $detailControll = new HomeControll($view, $mockRepository);
+        $detailControll = new UserProductSingleRecordControll($view, $mockRepository);
+
         $detailControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
 
-        self::assertSame('home.tpl', $template);
+        self::assertSame('productSingleRecord.tpl', $template);
         self::assertIsArray($params);
         self::assertSame(
             [
-                'menu' => [
-                    '<a href="index.php?page=UserProductCategoryOverview&mainId=1">Jeans</a>',
-                ],
+                'productName' => [0 => 'Jeans 1:'],
+                'productDescription' => [0 => 'The first Jeans'],
+                'price' => [0 => '29,99'],
             ],
             $params
         );

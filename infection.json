@@ -3,7 +3,7 @@
   "source": {
     "directories": [
       "src"
-    ]
+    ],
   },
   "timeout": 100,
   "logs": {
@@ -11,7 +11,16 @@
     "html": "infection/infection.html"
   },
   "mutators": {
-    "@default": true
+    "@default": true,
+    "@regex": {
+      "ignore": [
+        "App\\Service\\DependencyProvider"
+      ]
+    },         "Minus": {
+      "ignore": [
+        "App\\Service\\DependencyProvider"
+      ]
+    }
   },
   "initialTestsPhpOptions": "-d xdebug.mode=coverage",
   "testFrameworkOptions": ""

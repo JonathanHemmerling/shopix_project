@@ -19,7 +19,6 @@ class AdminMainProductCategoryOverviewControll implements ControllerInterface
     public function renderView(): void
     {
         $mainCategorys = $this->products->getAllMainCategorys();
-        $mainCategorysArray = [];
         foreach ($mainCategorys as $row) {
             $mainCategorysArray[$row->mainId] = $row->displayName;
         }

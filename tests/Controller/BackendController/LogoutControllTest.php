@@ -29,8 +29,6 @@ class LogoutControllTest extends TestCase
 
         $container = $this->getContainer();
         $view = $container->get(View::class);
-
-
         $logout = new LogoutControll($view, $container->get(Session::class));
 
         $logout->renderView();

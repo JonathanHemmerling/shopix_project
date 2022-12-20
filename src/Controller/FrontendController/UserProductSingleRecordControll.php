@@ -15,6 +15,7 @@ class UserProductSingleRecordControll implements ControllerInterface
     private array $strForProductName;
     private array $strForProductDescription;
     private array $strForPrice;
+    private int $productId;
 
     public function __construct(
         private readonly ViewInterface $view,
@@ -24,8 +25,8 @@ class UserProductSingleRecordControll implements ControllerInterface
 
     public function renderView(): void
     {
-        $productId = (int)$_GET['productId'];
-        $singleProduct = $this->products->getProductByProductId($productId);
+        $this->productId = (int)$_GET['productId'];
+        $singleProduct = $this->products->getProductByProductId($this->productId);
         $this->strForProductName[] = $singleProduct->displayName . ':';
         $this->strForProductDescription[] = $singleProduct->description;
         $this->strForPrice[] = $singleProduct->price;

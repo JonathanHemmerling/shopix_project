@@ -26,7 +26,6 @@ use App\Core\View;
 use App\Model\LoginRepository;
 use App\Model\Mapper\MainMenuMapper;
 use App\Model\Mapper\ProductsMapper;
-use App\Model\Mapper\SubMenuMapper;
 use App\Model\Mapper\UserDataMapper;
 use App\Model\ProductRepository;
 use App\Model\UserRepository;
@@ -34,6 +33,10 @@ use App\SQL\SqlConnection;
 use App\Validation\UserDataValidation;
 use PDO;
 use Smarty;
+
+/**
+ * @infection-ignore-all
+ */
 
 class DependencyProvider
 {
@@ -51,7 +54,6 @@ class DependencyProvider
         $container->set(Session::class, new Session());
         $container->set(UserDataMapper::class, new UserDataMapper());
         $container->set(ProductsMapper::class, new ProductsMapper());
-        $container->set(SubMenuMapper::class, new SubMenuMapper());
         $container->set(MainMenuMapper::class, new MainMenuMapper());
         $container->set(
             LoginRepository::class,
