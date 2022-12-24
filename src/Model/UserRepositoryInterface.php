@@ -11,7 +11,7 @@ interface UserRepositoryInterface
 
     public function getAllUsers(): array;
 
-    public function getCurrentUserDataById(int $id): UserDataTransferObject;
+    public function getCurrentUserDataById(int $id): UserDataTransferObject|null;
 
     public function editUserAttributeById(
         int $id,

@@ -13,6 +13,7 @@ class UserSingleRecordControll implements ControllerInterface
     private array $errors = [];
     private array $changedUser = [];
     private int $userId;
+    private array $userDataSet = [];
     public function __construct(
         private readonly ViewInterface $view,
         private readonly UserRepository $repository

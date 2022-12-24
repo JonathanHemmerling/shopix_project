@@ -15,29 +15,17 @@ use PHPUnit\Framework\TestCase;
 
 class NotFoundControllTest extends TestCase
 {
-    protected function tearDown(): void
-    {
-        $_SESSION = [];
-        $_POST = [];
-        parent::tearDown();
-    }
-
     public function testIfArrayIsLoaded(): void
     {
         $container = $this->getContainer();
-        /** @var View $view */
-        $view = $container->get(View::class);
+        $notFoundControll = new NotFoundControll($view = $container->get(View::class));
 
-        $notFoundControll = new NotFoundControll($view);
         $notFoundControll->renderView();
         $params = $view->getParams();
         $templates = $view->getTemplate();
 
         self::assertCount(1, $params);
-        self::assertIsArray($params);
         self::assertSame('notFound.tpl' ,$templates);
-
-
     }
 
     private function getContainer(): Container

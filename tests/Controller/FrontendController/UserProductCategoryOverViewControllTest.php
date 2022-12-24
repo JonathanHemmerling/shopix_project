@@ -25,8 +25,6 @@ class UserProductCategoryOverViewControllTest extends TestCase
     {
         $_GET['mainId'] = '1';
         $container = $this->getContainer();
-        /** @var View $view */
-        $view = $container->get(View::class);
         $dto = [
             'productId' => 1,
             'mainId' => 1,
@@ -40,19 +38,17 @@ class UserProductCategoryOverViewControllTest extends TestCase
         $mockRepository = $this->createMock(ProductRepository::class);
         $mockRepository->method('getProductByMainId')->with(1)->willReturn($dtoArray);
         $mockRepository->expects($this->atLeastOnce())->method('getProductByMainId');
-        $detailControll = new UserProductCategoryOverviewControll($view, $mockRepository);
+        $detailControll = new UserProductCategoryOverviewControll($view = $container->get(View::class), $mockRepository);
 
         $detailControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
+        $paramsThatShouldBeInArray = ['categoryLink' => [1 => 'Jeans 1']];
 
        self::assertIsArray($mockRepository->getProductByMainId(1));
        self::assertIsNumeric($_GET['mainId']);
        self::assertSame('productCategoryOverview.tpl', $template);
-       self::assertIsArray($params);
-       self::assertSame(['categoryLink' => [1 => 'Jeans 1']],
-            $params
-       );
+       self::assertSame($paramsThatShouldBeInArray, $params);
     }
 
     private function getContainer(): Container

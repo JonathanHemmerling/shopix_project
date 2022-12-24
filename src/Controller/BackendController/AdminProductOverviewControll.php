@@ -29,6 +29,9 @@ class AdminProductOverviewControll implements ControllerInterface
         }
 
         $products = $this->products->getProductByMainId($this->mainId);
+        if(!isset($products)){
+            $products = [];
+        }
         $productsArray = [];
         foreach ($products as $row) {
             $productsArray[$row->productId] = $row->displayName;

@@ -39,26 +39,21 @@ class UserSingleRecordControllTest extends TestCase
         $_POST['Telefonnumber'] = '0123456789';
 
         $container = $this->getContainer();
-        /** @var View $view */
-        $view = $container->get(View::class);
         $userDTO = new UserDataTransferObject(1, 'UserForTest', "User", "ForTest", "TestCountry", '55555', 'TestCity', 'TestStreet', '99', 'test@test.test', "0123456789", '');
         $mockRepository = $this->createMock(UserRepository::class);
         $mockRepository->expects($this->exactly(10))->method('editUserAttributeById');
         $mockRepository->expects($this->once())->method('getCurrentUserDataById')
             ->willReturn($userDTO);
-        $userControll = new UserSingleRecordControll($view, $mockRepository);
+        $userControll = new UserSingleRecordControll($view = $container->get(View::class), $mockRepository);
 
         $userControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
-        $expectedArray = ['changedUser' => [], 'errors' => [],
+        $paramsThatShouldBeInArray = ['changedUser' => [], 'errors' => [],
             'items' => ['Username' => 'UserForTest', 'First Name' => 'User', 'Last Name' => 'ForTest', 'Country' => 'TestCountry', 'Postcode' => '55555', 'City' => 'TestCity', 'Street' => 'TestStreet', 'Streetnumber' => '99', 'E-Mail' => 'test@test.test', 'Telefonnumber' => '0123456789']];
 
         self::assertSame('userSingleRecord.tpl' ,$template);
-        self::assertIsArray($params);
-        self::assertSame($expectedArray,$params);
-
-
+        self::assertSame($paramsThatShouldBeInArray,$params);
     }
 
     private function getContainer(): Container

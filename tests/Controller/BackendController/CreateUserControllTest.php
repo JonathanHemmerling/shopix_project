@@ -21,7 +21,7 @@ class CreateUserControllTest extends TestCase
         parent::tearDown();
     }
 
-    public function testIfArrayIsSetUp(): void
+    public function testIfUserIsNotAdded(): void
     {
         $_POST['submit'] = true;
         $_POST['userName'] = 'test';
@@ -33,7 +33,7 @@ class CreateUserControllTest extends TestCase
         $_POST['street'] = 'test';
         $_POST['streetNumber'] = 'test';
         $_POST['email'] = 'test';
-        $_POST['password'] = '';
+        $_POST['password'] = 'password';
         $_POST['confirmPassword'] = '';
         $_POST['telefonNumber'] = 'test';
 
@@ -41,19 +41,52 @@ class CreateUserControllTest extends TestCase
         /** @var View $view */
         $view = $container->get(View::class);
 
+        $validation = $container->get(UserDataValidation::class);
+
+        $mockRepository = $this->createMock(UserRepository::class);
+        $mockRepository->expects($this->never())->method('addNewUserDataArrayToDb');
+
+        $productSingleRecordControll = new CreateUserControll($view, $mockRepository, $validation);
+
+        $productSingleRecordControll->renderView();
+        $params = $view->getParams();
+        $template = $view->getTemplate();
+
+
+        self::assertCount(1, $params);
+        self::assertSame('createUser.tpl', $template);
+    }
+    public function testIfUserIsAdded(): void
+    {
+        $_POST['submit'] = true;
+        $_POST['userName'] = 'test';
+        $_POST['firstName'] = 'test';
+        $_POST['lastName'] = 'test';
+        $_POST['country'] = 'test';
+        $_POST['postCode'] = 'test';
+        $_POST['city'] = 'test';
+        $_POST['street'] = 'test';
+        $_POST['streetNumber'] = 'test';
+        $_POST['email'] = 'test';
+        $_POST['password'] = 'password';
+        $_POST['confirmPassword'] = 'test';
+        $_POST['telefonNumber'] = 'test';
+
+        $container = $this->getContainer();
         $mockValidation = $this->createMock(UserDataValidation::class);
         $mockValidation->expects($this->once())->method('checkIfNewUserNameIsValid')->with('test')->willReturn(true);
         $mockValidation->expects($this->once())->method('checkIfPasswordIsValid')->willReturn(true);
         $mockRepository = $this->createMock(UserRepository::class);
         $mockRepository->expects($this->once())->method('addNewUserDataArrayToDb');
 
-        $productSingleRecordControll = new CreateUserControll($view, $mockRepository, $mockValidation);
+        $productSingleRecordControll = new CreateUserControll($view = $container->get(View::class), $mockRepository, $mockValidation);
 
         $productSingleRecordControll->renderView();
-        var_dump($view->getParams());
         $params = $view->getParams();
         $template = $view->getTemplate();
+        $paramsThatShouldBeInArray = ['errors' => []];
 
+        self::assertSame($paramsThatShouldBeInArray, $params);
         self::assertCount(1, $params);
         self::assertSame('createUser.tpl', $template);
     }
@@ -65,4 +98,5 @@ class CreateUserControllTest extends TestCase
         $dependencyProvider->providerDependency($container);
         return $container;
     }
+
 }

@@ -28,12 +28,9 @@ class AdminLogoutControllTest extends TestCase
     {
         $_SESSION['adminName'] = 'admin';
         $container = $this->getContainer();
-        $view = $container->get(View::class);
-        $adminControll = new AdminLogoutControll(
-            $view,
-            $container->get(Session::class)
-        );
 
+        $adminControll = new AdminLogoutControll($view = $container->get(View::class), $container->get(Session::class)
+        );
         $adminControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
@@ -43,7 +40,6 @@ class AdminLogoutControllTest extends TestCase
         self::assertSame('adminLogin.tpl', $template);
         self::assertNotTrue($adminIsUnset);
     }
-
 
     private function getContainer(): Container
     {

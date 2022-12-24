@@ -29,21 +29,18 @@ class CreateProductControllTest extends TestCase
         $_POST['productName'] = 'test';
         $_POST['description'] = 'test';
         $_POST['price'] = '1';
-
         $container = $this->getContainer();
-        /** @var View $view */
-        $view = $container->get(View::class);
-
         $mockRepository = $this->createMock(ProductRepository::class);
         $mockRepository->expects($this->once())->method('createNewProduct')->with(1,'test', 'test', 'test','1');
-        $productSingleRecordControll = new CreateProductControll($view, $mockRepository);
+        $productSingleRecordControll = new CreateProductControll($view = $container->get(View::class), $mockRepository);
 
         $productSingleRecordControll->renderView();
         $params = $view->getParams();
         $template = $view->getTemplate();
-        $expectedArray = ['mainId'=> [0 => 1]];
-        self::assertSame($expectedArray, $params);
-        self::assertIsArray($params);
+
+        $paramsThatShouldBeInArray = ['mainId'=> [0 => 1]];
+
+        self::assertSame($paramsThatShouldBeInArray, $params);
         self::assertCount(1, $params);
         self::assertSame('createProduct.tpl', $template);
     }

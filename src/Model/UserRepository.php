@@ -8,7 +8,9 @@ use App\Model\Dto\UserDataTransferObject;
 use App\Model\Mapper\UserDataMapper;
 use App\SQL\SqlConnectionInterface;
 use PDO;
-
+/**
+ * @infection-ignore-all
+ */
 class UserRepository implements UserRepositoryInterface
 {
     private PDO $pdo;
@@ -27,11 +29,14 @@ class UserRepository implements UserRepositoryInterface
         return $dataArray;
     }
 
-    public function getCurrentUserDataById(int $id): UserDataTransferObject
+    public function getCurrentUserDataById(int $id): UserDataTransferObject|null
     {
         $queryString = "SELECT * FROM userData WHERE id=" . $id;
         foreach ($this->pdo->query($queryString) as $row) {
             $dataArray = $this->userDataMapper->mapToUserDTO($row);
+        }
+        if(!isset($dataArray)){
+            return null;
         }
         return $dataArray;
     }

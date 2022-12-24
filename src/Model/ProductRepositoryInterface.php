@@ -13,15 +13,15 @@ interface ProductRepositoryInterface
      * @param int $mainId
      * @return MainMenuDataTransferObject[]
      */
-    public function getAllMainCategorys(): array;
+    public function getAllMainCategorys(): array|null;
 
     /**
      * @param int $subId
      * @return ProductsDataTransferObject
      */
-    public function getAllProducts(): array;
+    public function getAllProducts(): array|null;
 
-    public function getProductByMainId(int $mainId): array;
+    public function getProductByMainId(int $mainId): array|null;
     public function createNewProduct(
         int $mainId,
         string $displayName,
@@ -30,7 +30,7 @@ interface ProductRepositoryInterface
         string $price
     ): void;
 
-    public function getProductByProductId(int $productId): ProductsDataTransferObject;
+    public function getProductByProductId(int $productId): ProductsDataTransferObject|null;
 
     public function editProductById(int $productId, string $column, string $stringToChange): void;
 

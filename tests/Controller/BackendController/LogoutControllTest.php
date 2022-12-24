@@ -26,10 +26,8 @@ class LogoutControllTest extends TestCase
     {
         $_SESSION['lastLogin'] = time();
         $_SESSION['userName'] = 'test';
-
         $container = $this->getContainer();
-        $view = $container->get(View::class);
-        $logout = new LogoutControll($view, $container->get(Session::class));
+        $logout = new LogoutControll($view = $container->get(View::class), $container->get(Session::class));
 
         $logout->renderView();
         $template = $view->getTemplate();
@@ -37,7 +35,6 @@ class LogoutControllTest extends TestCase
         $userIsUnset = isset($_SESSION['userName']);
 
         self::assertSame('login.tpl', $template);
-        self::assertIsArray($params);
         self::assertSame(['errors' => [0 => 'Logout successful!']],$params);
         self::assertNotTrue($userIsUnset);
     }

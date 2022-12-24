@@ -1,52 +1,171 @@
 Escaped mutants:
 ================
 
-1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/BackendController/CreateUserControll.php:41    [M] LogicalAnd
+1) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:101    [M] Concat
 
 --- Original
 +++ New
 @@ @@
-             $confirmPassword = $_POST['confirmPassword'];
-             $isUserNameValid = $this->validation->checkIfNewUserNameIsValid($userName);
-             $isPasswordValid = $this->validation->checkIfPasswordIsValid($password, $confirmPassword);
--            if ($isUserNameValid && $isPasswordValid) {
-+            if ($isUserNameValid || $isPasswordValid) {
-                 $this->userArray['userName'] = $userName;
-                 $this->userArray['firstName'] = $firstName;
-                 $this->userArray['lastName'] = $lastName;
-
-
-2) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Controller/BackendController/LoginControll.php:30    [M] LogicalOr
-
---- Original
-+++ New
-@@ @@
-     }
-     public function renderView() : void
-     {
--        if (isset($_SESSION['userName']) || isset($_SESSION['adminName'])) {
-+        if (isset($_SESSION['userName']) && isset($_SESSION['adminName'])) {
-             $this->session->logoutUser();
-         }
-         if (isset($_POST['submit'])) {
-
-
-3) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:91    [M] MethodCallRemoval
-
---- Original
-+++ New
-@@ @@
-     {
-         $queryString = "DELETE FROM products ";
-         $queryString .= "WHERE productId =" . $productId;
--        $this->pdo->query($queryString);
-+        
      }
      public function createNewProduct(int $mainId, string $displayName, string $productName, string $description, string $price) : void
      {
+-        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
++        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . $productName . "', '" . "', '" . $description . "', '" . $price . "')";
+         $this->pdo->query($queryString);
+     }
+ }
 
 
-4) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:23    [M] UnwrapTrim
+2) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:101    [M] ConcatOperandRemoval
+
+--- Original
++++ New
+@@ @@
+     }
+     public function createNewProduct(int $mainId, string $displayName, string $productName, string $description, string $price) : void
+     {
+-        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
++        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . "', '" . $description . "', '" . $price . "')";
+         $this->pdo->query($queryString);
+     }
+ }
+
+
+3) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:101    [M] Concat
+
+--- Original
++++ New
+@@ @@
+     }
+     public function createNewProduct(int $mainId, string $displayName, string $productName, string $description, string $price) : void
+     {
+-        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
++        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . "', '" . $productName . $description . "', '" . $price . "')";
+         $this->pdo->query($queryString);
+     }
+ }
+
+
+4) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:101    [M] Concat
+
+--- Original
++++ New
+@@ @@
+     }
+     public function createNewProduct(int $mainId, string $displayName, string $productName, string $description, string $price) : void
+     {
+-        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
++        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . $description . "', '" . "', '" . $price . "')";
+         $this->pdo->query($queryString);
+     }
+ }
+
+
+5) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Model/ProductRepository.php:102    [M] MethodCallRemoval
+
+--- Original
++++ New
+@@ @@
+     public function createNewProduct(int $mainId, string $displayName, string $productName, string $description, string $price) : void
+     {
+         $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
+-        $this->pdo->query($queryString);
++        
+     }
+ }
+
+
+6) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:26    [M] IncrementInteger
+
+--- Original
++++ New
+@@ @@
+         if ($this->is_blank($userName)) {
+             $this->errors[] = 'Username cannot be blank';
+             $userNameValid = false;
+-        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
++        } elseif (!$this->has_length($userName, ['min' => 4, 'max' => 20])) {
+             $this->errors[] = 'Username must be between 3 and 20 characters long';
+             $userNameValid = false;
+         } elseif (!$this->isAUniqueUserName($userName)) {
+
+
+7) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:64    [M] LogicalOr
+
+--- Original
++++ New
+@@ @@
+     public function checkIfPasswordIsValid(string $password, string $confirmPassword) : bool
+     {
+         $passwordValid = true;
+-        if ($this->is_blank($password) || $this->is_blank($confirmPassword)) {
++        if ($this->is_blank($password) && $this->is_blank($confirmPassword)) {
+             $this->errors[] = 'Password cannot be blank';
+             $passwordValid = false;
+         }
+
+
+8) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:66    [M] FalseValue
+
+--- Original
++++ New
+@@ @@
+         $passwordValid = true;
+         if ($this->is_blank($password) || $this->is_blank($confirmPassword)) {
+             $this->errors[] = 'Password cannot be blank';
+-            $passwordValid = false;
++            $passwordValid = true;
+         }
+         if (!$this->has_length($confirmPassword, ['min' => 8])) {
+             $this->errors[] = 'Password must be at least 8 characters long';
+
+
+9) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:68    [M] DecrementInteger
+
+--- Original
++++ New
+@@ @@
+             $this->errors[] = 'Password cannot be blank';
+             $passwordValid = false;
+         }
+-        if (!$this->has_length($confirmPassword, ['min' => 8])) {
++        if (!$this->has_length($confirmPassword, ['min' => 7])) {
+             $this->errors[] = 'Password must be at least 8 characters long';
+             $passwordValid = false;
+         }
+
+
+10) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:68    [M] ArrayItemRemoval
+
+--- Original
++++ New
+@@ @@
+             $this->errors[] = 'Password cannot be blank';
+             $passwordValid = false;
+         }
+-        if (!$this->has_length($confirmPassword, ['min' => 8])) {
++        if (!$this->has_length($confirmPassword, [])) {
+             $this->errors[] = 'Password must be at least 8 characters long';
+             $passwordValid = false;
+         }
+
+
+11) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:70    [M] FalseValue
+
+--- Original
++++ New
+@@ @@
+         }
+         if (!$this->has_length($confirmPassword, ['min' => 8])) {
+             $this->errors[] = 'Password must be at least 8 characters long';
+-            $passwordValid = false;
++            $passwordValid = true;
+         }
+         if (!password_verify($confirmPassword, $password)) {
+             $this->errors[] = 'Passwords has to be the same';
+
+
+12) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:87    [M] UnwrapTrim
 
 --- Original
 +++ New
@@ -61,7 +180,7 @@ Escaped mutants:
      {
 
 
-5) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:23    [M] LogicalOr
+13) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:87    [M] LogicalOr
 
 --- Original
 +++ New
@@ -76,37 +195,7 @@ Escaped mutants:
      {
 
 
-6) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:78    [M] PublicVisibility
-
---- Original
-+++ New
-@@ @@
-         }
-         return $userDataDontExist;
-     }
--    public function userNameExist(string $value) : bool
-+    protected function userNameExist(string $value) : bool
-     {
-         $userDataExist = false;
-         $userDataArray = $this->login->findUserByName($value);
-
-
-7) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:81    [M] FalseValue
-
---- Original
-+++ New
-@@ @@
-     }
-     public function userNameExist(string $value) : bool
-     {
--        $userDataExist = false;
-+        $userDataExist = true;
-         $userDataArray = $this->login->findUserByName($value);
-         if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
-             $userDataExist = true;
-
-
-8) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:83    [M] Identical
+14) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:134    [M] Identical
 
 --- Original
 +++ New
@@ -121,7 +210,7 @@ Escaped mutants:
          return $userDataExist;
 
 
-9) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:84    [M] TrueValue
+15) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:135    [M] TrueValue
 
 --- Original
 +++ New
@@ -134,81 +223,6 @@ Escaped mutants:
          }
          return $userDataExist;
      }
-
-
-10) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:89    [M] PublicVisibility
-
---- Original
-+++ New
-@@ @@
-         }
-         return $userDataExist;
-     }
--    public function userAdminExist(string $value) : bool
-+    protected function userAdminExist(string $value) : bool
-     {
-         $userDataExist = false;
-         $userDataArray = $this->login->findAdminByName($value);
-
-
-11) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:92    [M] FalseValue
-
---- Original
-+++ New
-@@ @@
-     }
-     public function userAdminExist(string $value) : bool
-     {
--        $userDataExist = false;
-+        $userDataExist = true;
-         $userDataArray = $this->login->findAdminByName($value);
-         if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
-             $userDataExist = true;
-
-
-12) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:94    [M] LogicalAnd
-
---- Original
-+++ New
-@@ @@
-     {
-         $userDataExist = false;
-         $userDataArray = $this->login->findAdminByName($value);
--        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
-+        if (isset($userDataArray['userName']) || $userDataArray['userName'] === $value) {
-             $userDataExist = true;
-         }
-         return $userDataExist;
-
-
-13) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:120    [M] LogicalNot
-
---- Original
-+++ New
-@@ @@
-     public function checkIfUserNameIsValid(string $userName) : bool
-     {
-         $userNameValid = true;
--        if ($this->is_blank($userName) || !$this->userNameExist($userName) && !$this->userAdminExist($userName)) {
-+        if ($this->is_blank($userName) || $this->userNameExist($userName) && !$this->userAdminExist($userName)) {
-             $this->errors = [];
-             $this->errors[] = 'Invalid Userdata!';
-             $userNameValid = false;
-
-
-14) /home/jonathanhemmerling/PhpstormProjects/shopix_project/src/Validation/UserDataValidation.php:120    [M] LogicalOr
-
---- Original
-+++ New
-@@ @@
-     public function checkIfUserNameIsValid(string $userName) : bool
-     {
-         $userNameValid = true;
--        if ($this->is_blank($userName) || !$this->userNameExist($userName) && !$this->userAdminExist($userName)) {
-+        if ($this->is_blank($userName) && (!$this->userNameExist($userName) && !$this->userAdminExist($userName))) {
-             $this->errors = [];
-             $this->errors[] = 'Invalid Userdata!';
-             $userNameValid = false;
 
 
 Timed Out mutants:

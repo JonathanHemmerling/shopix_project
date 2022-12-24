@@ -28,25 +28,22 @@ class AdminUserOverviewControllTest extends TestCase
         $_GET['userId'] = '1';
         $_POST['submit'] = true;
         $container = $this->getContainer();
-        /** @var View $view */
-        $view = $container->get(View::class);
         $mockUserRepository = $this->createMock(UserRepository::class);
         $mockUserRepository->expects($this->once())->method('deleteUserById');
         $mockUserRepository->expects($this->once())->method('getAllUsers')->willReturn(
             [new UserDataTransferObject(1,'user', 'user', 'user', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test'), new UserDataTransferObject(2,'user', 'user', 'user', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test')]);
-        $adminUserOverviewControll = new AdminUserOverviewControll($view, $mockUserRepository);
+        $adminUserOverviewControll = new AdminUserOverviewControll($view = $container->get(View::class), $mockUserRepository);
 
         $adminUserOverviewControll->renderView();
         $params = $view->getParams();
         $template = $view->getTemplate();
-        $expectedArray = ['userDisplay' => [1 => 'user', 2 => 'user']];
+        $paramsThatShouldBeInArray = ['userDisplay' => [1 => 'user', 2 => 'user']];
 
-        self::assertSame($expectedArray, $params);
+        self::assertSame($paramsThatShouldBeInArray, $params);
         self::assertIsArray($params);
         self::assertCount(1, $params);
         self::assertSame('userOverview.tpl',$template);
     }
-
 
     private function getContainer(): Container
     {

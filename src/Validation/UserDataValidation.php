@@ -17,86 +17,6 @@ class UserDataValidation implements UserDataValidationInterface
     ) {
     }
 
-    private function is_blank(
-        string $value
-    ): bool {
-        return !isset($value) || trim($value) === '';
-    }
-
-    private function has_length_greater_than(
-        string $value,
-        int $min
-    ): bool {
-        $length = strlen($value);
-        return $length > $min;
-    }
-
-    private function has_length_less_than(
-        string $value,
-        int $max
-    ): bool {
-        $length = strlen($value);
-        return $length < $max;
-    }
-
-    private function has_length_exactly(
-        $value,
-        $exact
-    ): bool {
-        $length = strlen($value);
-        return $length === $exact;
-    }
-
-    private function has_length(
-        string $value,
-        array $options
-    ): bool {
-        if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
-            return false;
-        }
-        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
-            return false;
-        }
-
-        if (isset($options['exact']) && !$this->has_length_exactly($value, $options['exact'])) {
-            return false;
-        } else {
-            return true;
-        }
-    }
-
-    private function isAUniqueUserName(string $userName): bool
-    {
-        $userDataDontExist = false;
-        $userDataExist = $this->repository->doesUserDataExists($userName);
-        if (!$userDataExist) {
-            $userDataDontExist = true;
-        }
-        return $userDataDontExist;
-    }
-
-    public function userNameExist(
-        string $value
-    ): bool {
-        $userDataExist = false;
-        $userDataArray = $this->login->findUserByName($value);
-        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
-            $userDataExist = true;
-        }
-        return $userDataExist;
-    }
-
-    public function userAdminExist(
-        string $value
-    ): bool {
-        $userDataExist = false;
-        $userDataArray = $this->login->findAdminByName($value);
-        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
-            $userDataExist = true;
-        }
-        return $userDataExist;
-    }
-
     public function checkIfNewUserNameIsValid(string $userName): bool
     {
         $userNameValid = true;
@@ -137,15 +57,16 @@ class UserDataValidation implements UserDataValidationInterface
         return $passwordVerified;
     }
 
-    public function checkIfPasswordIsValid(string $password, string $confirmPassword)
+    public function checkIfPasswordIsValid(string $password, string $confirmPassword): bool
     {
+
         $passwordValid = true;
-        if ($this->is_blank($password) || $this->is_blank($confirmPassword)) {
+        if (($this->is_blank($password) || $this->is_blank($confirmPassword))) {
             $this->errors[] = 'Password cannot be blank';
             $passwordValid = false;
         }
-        if (!$this->has_length($confirmPassword, ['min' => 8, 'max' => 40])) {
-            $this->errors[] = 'Password must be between 8 and 40 characters long';
+        if (!$this->has_length($confirmPassword, ['min' => 8])) {
+            $this->errors[] = 'Password must be at least 8 characters long';
             $passwordValid = false;
         }
         if (!password_verify($confirmPassword, $password)) {
@@ -158,5 +79,72 @@ class UserDataValidation implements UserDataValidationInterface
     public function getErrors(): array
     {
         return $this->errors;
+    }
+
+    private function is_blank(
+        string $value
+    ): bool {
+        return !isset($value) || trim($value) === '';
+    }
+
+    private function has_length_greater_than(
+        string $value,
+        int $min
+    ): bool {
+        $length = strlen($value);
+        return $length > $min;
+    }
+
+    private function has_length_less_than(
+        string $value,
+        int $max
+    ): bool {
+        $length = strlen($value);
+        return $length < $max;
+    }
+
+    private function has_length(
+        string $value,
+        array $options
+    ): bool {
+        if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
+            return false;
+        }
+        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
+            return false;
+        }
+        return true;
+    }
+
+    private function isAUniqueUserName(string $userName): bool
+    {
+        $userDataDontExist = false;
+        $userDataExist = $this->repository->doesUserDataExists($userName);
+        if (!$userDataExist) {
+            $userDataDontExist = true;
+        }
+        return $userDataDontExist;
+    }
+
+    private function userNameExist(
+        string $value
+    ): bool {
+        $userDataExist = false;
+        $userDataArray = $this->login->findUserByName($value);
+        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
+            $userDataExist = true;
+        }
+        return $userDataExist;
+    }
+
+    private function userAdminExist(
+        string $value
+    ): bool {
+        $userDataExist = false;
+        $userDataArray = $this->login->findAdminByName($value);
+        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
+            $userDataExist = true;
+        }
+        return $userDataExist;
     }
 }

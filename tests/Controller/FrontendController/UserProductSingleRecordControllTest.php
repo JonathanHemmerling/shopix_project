@@ -35,23 +35,15 @@ class UserProductSingleRecordControllTest extends TestCase
         $mockRepository = $this->createMock(ProductRepository::class);
         $mockRepository->method('getProductByProductId')->with(1)->willReturn($dto);
         $mockRepository->expects($this->once())->method('getProductByProductId');
-
         $detailControll = new UserProductSingleRecordControll($view, $mockRepository);
 
         $detailControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
+        $paramsThatShouldBeInArray = ['productName' => [0 => 'Jeans 1:'], 'productDescription' => [0 => 'The first Jeans'], 'price' => [0 => '29,99']];
 
         self::assertSame('productSingleRecord.tpl', $template);
-        self::assertIsArray($params);
-        self::assertSame(
-            [
-                'productName' => [0 => 'Jeans 1:'],
-                'productDescription' => [0 => 'The first Jeans'],
-                'price' => [0 => '29,99'],
-            ],
-            $params
-        );
+        self::assertSame($paramsThatShouldBeInArray, $params);
     }
 
     private function getContainer(): Container

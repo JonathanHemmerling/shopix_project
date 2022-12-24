@@ -29,19 +29,11 @@ class AdminLoginControllTest extends TestCase
         $_POST['adminName'] = 'admin';
         $_POST['password'] = 'adminpassword';
         $container = $this->getContainer();
-        $view = $container->get(View::class);
-        $validation = $container->get(UserDataValidation::class);
         $mockRedirect = $this->createMock(RedirectInterface::class);
         $mockRedirect->expects($this->once())->method('to');
         $mockSession = $this->createMock(Session::class);
         $mockSession->expects($this->once())->method('loginAdmin');
-        $adminControll = new AdminLoginControll(
-            $view,
-            $container->get(LoginRepository::class),
-            $validation,
-            $mockSession,
-            $mockRedirect,
-        );
+        $adminControll = new AdminLoginControll($view = $container->get(View::class), $container->get(LoginRepository::class), $container->get(UserDataValidation::class), $mockSession, $mockRedirect);
 
         $adminControll->renderView();
         $template = $view->getTemplate();
@@ -50,7 +42,6 @@ class AdminLoginControllTest extends TestCase
         self::assertSame(['errors' => []], $params);
         self::assertSame('adminLogin.tpl', $template);
     }
-
 
     private function getContainer(): Container
     {

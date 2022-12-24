@@ -34,7 +34,7 @@ class AdminProductOverviewControllTest extends TestCase
         $productProductOverviewControll->renderView();
         $params = $view->getParams();
         $template = $view->getTemplate();
-        $expectedArray = array('products' => [2 => 'Jeans 2', 3 => 'Jeans 3', 12 => 'Jeans 4']);
+        $expectedArray = array('products' => [12 => 'Jeans 4']);
 
         self::assertSame($expectedArray, $params);
         self::assertIsArray($params);
@@ -47,13 +47,10 @@ class AdminProductOverviewControllTest extends TestCase
         $_GET['productId'] = '1';
         $_POST['submit'] = true;
         $container = $this->getContainer();
-        /** @var View $view */
-        $view = $container->get(View::class);
         $mockProductRepository = $this->createMock(ProductRepository::class);
         $mockProductRepository->expects($this->once())->method('deleteProductById');
-        $mockProductRepository->expects($this->once())->method('getProductByMainId');
-        $mockProductRepository->method('getProductByMainId')->with(1);
-        $productProductOverviewControll = new AdminProductOverviewControll($view, $mockProductRepository);
+        $mockProductRepository->expects($this->once())->method('getProductByMainId')->with(1);
+        $productProductOverviewControll = new AdminProductOverviewControll($view = $container->get(View::class), $mockProductRepository);
 
         $productProductOverviewControll->renderView();
     }

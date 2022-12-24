@@ -21,8 +21,7 @@ class AdminControllTest extends TestCase
     public function testIfTemplateIsSetUp(): void
     {
         $container = $this->getContainer();
-        $view = $container->get(View::class);
-        $adminControll = new AdminControll($view);
+        $adminControll = new AdminControll($view = $container->get(View::class));
 
         $adminControll->renderView();
         $template = $view->getTemplate();
