@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-14 09:35:55
+/* Smarty version 4.3.0, created on 2023-01-02 16:21:51
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/productCategoryOverview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_63998aeb193676_46728627',
+  'version' => '4.3.0',
+  'unifunc' => 'content_63b3049f89e3d1_13664015',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./footer.tpl' => 1,
   ),
 ),false)) {
-function content_63998aeb193676_46728627 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63b3049f89e3d1_13664015 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <pre>

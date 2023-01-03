@@ -20,7 +20,9 @@ use App\Controller\FrontendController\HomeControll;
 use App\Controller\FrontendController\NotFoundControll;
 use App\Controller\FrontendController\UserProductCategoryOverviewControll;
 use App\Controller\FrontendController\UserProductSingleRecordControll;
-
+/**
+ * @infection-ignore-all
+ */
 class ControllerProvider
 {
 

@@ -17,8 +17,8 @@ class LoginControll implements ControllerInterface
 
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly LoginRepositoryInterface $login,
-        private readonly UserDataValidationInterface $userValidation,
+        private readonly LoginRepositoryInterface $loginRepository,
+        private readonly UserDataValidationInterface $userDataValidation,
         private readonly SessionInterface $session,
         private readonly RedirectInterface $redirect,
     ) {
@@ -33,20 +33,18 @@ class LoginControll implements ControllerInterface
         if (isset($_POST['submit'])) {
             $userName = $_POST['userName'];
             $password = $_POST['password'];
-            $isUserNameValid = $this->userValidation->checkIfUserNameIsValid($userName);
-
-            if ($isUserNameValid) {
-                $userDataArray = $this->login->findUserByName($userName);
-                $dbUserPassword = $userDataArray['hashedPassword'];
-                $isPasswordVerified = $this->userValidation->verifyPassword($password, $dbUserPassword);
-                if ($isPasswordVerified) {
-                    $this->session->loginUser($userDataArray['id']);
+            $userNameIsValid = $this->userDataValidation->checkIfUserNameIsValid($userName);
+            if ($userNameIsValid) {
+                $userDataFromRepository = $this->loginRepository->findUserByName($userName);
+                $hashedPassword = $userDataFromRepository['hashedPassword'];
+                $passwordIsVerified = $this->userDataValidation->verifyPassword($password, $hashedPassword);
+                if ($passwordIsVerified) {
+                    $this->session->loginUser($userDataFromRepository['id']);
                     $this->redirect->to('/../../index.php');
                 }
             }
         }
-
-        $this->view->addTemplateParameter('errors', $this->userValidation->getErrors());
+        $this->view->addTemplateParameter('message', $this->userDataValidation->getErrors());
         $this->view->setTemplate('login.tpl');
     }
 }

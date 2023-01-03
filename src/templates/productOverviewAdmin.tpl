@@ -11,7 +11,7 @@
             <th>Products:</th>
             <th></th>
         </tr>
-{foreach from=$products key=k item=p}
+{foreach from=$productDataSet key=k item=p}
     <tr>
         <td>
 <a href="index.php?page=AdminProductSingleRecord&productId={$k}&backend">{$p}</a>

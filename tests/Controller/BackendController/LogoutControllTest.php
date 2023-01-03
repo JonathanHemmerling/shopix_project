@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace AppTest\Controller\BackendController;
 
-use App\Controller\BackendController\AdminLogoutControll;
 use App\Controller\BackendController\LogoutControll;
 use App\Core\Session;
-use App\Core\SessionInterface;
 use App\Core\View;
 use App\Service\Container;
 use App\Service\DependencyProvider;
@@ -18,7 +16,6 @@ class LogoutControllTest extends TestCase
     protected function tearDown(): void
     {
         $_SESSION = [];
-        $_POST = [];
         parent::tearDown();
     }
 
@@ -35,7 +32,7 @@ class LogoutControllTest extends TestCase
         $userIsUnset = isset($_SESSION['userName']);
 
         self::assertSame('login.tpl', $template);
-        self::assertSame(['errors' => [0 => 'Logout successful!']],$params);
+        self::assertSame(['message' => [0 => 'Logout successful!']], $params);
         self::assertNotTrue($userIsUnset);
     }
 

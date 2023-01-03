@@ -10,26 +10,26 @@ use App\Model\UserRepository;
 
 class AdminUserOverviewControll implements ControllerInterface
 {
-    private array $userDisplay = [];
-    private int $userId;
+    private array $userDataToDisplay = [];
+
     public function __construct(
         private readonly ViewInterface $view,
         private readonly UserRepository $userRepository,
     ) {
-
     }
 
     public function renderView(): void
-    {$this->userId = (int)$_GET['userId'];
+    {
+        $userId = (int)$_GET['userId'];
         if (isset($_POST['submit'])){
-            $this->userRepository->deleteUserById($this->userId);
+            $this->userRepository->deleteUserById($userId);
         }
 
-        $users = $this->userRepository->getAllUsers();
-        foreach ($users as $user) {
-            $this->userDisplay [$user->id] = $user->userName;
+        $allUsers = $this->userRepository->getAllUsers();
+        foreach ($allUsers as $user) {
+            $this->userDataToDisplay[$user->id] = $user->userName;
         }
-        $this->view->addTemplateParameter('userDisplay', $this->userDisplay);
+        $this->view->addTemplateParameter('userDisplay', $this->userDataToDisplay);
         $this->view->setTemplate('userOverview.tpl');
     }
 }

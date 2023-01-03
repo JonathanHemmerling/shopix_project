@@ -16,28 +16,33 @@ use PHPUnit\Framework\TestCase;
 
 class AdminUserOverviewControllTest extends TestCase
 {
+    protected function setUp(): void
+    {
+        $_GET['userId'] = '1';
+        $_POST['submit'] = true;
+        parent::setUp();
+    }
+
     protected function tearDown(): void
     {
-        $_SESSION = [];
+        $_GET = [];
         $_POST = [];
         parent::tearDown();
     }
 
     public function testIfArrayIsSetUp(): void
     {
-        $_GET['userId'] = '1';
-        $_POST['submit'] = true;
         $container = $this->getContainer();
         $mockUserRepository = $this->createMock(UserRepository::class);
         $mockUserRepository->expects($this->once())->method('deleteUserById');
         $mockUserRepository->expects($this->once())->method('getAllUsers')->willReturn(
             [new UserDataTransferObject(1,'user', 'user', 'user', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test'), new UserDataTransferObject(2,'user', 'user', 'user', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test')]);
         $adminUserOverviewControll = new AdminUserOverviewControll($view = $container->get(View::class), $mockUserRepository);
+        $paramsThatShouldBeInArray = ['userDisplay' => [1 => 'user', 2 => 'user']];
 
         $adminUserOverviewControll->renderView();
         $params = $view->getParams();
         $template = $view->getTemplate();
-        $paramsThatShouldBeInArray = ['userDisplay' => [1 => 'user', 2 => 'user']];
 
         self::assertSame($paramsThatShouldBeInArray, $params);
         self::assertIsArray($params);

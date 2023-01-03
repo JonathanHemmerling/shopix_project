@@ -34,6 +34,9 @@ class View implements ViewInterface
         return $this->template;
     }
 
+    /**
+     * @throws \SmartyException
+     */
     public function renderTemplate(): void
     {
         $this->smarty->assign($this->params);

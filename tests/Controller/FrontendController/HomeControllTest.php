@@ -14,7 +14,6 @@ use PHPUnit\Framework\TestCase;
 
 class HomeControllTest extends TestCase
 {
-
     public function testIfMainCategorysAreLoadedAndDisplayed(): void
     {
         $container = $this->getContainer();
@@ -25,11 +24,11 @@ class HomeControllTest extends TestCase
         $mockRepository->method('getAllMainCategorys')->willReturn($dtoArray);
         $mockRepository->expects($this->once())->method('getAllMainCategorys');
         $detailControll = new HomeControll($view = $container->get(View::class), $mockRepository);
+        $paramsThatShouldBeInArray = ['menu' => ['<a href="index.php?page=UserProductCategoryOverview&mainId=1">Jeans</a>']];
 
         $detailControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
-        $paramsThatShouldBeInArray = ['menu' => ['<a href="index.php?page=UserProductCategoryOverview&mainId=1">Jeans</a>']];
 
         self::assertSame('home.tpl', $template);
         self::assertSame($paramsThatShouldBeInArray, $params);

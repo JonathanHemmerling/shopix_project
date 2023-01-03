@@ -21,6 +21,10 @@ class AdminProductSingleRecordControllTest extends TestCase
     private AdminProductSingleRecordControll $productSingleRecordControll;
     protected function setUp(): void
     {
+        $_GET['productId'] = '1';
+        $_POST['displayName'] = 'ok';
+        $_POST['productDescription'] = 'ok';
+        $_POST['price'] = '0';
         $container = $this->getContainer();
         $this->mockRepository = $this->createMock(ProductRepository::class);
         $this->productSingleRecordControll = new AdminProductSingleRecordControll($this->view = $container->get(View::class), $this->mockRepository);
@@ -30,29 +34,27 @@ class AdminProductSingleRecordControllTest extends TestCase
     protected function tearDown(): void
     {
         unset($this->mockRepository, $this->productSingleRecordControll);
-        $_SESSION = [];
+        $_GET = [];
         $_POST = [];
         parent::tearDown();
     }
 
     public function testIfProductIsEdited(): void
     {
-        $_GET['productId'] = '1';
         $_POST['submit'] = true;
-        $_POST['displayName'] = 'ok';
-        $_POST['productDescription'] = 'ok';
-        $_POST['price'] = '0';
         $productDTO = new ProductsDataTransferObject(1, 1, 'test', 'test', 'Test', '1');
         $this->mockRepository->expects($this->atLeastOnce())->method('getProductByProductId')->with(1)->willReturn($productDTO);
         $this->mockRepository->expects($this->exactly(3))->method('editProductById');
+
         $this->productSingleRecordControll->renderView();
     }
+
     public function testIfArrayIsSetUp(): void
     {
-        $_GET['productId'] = '1';
         $productDTO = new ProductsDataTransferObject(1, 1, 'test', 'test', 'Test', '1');
         $this->mockRepository->expects($this->once())->method('getProductByProductId')->with(1)->willReturn($productDTO);
-        $paramsThatShouldBeInArray = ['productName' => ['displayName' => 'test', 'productDescription' => 'Test', 'price' => '1']];
+        $paramsThatShouldBeInArray = ['productDataSet' => ['displayName' => 'test', 'productDescription' => 'Test', 'price' => '1']];
+
         $this->productSingleRecordControll->renderView();
         $params = $this->view->getParams();
         $template = $this->view->getTemplate();

@@ -20,7 +20,6 @@ class AdminLogoutControllTest extends TestCase
     protected function tearDown(): void
     {
         $_SESSION = [];
-        $_POST = [];
         parent::tearDown();
     }
 
@@ -28,9 +27,9 @@ class AdminLogoutControllTest extends TestCase
     {
         $_SESSION['adminName'] = 'admin';
         $container = $this->getContainer();
+        $adminControll = new AdminLogoutControll($view = $container->get(View::class), $container->get(Session::class));
 
-        $adminControll = new AdminLogoutControll($view = $container->get(View::class), $container->get(Session::class)
-        );
+
         $adminControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();

@@ -14,9 +14,9 @@
 <div class="changeUserForm">
     <h3>Userdata</h3>
 
-    <form  action="/index.php?page=UserSingleRecord&userId={$smarty.session.userId}&backend" method="post">
+    <form action="/index.php?page=UserSingleRecord&userId={$smarty.session.userId}&backend" method="post">
         <label>
-            {foreach from=$items key=k item=p}
+            {foreach from=$userDataSet key=k item=p}
             {$k}:<br />
         <input type="text" name="{$k}" value="{$p}"/>
         <br/><br/>

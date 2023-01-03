@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-11-14 12:47:37
+/* Smarty version 4.3.0, created on 2022-12-29 12:50:37
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/loginFooter.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_63722ad953c2e5_15505638',
+  'version' => '4.3.0',
+  'unifunc' => 'content_63ad8d1d687a69_96212587',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63722ad953c2e5_15505638 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63ad8d1d687a69_96212587 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 </body>
 </html><?php }

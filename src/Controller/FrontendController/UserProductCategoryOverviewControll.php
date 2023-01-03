@@ -12,18 +12,17 @@ class UserProductCategoryOverviewControll implements ControllerInterface
 {
 
     private array $strForLinks = [];
-    private int $mainId;
-    public function __construct(private readonly View $view, private readonly ProductRepository $products)
-    {
 
+    public function __construct(private readonly View $view, private readonly ProductRepository $productRepository)
+    {
     }
 
     public function renderView(): void
     {
-        $this->mainId = (int)$_GET['mainId'];
-        $listContent = $this->products->getProductByMainId($this->mainId);
-        foreach ($listContent as $listElement) {
-            $this->strForLinks[$listElement->productId] = $listElement->displayName;
+        $mainId = (int)$_GET['mainId'];
+        $productDataSet = $this->productRepository->getProductByMainId($mainId);
+        foreach ($productDataSet as $element) {
+            $this->strForLinks[$element->productId] = $element->displayName;
         }
         $this->view->addTemplateParameter('categoryLink', $this->strForLinks);
         $this->view->setTemplate('productCategoryOverview.tpl');

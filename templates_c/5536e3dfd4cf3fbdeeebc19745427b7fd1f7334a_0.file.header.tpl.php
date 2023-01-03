@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-21 10:15:48
+/* Smarty version 4.3.0, created on 2022-12-29 12:50:37
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_6352715467dc51_54110468',
+  'version' => '4.3.0',
+  'unifunc' => 'content_63ad8d1d66e539_25326086',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6352715467dc51_54110468 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63ad8d1d66e539_25326086 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="de">
 <head>

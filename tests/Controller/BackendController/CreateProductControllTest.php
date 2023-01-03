@@ -14,14 +14,8 @@ use PHPUnit\Framework\TestCase;
 
 class CreateProductControllTest extends TestCase
 {
-    protected function tearDown(): void
-    {
-        $_SESSION = [];
-        $_POST = [];
-        parent::tearDown();
-    }
 
-    public function testIfArrayIsSetUp(): void
+    protected function setUp(): void
     {
         $_GET['mainId'] = '1';
         $_POST['submit'] = true;
@@ -29,16 +23,27 @@ class CreateProductControllTest extends TestCase
         $_POST['productName'] = 'test';
         $_POST['description'] = 'test';
         $_POST['price'] = '1';
+        parent::setUp();
+    }
+
+    protected function tearDown(): void
+    {
+        $_GET = [];
+        $_POST = [];
+        parent::tearDown();
+    }
+
+    public function testIfArrayIsSetUp(): void
+    {
         $container = $this->getContainer();
         $mockRepository = $this->createMock(ProductRepository::class);
         $mockRepository->expects($this->once())->method('createNewProduct')->with(1,'test', 'test', 'test','1');
         $productSingleRecordControll = new CreateProductControll($view = $container->get(View::class), $mockRepository);
+        $paramsThatShouldBeInArray = ['mainId'=> [0 => 1]];
 
         $productSingleRecordControll->renderView();
         $params = $view->getParams();
         $template = $view->getTemplate();
-
-        $paramsThatShouldBeInArray = ['mainId'=> [0 => 1]];
 
         self::assertSame($paramsThatShouldBeInArray, $params);
         self::assertCount(1, $params);

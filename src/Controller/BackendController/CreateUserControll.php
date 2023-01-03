@@ -13,36 +13,36 @@ class CreateUserControll implements ControllerInterface
 {
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly UserRepositoryInterface $repository,
-        private readonly UserDataValidationInterface $validation
+        private readonly UserRepositoryInterface $userRepository,
+        private readonly UserDataValidationInterface $userDataValidation
     ) {
     }
 
     public function renderView(): void
     {
         if (isset($_POST['submit'])) {
-            $userArray = [];
+            $userDataSet = [];
             $userName = $_POST['userName'];
             $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
             $confirmPassword = $_POST['confirmPassword'];
-            $isUserNameValid = $this->validation->checkIfNewUserNameIsValid($userName);
-            $isPasswordValid = $this->validation->checkIfPasswordIsValid($password, $confirmPassword);
-            if ($isUserNameValid && $isPasswordValid) {
-                $userArray['userName'] = $userName;
-                $userArray['firstName'] = $_POST['firstName'];
-                $userArray['lastName'] = $_POST['lastName'];
-                $userArray['country'] = $_POST['country'];
-                $userArray['postCode'] = $_POST['postCode'];
-                $userArray['city'] = $_POST['city'];
-                $userArray['street'] = $_POST['street'];
-                $userArray['streetNumber'] = $_POST['streetNumber'];
-                $userArray['email'] = $_POST['email'];
-                $userArray['telefonNumber'] = $_POST['telefonNumber'];
-                $userArray['hashedPassword'] = $password;
-                $this->repository->addNewUserDataArrayToDb($userArray);
+            $userNameIsValid = $this->userDataValidation->checkIfNewUserNameIsValid($userName);
+            $passwordIsValid = $this->userDataValidation->checkIfPasswordIsValid($password, $confirmPassword);
+            if ($userNameIsValid && $passwordIsValid) {
+                $userDataSet['userName'] = $userName;
+                $userDataSet['firstName'] = $_POST['firstName'];
+                $userDataSet['lastName'] = $_POST['lastName'];
+                $userDataSet['country'] = $_POST['country'];
+                $userDataSet['postCode'] = $_POST['postCode'];
+                $userDataSet['city'] = $_POST['city'];
+                $userDataSet['street'] = $_POST['street'];
+                $userDataSet['streetNumber'] = $_POST['streetNumber'];
+                $userDataSet['email'] = $_POST['email'];
+                $userDataSet['telefonNumber'] = $_POST['telefonNumber'];
+                $userDataSet['hashedPassword'] = $password;
+                $this->userRepository->addNewUserDataArrayToDb($userDataSet);
             }
         }
-        $this->view->addTemplateParameter('errors', $this->validation->getErrors());
+        $this->view->addTemplateParameter('errors', $this->userDataValidation->getErrors());
         $this->view->setTemplate('createUser.tpl');
     }
 }

@@ -14,13 +14,13 @@ class HomeControll implements ControllerInterface
 
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly ProductRepositoryInterface $mainMenuRepository
+        private readonly ProductRepositoryInterface $productRepository
     ) {
     }
 
     public function renderView(): void
     {
-        $allMenuCategorys = $this->mainMenuRepository->getAllMainCategorys();
+        $allMenuCategorys = $this->productRepository->getAllMainCategorys();
         foreach ($allMenuCategorys as $singleMenuElement) {
             $this->strForLinks [] = (
                 '<a href="index.php?page=UserProductCategoryOverview&mainId=' . $singleMenuElement->mainId . '">' . $singleMenuElement->displayName . '</a>'

@@ -11,28 +11,22 @@ use App\Model\ProductRepositoryInterface;
 
 class UserProductSingleRecordControll implements ControllerInterface
 {
-
-    private array $strForProductName;
-    private array $strForProductDescription;
-    private array $strForPrice;
-    private int $productId;
-
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly ProductRepositoryInterface $products
+        private readonly ProductRepositoryInterface $productRepository
     ) {
     }
 
     public function renderView(): void
     {
-        $this->productId = (int)$_GET['productId'];
-        $singleProduct = $this->products->getProductByProductId($this->productId);
-        $this->strForProductName[] = $singleProduct->displayName . ':';
-        $this->strForProductDescription[] = $singleProduct->description;
-        $this->strForPrice[] = $singleProduct->price;
-        $this->view->addTemplateParameter('productName', $this->strForProductName);
-        $this->view->addTemplateParameter('productDescription', $this->strForProductDescription);
-        $this->view->addTemplateParameter('price', $this->strForPrice);
+        $productId = (int)$_GET['productId'];
+        $singleProduct = $this->productRepository->getProductByProductId($productId);
+        $strForProductName[] = $singleProduct->displayName . ':';
+        $strForProductDescription[] = $singleProduct->description;
+        $strForPrice[] = $singleProduct->price;
+        $this->view->addTemplateParameter('productName', $strForProductName);
+        $this->view->addTemplateParameter('productDescription', $strForProductDescription);
+        $this->view->addTemplateParameter('price', $strForPrice);
         $this->view->setTemplate('productSingleRecord.tpl');
     }
 }

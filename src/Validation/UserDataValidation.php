@@ -7,6 +7,8 @@ namespace App\Validation;
 use App\Model\LoginRepositoryInterface;
 use App\Model\UserRepositoryInterface;
 
+use function PHPUnit\Framework\isEmpty;
+
 class UserDataValidation implements UserDataValidationInterface
 {
     private array $errors = [];
@@ -19,30 +21,30 @@ class UserDataValidation implements UserDataValidationInterface
 
     public function checkIfNewUserNameIsValid(string $userName): bool
     {
-        $userNameValid = true;
-        if ($this->is_blank($userName)) {
+        if ($userName === '') {
             $this->errors[] = 'Username cannot be blank';
-            $userNameValid = false;
-        } elseif (!$this->has_length($userName, ['min' => 3, 'max' => 20])) {
-            $this->errors[] = 'Username must be between 3 and 20 characters long';
-            $userNameValid = false;
-        } elseif (!$this->isAUniqueUserName($userName)) {
-            $this->errors[] = 'Select another Username';
-            $userNameValid = false;
+            return false;
         }
-        return $userNameValid;
+        if (!$this->hasLength($userName)) {
+            $this->errors[] = 'Username must be between 3 and 20 characters long';
+            return false;
+        }
+        if (!$this->isAUniqueUserName($userName)) {
+            $this->errors[] = 'Select another Username';
+            return false;
+        }
+        return true;
     }
 
     public function checkIfUserNameIsValid(
         string $userName
     ): bool {
-        $userNameValid = true;
-        if ($this->is_blank($userName) || ((!$this->userNameExist($userName) && !$this->userAdminExist($userName)))) {
+        if ($userName === '' || ((!$this->userExist($userName)))) {
             $this->errors = [];
             $this->errors[] = 'Invalid Userdata!';
-            $userNameValid = false;
+            return false;
         }
-        return $userNameValid;
+        return true;
     }
 
     public function verifyPassword(
@@ -59,21 +61,23 @@ class UserDataValidation implements UserDataValidationInterface
 
     public function checkIfPasswordIsValid(string $password, string $confirmPassword): bool
     {
-
-        $passwordValid = true;
-        if (($this->is_blank($password) || $this->is_blank($confirmPassword))) {
-            $this->errors[] = 'Password cannot be blank';
-            $passwordValid = false;
-        }
-        if (!$this->has_length($confirmPassword, ['min' => 8])) {
+        if ($password === '') {
+        $this->errors[] = 'Password cannot be blank';
+        return false;
+    }
+        if ($confirmPassword === '') {
+        $this->errors[] = 'Confirmpassword cannot be blank';
+        return false;
+    }
+        if (strlen($confirmPassword) < 8) {
             $this->errors[] = 'Password must be at least 8 characters long';
-            $passwordValid = false;
+            return false;
         }
         if (!password_verify($confirmPassword, $password)) {
             $this->errors[] = 'Passwords has to be the same';
-            $passwordValid = false;
+            return false;
         }
-        return $passwordValid;
+        return true;
     }
 
     public function getErrors(): array
@@ -81,13 +85,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $this->errors;
     }
 
-    private function is_blank(
-        string $value
-    ): bool {
-        return !isset($value) || trim($value) === '';
-    }
-
-    private function has_length_greater_than(
+    private function hasLengthGreaterThan(
         string $value,
         int $min
     ): bool {
@@ -95,7 +93,7 @@ class UserDataValidation implements UserDataValidationInterface
         return $length > $min;
     }
 
-    private function has_length_less_than(
+    private function hasLengthLessThan(
         string $value,
         int $max
     ): bool {
@@ -103,14 +101,14 @@ class UserDataValidation implements UserDataValidationInterface
         return $length < $max;
     }
 
-    private function has_length(
-        string $value,
-        array $options
+    private function hasLength(
+        string $value
     ): bool {
-        if (isset($options['min']) && !$this->has_length_greater_than($value, $options['min'] - 1)) {
+        $options = ['min' => 3, 'max' => 20];
+        if (!$this->hasLengthGreaterThan($value, $options['min'] - 1)) {
             return false;
         }
-        if (isset($options['max']) && !$this->has_length_less_than($value, $options['max'] + 1)) {
+        if (!$this->hasLengthLessThan($value, ($options['max'] + 1))) {
             return false;
         }
         return true;
@@ -126,23 +124,13 @@ class UserDataValidation implements UserDataValidationInterface
         return $userDataDontExist;
     }
 
-    private function userNameExist(
+    private function userExist(
         string $value
     ): bool {
         $userDataExist = false;
+        $adminDataArray = $this->login->findAdminByName($value);
         $userDataArray = $this->login->findUserByName($value);
-        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
-            $userDataExist = true;
-        }
-        return $userDataExist;
-    }
-
-    private function userAdminExist(
-        string $value
-    ): bool {
-        $userDataExist = false;
-        $userDataArray = $this->login->findAdminByName($value);
-        if (isset($userDataArray['userName']) && $userDataArray['userName'] === $value) {
+        if ((isset($userDataArray['userName']) && $userDataArray['userName'] === $value) || (isset($adminDataArray['userName']) && $adminDataArray['userName'] === $value)) {
             $userDataExist = true;
         }
         return $userDataExist;

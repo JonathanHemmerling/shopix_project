@@ -4,11 +4,8 @@ declare(strict_types=1);
 
 namespace AppTest\FrontendController;
 
-use App\Controller\FrontendController\HomeControll;
 use App\Controller\FrontendController\NotFoundControll;
 use App\Core\View;
-use App\Model\Mapper\MainMenuMapper;
-use App\Model\ProductRepository;
 use App\Service\Container;
 use App\Service\DependencyProvider;
 use PHPUnit\Framework\TestCase;
@@ -25,7 +22,7 @@ class NotFoundControllTest extends TestCase
         $templates = $view->getTemplate();
 
         self::assertCount(1, $params);
-        self::assertSame('notFound.tpl' ,$templates);
+        self::assertSame('notFound.tpl', $templates);
     }
 
     private function getContainer(): Container

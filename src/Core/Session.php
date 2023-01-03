@@ -24,8 +24,7 @@ class Session implements SessionInterface
 
     public function logoutUser(): void
     {
-        unset($_SESSION['userName']);
-        unset($_SESSION['adminName']);
+        unset($_SESSION['userName'], $_SESSION['adminName']);
     }
 
 }

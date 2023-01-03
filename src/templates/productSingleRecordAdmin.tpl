@@ -8,7 +8,7 @@
 <tr>
     <td><form action="/index.php?page=AdminProductSingleRecord&productId={$smarty.session.productId}&backend" method="post">
     <label>
-    {foreach from=$productName key=k item=p}
+    {foreach from=$productDataSet key=k item=p}
     <input type="text" name= "{$k}" value="{$p}"/>
     {/foreach}
     <input type="submit" name= "submit" value="save"/>

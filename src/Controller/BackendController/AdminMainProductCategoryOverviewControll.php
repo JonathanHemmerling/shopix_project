@@ -12,18 +12,18 @@ class AdminMainProductCategoryOverviewControll implements ControllerInterface
 {
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly ProductRepositoryInterface $products,
+        private readonly ProductRepositoryInterface $productRepository,
     ) {
     }
 
     public function renderView(): void
     {
-        $mainCategorys = $this->products->getAllMainCategorys();
-        foreach ($mainCategorys as $row) {
-            $mainCategorysArray[$row->mainId] = $row->displayName;
+        $mainCategory = $this->productRepository->getAllMainCategorys();
+        foreach ($mainCategory as $row) {
+            $mainCategoryDataSet[$row->mainId] = $row->displayName;
         }
 
-        $this->view->addTemplateParameter('mainCategorys', $mainCategorysArray);
+        $this->view->addTemplateParameter('mainCategory', $mainCategoryDataSet);
 
         $this->view->setTemplate('productMainCategoryOverviewAdmin.tpl');
     }

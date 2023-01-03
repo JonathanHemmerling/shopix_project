@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-15 09:45:31
+/* Smarty version 4.3.0, created on 2023-01-02 16:51:02
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/userOverview.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_639adeabb89138_87176178',
+  'version' => '4.3.0',
+  'unifunc' => 'content_63b30b76648154_34199771',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1773231eefee4475aefae1a5ffb621e03673b099' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/userOverview.tpl',
-      1 => 1671093929,
+      1 => 1672676503,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./loginFooter.tpl' => 1,
   ),
 ),false)) {
-function content_639adeabb89138_87176178 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63b30b76648154_34199771 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 

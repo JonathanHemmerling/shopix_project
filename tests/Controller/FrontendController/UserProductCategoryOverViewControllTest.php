@@ -16,8 +16,7 @@ class UserProductCategoryOverViewControllTest extends TestCase
 {
     protected function tearDown(): void
     {
-        $_SESSION = [];
-        $_POST = [];
+        $_GET = [];
         parent::tearDown();
     }
 
@@ -38,17 +37,20 @@ class UserProductCategoryOverViewControllTest extends TestCase
         $mockRepository = $this->createMock(ProductRepository::class);
         $mockRepository->method('getProductByMainId')->with(1)->willReturn($dtoArray);
         $mockRepository->expects($this->atLeastOnce())->method('getProductByMainId');
-        $detailControll = new UserProductCategoryOverviewControll($view = $container->get(View::class), $mockRepository);
+        $detailControll = new UserProductCategoryOverviewControll(
+            $view = $container->get(View::class), $mockRepository
+        );
+        $paramsThatShouldBeInArray = ['categoryLink' => [1 => 'Jeans 1']];
 
         $detailControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
-        $paramsThatShouldBeInArray = ['categoryLink' => [1 => 'Jeans 1']];
 
-       self::assertIsArray($mockRepository->getProductByMainId(1));
-       self::assertIsNumeric($_GET['mainId']);
-       self::assertSame('productCategoryOverview.tpl', $template);
-       self::assertSame($paramsThatShouldBeInArray, $params);
+
+        self::assertIsArray($mockRepository->getProductByMainId(1));
+        self::assertIsNumeric($_GET['mainId']);
+        self::assertSame('productCategoryOverview.tpl', $template);
+        self::assertSame($paramsThatShouldBeInArray, $params);
     }
 
     private function getContainer(): Container

@@ -8,9 +8,8 @@ use App\Model\Dto\UserDataTransferObject;
 use App\Model\Mapper\UserDataMapper;
 use App\SQL\SqlConnectionInterface;
 use PDO;
-/**
- * @infection-ignore-all
- */
+
+
 class UserRepository implements UserRepositoryInterface
 {
     private PDO $pdo;

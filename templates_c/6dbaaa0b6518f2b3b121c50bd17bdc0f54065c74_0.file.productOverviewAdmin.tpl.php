@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-15 15:41:03
+/* Smarty version 4.3.0, created on 2023-01-02 17:52:24
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/productOverviewAdmin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_639b31ffaa67e3_98788549',
+  'version' => '4.3.0',
+  'unifunc' => 'content_63b319d80bdbe9_62763589',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6dbaaa0b6518f2b3b121c50bd17bdc0f54065c74' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/productOverviewAdmin.tpl',
-      1 => 1671115259,
+      1 => 1672681940,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./loginFooter.tpl' => 1,
   ),
 ),false)) {
-function content_639b31ffaa67e3_98788549 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63b319d80bdbe9_62763589 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -39,7 +39,7 @@ $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_
             <th></th>
         </tr>
 <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['products']->value, 'p', false, 'k');
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['productDataSet']->value, 'p', false, 'k');
 $_smarty_tpl->tpl_vars['p']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['k']->value => $_smarty_tpl->tpl_vars['p']->value) {
 $_smarty_tpl->tpl_vars['p']->do_else = false;

@@ -18,8 +18,7 @@ class UserProductSingleRecordControllTest extends TestCase
 
     protected function tearDown(): void
     {
-        $_SESSION = [];
-        $_POST = [];
+        $_GET = [];
         parent::tearDown();
     }
 
@@ -36,11 +35,11 @@ class UserProductSingleRecordControllTest extends TestCase
         $mockRepository->method('getProductByProductId')->with(1)->willReturn($dto);
         $mockRepository->expects($this->once())->method('getProductByProductId');
         $detailControll = new UserProductSingleRecordControll($view, $mockRepository);
+        $paramsThatShouldBeInArray = ['productName' => [0 => 'Jeans 1:'], 'productDescription' => [0 => 'The first Jeans'], 'price' => [0 => '29,99']];
 
         $detailControll->renderView();
         $template = $view->getTemplate();
         $params = $view->getParams();
-        $paramsThatShouldBeInArray = ['productName' => [0 => 'Jeans 1:'], 'productDescription' => [0 => 'The first Jeans'], 'price' => [0 => '29,99']];
 
         self::assertSame('productSingleRecord.tpl', $template);
         self::assertSame($paramsThatShouldBeInArray, $params);

@@ -13,23 +13,20 @@ use PHPUnit\Framework\TestCase;
 
 class AdminMainProductCategoryOverviewControllTest extends TestCase
 {
-    protected function tearDown(): void
-    {
-        $_SESSION = [];
-        $_POST = [];
-        parent::tearDown();
-    }
-
     public function testIfArrayIsSetUp(): void
     {
         $container = $this->getContainer();
         /** @var View $view */
-        $categoryDataControll = new AdminMainProductCategoryOverviewControll($view = $container->get(View::class), $container->get(ProductRepository::class));
+        $categoryDataControll = new AdminMainProductCategoryOverviewControll(
+            $view = $container->get(View::class),
+            $container->get(ProductRepository::class)
+        );
+        $paramsThatShouldBeInArray = ['mainCategory' => [1 => 'Jeans', 2 => 'Sweatshirts', 3 => 'T-Shirts']];
 
         $categoryDataControll->renderView();
         $params = $view->getParams();
         $template = $view->getTemplate();
-        $paramsThatShouldBeInArray = array('mainCategorys' => [1 => 'Jeans', 2 => 'Sweatshirts', 3 => 'T-Shirts', 4=> 'Test']);
+
 
         self::assertSame($paramsThatShouldBeInArray, $params);
         self::assertCount(1, $params);

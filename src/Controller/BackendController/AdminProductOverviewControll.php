@@ -10,33 +10,29 @@ use App\Model\ProductRepositoryInterface;
 
 class AdminProductOverviewControll implements ControllerInterface
 {
-    private int $mainId;
-    private int $productId;
 
-    public function __construct(private readonly ViewInterface $view, private readonly ProductRepositoryInterface $products)
+    public function __construct(private readonly ViewInterface $view, private readonly ProductRepositoryInterface $productRepository)
     {
-
     }
 
     public function renderView(): void
     {
-        $this->mainId = (int)$_GET['mainId'];
-        $this->productId = (int)$_GET['productId'];
-        $_SESSION['mainId'] = $this->mainId;
+        $mainId = (int)$_GET['mainId'];
+        $productId = (int)$_GET['productId'];
+        $_SESSION['mainId'] = $mainId;
 
         if (isset($_POST['submit'])) {
-            $this->products->deleteProductById($this->productId);
+            $this->productRepository->deleteProductById($productId);
         }
-
-        $products = $this->products->getProductByMainId($this->mainId);
-        if(!isset($products)){
-            $products = [];
+        $productsFromRepository = $this->productRepository->getProductByMainId($mainId);
+        if(!isset($productsFromRepository)){
+            $productsFromRepository = [];
         }
-        $productsArray = [];
-        foreach ($products as $row) {
-            $productsArray[$row->productId] = $row->displayName;
+        $productDataSet = [];
+        foreach ($productsFromRepository as $row) {
+            $productDataSet[$row->productId] = $row->displayName;
         }
-        $this->view->addTemplateParameter('products', $productsArray);
+        $this->view->addTemplateParameter('productDataSet', $productDataSet);
         $this->view->setTemplate('productOverviewAdmin.tpl');
     }
 }

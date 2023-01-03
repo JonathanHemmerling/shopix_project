@@ -14,8 +14,7 @@ class SqlConnection implements SqlConnectionInterface
 
     public function connectToDatabase(string $dsn, string $database, string $user, string $password, string $port): PDO
     {
-        $pdoConnection = new PDO("mysql:host=$dsn;dbname=$database;port=$port", $user, $password);
-        return $pdoConnection;
+        return new PDO("mysql:host=$dsn;dbname=$database;port=$port", $user, $password);
     }
 
     public function disconnectFromDatabase($connection): void

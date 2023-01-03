@@ -11,7 +11,7 @@ use App\Core\ViewInterface;
 
 class LogoutControll implements ControllerInterface
 {
-    private const message = ['Logout successful!'];
+    private const logoutMessage = ['Logout successful!'];
 
     public function __construct(
         private readonly ViewInterface $view,
@@ -22,7 +22,7 @@ class LogoutControll implements ControllerInterface
     public function renderView(): void
     {
         $this->session->logoutUser();
-        $this->view->addTemplateParameter('errors', self::message);
+        $this->view->addTemplateParameter('message', self::logoutMessage);
         $this->view->setTemplate('login.tpl');
     }
 }

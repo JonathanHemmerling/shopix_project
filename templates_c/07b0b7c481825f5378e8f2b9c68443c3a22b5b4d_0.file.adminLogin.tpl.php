@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-12-15 08:23:54
+/* Smarty version 4.3.0, created on 2023-01-02 16:50:59
   from '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/adminLogin.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '4.2.1',
-  'unifunc' => 'content_639acb8af049e0_95272408',
+  'version' => '4.3.0',
+  'unifunc' => 'content_63b30b73062369_11053408',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '07b0b7c481825f5378e8f2b9c68443c3a22b5b4d' => 
     array (
       0 => '/home/jonathanhemmerling/PhpstormProjects/shopix_project/src/templates/adminLogin.tpl',
-      1 => 1671008180,
+      1 => 1672676503,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:./loginFooter.tpl' => 1,
   ),
 ),false)) {
-function content_639acb8af049e0_95272408 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63b30b73062369_11053408 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:./header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 

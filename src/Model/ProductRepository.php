@@ -27,8 +27,7 @@ class ProductRepository implements ProductRepositoryInterface
     //MainMenu
 
     /**
-     * @param int $mainId
-     * @return MainMenuDataTransferObject[]
+     * @return array|null
      */
     public function getAllMainCategorys(): array|null
     {
@@ -43,8 +42,7 @@ class ProductRepository implements ProductRepositoryInterface
     //ProductsTable
 
     /**
-     * @param int $subId
-     * @return ProductsDataTransferObject
+     * @return array|null
      */
     public function getAllProducts(): array|null
     {
@@ -80,7 +78,7 @@ class ProductRepository implements ProductRepositoryInterface
     public function editProductById(int $productId, string $column, string $stringToChange): void
     {
         $queryString = "UPDATE products SET " . $column . "='" . $stringToChange . "' ";
-        $queryString .= "WHERE productid=" . $productId;
+        $queryString .= "WHERE productId=" . $productId;
         $this->pdo->query($queryString);
     }
 
@@ -98,7 +96,7 @@ class ProductRepository implements ProductRepositoryInterface
         string $description,
         string $price
     ): void {
-        $queryString = "INSERT INTO products (mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
+        $queryString = "INSERT INTO products(mainId, displayName, productName, description, price) VALUES (" . $mainId . ", '" . $displayName . "', '" . $productName . "', '" . $description . "', '" . $price . "')";
         $this->pdo->query($queryString);
     }
 

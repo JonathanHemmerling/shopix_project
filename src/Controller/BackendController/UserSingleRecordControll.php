@@ -11,47 +11,44 @@ use App\Model\UserRepository;
 class UserSingleRecordControll implements ControllerInterface
 {
     private array $errors = [];
-    private array $changedUser = [];
-    private int $userId;
     private array $userDataSet = [];
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly UserRepository $repository
+        private readonly UserRepository $userRepository
     ) {
     }
 
     public function renderView(): void
     {
-        $this->userId = (int)$_GET['userId'];
+        $userId = (int)$_GET['userId'];
         if (isset($_POST['submit'])) {
-            $userDataFromForm = $_POST;
+            $userDataSubmitted = $_POST;
 
-            $this->repository->editUserAttributeById($this->userId, 'userName', $userDataFromForm['Username']);
-            $this->repository->editUserAttributeById($this->userId, 'firstName', $userDataFromForm['First_Name']);
-            $this->repository->editUserAttributeById($this->userId, 'lastName', $userDataFromForm['Last_Name']);
-            $this->repository->editUserAttributeById($this->userId, 'country', $userDataFromForm['Country']);
-            $this->repository->editUserAttributeById($this->userId, 'postcode', $userDataFromForm['Postcode']);
-            $this->repository->editUserAttributeById($this->userId, 'city', $userDataFromForm['City']);
-            $this->repository->editUserAttributeById($this->userId, 'street', $userDataFromForm['Street']);
-            $this->repository->editUserAttributeById($this->userId, 'streetNumber', $userDataFromForm['Streetnumber']);
-            $this->repository->editUserAttributeById($this->userId, 'email', $userDataFromForm['E-Mail']);
-            $this->repository->editUserAttributeById($this->userId, 'telefonNumber', $userDataFromForm['Telefonnumber']);
+            $this->userRepository->editUserAttributeById($userId, 'userName', $userDataSubmitted['Username']);
+            $this->userRepository->editUserAttributeById($userId, 'firstName', $userDataSubmitted['First_Name']);
+            $this->userRepository->editUserAttributeById($userId, 'lastName', $userDataSubmitted['Last_Name']);
+            $this->userRepository->editUserAttributeById($userId, 'country', $userDataSubmitted['Country']);
+            $this->userRepository->editUserAttributeById($userId, 'postcode', $userDataSubmitted['Postcode']);
+            $this->userRepository->editUserAttributeById($userId, 'city', $userDataSubmitted['City']);
+            $this->userRepository->editUserAttributeById($userId, 'street', $userDataSubmitted['Street']);
+            $this->userRepository->editUserAttributeById($userId, 'streetNumber', $userDataSubmitted['Streetnumber']);
+            $this->userRepository->editUserAttributeById($userId, 'email', $userDataSubmitted['E-Mail']);
+            $this->userRepository->editUserAttributeById($userId, 'telefonNumber', $userDataSubmitted['Telefonnumber']);
         }
 
-        $userData = $this->repository->getCurrentUserDataById($_SESSION['userId']);
-        $this->userDataSet['Username'] = $userData->userName;
-        $this->userDataSet['First Name'] = $userData->firstName;
-        $this->userDataSet['Last Name'] = $userData->lastName;
-        $this->userDataSet['Country'] = $userData->country;
-        $this->userDataSet['Postcode'] = $userData->postcode;
-        $this->userDataSet['City'] = $userData->city;
-        $this->userDataSet['Street'] = $userData->street;
-        $this->userDataSet['Streetnumber'] = $userData->streetNumber;
-        $this->userDataSet['E-Mail'] = $userData->email;
-        $this->userDataSet['Telefonnumber'] = $userData->telefonNumber;
-        $this->view->addTemplateParameter('changedUser', $this->changedUser);
+        $userDataFromRepository = $this->userRepository->getCurrentUserDataById($_SESSION['userId']);
+        $this->userDataSet['Username'] = $userDataFromRepository->userName;
+        $this->userDataSet['First Name'] = $userDataFromRepository->firstName;
+        $this->userDataSet['Last Name'] = $userDataFromRepository->lastName;
+        $this->userDataSet['Country'] = $userDataFromRepository->country;
+        $this->userDataSet['Postcode'] = $userDataFromRepository->postcode;
+        $this->userDataSet['City'] = $userDataFromRepository->city;
+        $this->userDataSet['Street'] = $userDataFromRepository->street;
+        $this->userDataSet['Streetnumber'] = $userDataFromRepository->streetNumber;
+        $this->userDataSet['E-Mail'] = $userDataFromRepository->email;
+        $this->userDataSet['Telefonnumber'] = $userDataFromRepository->telefonNumber;
         $this->view->addTemplateParameter('errors', $this->errors);
-        $this->view->addTemplateParameter('items', $this->userDataSet);
+        $this->view->addTemplateParameter('userDataSet', $this->userDataSet);
         $this->view->setTemplate('userSingleRecord.tpl');
     }
 }

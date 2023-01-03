@@ -6,7 +6,7 @@
     }{/literal}</style>
 <div class="error">
 <pre>
-{foreach from=$errors item=p}
+{foreach from=$message item=p}
 {$p}
 {/foreach}
 </pre>

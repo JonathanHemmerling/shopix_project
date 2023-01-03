@@ -21,6 +21,7 @@ class LoginRepositoryTest extends TestCase
         $this->loginRepository = new LoginRepository($container->get(SqlConnection::class), $pdo);
         parent::setUp();
     }
+
     protected function tearDown(): void
     {
         unset($this->loginRepository);
@@ -29,7 +30,6 @@ class LoginRepositoryTest extends TestCase
 
     public function testIfAdminDataIsFound(): void
     {
-        $adminArrayFromDb = $this->loginRepository->findAdminByName('admin');
         $paramsThatDbShouldDeliver = [
             'AdminId' => 1,
             0 => 1,
@@ -38,14 +38,14 @@ class LoginRepositoryTest extends TestCase
             'hashedPassword' => '$2y$10$znTFHBIvM4dnDjxnHJs/gu/uulO//BxQMO8GsZE92TA5XHFXBnF4u',
             2 => '$2y$10$znTFHBIvM4dnDjxnHJs/gu/uulO//BxQMO8GsZE92TA5XHFXBnF4u',
         ];
+        $dataArrayDeliveredByRepository = $this->loginRepository->findAdminByName('admin');
 
-        self::assertCount(6, $adminArrayFromDb);
-        self::assertSame($paramsThatDbShouldDeliver, $adminArrayFromDb);
+        self::assertCount(6, $dataArrayDeliveredByRepository);
+        self::assertSame($paramsThatDbShouldDeliver, $dataArrayDeliveredByRepository);
     }
 
     public function testIfUserDataIsFound(): void
     {
-        $adminArrayFromDb = $this->loginRepository->findUserByName('UserTest123');
         $paramsThatDbShouldDeliver = [
             'id' => 2,
             0 => 2,
@@ -72,9 +72,10 @@ class LoginRepositoryTest extends TestCase
             'hashedPassword' => '$2y$10$KHRC2ZGpNz1V1H5YMuOmAuOS0szm8OVyZL/1k8YFH2tnBwYqQuzSm',
             11 => '$2y$10$KHRC2ZGpNz1V1H5YMuOmAuOS0szm8OVyZL/1k8YFH2tnBwYqQuzSm',
         ];
+        $dataArrayDeliveredByRepository = $this->loginRepository->findUserByName('UserTest123');
 
-        self::assertCount(24, $adminArrayFromDb);
-        self::assertSame($paramsThatDbShouldDeliver, $adminArrayFromDb);
+        self::assertCount(24, $dataArrayDeliveredByRepository);
+        self::assertSame($paramsThatDbShouldDeliver, $dataArrayDeliveredByRepository);
     }
 
     private function getContainer(): Container

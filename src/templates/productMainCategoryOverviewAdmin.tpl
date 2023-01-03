@@ -2,7 +2,7 @@
 
 <div>
     <h3>Main Categorys: </h3>
-{foreach from=$mainCategorys key=k item=p}
+{foreach from=$mainCategory key=k item=p}
 <a href="index.php?page=AdminProductOverview&mainId={$k}&backend">{$p}</a>
 <br />
 {/foreach}

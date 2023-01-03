@@ -12,28 +12,27 @@ use App\Model\ProductRepository;
 class CreateProductControll implements ControllerInterface
 {
 
-    private int $mainId;
     public function __construct(
         private readonly ViewInterface $view,
-        private readonly ProductRepository $products,
+        private readonly ProductRepository $productRepository,
     ) {
 
     }
 
     public function renderView(): void
     {
-        $this->mainId = (int)$_GET['mainId'];
+        $mainId = (int)$_GET['mainId'];
         if (isset($_POST['submit'])) {
-            $productDataFromForm = $_POST;
-            $this->products->createNewProduct(
-                $this->mainId,
-                $productDataFromForm['displayName'],
-                $productDataFromForm['productName'],
-                $productDataFromForm['description'],
-                $productDataFromForm['price']
+            $productDataSbmitted = $_POST;
+            $this->productRepository->createNewProduct(
+                $mainId,
+                $productDataSbmitted['displayName'],
+                $productDataSbmitted['productName'],
+                $productDataSbmitted['description'],
+                $productDataSbmitted['price']
             );
         }
-        $this->view->addTemplateParameter('mainId', [$this->mainId]);
+        $this->view->addTemplateParameter('mainId', [$mainId]);
         $this->view->setTemplate('createProduct.tpl');
     }
 }

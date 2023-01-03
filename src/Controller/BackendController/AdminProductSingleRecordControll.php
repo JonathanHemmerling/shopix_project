@@ -10,30 +10,29 @@ use App\Model\ProductRepository;
 
 class AdminProductSingleRecordControll implements ControllerInterface
 {
-    private int $productId;
-    public function __construct(private readonly ViewInterface $view, private readonly ProductRepository $products)
+    public function __construct(private readonly ViewInterface $view, private readonly ProductRepository $productRepository)
     {
     }
 
     public function renderView(): void
     {
-        $this->productId = (int)$_GET['productId'];
+        $productIdBeforeSubmit = (int)$_GET['productId'];
         if (isset($_POST['submit'])) {
-            $productDataFromForm = $_POST;
-            $productData = $this->products->getProductByProductId($this->productId);
-            $productId = $productData->productId;
-            $this->products->editProductById($productId, 'displayName', $productDataFromForm['displayName']);
-            $this->products->editProductById($productId, 'description', $productDataFromForm['productDescription']);
-            $this->products->editProductByid($productId, 'price', $productDataFromForm['price']);
+            $productDataSubmitted = $_POST;
+            $productData = $this->productRepository->getProductByProductId($productIdBeforeSubmit);
+            $productIdAfterSubmit = $productData->productId;
+            $this->productRepository->editProductById($productIdAfterSubmit, 'displayName', $productDataSubmitted['displayName']);
+            $this->productRepository->editProductById($productIdAfterSubmit, 'description', $productDataSubmitted['productDescription']);
+            $this->productRepository->editProductByid($productIdAfterSubmit, 'price', $productDataSubmitted['price']);
         }
 
-        $arrayMain = [];
-        $mainCategorys = $this->products->getProductByProductId($this->productId);
-        $arrayMain['displayName'] = $mainCategorys->displayName;
-        $arrayMain['productDescription'] = $mainCategorys->description;
-        $arrayMain['price'] = $mainCategorys->price;
-        $_SESSION['productId'] = $mainCategorys->productId;
-        $this->view->addTemplateParameter('productName', $arrayMain);
+        $productDataSet = [];
+        $productFromRepository = $this->productRepository->getProductByProductId($productIdBeforeSubmit);
+        $productDataSet['displayName'] = $productFromRepository->displayName;
+        $productDataSet['productDescription'] = $productFromRepository->description;
+        $productDataSet['price'] = $productFromRepository->price;
+        $_SESSION['productId'] = $productFromRepository->productId;
+        $this->view->addTemplateParameter('productDataSet', $productDataSet);
         $this->view->setTemplate('productSingleRecordAdmin.tpl');
     }
 }
